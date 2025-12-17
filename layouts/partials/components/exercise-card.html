@@ -61,8 +61,10 @@
       {{ end }}
 
       <!-- Equipment -->
-      {{ range first 2 .Params.equipment }}
-      <span class="px-2 py-1 text-xs bg-gray-100 text-gray-600 rounded-full">{{ . }}</span>
+      {{ with .Params.equipment }}
+        {{ range first 2 . }}
+        <span class="px-2 py-1 text-xs bg-gray-100 text-gray-600 rounded-full">{{ . }}</span>
+        {{ end }}
       {{ end }}
     </div>
   </div>
