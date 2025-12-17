@@ -1,0 +1,30 @@
+# Hugo
+/public/
+/resources/
+.hugo_build.lock
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Build artifacts
+/dist/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Pagefind
+/static/pagefind/

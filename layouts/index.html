@@ -1,0 +1,119 @@
+{{ define "main" }}
+<!-- Hero Section -->
+<section class="bg-gradient-to-br from-pink-50 to-purple-50 py-16 lg:py-24">
+  <div class="container">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+        {{ i18n "hero_title" }}
+      </h1>
+      <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        {{ i18n "hero_subtitle" }}
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="{{ "/exercises/" | relLangURL }}" class="btn btn-primary">
+          {{ i18n "browse_exercises" }}
+        </a>
+        <a href="{{ "/workouts/generator/" | relLangURL }}" class="btn btn-secondary">
+          {{ i18n "generate_workout" }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-16 lg:py-24">
+  <div class="container">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{{ i18n "features_title" }}</h2>
+      <p class="text-lg text-gray-600">{{ i18n "features_subtitle" }}</p>
+    </div>
+
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <!-- Exercise Library -->
+      <div class="text-center p-6">
+        <div class="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">{{ i18n "feature_exercises_title" }}</h3>
+        <p class="text-gray-600">{{ i18n "feature_exercises_desc" }}</p>
+      </div>
+
+      <!-- Workout Generator -->
+      <div class="text-center p-6">
+        <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">{{ i18n "feature_generator_title" }}</h3>
+        <p class="text-gray-600">{{ i18n "feature_generator_desc" }}</p>
+      </div>
+
+      <!-- Encyclopedia -->
+      <div class="text-center p-6">
+        <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">{{ i18n "feature_learn_title" }}</h3>
+        <p class="text-gray-600">{{ i18n "feature_learn_desc" }}</p>
+      </div>
+
+      <!-- Bilingual -->
+      <div class="text-center p-6">
+        <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">{{ i18n "feature_bilingual_title" }}</h3>
+        <p class="text-gray-600">{{ i18n "feature_bilingual_desc" }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Popular Exercises -->
+{{ $exercises := where .Site.RegularPages "Section" "exercises" }}
+{{ with $exercises | first 6 }}
+<section class="py-16 lg:py-24 bg-gray-50">
+  <div class="container">
+    <div class="flex items-center justify-between mb-8">
+      <h2 class="text-3xl font-bold text-gray-900">{{ i18n "popular_exercises" }}</h2>
+      <a href="{{ "/exercises/" | relLangURL }}" class="text-pink-600 hover:text-pink-700 font-medium flex items-center gap-1">
+        {{ i18n "view_all" }}
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="exercise-grid">
+      {{ range . }}
+      {{ partial "components/exercise-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- CTA Section -->
+<section class="py-16 lg:py-24">
+  <div class="container">
+    <div class="bg-gradient-to-r from-pink-600 to-purple-600 rounded-3xl p-8 lg:p-12 text-center text-white">
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4">{{ i18n "cta_title" }}</h2>
+      <p class="text-lg text-pink-100 mb-8 max-w-2xl mx-auto">{{ i18n "cta_subtitle" }}</p>
+      <a href="{{ "/workouts/generator/" | relLangURL }}" class="inline-flex items-center gap-2 bg-white text-pink-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-colors">
+        {{ i18n "start_now" }}
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}

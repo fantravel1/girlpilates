@@ -1,0 +1,96 @@
+{{ define "main" }}
+<div class="container py-8 lg:py-12">
+  <!-- Page Header -->
+  <header class="max-w-2xl mx-auto text-center mb-12">
+    <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{{ .Title }}</h1>
+    {{ with .Description }}
+    <p class="text-lg text-gray-600">{{ . }}</p>
+    {{ end }}
+  </header>
+
+  <div class="max-w-4xl mx-auto">
+    <!-- Generator Form -->
+    <form id="workout-generator" class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 lg:p-8 mb-8">
+      <div class="grid gap-6 md:grid-cols-2">
+        <!-- Duration -->
+        <div>
+          <label for="duration" class="block text-sm font-medium text-gray-700 mb-2">
+            {{ i18n "select_duration" }}
+          </label>
+          <select name="duration" id="duration" class="select">
+            <option value="15">15 {{ i18n "minutes" }}</option>
+            <option value="20">20 {{ i18n "minutes" }}</option>
+            <option value="30" selected>30 {{ i18n "minutes" }}</option>
+            <option value="45">45 {{ i18n "minutes" }}</option>
+            <option value="60">60 {{ i18n "minutes" }}</option>
+          </select>
+        </div>
+
+        <!-- Difficulty -->
+        <div>
+          <label for="difficulty" class="block text-sm font-medium text-gray-700 mb-2">
+            {{ i18n "select_difficulty" }}
+          </label>
+          <select name="difficulty" id="difficulty" class="select">
+            <option value="beginner">{{ i18n "beginner" }}</option>
+            <option value="intermediate">{{ i18n "intermediate" }}</option>
+            <option value="advanced">{{ i18n "advanced" }}</option>
+          </select>
+        </div>
+
+        <!-- Equipment -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2">
+            {{ i18n "select_equipment" }}
+          </label>
+          <div class="space-y-2">
+            <label class="flex items-center gap-2">
+              <input type="checkbox" name="equipment" value="mat" checked class="w-4 h-4 text-pink-600 rounded">
+              <span>{{ i18n "mat" }}</span>
+            </label>
+            <label class="flex items-center gap-2">
+              <input type="checkbox" name="equipment" value="ring" class="w-4 h-4 text-pink-600 rounded">
+              <span>{{ i18n "ring" }}</span>
+            </label>
+            <label class="flex items-center gap-2">
+              <input type="checkbox" name="equipment" value="ball" class="w-4 h-4 text-pink-600 rounded">
+              <span>{{ i18n "ball" }}</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Focus Area -->
+        <div>
+          <label for="focus" class="block text-sm font-medium text-gray-700 mb-2">
+            {{ i18n "select_focus" }}
+          </label>
+          <select name="focus" id="focus" class="select">
+            <option value="full_body">{{ i18n "full_body" }}</option>
+            <option value="core">{{ i18n "core" }}</option>
+            <option value="legs">{{ i18n "legs" }}</option>
+            <option value="back">{{ i18n "back" }}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mt-8">
+        <button type="submit" class="btn btn-primary w-full md:w-auto">
+          {{ i18n "generate" }}
+        </button>
+      </div>
+    </form>
+
+    <!-- Results Container -->
+    <div id="workout-results">
+      <div class="text-center py-12 text-gray-500">
+        <svg class="w-16 h-16 mx-auto mb-4 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+        </svg>
+        <p>{{ i18n "features_subtitle" }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="{{ "/js/generator.js" | relURL }}" defer></script>
+{{ end }}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title -->
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | GirlPilates{{ if eq .Language.Lang "es" }}.com/es{{ end }}{{ end }}</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | truncate 160 }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <!-- Hreflang -->
+  {{ partial "head/hreflang.html" . }}
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | truncate 200 }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="GirlPilates">
+  <meta property="og:locale" content="{{ .Language.Params.locale }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  {{ with .Params.image }}
+  <meta property="og:image" content="{{ . | absURL }}">
+  {{ else }}
+  <meta property="og:image" content="{{ "/images/og-default.jpg" | absURL }}">
+  {{ end }}
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | truncate 200 }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+  {{ with .Params.image }}
+  <meta name="twitter:image" content="{{ . | absURL }}">
+  {{ end }}
+
+  <!-- Schema.org JSON-LD -->
+  {{ partial "head/schema.html" . }}
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+  <!-- CSS -->
+  {{ $css := resources.Get "css/main.css" }}
+  {{ if $css }}
+    {{ $css = $css | resources.PostCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{ end }}
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.youtube-nocookie.com">
+  <link rel="preconnect" href="https://i.ytimg.com">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  {{ block "head" . }}{{ end }}
+</head>
+<body class="min-h-screen bg-white text-gray-900 font-sans antialiased">
+  <!-- Skip to content -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-pink-600 text-white px-4 py-2">
+    {{ i18n "skip_to_content" }}
+  </a>
+
+  {{ partial "components/header.html" . }}
+
+  <!-- Breadcrumbs -->
+  {{ if not .IsHome }}
+    {{ partial "components/breadcrumbs.html" . }}
+  {{ end }}
+
+  <main id="main" class="flex-1">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "components/footer.html" . }}
+
+  <!-- Mobile Navigation -->
+  {{ partial "components/nav-mobile.html" . }}
+
+  <!-- JavaScript -->
+  {{ $js := resources.Get "js/app.js" }}
+  {{ if $js }}
+    {{ $js = $js | minify | fingerprint }}
+    <script src="{{ $js.RelPermalink }}" defer></script>
+  {{ end }}
+
+  {{ block "scripts" . }}{{ end }}
+</body>
+</html>

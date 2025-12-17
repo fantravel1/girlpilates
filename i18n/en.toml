@@ -1,0 +1,223 @@
+# English Translations
+
+# Navigation
+[nav_home]
+other = "Home"
+
+[nav_exercises]
+other = "Exercises"
+
+[nav_workouts]
+other = "Workouts"
+
+[nav_learn]
+other = "Learn"
+
+[nav_teachers]
+other = "Teachers"
+
+[nav_generate]
+other = "Generate"
+
+# Homepage
+[hero_title]
+other = "Free Pilates for Every Woman"
+
+[hero_subtitle]
+other = "The world's most comprehensive free Pilates resource. 500+ exercises, expert programs, and complete education - all in English and Spanish."
+
+[browse_exercises]
+other = "Browse Exercises"
+
+[generate_workout]
+other = "Generate a Workout"
+
+[features_title]
+other = "Everything You Need to Practice Pilates"
+
+[features_subtitle]
+other = "Free resources designed to help you build strength, flexibility, and confidence"
+
+[feature_exercises_title]
+other = "500+ Exercises"
+
+[feature_exercises_desc]
+other = "Complete exercise library with video, instructions, and modifications for every level"
+
+[feature_generator_title]
+other = "Workout Generator"
+
+[feature_generator_desc]
+other = "Build personalized routines based on your time, equipment, and goals"
+
+[feature_learn_title]
+other = "Complete Education"
+
+[feature_learn_desc]
+other = "From fundamentals to advanced concepts - anatomy, history, and techniques"
+
+[feature_bilingual_title]
+other = "Fully Bilingual"
+
+[feature_bilingual_desc]
+other = "Every page available in English and Spanish for 500M+ speakers worldwide"
+
+[popular_exercises]
+other = "Popular Exercises"
+
+[view_all]
+other = "View all"
+
+[cta_title]
+other = "Start Your Pilates Journey Today"
+
+[cta_subtitle]
+other = "No cost. No sign-up required. Just press play and move your body."
+
+[start_now]
+other = "Start Now"
+
+# Exercise pages
+[how_to_do]
+other = "How to do"
+
+[how_to_perform]
+other = "How to Perform"
+
+[modifications]
+other = "Modifications"
+
+[faq]
+other = "Frequently Asked Questions"
+
+[related]
+other = "Related Content"
+
+[related_exercises]
+other = "Related Exercises"
+
+[quick_info]
+other = "Quick Info"
+
+[difficulty]
+other = "Difficulty"
+
+[duration]
+other = "Duration"
+
+[equipment]
+other = "Equipment"
+
+[muscles]
+other = "Target Muscles"
+
+[minutes]
+other = "minutes"
+
+[min]
+other = "min"
+
+[play_video]
+other = "Play video"
+
+# Difficulty levels
+[beginner]
+other = "Beginner"
+
+[intermediate]
+other = "Intermediate"
+
+[advanced]
+other = "Advanced"
+
+# Filters
+[filter_difficulty]
+other = "Difficulty"
+
+[filter_equipment]
+other = "Equipment"
+
+[mat]
+other = "Mat"
+
+[reformer]
+other = "Reformer"
+
+[ring]
+other = "Ring"
+
+[ball]
+other = "Ball"
+
+# Search
+[search]
+other = "Search"
+
+[search_placeholder]
+other = "Search exercises, workouts, articles..."
+
+# Footer
+[footer_tagline]
+other = "Free Pilates for every woman, everywhere. No subscriptions, no paywalls - just free, high-quality fitness education."
+
+[quick_links]
+other = "Quick Links"
+
+[resources]
+other = "Resources"
+
+[legal]
+other = "Legal"
+
+[workout_generator]
+other = "Workout Generator"
+
+[pilates_fundamentals]
+other = "Pilates Fundamentals"
+
+[anatomy_guide]
+other = "Anatomy Guide"
+
+[all_rights_reserved]
+other = "All rights reserved."
+
+[made_with_love]
+other = "Made with love for the Pilates community"
+
+# Accessibility
+[skip_to_content]
+other = "Skip to content"
+
+[breadcrumb]
+other = "Breadcrumb"
+
+# Generator
+[select_duration]
+other = "Select Duration"
+
+[select_equipment]
+other = "Select Equipment"
+
+[select_difficulty]
+other = "Select Difficulty"
+
+[select_focus]
+other = "Focus Area"
+
+[full_body]
+other = "Full Body"
+
+[core]
+other = "Core"
+
+[legs]
+other = "Legs"
+
+[arms]
+other = "Arms"
+
+[back]
+other = "Back"
+
+[generate]
+other = "Generate Workout"

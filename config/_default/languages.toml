@@ -1,0 +1,25 @@
+# Language Configuration
+
+[en]
+  languageName = "English"
+  languageCode = "en"
+  weight = 1
+  contentDir = "content/en"
+  title = "GirlPilates - Free Pilates for Every Woman"
+
+  [en.params]
+    description = "The world's most comprehensive free Pilates resource. 500+ exercises, expert programs, complete education."
+    locale = "en_US"
+    subtitle = "Free Pilates for Every Woman"
+
+[es]
+  languageName = "Español"
+  languageCode = "es"
+  weight = 2
+  contentDir = "content/es"
+  title = "GirlPilates - Pilates Gratis para Todas las Mujeres"
+
+  [es.params]
+    description = "El recurso de Pilates gratuito más completo del mundo. Más de 500 ejercicios, programas con expertos, educación completa."
+    locale = "es_ES"
+    subtitle = "Pilates Gratis para Todas las Mujeres"

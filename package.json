@@ -1,0 +1,40 @@
+{
+  "name": "girlpilates",
+  "version": "1.0.0",
+  "description": "Free Pilates resource for every woman - bilingual (EN/ES)",
+  "scripts": {
+    "dev": "hugo server -D --bind 0.0.0.0",
+    "build": "hugo --minify --gc",
+    "postbuild": "npx pagefind --site public",
+    "clean": "rm -rf public resources",
+    "lint:css": "npx stylelint 'assets/css/**/*.css'",
+    "lint:js": "npx eslint 'assets/js/**/*.js'"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.16",
+    "pagefind": "^1.0.4",
+    "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.0"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ],
+  "keywords": [
+    "pilates",
+    "fitness",
+    "womens-health",
+    "exercise",
+    "hugo",
+    "static-site"
+  ],
+  "author": "GirlPilates Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/girlpilates/girlpilates.com"
+  },
+  "homepage": "https://girlpilates.com"
+}

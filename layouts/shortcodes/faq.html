@@ -1,0 +1,14 @@
+{{- $q := .Get "q" -}}
+{{- $a := .Get "a" -}}
+
+<details class="faq-item group bg-gray-50 rounded-lg my-4">
+  <summary class="flex items-center justify-between p-5 cursor-pointer font-medium text-gray-900">
+    {{ $q }}
+    <svg class="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+    </svg>
+  </summary>
+  <div class="px-5 pb-5 text-gray-600">
+    {{ $a }}
+  </div>
+</details>

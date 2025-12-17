@@ -1,0 +1,63 @@
+<header class="sticky top-0 bg-white/95 backdrop-blur border-b border-gray-100 z-30">
+  <div class="container flex items-center justify-between h-14 lg:h-16">
+    <!-- Logo -->
+    <a href="{{ .Site.Home.Permalink }}" class="flex items-center gap-2">
+      <div class="w-8 h-8 bg-pink-600 rounded-lg flex items-center justify-center">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+        </svg>
+      </div>
+      <span class="font-bold text-gray-900 hidden sm:inline">GirlPilates</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden lg:flex items-center gap-8">
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}" class="text-gray-600 hover:text-pink-600 font-medium transition-colors">
+        {{ .Name }}
+      </a>
+      {{ end }}
+    </nav>
+
+    <!-- Right Side: Language + Search -->
+    <div class="flex items-center gap-3">
+      <!-- Language Switcher -->
+      {{ partial "components/lang-switch.html" . }}
+
+      <!-- Search Button -->
+      <button id="search-btn" aria-label="{{ i18n "search" }}" class="p-2 text-gray-600 hover:text-pink-600 transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Search Modal -->
+<div id="search-modal" class="fixed inset-0 bg-black/50 z-50 hidden" aria-hidden="true">
+  <div class="container pt-20">
+    <div class="bg-white rounded-xl shadow-2xl max-w-2xl mx-auto overflow-hidden">
+      <div class="flex items-center gap-3 p-4 border-b">
+        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input
+          type="search"
+          id="search-input"
+          placeholder="{{ i18n "search_placeholder" }}"
+          class="flex-1 outline-none text-lg"
+          autocomplete="off"
+        >
+        <button id="close-search" class="p-2 text-gray-400 hover:text-gray-600">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <div id="search-results" class="max-h-96 overflow-y-auto p-2">
+        <!-- Results populated by JS -->
+      </div>
+    </div>
+  </div>
+</div>
