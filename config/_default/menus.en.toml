@@ -1,0 +1,42 @@
+# English Navigation Menus
+
+[[main]]
+  name = "Exercises"
+  url = "/exercises/"
+  weight = 10
+
+[[main]]
+  name = "Workouts"
+  url = "/workouts/"
+  weight = 20
+
+[[main]]
+  name = "Learn"
+  url = "/learn/"
+  weight = 30
+
+[[main]]
+  name = "Teachers"
+  url = "/teachers/"
+  weight = 40
+
+# Footer menu
+[[footer]]
+  name = "About"
+  url = "/about/"
+  weight = 10
+
+[[footer]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 20
+
+[[footer]]
+  name = "Privacy"
+  url = "/privacy/"
+  weight = 30
+
+[[footer]]
+  name = "Terms"
+  url = "/terms/"
+  weight = 40

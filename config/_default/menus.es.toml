@@ -1,0 +1,42 @@
+# Spanish Navigation Menus
+
+[[main]]
+  name = "Ejercicios"
+  url = "/es/ejercicios/"
+  weight = 10
+
+[[main]]
+  name = "Entrenamientos"
+  url = "/es/entrenamientos/"
+  weight = 20
+
+[[main]]
+  name = "Aprender"
+  url = "/es/aprender/"
+  weight = 30
+
+[[main]]
+  name = "Profesores"
+  url = "/es/profesores/"
+  weight = 40
+
+# Footer menu
+[[footer]]
+  name = "Sobre Nosotros"
+  url = "/es/sobre-nosotros/"
+  weight = 10
+
+[[footer]]
+  name = "Contacto"
+  url = "/es/contacto/"
+  weight = 20
+
+[[footer]]
+  name = "Privacidad"
+  url = "/es/privacidad/"
+  weight = 30
+
+[[footer]]
+  name = "Términos"
+  url = "/es/terminos/"
+  weight = 40

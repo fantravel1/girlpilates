@@ -1,0 +1,223 @@
+# Spanish Translations
+
+# Navigation
+[nav_home]
+other = "Inicio"
+
+[nav_exercises]
+other = "Ejercicios"
+
+[nav_workouts]
+other = "Entrenamientos"
+
+[nav_learn]
+other = "Aprender"
+
+[nav_teachers]
+other = "Profesores"
+
+[nav_generate]
+other = "Generar"
+
+# Homepage
+[hero_title]
+other = "Pilates Gratis para Todas las Mujeres"
+
+[hero_subtitle]
+other = "El recurso de Pilates gratuito más completo del mundo. Más de 500 ejercicios, programas con expertos y educación completa - todo en inglés y español."
+
+[browse_exercises]
+other = "Explorar Ejercicios"
+
+[generate_workout]
+other = "Generar Entrenamiento"
+
+[features_title]
+other = "Todo lo que Necesitas para Practicar Pilates"
+
+[features_subtitle]
+other = "Recursos gratuitos diseñados para ayudarte a desarrollar fuerza, flexibilidad y confianza"
+
+[feature_exercises_title]
+other = "500+ Ejercicios"
+
+[feature_exercises_desc]
+other = "Biblioteca completa de ejercicios con video, instrucciones y modificaciones para cada nivel"
+
+[feature_generator_title]
+other = "Generador de Rutinas"
+
+[feature_generator_desc]
+other = "Crea rutinas personalizadas según tu tiempo, equipamiento y objetivos"
+
+[feature_learn_title]
+other = "Educación Completa"
+
+[feature_learn_desc]
+other = "Desde fundamentos hasta conceptos avanzados - anatomía, historia y técnicas"
+
+[feature_bilingual_title]
+other = "Totalmente Bilingüe"
+
+[feature_bilingual_desc]
+other = "Cada página disponible en inglés y español para más de 500M de hablantes en todo el mundo"
+
+[popular_exercises]
+other = "Ejercicios Populares"
+
+[view_all]
+other = "Ver todos"
+
+[cta_title]
+other = "Comienza Tu Viaje de Pilates Hoy"
+
+[cta_subtitle]
+other = "Sin costo. Sin registro. Solo presiona play y mueve tu cuerpo."
+
+[start_now]
+other = "Comenzar Ahora"
+
+# Exercise pages
+[how_to_do]
+other = "Cómo hacer"
+
+[how_to_perform]
+other = "Cómo Realizar"
+
+[modifications]
+other = "Modificaciones"
+
+[faq]
+other = "Preguntas Frecuentes"
+
+[related]
+other = "Contenido Relacionado"
+
+[related_exercises]
+other = "Ejercicios Relacionados"
+
+[quick_info]
+other = "Información Rápida"
+
+[difficulty]
+other = "Dificultad"
+
+[duration]
+other = "Duración"
+
+[equipment]
+other = "Equipamiento"
+
+[muscles]
+other = "Músculos Objetivo"
+
+[minutes]
+other = "minutos"
+
+[min]
+other = "min"
+
+[play_video]
+other = "Reproducir video"
+
+# Difficulty levels
+[beginner]
+other = "Principiante"
+
+[intermediate]
+other = "Intermedio"
+
+[advanced]
+other = "Avanzado"
+
+# Filters
+[filter_difficulty]
+other = "Dificultad"
+
+[filter_equipment]
+other = "Equipamiento"
+
+[mat]
+other = "Colchoneta"
+
+[reformer]
+other = "Reformer"
+
+[ring]
+other = "Aro"
+
+[ball]
+other = "Pelota"
+
+# Search
+[search]
+other = "Buscar"
+
+[search_placeholder]
+other = "Buscar ejercicios, entrenamientos, artículos..."
+
+# Footer
+[footer_tagline]
+other = "Pilates gratis para todas las mujeres, en todas partes. Sin suscripciones, sin muros de pago - solo educación fitness gratuita y de alta calidad."
+
+[quick_links]
+other = "Enlaces Rápidos"
+
+[resources]
+other = "Recursos"
+
+[legal]
+other = "Legal"
+
+[workout_generator]
+other = "Generador de Entrenamientos"
+
+[pilates_fundamentals]
+other = "Fundamentos de Pilates"
+
+[anatomy_guide]
+other = "Guía de Anatomía"
+
+[all_rights_reserved]
+other = "Todos los derechos reservados."
+
+[made_with_love]
+other = "Hecho con amor para la comunidad de Pilates"
+
+# Accessibility
+[skip_to_content]
+other = "Saltar al contenido"
+
+[breadcrumb]
+other = "Ruta de navegación"
+
+# Generator
+[select_duration]
+other = "Seleccionar Duración"
+
+[select_equipment]
+other = "Seleccionar Equipamiento"
+
+[select_difficulty]
+other = "Seleccionar Dificultad"
+
+[select_focus]
+other = "Área de Enfoque"
+
+[full_body]
+other = "Cuerpo Completo"
+
+[core]
+other = "Core"
+
+[legs]
+other = "Piernas"
+
+[arms]
+other = "Brazos"
+
+[back]
+other = "Espalda"
+
+[generate]
+other = "Generar Entrenamiento"

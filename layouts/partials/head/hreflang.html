@@ -1,0 +1,6 @@
+{{- /* Hreflang for multilingual SEO */ -}}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+{{ range .Translations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+{{ end }}
+<link rel="alternate" hreflang="x-default" href="{{ if eq .Language.Lang "en" }}{{ .Permalink }}{{ else }}{{ replace .Permalink "/es/" "/" }}{{ end }}" />

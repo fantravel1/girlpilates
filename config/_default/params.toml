@@ -1,0 +1,37 @@
+# Site Parameters
+
+# Site Info
+author = "GirlPilates Team"
+logo = "/images/logo.svg"
+favicon = "/images/favicon.ico"
+
+# SEO
+googleAnalytics = ""
+enableOpenGraph = true
+enableTwitterCards = true
+
+# Social
+[social]
+  youtube = "https://youtube.com/@girlpilates"
+  instagram = "https://instagram.com/girlpilates"
+  pinterest = "https://pinterest.com/girlpilates"
+
+# Contact
+[contact]
+  email = "hello@girlpilates.com"
+
+# Features
+[features]
+  search = true
+  darkMode = false
+  newsletter = true
+
+# Images
+[images]
+  ogDefault = "/images/og-default.jpg"
+  placeholder = "/images/placeholder.jpg"
+
+# Pagination
+exercisesPerPage = 12
+workoutsPerPage = 9
+articlesPerPage = 10

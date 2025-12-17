@@ -1,0 +1,69 @@
+# GirlPilates Hugo Configuration
+baseURL = "https://girlpilates.com/"
+title = "GirlPilates"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+# Build settings
+enableRobotsTXT = true
+enableGitInfo = true
+paginate = 12
+summaryLength = 70
+
+# Outputs
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
+
+# Sitemap
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+# Taxonomies
+[taxonomies]
+  equipment = "equipment"
+  muscle = "muscles"
+  difficulty = "difficulties"
+  tag = "tags"
+
+# Markup settings
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    codeFences = true
+    lineNos = true
+    style = "monokai"
+
+# Minification
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+
+# Related content
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "muscles"
+    weight = 80
+  [[related.indices]]
+    name = "equipment"
+    weight = 60
+
+# Security
+[security]
+  [security.funcs]
+    getenv = ["^HUGO_", "^CI$"]
