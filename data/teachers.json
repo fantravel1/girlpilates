@@ -1,0 +1,198 @@
+{
+  "teachers": [
+    {
+      "id": "romana-kryzanowska",
+      "name": "Romana Kryzanowska",
+      "title": "First Generation Elder",
+      "title_es": "Elder de Primera Generación",
+      "bio": "Trained directly by Joseph Pilates, became heir to the Pilates method",
+      "bio_es": "Entrenada directamente por Joseph Pilates, se convirtió en heredera del método Pilates",
+      "specialty": ["Classical Pilates", "Apparatus Work"],
+      "specialty_es": ["Pilates Clásico", "Trabajo con Aparatos"],
+      "certifications": ["Pilates Elder", "Direct Lineage to Joseph Pilates"],
+      "location": "New York, USA",
+      "legacy": true,
+      "years_teaching": 60
+    },
+    {
+      "id": "ron-fletcher",
+      "name": "Ron Fletcher",
+      "title": "First Generation Elder",
+      "title_es": "Elder de Primera Generación",
+      "bio": "Former Martha Graham dancer who brought Pilates to Hollywood",
+      "bio_es": "Ex bailarín de Martha Graham que llevó el Pilates a Hollywood",
+      "specialty": ["Fletcher Pilates", "Percussive Breathing"],
+      "specialty_es": ["Pilates Fletcher", "Respiración Percusiva"],
+      "certifications": ["Pilates Elder", "Fletcher Pilates Founder"],
+      "location": "Los Angeles, USA",
+      "legacy": true,
+      "years_teaching": 50
+    },
+    {
+      "id": "lolita-san-miguel",
+      "name": "Lolita San Miguel",
+      "title": "First Generation Elder",
+      "title_es": "Elder de Primera Generación",
+      "bio": "One of only two people certified by Joseph Pilates himself",
+      "bio_es": "Una de solo dos personas certificadas por el propio Joseph Pilates",
+      "specialty": ["Classical Pilates", "Teacher Training"],
+      "specialty_es": ["Pilates Clásico", "Formación de Profesores"],
+      "certifications": ["Certified by Joseph Pilates", "Master Teacher"],
+      "location": "Puerto Rico",
+      "legacy": true,
+      "years_teaching": 55
+    },
+    {
+      "id": "mari-winsor",
+      "name": "Mari Winsor",
+      "title": "Contemporary Master",
+      "title_es": "Maestra Contemporánea",
+      "bio": "Created Winsor Pilates, bringing mat Pilates to millions via video",
+      "bio_es": "Creadora de Winsor Pilates, llevando Pilates mat a millones a través de video",
+      "specialty": ["Mat Pilates", "Fitness Integration"],
+      "specialty_es": ["Pilates Mat", "Integración Fitness"],
+      "certifications": ["Romana's Pilates Certified"],
+      "location": "Los Angeles, USA",
+      "legacy": true,
+      "years_teaching": 30
+    },
+    {
+      "id": "moira-merrithew",
+      "name": "Moira Merrithew",
+      "title": "STOTT PILATES Co-Founder",
+      "title_es": "Co-Fundadora de STOTT PILATES",
+      "bio": "Developed contemporary Pilates with modern exercise science principles",
+      "bio_es": "Desarrolló Pilates contemporáneo con principios modernos de ciencia del ejercicio",
+      "specialty": ["STOTT PILATES", "Rehabilitation"],
+      "specialty_es": ["STOTT PILATES", "Rehabilitación"],
+      "certifications": ["STOTT PILATES Master Instructor"],
+      "location": "Toronto, Canada",
+      "years_teaching": 35
+    },
+    {
+      "id": "rael-isacowitz",
+      "name": "Rael Isacowitz",
+      "title": "BASI Pilates Founder",
+      "title_es": "Fundador de BASI Pilates",
+      "bio": "World-renowned Pilates educator and founder of BASI Pilates",
+      "bio_es": "Educador de Pilates de renombre mundial y fundador de BASI Pilates",
+      "specialty": ["BASI Pilates", "Integrated Movement"],
+      "specialty_es": ["BASI Pilates", "Movimiento Integrado"],
+      "certifications": ["BASI Master Instructor", "International Presenter"],
+      "location": "California, USA",
+      "years_teaching": 40
+    },
+    {
+      "id": "elizabeth-larkam",
+      "name": "Elizabeth Larkam",
+      "title": "Pilates Innovator",
+      "title_es": "Innovadora de Pilates",
+      "bio": "Pioneer in integrating Pilates with dance and rehabilitation",
+      "bio_es": "Pionera en integrar Pilates con danza y rehabilitación",
+      "specialty": ["Fascia Training", "Dance Integration"],
+      "specialty_es": ["Entrenamiento de Fascia", "Integración con Danza"],
+      "certifications": ["Balanced Body Master Instructor"],
+      "location": "San Francisco, USA",
+      "years_teaching": 35
+    },
+    {
+      "id": "brooke-siler",
+      "name": "Brooke Siler",
+      "title": "Author & Studio Owner",
+      "title_es": "Autora y Dueña de Estudio",
+      "bio": "Author of 'The Pilates Body' and founder of re:AB studio",
+      "bio_es": "Autora de 'The Pilates Body' y fundadora del estudio re:AB",
+      "specialty": ["Classical Pilates", "Celebrity Training"],
+      "specialty_es": ["Pilates Clásico", "Entrenamiento de Celebridades"],
+      "certifications": ["Romana's Pilates Certified"],
+      "location": "New York, USA",
+      "years_teaching": 25
+    },
+    {
+      "id": "alycea-ungaro",
+      "name": "Alycea Ungaro",
+      "title": "Physical Therapist & Author",
+      "title_es": "Fisioterapeuta y Autora",
+      "bio": "Licensed PT who bridges Pilates and rehabilitation",
+      "bio_es": "Fisioterapeuta licenciada que une Pilates y rehabilitación",
+      "specialty": ["Rehabilitation", "Injury Prevention"],
+      "specialty_es": ["Rehabilitación", "Prevención de Lesiones"],
+      "certifications": ["Licensed Physical Therapist", "Romana's Pilates"],
+      "location": "New York, USA",
+      "years_teaching": 30
+    },
+    {
+      "id": "kathy-corey",
+      "name": "Kathy Corey",
+      "title": "Pilates Historian",
+      "title_es": "Historiadora de Pilates",
+      "bio": "Preserving the legacy and history of classical Pilates",
+      "bio_es": "Preservando el legado e historia del Pilates clásico",
+      "specialty": ["Classical Pilates", "Pilates History"],
+      "specialty_es": ["Pilates Clásico", "Historia del Pilates"],
+      "certifications": ["Second Generation Elder"],
+      "location": "San Diego, USA",
+      "years_teaching": 40
+    },
+    {
+      "id": "amy-taylor-alpers",
+      "name": "Amy Taylor Alpers",
+      "title": "The Pilates Center Co-Founder",
+      "title_es": "Co-Fundadora de The Pilates Center",
+      "bio": "Trained by Romana, co-founded premier training center",
+      "bio_es": "Entrenada por Romana, co-fundó centro de formación premier",
+      "specialty": ["Classical Pilates", "Teacher Training"],
+      "specialty_es": ["Pilates Clásico", "Formación de Profesores"],
+      "certifications": ["Romana's Pilates Certified", "Master Teacher"],
+      "location": "Boulder, USA",
+      "years_teaching": 30
+    },
+    {
+      "id": "deborah-lessen",
+      "name": "Deborah Lessen",
+      "title": "Green Street Studio Founder",
+      "title_es": "Fundadora de Green Street Studio",
+      "bio": "Studied directly with Carola Trier, preserving original teachings",
+      "bio_es": "Estudió directamente con Carola Trier, preservando enseñanzas originales",
+      "specialty": ["Classical Pilates", "Original Method"],
+      "specialty_es": ["Pilates Clásico", "Método Original"],
+      "certifications": ["First Generation Lineage", "Master Teacher"],
+      "location": "New York, USA",
+      "years_teaching": 45
+    }
+  ],
+  "certifying_bodies": [
+    {
+      "id": "pma",
+      "name": "Pilates Method Alliance",
+      "name_es": "Alianza del Método Pilates",
+      "description": "International non-profit organization for Pilates professionals",
+      "description_es": "Organización internacional sin fines de lucro para profesionales de Pilates",
+      "website": "https://www.pilatesmethodalliance.org"
+    },
+    {
+      "id": "basi",
+      "name": "BASI Pilates",
+      "name_es": "BASI Pilates",
+      "description": "Body Arts and Science International",
+      "description_es": "Body Arts and Science International",
+      "website": "https://www.basipilates.com"
+    },
+    {
+      "id": "stott",
+      "name": "STOTT PILATES",
+      "name_es": "STOTT PILATES",
+      "description": "Contemporary approach to Pilates exercise",
+      "description_es": "Enfoque contemporáneo del ejercicio de Pilates",
+      "website": "https://www.merrithew.com"
+    },
+    {
+      "id": "balanced-body",
+      "name": "Balanced Body",
+      "name_es": "Balanced Body",
+      "description": "Pilates education and equipment manufacturer",
+      "description_es": "Educación de Pilates y fabricante de equipos",
+      "website": "https://www.pilates.com"
+    }
+  ]
+}
