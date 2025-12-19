@@ -24,7 +24,7 @@ other = "Generate"
 other = "Free Pilates for Every Woman"
 
 [hero_subtitle]
-other = "The world's most comprehensive free Pilates resource. 500+ exercises, expert programs, and complete education - all in English and Spanish."
+other = "The world's most comprehensive free Pilates resource. 520+ exercises with step-by-step instructions, modifications, and expert tips - all in English and Spanish."
 
 [browse_exercises]
 other = "Browse Exercises"
@@ -39,10 +39,10 @@ other = "Everything You Need to Practice Pilates"
 other = "Free resources designed to help you build strength, flexibility, and confidence"
 
 [feature_exercises_title]
-other = "500+ Exercises"
+other = "520+ Exercises"
 
 [feature_exercises_desc]
-other = "Complete exercise library with video, instructions, and modifications for every level"
+other = "The largest free Pilates library with detailed instructions, modifications for all levels, and expert tips"
 
 [feature_generator_title]
 other = "Workout Generator"
@@ -221,3 +221,16 @@ other = "Back"
 
 [generate]
 other = "Generate Workout"
+
+# Stats Section
+[stat_exercises]
+other = "Exercises"
+
+[stat_languages]
+other = "Languages"
+
+[stat_levels]
+other = "Difficulty Levels"
+
+[stat_free]
+other = "Free"

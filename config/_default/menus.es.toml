@@ -22,8 +22,8 @@
 
 # Footer menu
 [[footer]]
-  name = "Sobre Nosotros"
-  url = "/es/sobre-nosotros/"
+  name = "Acerca de"
+  url = "/es/acerca/"
   weight = 10
 
 [[footer]]
