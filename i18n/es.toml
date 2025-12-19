@@ -24,7 +24,7 @@ other = "Generar"
 other = "Pilates Gratis para Todas las Mujeres"
 
 [hero_subtitle]
-other = "El recurso de Pilates gratuito más completo del mundo. Más de 500 ejercicios, programas con expertos y educación completa - todo en inglés y español."
+other = "El recurso de Pilates gratuito más completo del mundo. Más de 520 ejercicios con instrucciones paso a paso, modificaciones y consejos de expertos - todo en inglés y español."
 
 [browse_exercises]
 other = "Explorar Ejercicios"
@@ -39,10 +39,10 @@ other = "Todo lo que Necesitas para Practicar Pilates"
 other = "Recursos gratuitos diseñados para ayudarte a desarrollar fuerza, flexibilidad y confianza"
 
 [feature_exercises_title]
-other = "500+ Ejercicios"
+other = "520+ Ejercicios"
 
 [feature_exercises_desc]
-other = "Biblioteca completa de ejercicios con video, instrucciones y modificaciones para cada nivel"
+other = "La biblioteca de Pilates gratuita más grande con instrucciones detalladas, modificaciones para todos los niveles y consejos de expertos"
 
 [feature_generator_title]
 other = "Generador de Rutinas"
@@ -221,3 +221,16 @@ other = "Espalda"
 
 [generate]
 other = "Generar Entrenamiento"
+
+# Stats Section
+[stat_exercises]
+other = "Ejercicios"
+
+[stat_languages]
+other = "Idiomas"
+
+[stat_levels]
+other = "Niveles de Dificultad"
+
+[stat_free]
+other = "Gratis"

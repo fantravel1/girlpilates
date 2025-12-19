@@ -8,7 +8,7 @@
   title = "GirlPilates - Free Pilates for Every Woman"
 
   [en.params]
-    description = "The world's most comprehensive free Pilates resource. 500+ exercises, expert programs, complete education."
+    description = "The world's most comprehensive free Pilates resource. 520+ exercises with instructions, modifications, and expert tips."
     locale = "en_US"
     subtitle = "Free Pilates for Every Woman"
 
@@ -20,6 +20,6 @@
   title = "GirlPilates - Pilates Gratis para Todas las Mujeres"
 
   [es.params]
-    description = "El recurso de Pilates gratuito más completo del mundo. Más de 500 ejercicios, programas con expertos, educación completa."
+    description = "El recurso de Pilates gratuito más completo del mundo. Más de 520 ejercicios con instrucciones, modificaciones y consejos de expertos."
     locale = "es_ES"
     subtitle = "Pilates Gratis para Todas las Mujeres"
