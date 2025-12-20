@@ -4,17 +4,17 @@
   <div class="container">
     <div class="max-w-4xl mx-auto text-center">
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-        {{ i18n "hero_title" }}
+        {{ i18n "hero_title" | default "Free Pilates for Every Woman" }}
       </h1>
       <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-        {{ i18n "hero_subtitle" }}
+        {{ i18n "hero_subtitle" | default "500+ exercises, expert programs, complete education - all free, in English and Spanish" }}
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a href="{{ "/exercises/" | relLangURL }}" class="btn btn-primary">
-          {{ i18n "browse_exercises" }}
+          {{ i18n "browse_exercises" | default "Browse Exercises" }}
         </a>
         <a href="{{ "/workouts/generator/" | relLangURL }}" class="btn btn-secondary">
-          {{ i18n "generate_workout" }}
+          {{ i18n "generate_workout" | default "Generate Workout" }}
         </a>
       </div>
     </div>
@@ -22,96 +22,116 @@
 </section>
 
 <!-- Stats Section -->
-{{ $exercises := where .Site.RegularPages "Section" "exercises" }}
-{{ $exerciseCount := len $exercises }}
+{{ $exercisesEN := where .Site.RegularPages "Section" "exercises" }}
+{{ $exercisesES := where .Site.RegularPages "Section" "ejercicios" }}
+{{ $exerciseCount := add (len $exercisesEN) (len $exercisesES) }}
+{{ $workoutsEN := where .Site.RegularPages "Section" "workouts" }}
+{{ $workoutsES := where .Site.RegularPages "Section" "entrenamientos" }}
+{{ $workoutCount := add (len $workoutsEN) (len $workoutsES) }}
+{{ $learnEN := where .Site.RegularPages "Section" "learn" }}
+{{ $learnES := where .Site.RegularPages "Section" "aprender" }}
+{{ $learnCount := add (len $learnEN) (len $learnES) }}
 <section class="py-12 bg-white border-b">
   <div class="container">
     <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
       <div>
         <div class="text-4xl lg:text-5xl font-bold text-pink-600 mb-2">{{ $exerciseCount }}+</div>
-        <div class="text-gray-600">{{ i18n "stat_exercises" }}</div>
+        <div class="text-gray-600">{{ i18n "stat_exercises" | default "Exercises" }}</div>
       </div>
       <div>
-        <div class="text-4xl lg:text-5xl font-bold text-purple-600 mb-2">2</div>
-        <div class="text-gray-600">{{ i18n "stat_languages" }}</div>
+        <div class="text-4xl lg:text-5xl font-bold text-purple-600 mb-2">{{ $workoutCount }}+</div>
+        <div class="text-gray-600">{{ i18n "stat_workouts" | default "Workouts" }}</div>
       </div>
       <div>
-        <div class="text-4xl lg:text-5xl font-bold text-blue-600 mb-2">3</div>
-        <div class="text-gray-600">{{ i18n "stat_levels" }}</div>
+        <div class="text-4xl lg:text-5xl font-bold text-blue-600 mb-2">{{ $learnCount }}+</div>
+        <div class="text-gray-600">{{ i18n "stat_articles" | default "Articles" }}</div>
       </div>
       <div>
         <div class="text-4xl lg:text-5xl font-bold text-green-600 mb-2">100%</div>
-        <div class="text-gray-600">{{ i18n "stat_free" }}</div>
+        <div class="text-gray-600">{{ i18n "stat_free" | default "Free" }}</div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Main Content from _index.md -->
+{{ if .Content }}
+<section class="py-16 lg:py-20">
+  <div class="container">
+    <div class="max-w-4xl mx-auto prose prose-lg prose-pink">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
 <!-- Features Section -->
-<section class="py-16 lg:py-24">
+<section class="py-16 lg:py-24 bg-gray-50">
   <div class="container">
     <div class="text-center mb-12">
-      <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{{ i18n "features_title" }}</h2>
-      <p class="text-lg text-gray-600">{{ i18n "features_subtitle" }}</p>
+      <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{{ i18n "features_title" | default "Everything You Need" }}</h2>
+      <p class="text-lg text-gray-600">{{ i18n "features_subtitle" | default "A complete Pilates resource at your fingertips" }}</p>
     </div>
 
     <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
       <!-- Exercise Library -->
-      <div class="text-center p-6">
+      <a href="{{ "/exercises/" | relLangURL }}" class="block text-center p-6 bg-white rounded-2xl hover:shadow-lg transition-shadow">
         <div class="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
           <svg class="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
           </svg>
         </div>
-        <h3 class="text-xl font-semibold mb-2">{{ i18n "feature_exercises_title" }}</h3>
-        <p class="text-gray-600">{{ i18n "feature_exercises_desc" }}</p>
-      </div>
+        <h3 class="text-xl font-semibold mb-2">{{ i18n "feature_exercises_title" | default "500+ Exercises" }}</h3>
+        <p class="text-gray-600">{{ i18n "feature_exercises_desc" | default "Complete library with instructions, modifications, and tips" }}</p>
+      </a>
 
-      <!-- Workout Generator -->
-      <div class="text-center p-6">
+      <!-- Workout Programs -->
+      <a href="{{ "/workouts/" | relLangURL }}" class="block text-center p-6 bg-white rounded-2xl hover:shadow-lg transition-shadow">
         <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
           <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
           </svg>
         </div>
-        <h3 class="text-xl font-semibold mb-2">{{ i18n "feature_generator_title" }}</h3>
-        <p class="text-gray-600">{{ i18n "feature_generator_desc" }}</p>
-      </div>
+        <h3 class="text-xl font-semibold mb-2">{{ i18n "feature_workouts_title" | default "17 Workout Programs" }}</h3>
+        <p class="text-gray-600">{{ i18n "feature_workouts_desc" | default "Ready-to-follow routines for every level and goal" }}</p>
+      </a>
 
-      <!-- Encyclopedia -->
-      <div class="text-center p-6">
+      <!-- Learn Section -->
+      <a href="{{ "/learn/" | relLangURL }}" class="block text-center p-6 bg-white rounded-2xl hover:shadow-lg transition-shadow">
         <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
           <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
           </svg>
         </div>
-        <h3 class="text-xl font-semibold mb-2">{{ i18n "feature_learn_title" }}</h3>
-        <p class="text-gray-600">{{ i18n "feature_learn_desc" }}</p>
-      </div>
+        <h3 class="text-xl font-semibold mb-2">{{ i18n "feature_learn_title" | default "Complete Education" }}</h3>
+        <p class="text-gray-600">{{ i18n "feature_learn_desc" | default "Fundamentals, anatomy, history, and women's health" }}</p>
+      </a>
 
-      <!-- Bilingual -->
-      <div class="text-center p-6">
+      <!-- Teachers -->
+      <a href="{{ "/teachers/" | relLangURL }}" class="block text-center p-6 bg-white rounded-2xl hover:shadow-lg transition-shadow">
         <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
           <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
           </svg>
         </div>
-        <h3 class="text-xl font-semibold mb-2">{{ i18n "feature_bilingual_title" }}</h3>
-        <p class="text-gray-600">{{ i18n "feature_bilingual_desc" }}</p>
-      </div>
+        <h3 class="text-xl font-semibold mb-2">{{ i18n "feature_teachers_title" | default "Expert Teachers" }}</h3>
+        <p class="text-gray-600">{{ i18n "feature_teachers_desc" | default "Profiles of Pilates masters and lineage holders" }}</p>
+      </a>
     </div>
   </div>
 </section>
 
 <!-- Popular Exercises -->
-{{ $exercises := where .Site.RegularPages "Section" "exercises" }}
-{{ with $exercises | first 6 }}
-<section class="py-16 lg:py-24 bg-gray-50">
+{{ $exerciseSections := slice "exercises" "ejercicios" }}
+{{ $allExercises := where .Site.RegularPages "Section" "in" $exerciseSections }}
+{{ $popularExercises := first 6 $allExercises }}
+{{ with $popularExercises }}
+<section class="py-16 lg:py-24">
   <div class="container">
     <div class="flex items-center justify-between mb-8">
-      <h2 class="text-3xl font-bold text-gray-900">{{ i18n "popular_exercises" }}</h2>
+      <h2 class="text-3xl font-bold text-gray-900">{{ i18n "popular_exercises" | default "Popular Exercises" }}</h2>
       <a href="{{ "/exercises/" | relLangURL }}" class="text-pink-600 hover:text-pink-700 font-medium flex items-center gap-1">
-        {{ i18n "view_all" }}
+        {{ i18n "view_all" | default "View All" }}
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
         </svg>
@@ -128,13 +148,13 @@
 {{ end }}
 
 <!-- CTA Section -->
-<section class="py-16 lg:py-24">
+<section class="py-16 lg:py-24 bg-gray-50">
   <div class="container">
     <div class="bg-gradient-to-r from-pink-600 to-purple-600 rounded-3xl p-8 lg:p-12 text-center text-white">
-      <h2 class="text-3xl lg:text-4xl font-bold mb-4">{{ i18n "cta_title" }}</h2>
-      <p class="text-lg text-pink-100 mb-8 max-w-2xl mx-auto">{{ i18n "cta_subtitle" }}</p>
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4">{{ i18n "cta_title" | default "Ready to Start Your Practice?" }}</h2>
+      <p class="text-lg text-pink-100 mb-8 max-w-2xl mx-auto">{{ i18n "cta_subtitle" | default "Generate a personalized workout in seconds" }}</p>
       <a href="{{ "/workouts/generator/" | relLangURL }}" class="inline-flex items-center gap-2 bg-white text-pink-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-colors">
-        {{ i18n "start_now" }}
+        {{ i18n "start_now" | default "Start Now" }}
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
         </svg>

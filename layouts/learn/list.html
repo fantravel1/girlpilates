@@ -1,0 +1,57 @@
+{{ define "main" }}
+<div class="container py-8 lg:py-12">
+  <!-- Page Header -->
+  <header class="mb-8 lg:mb-12">
+    <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{{ .Title }}</h1>
+    {{ with .Description }}
+    <p class="text-lg text-gray-600 max-w-3xl">{{ . }}</p>
+    {{ end }}
+  </header>
+
+  <!-- Content from _index.md -->
+  {{ if .Content }}
+  <div class="prose prose-lg prose-pink max-w-none mb-12">
+    {{ .Content }}
+  </div>
+  {{ end }}
+
+  <!-- Subsections -->
+  {{ $sections := .Sections }}
+  {{ with $sections }}
+  <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-12">
+    {{ range . }}
+    <a href="{{ .RelPermalink }}" class="block bg-white rounded-xl border border-gray-100 p-6 hover:shadow-lg transition-shadow">
+      <h2 class="text-xl font-bold text-gray-900 mb-2">{{ .Title }}</h2>
+      {{ with .Description }}
+      <p class="text-gray-600">{{ . }}</p>
+      {{ end }}
+      {{ $count := len .RegularPages }}
+      <p class="text-sm text-pink-600 mt-4">{{ $count }} {{ if eq $count 1 }}article{{ else }}articles{{ end }} →</p>
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <!-- Pages in this section -->
+  {{ $pages := .RegularPages }}
+  {{ with $pages }}
+  <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ i18n "all_articles" | default "All Articles" }}</h2>
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {{ range . }}
+    <article class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+      <div class="p-5">
+        <h3 class="text-lg font-semibold mb-2">
+          <a href="{{ .RelPermalink }}" class="hover:text-pink-600 transition-colors">{{ .Title }}</a>
+        </h3>
+        {{ with .Description }}
+        <p class="text-gray-600 text-sm line-clamp-2">{{ . }}</p>
+        {{ else }}
+        <p class="text-gray-600 text-sm line-clamp-2">{{ .Summary | truncate 120 }}</p>
+        {{ end }}
+      </div>
+    </article>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
+{{ end }}
