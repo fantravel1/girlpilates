@@ -1,0 +1,64 @@
+{{ define "main" }}
+<div class="container py-8 lg:py-12">
+  <!-- Page Header -->
+  <header class="mb-8 lg:mb-12">
+    <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{{ .Title }}</h1>
+    {{ with .Description }}
+    <p class="text-lg text-gray-600 max-w-3xl">{{ . }}</p>
+    {{ end }}
+  </header>
+
+  <!-- Filters -->
+  <div class="mb-8 flex flex-wrap gap-4">
+    <!-- Difficulty Filter -->
+    <div class="relative" x-data="{ open: false }">
+      <button @click="open = !open" class="flex items-center gap-2 px-4 py-2 border border-gray-200 rounded-lg hover:border-pink-300 transition-colors">
+        <span>{{ i18n "filter_difficulty" }}</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div x-show="open" @click.away="open = false" class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-20" style="display: none;">
+        <a href="?difficulty=beginner" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "beginner" }}</a>
+        <a href="?difficulty=intermediate" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "intermediate" }}</a>
+        <a href="?difficulty=advanced" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "advanced" }}</a>
+      </div>
+    </div>
+
+    <!-- Equipment Filter -->
+    <div class="relative" x-data="{ open: false }">
+      <button @click="open = !open" class="flex items-center gap-2 px-4 py-2 border border-gray-200 rounded-lg hover:border-pink-300 transition-colors">
+        <span>{{ i18n "filter_equipment" }}</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div x-show="open" @click.away="open = false" class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-20" style="display: none;">
+        <a href="?equipment=mat" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "mat" }}</a>
+        <a href="?equipment=reformer" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "reformer" }}</a>
+        <a href="?equipment=ring" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "ring" }}</a>
+        <a href="?equipment=ball" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "ball" }}</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content -->
+  {{ if .Content }}
+  <div class="prose prose-lg prose-pink max-w-none mb-12">
+    {{ .Content }}
+  </div>
+  {{ end }}
+
+  <!-- Exercise Grid -->
+  {{ if .Pages }}
+  <div class="exercise-grid grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+    {{ range .Pages }}
+    {{ partial "components/exercise-card.html" . }}
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <!-- Pagination -->
+  {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}
