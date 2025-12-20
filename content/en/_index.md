@@ -1,6 +1,6 @@
 ---
 title: "GirlPilates - Free Pilates for Every Woman"
-description: "The world's most comprehensive free Pilates resource. 500+ exercises with step-by-step instructions, modifications, and expert tips - all in English and Spanish."
+description: "The world's most comprehensive free Pilates resource. 650+ exercises with step-by-step instructions, modifications, and expert tips - all in English and Spanish."
 translationKey: "home"
 ---
 
@@ -10,13 +10,21 @@ The world's largest free bilingual Pilates resource, designed for women at every
 
 ### What You'll Find Here
 
-#### 500+ Exercises
-Browse our comprehensive exercise library featuring over 500 Pilates exercises. Each one includes detailed instructions, video demonstrations, modifications for all levels, and expert tips.
+#### 650+ Exercises
+Browse our comprehensive exercise library featuring over 650 Pilates exercises across four equipment categories:
+- **Mat exercises** (245+) - Classic Pilates requiring only a mat
+- **Ball exercises** (30) - Stability ball for core and balance
+- **Ring exercises** (25) - Magic Circle for toning and resistance
+- **Band exercises** (25) - Resistance bands for strength training
 
 [Explore Exercises →](/exercises/)
 
-#### 17 Ready-Made Workouts
-From quick 10-minute morning routines to challenging 35-minute advanced sessions. Programs for prenatal, postpartum, back care, flexibility, and more.
+#### 20 Ready-Made Workout Programs
+From quick 15-minute morning routines to challenging 35-minute advanced sessions. Programs include:
+- Core-focused and full-body workouts
+- Prenatal and postpartum programs
+- Back care and flexibility flows
+- Equipment-specific workouts (ball, ring, band)
 
 [Browse Workouts →](/workouts/)
 
@@ -26,7 +34,12 @@ Create your perfect routine in seconds. Just select your time, equipment, and fo
 [Generate a Workout →](/workouts/generator/)
 
 #### Complete Education
-Deepen your practice with our Learn section. Explore Pilates fundamentals, anatomy, history, and specialized topics for women's health.
+Deepen your practice with our Learn section covering:
+- Pilates fundamentals and principles
+- Anatomy and posture
+- History of Pilates and Joseph Pilates
+- Equipment guides
+- Women's health topics
 
 [Start Learning →](/learn/)
 
