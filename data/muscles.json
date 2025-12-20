@@ -1,0 +1,191 @@
+{
+  "muscle_groups": [
+    {
+      "id": "core",
+      "name": "Core",
+      "name_es": "Core",
+      "description": "The central powerhouse of the body including deep stabilizers",
+      "description_es": "La zona central del cuerpo incluyendo estabilizadores profundos",
+      "muscles": ["transverse abdominis", "internal obliques", "external obliques", "rectus abdominis", "multifidus", "pelvic floor"],
+      "exercises_count": 150
+    },
+    {
+      "id": "abs",
+      "name": "Abdominals",
+      "name_es": "Abdominales",
+      "description": "The front abdominal wall muscles",
+      "description_es": "Los músculos de la pared abdominal frontal",
+      "muscles": ["rectus abdominis", "transverse abdominis"],
+      "exercises_count": 120
+    },
+    {
+      "id": "obliques",
+      "name": "Obliques",
+      "name_es": "Oblicuos",
+      "description": "Side abdominal muscles for rotation and lateral flexion",
+      "description_es": "Músculos abdominales laterales para rotación y flexión lateral",
+      "muscles": ["internal obliques", "external obliques"],
+      "exercises_count": 80
+    },
+    {
+      "id": "back",
+      "name": "Back",
+      "name_es": "Espalda",
+      "description": "Upper and lower back muscles for posture and extension",
+      "description_es": "Músculos de espalda superior e inferior para postura y extensión",
+      "muscles": ["erector spinae", "latissimus dorsi", "rhomboids", "trapezius"],
+      "exercises_count": 90
+    },
+    {
+      "id": "spine",
+      "name": "Spine",
+      "name_es": "Columna",
+      "description": "Muscles supporting spinal mobility and stability",
+      "description_es": "Músculos que soportan la movilidad y estabilidad espinal",
+      "muscles": ["erector spinae", "multifidus", "quadratus lumborum"],
+      "exercises_count": 100
+    },
+    {
+      "id": "glutes",
+      "name": "Glutes",
+      "name_es": "Glúteos",
+      "description": "Hip extensors and stabilizers",
+      "description_es": "Extensores y estabilizadores de cadera",
+      "muscles": ["gluteus maximus", "gluteus medius", "gluteus minimus"],
+      "exercises_count": 85
+    },
+    {
+      "id": "hips",
+      "name": "Hip Muscles",
+      "name_es": "Músculos de Cadera",
+      "description": "All muscles surrounding the hip joint",
+      "description_es": "Todos los músculos que rodean la articulación de la cadera",
+      "muscles": ["hip flexors", "hip extensors", "hip abductors", "hip adductors", "hip rotators"],
+      "exercises_count": 110
+    },
+    {
+      "id": "hip-flexors",
+      "name": "Hip Flexors",
+      "name_es": "Flexores de Cadera",
+      "description": "Front hip muscles that lift the legs",
+      "description_es": "Músculos frontales de cadera que elevan las piernas",
+      "muscles": ["psoas", "iliacus", "rectus femoris"],
+      "exercises_count": 60
+    },
+    {
+      "id": "legs",
+      "name": "Legs",
+      "name_es": "Piernas",
+      "description": "All leg muscles from hips to ankles",
+      "description_es": "Todos los músculos de las piernas desde caderas hasta tobillos",
+      "muscles": ["quadriceps", "hamstrings", "calves", "adductors"],
+      "exercises_count": 95
+    },
+    {
+      "id": "hamstrings",
+      "name": "Hamstrings",
+      "name_es": "Isquiotibiales",
+      "description": "Back of thigh muscles for knee flexion and hip extension",
+      "description_es": "Músculos posteriores del muslo para flexión de rodilla y extensión de cadera",
+      "muscles": ["biceps femoris", "semitendinosus", "semimembranosus"],
+      "exercises_count": 55
+    },
+    {
+      "id": "quadriceps",
+      "name": "Quadriceps",
+      "name_es": "Cuádriceps",
+      "description": "Front thigh muscles for knee extension",
+      "description_es": "Músculos frontales del muslo para extensión de rodilla",
+      "muscles": ["rectus femoris", "vastus lateralis", "vastus medialis", "vastus intermedius"],
+      "exercises_count": 50
+    },
+    {
+      "id": "inner-thighs",
+      "name": "Inner Thighs",
+      "name_es": "Muslos Internos",
+      "description": "Adductor muscles for leg stability",
+      "description_es": "Músculos aductores para estabilidad de piernas",
+      "muscles": ["adductor magnus", "adductor longus", "adductor brevis", "gracilis"],
+      "exercises_count": 40
+    },
+    {
+      "id": "shoulders",
+      "name": "Shoulders",
+      "name_es": "Hombros",
+      "description": "Shoulder girdle muscles for arm movement and stability",
+      "description_es": "Músculos de la cintura escapular para movimiento y estabilidad del brazo",
+      "muscles": ["deltoids", "rotator cuff", "trapezius", "serratus anterior"],
+      "exercises_count": 70
+    },
+    {
+      "id": "arms",
+      "name": "Arms",
+      "name_es": "Brazos",
+      "description": "Upper arm muscles for pushing and pulling",
+      "description_es": "Músculos del brazo superior para empujar y jalar",
+      "muscles": ["biceps", "triceps", "forearms"],
+      "exercises_count": 45
+    },
+    {
+      "id": "chest",
+      "name": "Chest",
+      "name_es": "Pecho",
+      "description": "Pectoral muscles for pushing movements",
+      "description_es": "Músculos pectorales para movimientos de empuje",
+      "muscles": ["pectoralis major", "pectoralis minor"],
+      "exercises_count": 35
+    },
+    {
+      "id": "pelvic-floor",
+      "name": "Pelvic Floor",
+      "name_es": "Suelo Pélvico",
+      "description": "Deep muscles supporting pelvic organs",
+      "description_es": "Músculos profundos que soportan los órganos pélvicos",
+      "muscles": ["levator ani", "coccygeus", "urethral sphincter"],
+      "exercises_count": 30
+    },
+    {
+      "id": "full-body",
+      "name": "Full Body",
+      "name_es": "Cuerpo Completo",
+      "description": "Exercises that engage multiple muscle groups",
+      "description_es": "Ejercicios que activan múltiples grupos musculares",
+      "muscles": ["integrated movement"],
+      "exercises_count": 180
+    }
+  ],
+  "anatomy_terms": {
+    "transverse_abdominis": {
+      "name": "Transverse Abdominis",
+      "name_es": "Transverso del Abdomen",
+      "description": "Deepest abdominal muscle, wraps around the torso like a corset",
+      "description_es": "Músculo abdominal más profundo, envuelve el torso como un corsé",
+      "function": "Core stabilization, compression of abdomen",
+      "function_es": "Estabilización del core, compresión del abdomen"
+    },
+    "rectus_abdominis": {
+      "name": "Rectus Abdominis",
+      "name_es": "Recto del Abdomen",
+      "description": "The 'six-pack' muscle running vertically down the front",
+      "description_es": "El músculo 'six-pack' que corre verticalmente por el frente",
+      "function": "Spinal flexion, compression of abdomen",
+      "function_es": "Flexión espinal, compresión del abdomen"
+    },
+    "multifidus": {
+      "name": "Multifidus",
+      "name_es": "Multífido",
+      "description": "Deep back muscles along the spine",
+      "description_es": "Músculos profundos de la espalda a lo largo de la columna",
+      "function": "Spinal stability and rotation",
+      "function_es": "Estabilidad espinal y rotación"
+    },
+    "psoas": {
+      "name": "Psoas Major",
+      "name_es": "Psoas Mayor",
+      "description": "Deep hip flexor connecting spine to femur",
+      "description_es": "Flexor de cadera profundo que conecta la columna al fémur",
+      "function": "Hip flexion, spinal stability",
+      "function_es": "Flexión de cadera, estabilidad espinal"
+    }
+  }
+}
