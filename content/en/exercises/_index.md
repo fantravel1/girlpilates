@@ -8,12 +8,27 @@ translationKey: "exercises"
 
 Explore our comprehensive collection of over **500 Pilates exercises**, the largest free exercise database available online.
 
-### Browse by Category
+### Browse by Equipment
 
 #### Mat Exercises
 The foundation of Pilates practice. These exercises require only a mat and your body weight, making them perfect for home practice.
 
-[View Mat Exercises →](/exercises/mat/)
+[View 245+ Mat Exercises →](/exercises/mat/)
+
+#### Ball Exercises
+Add challenge and variety with stability ball work. Great for core strength, balance, and stretching.
+
+[View 30 Ball Exercises →](/exercises/ball/)
+
+#### Ring Exercises
+The Magic Circle (Pilates Ring) provides resistance for arms, legs, and core work.
+
+[View 25 Ring Exercises →](/exercises/ring/)
+
+#### Resistance Band Exercises
+Portable and versatile, bands add resistance to strengthen and tone the entire body.
+
+[View 25 Band Exercises →](/exercises/band/)
 
 ### Filter Your Search
 
