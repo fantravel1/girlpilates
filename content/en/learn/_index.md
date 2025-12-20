@@ -13,29 +13,41 @@ Expand your Pilates knowledge with our comprehensive educational content. Whethe
 #### Pilates Fundamentals
 Master the core principles that make Pilates unique and effective.
 
-- [The Six Principles of Pilates](/learn/fundamentals/six-principles/)
-- [Breathing Techniques](/learn/fundamentals/breathing-techniques/)
-- [The Powerhouse Explained](/learn/fundamentals/powerhouse/)
-- [History of Pilates](/learn/fundamentals/history-of-pilates/)
-- [Mat vs Reformer](/learn/fundamentals/mat-vs-reformer/)
+- [The Six Principles of Pilates](/learn/fundamentals/pilates-principles/)
+- [Breathing Techniques](/learn/fundamentals/pilates-breathing/)
+- [Common Mistakes to Avoid](/learn/fundamentals/common-mistakes/)
 
 [View All Fundamentals →](/learn/fundamentals/)
 
 #### Anatomy & Body
 Understand how your body moves and why Pilates works.
 
+- [Posture Assessment Guide](/learn/anatomy/posture-assessment/)
 - [Core Muscles](/learn/anatomy/core-muscles/)
 - [Spine Health](/learn/anatomy/spine-health/)
-- [The Pelvic Floor](/learn/anatomy/pelvic-floor/)
 
 [View All Anatomy Articles →](/learn/anatomy/)
+
+#### Pilates History
+Discover the origins and evolution of the Pilates method.
+
+- [Joseph Pilates Biography](/learn/history/joseph-pilates/)
+- [Evolution of Pilates](/learn/history/pilates-evolution/)
+
+[View History Section →](/learn/history/)
+
+#### Equipment Guide
+Learn about Pilates apparatus and how to choose equipment.
+
+- [Complete Equipment Guide](/learn/equipment/equipment-guide/)
+
+[View Equipment Section →](/learn/equipment/)
 
 #### Women's Health
 Specialized content for women's unique needs.
 
 - [Pilates During Pregnancy](/learn/womens-health/pilates-during-pregnancy/)
 - [Postpartum Recovery](/learn/womens-health/postpartum-recovery/)
-- [Menopause and Pilates](/learn/womens-health/menopause-and-pilates/)
 - [Pelvic Floor Health](/learn/womens-health/pelvic-floor-health/)
 
 [View All Women's Health Articles →](/learn/womens-health/)

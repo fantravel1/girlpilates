@@ -8,12 +8,27 @@ translationKey: "exercises"
 
 Explora nuestra colección integral de más de **500 ejercicios de Pilates**, la base de datos de ejercicios gratuita más grande disponible en línea.
 
-### Explorar por Categoría
+### Explorar por Equipamiento
 
 #### Ejercicios de Mat
 La base de la práctica de Pilates. Estos ejercicios solo requieren un tapete y tu peso corporal, haciéndolos perfectos para practicar en casa.
 
-[Ver Ejercicios de Mat →](/es/ejercicios/mat/)
+[Ver 260+ Ejercicios de Mat →](/es/ejercicios/mat/)
+
+#### Ejercicios con Pelota
+Añade desafío y variedad con trabajo de pelota de estabilidad. Excelente para fuerza del core, equilibrio y estiramientos.
+
+[Ver 30 Ejercicios con Pelota →](/es/ejercicios/pelota/)
+
+#### Ejercicios con Aro
+El Aro Mágico (Magic Circle) proporciona resistencia para trabajo de brazos, piernas y core.
+
+[Ver 25 Ejercicios con Aro →](/es/ejercicios/aro/)
+
+#### Ejercicios con Banda de Resistencia
+Portátil y versátil, las bandas añaden resistencia para fortalecer y tonificar todo el cuerpo.
+
+[Ver 25 Ejercicios con Banda →](/es/ejercicios/banda/)
 
 ### Filtra Tu Búsqueda
 

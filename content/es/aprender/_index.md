@@ -13,29 +13,41 @@ Expande tu conocimiento de Pilates con nuestro contenido educativo completo. Ya 
 #### Fundamentos de Pilates
 Domina los principios centrales que hacen a Pilates único y efectivo.
 
-- [Los Seis Principios de Pilates](/es/aprender/fundamentos/seis-principios/)
-- [Técnicas de Respiración](/es/aprender/fundamentos/tecnicas-de-respiracion/)
-- [El Powerhouse Explicado](/es/aprender/fundamentos/powerhouse/)
-- [Historia del Pilates](/es/aprender/fundamentos/historia-del-pilates/)
-- [Mat vs Reformer](/es/aprender/fundamentos/mat-vs-reformer/)
+- [Los Seis Principios de Pilates](/es/aprender/fundamentos/principios-pilates/)
+- [Técnicas de Respiración](/es/aprender/fundamentos/respiracion-pilates/)
+- [Errores Comunes a Evitar](/es/aprender/fundamentos/errores-comunes/)
 
 [Ver Todos los Fundamentos →](/es/aprender/fundamentos/)
 
 #### Anatomía y Cuerpo
 Entiende cómo tu cuerpo se mueve y por qué Pilates funciona.
 
+- [Guía de Evaluación Postural](/es/aprender/anatomia/evaluacion-postura/)
 - [Músculos del Core](/es/aprender/anatomia/musculos-del-core/)
 - [Salud de la Columna](/es/aprender/anatomia/salud-de-columna/)
-- [El Suelo Pélvico](/es/aprender/anatomia/suelo-pelvico/)
 
 [Ver Todos los Artículos de Anatomía →](/es/aprender/anatomia/)
+
+#### Historia del Pilates
+Descubre los orígenes y la evolución del método Pilates.
+
+- [Biografía de Joseph Pilates](/es/aprender/historia/joseph-pilates/)
+- [Evolución del Pilates](/es/aprender/historia/evolucion-pilates/)
+
+[Ver Sección de Historia →](/es/aprender/historia/)
+
+#### Guía de Equipamiento
+Aprende sobre los aparatos de Pilates y cómo elegir equipamiento.
+
+- [Guía Completa de Equipamiento](/es/aprender/equipamiento/guia-equipamiento/)
+
+[Ver Sección de Equipamiento →](/es/aprender/equipamiento/)
 
 #### Salud de la Mujer
 Contenido especializado para las necesidades únicas de las mujeres.
 
 - [Pilates Durante el Embarazo](/es/aprender/salud-femenina/pilates-durante-el-embarazo/)
 - [Recuperación Postparto](/es/aprender/salud-femenina/recuperacion-postparto/)
-- [Menopausia y Pilates](/es/aprender/salud-femenina/menopausia-y-pilates/)
 - [Salud del Suelo Pélvico](/es/aprender/salud-femenina/salud-del-suelo-pelvico/)
 
 [Ver Todos los Artículos de Salud Femenina →](/es/aprender/salud-femenina/)
