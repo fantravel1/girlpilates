@@ -149,6 +149,15 @@ other = "Ring"
 [ball]
 other = "Ball"
 
+[band]
+other = "Resistance Band"
+
+[filter_muscles]
+other = "Target Muscle"
+
+[exercises]
+other = "Exercises"
+
 # Search
 [search]
 other = "Search"
