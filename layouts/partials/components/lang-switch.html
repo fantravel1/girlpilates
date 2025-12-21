@@ -14,24 +14,18 @@
     </svg>
   </button>
 
-  <div class="lang-switch-menu absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg border border-gray-100 py-1 z-50 hidden">
+  <div class="lang-switch-menu absolute right-0 mt-2 w-36 bg-white rounded-lg shadow-lg border border-gray-100 py-1 z-50 hidden">
     {{- range $.Site.Home.AllTranslations -}}
     <a
       href="{{ .Permalink }}"
-      class="flex items-center gap-2 px-4 py-2 text-sm {{ if eq .Language.Lang $.Language.Lang }}text-pink-600 bg-pink-50{{ else }}text-gray-700 hover:bg-gray-50{{ end }}"
+      class="flex items-center justify-between px-4 py-2.5 text-sm {{ if eq .Language.Lang $.Language.Lang }}text-pink-600 bg-pink-50 font-medium{{ else }}text-gray-700 hover:bg-gray-50{{ end }}"
       {{ if eq .Language.Lang $.Language.Lang }}aria-current="true"{{ end }}
     >
-      {{ if eq .Language.Lang "en" }}
-        <span>🇺🇸 English</span>
-      {{ else if eq .Language.Lang "es" }}
-        <span>🇪🇸 Español</span>
-      {{ else }}
-        <span>{{ .Language.LanguageName }}</span>
-      {{ end }}
+      <span>{{ if eq .Language.Lang "en" }}English{{ else if eq .Language.Lang "es" }}Español{{ else }}{{ .Language.LanguageName }}{{ end }}</span>
       {{ if eq .Language.Lang $.Language.Lang }}
-        <svg class="w-4 h-4 ml-auto" fill="currentColor" viewBox="0 0 20 20">
-          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-        </svg>
+      <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
       {{ end }}
     </a>
     {{- end -}}
