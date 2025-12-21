@@ -1,8 +1,11 @@
 ---
-title: "Joseph Pilates: The Life and Legacy of a Fitness Pioneer"
-description: "Discover the inspiring biography of Joseph Pilates, who overcame childhood illness to create one of the most influential exercise methods in history."
+title: "Who Founded Pilates? Joseph Pilates Biography & Legacy"
+description: "Who founded Pilates? Learn about Joseph Pilates (1883-1967), the German fitness pioneer who overcame childhood illness to create one of the most influential exercise methods in history."
 date: 2024-01-15
+lastmod: 2024-12-20
 translationKey: "joseph-pilates"
+keywords: ["who founded pilates", "joseph pilates", "pilates founder", "pilates history", "pilates inventor", "who created pilates", "who invented pilates"]
+layout: "faq"
 ---
 
 ## Introduction

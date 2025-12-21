@@ -1,14 +1,15 @@
 ---
-title: "Pilates Durante el Embarazo: Una Guía Segura"
-description: "Todo lo que necesitas saber sobre practicar Pilates durante el embarazo. Modificaciones seguras, beneficios y qué evitar en cada trimestre."
+title: "Pilates Estando Embarazada: Guía Completa de Seguridad por Trimestre"
+description: "¿Es seguro hacer Pilates estando embarazada? ¡Sí! Aprende modificaciones seguras, beneficios y ejercicios a evitar durante cada trimestre del embarazo."
 translationKey: "womens-pregnancy"
 date: 2024-01-20
-lastmod: 2024-12-01
+lastmod: 2024-12-20
 author: "Equipo GirlPilates"
-keywords: ["pilates prenatal", "ejercicio embarazo", "entrenamiento seguro embarazo", "fitness embarazo", "modificaciones pilates embarazo"]
+keywords: ["pilates embarazada", "pilates prenatal", "pilates durante embarazo", "pilates seguro embarazo", "ejercicios pilates embarazo", "modificaciones pilates embarazo"]
+layout: "faq"
 ---
 
-## ¿Es Seguro el Pilates Durante el Embarazo?
+## ¿Se Puede Hacer Pilates Estando Embarazada?
 
 ¡Sí! Cuando se practica apropiadamente con las modificaciones correctas, Pilates es una de las mejores formas de ejercicio durante el embarazo. Fortalece los músculos que necesitarás para el parto y la recuperación mientras es gentil con tu cuerpo cambiante.
 

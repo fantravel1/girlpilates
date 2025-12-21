@@ -1,8 +1,11 @@
 ---
-title: "Joseph Pilates: Biografía del Creador del Método"
-description: "Conoce la vida extraordinaria de Joseph Pilates, desde su infancia enfermiza hasta convertirse en el creador del método de ejercicio más influyente."
+title: "¿Quién Fundó Pilates? Biografía de Joseph Pilates y su Legado"
+description: "¿Quién fundó Pilates? Conoce a Joseph Pilates (1883-1967), el pionero alemán que superó una infancia enfermiza para crear el método de ejercicio más influyente de la historia."
 date: 2024-01-15
+lastmod: 2024-12-20
 translationKey: "joseph-pilates"
+keywords: ["quién fundó pilates", "joseph pilates", "fundador pilates", "historia pilates", "inventor pilates", "quién creó pilates", "creador del pilates"]
+layout: "faq"
 ---
 
 ## Introducción
