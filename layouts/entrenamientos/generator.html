@@ -18,6 +18,7 @@
             {{ i18n "select_duration" }}
           </label>
           <select name="duration" id="duration" class="select">
+            <option value="10">10 {{ i18n "minutes" }}</option>
             <option value="15">15 {{ i18n "minutes" }}</option>
             <option value="20">20 {{ i18n "minutes" }}</option>
             <option value="30" selected>30 {{ i18n "minutes" }}</option>
@@ -43,18 +44,22 @@
           <label class="block text-sm font-medium text-gray-700 mb-2">
             {{ i18n "select_equipment" }}
           </label>
-          <div class="space-y-2">
-            <label class="flex items-center gap-2">
+          <div class="grid grid-cols-2 gap-2">
+            <label class="flex items-center gap-2 p-2 rounded-lg border border-gray-200 hover:border-pink-300 cursor-pointer has-[:checked]:border-pink-500 has-[:checked]:bg-pink-50">
               <input type="checkbox" name="equipment" value="mat" checked class="w-4 h-4 text-pink-600 rounded">
-              <span>{{ i18n "mat" }}</span>
+              <span class="text-sm">{{ i18n "mat" }}</span>
             </label>
-            <label class="flex items-center gap-2">
-              <input type="checkbox" name="equipment" value="ring" class="w-4 h-4 text-pink-600 rounded">
-              <span>{{ i18n "ring" }}</span>
-            </label>
-            <label class="flex items-center gap-2">
+            <label class="flex items-center gap-2 p-2 rounded-lg border border-gray-200 hover:border-pink-300 cursor-pointer has-[:checked]:border-pink-500 has-[:checked]:bg-pink-50">
               <input type="checkbox" name="equipment" value="ball" class="w-4 h-4 text-pink-600 rounded">
-              <span>{{ i18n "ball" }}</span>
+              <span class="text-sm">{{ i18n "ball" }}</span>
+            </label>
+            <label class="flex items-center gap-2 p-2 rounded-lg border border-gray-200 hover:border-pink-300 cursor-pointer has-[:checked]:border-pink-500 has-[:checked]:bg-pink-50">
+              <input type="checkbox" name="equipment" value="ring" class="w-4 h-4 text-pink-600 rounded">
+              <span class="text-sm">{{ i18n "ring" }}</span>
+            </label>
+            <label class="flex items-center gap-2 p-2 rounded-lg border border-gray-200 hover:border-pink-300 cursor-pointer has-[:checked]:border-pink-500 has-[:checked]:bg-pink-50">
+              <input type="checkbox" name="equipment" value="band" class="w-4 h-4 text-pink-600 rounded">
+              <span class="text-sm">{{ i18n "band" }}</span>
             </label>
           </div>
         </div>
@@ -69,13 +74,18 @@
             <option value="core">{{ i18n "core" }}</option>
             <option value="legs">{{ i18n "legs" }}</option>
             <option value="back">{{ i18n "back" }}</option>
+            <option value="arms">{{ i18n "arms" }}</option>
+            <option value="glutes">{{ i18n "glutes" | default "Glúteos" }}</option>
           </select>
         </div>
       </div>
 
-      <div class="mt-8">
-        <button type="submit" class="btn btn-primary w-full md:w-auto">
+      <div class="mt-8 flex flex-col sm:flex-row gap-4">
+        <button type="submit" class="btn btn-primary flex-1 sm:flex-none">
           {{ i18n "generate" }}
+        </button>
+        <button type="button" id="regenerate-btn" class="btn btn-secondary hidden">
+          {{ i18n "generate_new" | default "Generar Nuevo" }}
         </button>
       </div>
     </form>
@@ -86,7 +96,7 @@
         <svg class="w-16 h-16 mx-auto mb-4 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
         </svg>
-        <p>{{ i18n "features_subtitle" }}</p>
+        <p>{{ i18n "generator_placeholder" | default "Selecciona tus preferencias y genera un entrenamiento personalizado" }}</p>
       </div>
     </div>
   </div>

@@ -149,6 +149,15 @@ other = "Aro"
 [ball]
 other = "Pelota"
 
+[band]
+other = "Banda de Resistencia"
+
+[filter_muscles]
+other = "Músculo Objetivo"
+
+[exercises]
+other = "Ejercicios"
+
 # Search
 [search]
 other = "Buscar"

@@ -19,9 +19,9 @@
         </svg>
       </button>
       <div x-show="open" @click.away="open = false" class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-20" style="display: none;">
-        <a href="?difficulty=beginner" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "beginner" }}</a>
-        <a href="?difficulty=intermediate" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "intermediate" }}</a>
-        <a href="?difficulty=advanced" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "advanced" }}</a>
+        <a href="/difficulties/beginner/" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "beginner" }}</a>
+        <a href="/difficulties/intermediate/" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "intermediate" }}</a>
+        <a href="/difficulties/advanced/" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "advanced" }}</a>
       </div>
     </div>
 
@@ -34,24 +34,204 @@
         </svg>
       </button>
       <div x-show="open" @click.away="open = false" class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-20" style="display: none;">
-        <a href="?equipment=mat" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "mat" }}</a>
-        <a href="?equipment=reformer" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "reformer" }}</a>
-        <a href="?equipment=ring" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "ring" }}</a>
-        <a href="?equipment=ball" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "ball" }}</a>
+        <a href="/exercises/mat/" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "mat" }}</a>
+        <a href="/exercises/ball/" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "ball" }}</a>
+        <a href="/exercises/ring/" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "ring" }}</a>
+        <a href="/exercises/band/" class="block px-4 py-2 text-sm hover:bg-gray-50">{{ i18n "band" }}</a>
+      </div>
+    </div>
+
+    <!-- Muscle Group Filter -->
+    <div class="relative" x-data="{ open: false }">
+      <button @click="open = !open" class="flex items-center gap-2 px-4 py-2 border border-gray-200 rounded-lg hover:border-pink-300 transition-colors">
+        <span>{{ i18n "filter_muscles" | default "Target Muscle" }}</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div x-show="open" @click.away="open = false" class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-20 max-h-64 overflow-y-auto" style="display: none;">
+        <a href="/muscles/core/" class="block px-4 py-2 text-sm hover:bg-gray-50">Core</a>
+        <a href="/muscles/abs/" class="block px-4 py-2 text-sm hover:bg-gray-50">Abdominals</a>
+        <a href="/muscles/spine/" class="block px-4 py-2 text-sm hover:bg-gray-50">Spine</a>
+        <a href="/muscles/hip-flexors/" class="block px-4 py-2 text-sm hover:bg-gray-50">Hip Flexors</a>
+        <a href="/muscles/" class="block px-4 py-2 text-sm hover:bg-gray-50 text-pink-600 font-medium">View All Muscles →</a>
       </div>
     </div>
   </div>
 
-  <!-- Content -->
-  {{ .Content }}
+  <!-- Equipment Category Cards (for main exercises page only) -->
+  {{ if eq .RelPermalink "/exercises/" }}
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">Browse by Equipment</h2>
+    <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+      <!-- Mat -->
+      <a href="/exercises/mat/" class="group bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+        <div class="aspect-video bg-gradient-to-br from-pink-100 to-pink-200 flex items-center justify-center">
+          <svg class="w-16 h-16 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V5z"/>
+          </svg>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-gray-900 group-hover:text-pink-600 transition-colors">Mat Exercises</h3>
+          <p class="text-sm text-gray-600 mt-1">245+ exercises • No equipment needed</p>
+        </div>
+      </a>
+      <!-- Ball -->
+      <a href="/exercises/ball/" class="group bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+        <div class="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+          <svg class="w-16 h-16 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-gray-900 group-hover:text-pink-600 transition-colors">Stability Ball</h3>
+          <p class="text-sm text-gray-600 mt-1">30 exercises • Core & balance</p>
+        </div>
+      </a>
+      <!-- Ring -->
+      <a href="/exercises/ring/" class="group bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+        <div class="aspect-video bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+          <svg class="w-16 h-16 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="8" stroke-width="2"/>
+            <circle cx="12" cy="12" r="5" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-gray-900 group-hover:text-pink-600 transition-colors">Magic Circle</h3>
+          <p class="text-sm text-gray-600 mt-1">25 exercises • Toning & resistance</p>
+        </div>
+      </a>
+      <!-- Band -->
+      <a href="/exercises/band/" class="group bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+        <div class="aspect-video bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
+          <svg class="w-16 h-16 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16M4 8h16M4 16h16"/>
+          </svg>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-gray-900 group-hover:text-pink-600 transition-colors">Resistance Band</h3>
+          <p class="text-sm text-gray-600 mt-1">25 exercises • Strength training</p>
+        </div>
+      </a>
+    </div>
+  </section>
 
-  <!-- Exercise Grid -->
-  {{ if .Pages }}
-  <div class="exercise-grid grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-    {{ range .Pages }}
-    {{ partial "components/exercise-card.html" . }}
-    {{ end }}
+  <!-- Browse by Muscle Group -->
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">Browse by Target Muscle</h2>
+    <div class="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
+      <a href="/muscles/core/" class="bg-white rounded-lg border border-gray-200 p-4 hover:border-pink-300 hover:shadow-sm transition-all text-center">
+        <span class="font-medium text-gray-900">Core</span>
+        <span class="block text-sm text-gray-500 mt-1">150+ exercises</span>
+      </a>
+      <a href="/muscles/abs/" class="bg-white rounded-lg border border-gray-200 p-4 hover:border-pink-300 hover:shadow-sm transition-all text-center">
+        <span class="font-medium text-gray-900">Abdominals</span>
+        <span class="block text-sm text-gray-500 mt-1">120+ exercises</span>
+      </a>
+      <a href="/muscles/spine/" class="bg-white rounded-lg border border-gray-200 p-4 hover:border-pink-300 hover:shadow-sm transition-all text-center">
+        <span class="font-medium text-gray-900">Spine</span>
+        <span class="block text-sm text-gray-500 mt-1">100+ exercises</span>
+      </a>
+      <a href="/muscles/hip-flexors/" class="bg-white rounded-lg border border-gray-200 p-4 hover:border-pink-300 hover:shadow-sm transition-all text-center">
+        <span class="font-medium text-gray-900">Hip Flexors</span>
+        <span class="block text-sm text-gray-500 mt-1">60+ exercises</span>
+      </a>
+      <a href="/muscles/" class="bg-pink-50 rounded-lg border border-pink-200 p-4 hover:bg-pink-100 transition-all text-center">
+        <span class="font-medium text-pink-600">View All</span>
+        <span class="block text-sm text-pink-500 mt-1">All muscle groups</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Browse by Difficulty -->
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">Browse by Difficulty</h2>
+    <div class="grid gap-4 grid-cols-1 sm:grid-cols-3">
+      <a href="/difficulties/beginner/" class="bg-white rounded-lg border border-gray-200 p-6 hover:border-green-300 hover:shadow-sm transition-all">
+        <span class="inline-block px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded mb-2">Beginner</span>
+        <h3 class="font-semibold text-gray-900">Foundational Exercises</h3>
+        <p class="text-sm text-gray-600 mt-1">Learn proper form, breathing, and core engagement</p>
+      </a>
+      <a href="/difficulties/intermediate/" class="bg-white rounded-lg border border-gray-200 p-6 hover:border-yellow-300 hover:shadow-sm transition-all">
+        <span class="inline-block px-2 py-1 bg-yellow-100 text-yellow-700 text-xs font-medium rounded mb-2">Intermediate</span>
+        <h3 class="font-semibold text-gray-900">Progressive Challenge</h3>
+        <p class="text-sm text-gray-600 mt-1">Build on fundamentals with added complexity</p>
+      </a>
+      <a href="/difficulties/advanced/" class="bg-white rounded-lg border border-gray-200 p-6 hover:border-red-300 hover:shadow-sm transition-all">
+        <span class="inline-block px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded mb-2">Advanced</span>
+        <h3 class="font-semibold text-gray-900">Master-Level Work</h3>
+        <p class="text-sm text-gray-600 mt-1">Demanding exercises requiring full-body control</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Quick Tools -->
+  <section class="mb-12 bg-gray-50 rounded-xl p-6 lg:p-8">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">Tools & Resources</h2>
+    <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+      <a href="/workouts/generator/" class="flex items-center gap-3 bg-white rounded-lg p-4 border border-gray-200 hover:border-pink-300 hover:shadow-sm transition-all">
+        <div class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
+          <svg class="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+          </svg>
+        </div>
+        <div>
+          <span class="font-medium text-gray-900 block">Workout Generator</span>
+          <span class="text-sm text-gray-500">Create custom routines</span>
+        </div>
+      </a>
+      <a href="/workouts/" class="flex items-center gap-3 bg-white rounded-lg p-4 border border-gray-200 hover:border-pink-300 hover:shadow-sm transition-all">
+        <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+          <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+          </svg>
+        </div>
+        <div>
+          <span class="font-medium text-gray-900 block">Ready Workouts</span>
+          <span class="text-sm text-gray-500">Complete routines</span>
+        </div>
+      </a>
+      <a href="/equipment/" class="flex items-center gap-3 bg-white rounded-lg p-4 border border-gray-200 hover:border-pink-300 hover:shadow-sm transition-all">
+        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+          <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+          </svg>
+        </div>
+        <div>
+          <span class="font-medium text-gray-900 block">Equipment Guide</span>
+          <span class="text-sm text-gray-500">What you need</span>
+        </div>
+      </a>
+      <a href="/learn/fundamentals/" class="flex items-center gap-3 bg-white rounded-lg p-4 border border-gray-200 hover:border-pink-300 hover:shadow-sm transition-all">
+        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+          <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+          </svg>
+        </div>
+        <div>
+          <span class="font-medium text-gray-900 block">Learn Pilates</span>
+          <span class="text-sm text-gray-500">Fundamentals & more</span>
+        </div>
+      </a>
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- Content (markdown) -->
+  <div class="prose prose-pink max-w-none mb-12">
+    {{ .Content }}
   </div>
+
+  <!-- Exercise Grid (child pages) -->
+  {{ if .Pages }}
+  <section>
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ i18n "exercises" | default "Exercises" }}</h2>
+    <div class="exercise-grid grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      {{ range .Pages }}
+      {{ partial "components/exercise-card.html" . }}
+      {{ end }}
+    </div>
+  </section>
   {{ end }}
 
   <!-- Pagination -->
