@@ -3,12 +3,61 @@
  * Handles core site functionality
  */
 
-// Alpine.js initialization (for dropdowns, modals, etc.)
-document.addEventListener('alpine:init', () => {
-  // Global store for app state
-  Alpine.store('app', {
-    searchOpen: false,
-    mobileMenuOpen: false,
+// Language Switcher functionality
+document.addEventListener('DOMContentLoaded', () => {
+  // Handle all language switchers on the page
+  document.querySelectorAll('.lang-switch').forEach((switcher) => {
+    const btn = switcher.querySelector('.lang-switch-btn');
+    const menu = switcher.querySelector('.lang-switch-menu');
+    const arrow = switcher.querySelector('.lang-switch-arrow');
+
+    if (!btn || !menu) return;
+
+    // Toggle menu on button click
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = !menu.classList.contains('hidden');
+
+      // Close all other menus first
+      document.querySelectorAll('.lang-switch-menu').forEach((m) => {
+        m.classList.add('hidden');
+      });
+      document.querySelectorAll('.lang-switch-arrow').forEach((a) => {
+        a.classList.remove('rotate-180');
+      });
+      document.querySelectorAll('.lang-switch-btn').forEach((b) => {
+        b.setAttribute('aria-expanded', 'false');
+      });
+
+      // Toggle this menu
+      if (!isOpen) {
+        menu.classList.remove('hidden');
+        btn.setAttribute('aria-expanded', 'true');
+        if (arrow) arrow.classList.add('rotate-180');
+      }
+    });
+  });
+
+  // Close menus when clicking outside
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.lang-switch-menu').forEach((menu) => {
+      menu.classList.add('hidden');
+    });
+    document.querySelectorAll('.lang-switch-arrow').forEach((arrow) => {
+      arrow.classList.remove('rotate-180');
+    });
+    document.querySelectorAll('.lang-switch-btn').forEach((btn) => {
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.lang-switch-menu').forEach((menu) => {
+        menu.classList.add('hidden');
+      });
+    }
   });
 });
 
