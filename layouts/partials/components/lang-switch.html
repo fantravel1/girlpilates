@@ -1,32 +1,20 @@
-{{- /* Language Switcher */ -}}
-<div class="relative" x-data="{ open: false }">
+{{- /* Language Switcher - Vanilla JS */ -}}
+<div class="relative lang-switch">
   <button
-    @click="open = !open"
-    class="flex items-center gap-1 px-3 py-2 text-sm text-gray-600 hover:text-pink-600 transition-colors rounded-lg hover:bg-gray-50"
+    class="lang-switch-btn flex items-center gap-1 px-3 py-2 text-sm text-gray-600 hover:text-pink-600 transition-colors rounded-lg hover:bg-gray-50"
     aria-haspopup="true"
-    :aria-expanded="open"
+    aria-expanded="false"
   >
     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
     </svg>
     <span class="uppercase">{{ .Language.Lang }}</span>
-    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <svg class="w-4 h-4 transition-transform lang-switch-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
     </svg>
   </button>
 
-  <div
-    x-show="open"
-    @click.away="open = false"
-    x-transition:enter="transition ease-out duration-100"
-    x-transition:enter-start="opacity-0 scale-95"
-    x-transition:enter-end="opacity-100 scale-100"
-    x-transition:leave="transition ease-in duration-75"
-    x-transition:leave-start="opacity-100 scale-100"
-    x-transition:leave-end="opacity-0 scale-95"
-    class="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg border border-gray-100 py-1 z-50"
-    style="display: none;"
-  >
+  <div class="lang-switch-menu absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg border border-gray-100 py-1 z-50 hidden">
     {{- range $.Site.Home.AllTranslations -}}
     <a
       href="{{ .Permalink }}"
@@ -34,9 +22,9 @@
       {{ if eq .Language.Lang $.Language.Lang }}aria-current="true"{{ end }}
     >
       {{ if eq .Language.Lang "en" }}
-        <span>English</span>
+        <span>🇺🇸 English</span>
       {{ else if eq .Language.Lang "es" }}
-        <span>Español</span>
+        <span>🇪🇸 Español</span>
       {{ else }}
         <span>{{ .Language.LanguageName }}</span>
       {{ end }}
@@ -49,3 +37,14 @@
     {{- end -}}
   </div>
 </div>
+
+{{- /* Also provide simple inline links for when JS fails */ -}}
+<noscript>
+  <div class="flex gap-2 text-sm">
+    {{ range $.Site.Home.AllTranslations }}
+    <a href="{{ .Permalink }}" class="{{ if eq .Language.Lang $.Language.Lang }}text-pink-600 font-medium{{ else }}text-gray-600 hover:text-pink-600{{ end }}">
+      {{ .Language.Lang | upper }}
+    </a>
+    {{ end }}
+  </div>
+</noscript>
