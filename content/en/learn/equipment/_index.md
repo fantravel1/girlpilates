@@ -3,6 +3,8 @@ title: "Pilates Equipment Guide"
 description: "Comprehensive guide to Pilates equipment including the Reformer, Cadillac, Chair, and accessories. Learn what each piece does and how to choose the right equipment."
 date: 2024-01-15
 translationKey: "equipment-index"
+type: "learn"
+layout: "list"
 ---
 
 ## Understanding Pilates Equipment
@@ -30,7 +32,7 @@ Understand the differences between mat Pilates and equipment-based practice, and
 
 ## Start Your Equipment Education
 
-- [Complete Pilates Equipment Guide](/en/learn/equipment/equipment-guide/)
+- [Complete Pilates Equipment Guide](/learn/equipment/equipment-guide/)
 
 ## Why Equipment Matters
 

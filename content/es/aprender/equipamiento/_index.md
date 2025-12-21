@@ -2,6 +2,9 @@
 title: "Equipamiento de Pilates"
 description: "Guía completa del equipamiento de Pilates, desde la colchoneta hasta el Reformer, Cadillac y accesorios para una práctica efectiva."
 date: 2024-01-15
+translationKey: "equipment-index"
+type: "aprender"
+layout: "list"
 ---
 
 ## El Equipamiento del Método Pilates
