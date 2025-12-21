@@ -104,7 +104,7 @@
   <!-- CSS -->
   {{ $css := resources.Get "css/main.css" }}
   {{ if $css }}
-    {{ $css = $css | resources.PostCSS | minify | fingerprint }}
+    {{ $css = $css | css.PostCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   {{ end }}
 
