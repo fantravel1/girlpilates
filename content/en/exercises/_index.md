@@ -2,6 +2,8 @@
 title: "Pilates Exercise Library"
 description: "Browse our complete library of 500+ Pilates exercises. Filter by difficulty, equipment, and target muscles. Each exercise includes step-by-step instructions, modifications, and expert tips."
 translationKey: "exercises"
+type: "exercises"
+layout: "list"
 ---
 
 Explore our comprehensive collection of over **500 Pilates exercises**, the largest free exercise database available online.

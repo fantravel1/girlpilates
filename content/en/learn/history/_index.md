@@ -3,6 +3,8 @@ title: "The History of Pilates"
 description: "Explore the fascinating history of Pilates, from Joseph Pilates' innovative methods in the 1920s to the modern practice enjoyed by millions worldwide."
 date: 2024-01-15
 translationKey: "history-index"
+type: "learn"
+layout: "list"
 ---
 
 ## Discover the Rich Heritage of Pilates
@@ -25,8 +27,8 @@ Understand the historical events and cultural movements that influenced Pilates'
 
 ## Explore the History of Pilates
 
-- [Joseph Pilates: Biography and Legacy](/en/learn/history/joseph-pilates/)
-- [The Evolution of Pilates: 1920s to Today](/en/learn/history/pilates-evolution/)
+- [Joseph Pilates: Biography and Legacy](/learn/history/joseph-pilates/)
+- [The Evolution of Pilates: 1920s to Today](/learn/history/pilates-evolution/)
 
 ## Why History Matters
 

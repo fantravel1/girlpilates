@@ -2,6 +2,8 @@
 title: "Biblioteca de Ejercicios de Pilates"
 description: "Explora nuestra biblioteca completa de más de 500 ejercicios de Pilates. Filtra por dificultad, equipo y músculos objetivo. Cada ejercicio incluye instrucciones paso a paso, modificaciones y consejos de expertos."
 translationKey: "exercises"
+type: "ejercicios"
+layout: "list"
 ---
 
 Explora nuestra colección integral de más de **500 ejercicios de Pilates**, la base de datos de ejercicios gratuita más grande disponible en línea.

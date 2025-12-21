@@ -2,6 +2,9 @@
 title: "Historia del Pilates"
 description: "Explora la fascinante historia del método Pilates, desde su creador Joseph Pilates hasta su evolución moderna como sistema de ejercicio global."
 date: 2024-01-15
+translationKey: "history-index"
+type: "aprender"
+layout: "list"
 ---
 
 ## La Historia del Método Pilates
