@@ -12,8 +12,8 @@
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | truncate 160 }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
 
   <!-- Keywords -->
-  {{ with .Params.muscles }}
-  <meta name="keywords" content="pilates, {{ delimit . ", " }}, exercise, workout, fitness">
+  {{ if .Params.muscles }}
+  <meta name="keywords" content="pilates, {{ delimit .Params.muscles ", " }}, exercise, workout, fitness">
   {{ else if .Params.equipment }}
   <meta name="keywords" content="pilates, {{ delimit .Params.equipment ", " }}, exercise, workout, fitness">
   {{ else }}

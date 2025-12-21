@@ -7,8 +7,11 @@ defaultContentLanguageInSubdir = false
 # Build settings
 enableRobotsTXT = true
 enableGitInfo = true
-paginate = 12
 summaryLength = 70
+
+# Pagination
+[pagination]
+  pagerSize = 12
 
 # Outputs
 [outputs]
