@@ -15,14 +15,48 @@
   </button>
 
   <div class="lang-switch-menu absolute right-0 mt-2 w-36 bg-white rounded-lg shadow-lg border border-gray-100 py-1 z-50 hidden">
-    {{- range $.Site.Home.AllTranslations -}}
+    {{- /* Use current page translations if available, otherwise fall back to site languages */ -}}
+    {{- $translations := .Translations -}}
+    {{- $currentLang := .Language.Lang -}}
+    {{- $currentPage := . -}}
+
+    {{- /* Build list of all languages with their target URLs */ -}}
+    {{- range $.Site.Languages -}}
+    {{- $targetLang := .Lang -}}
+    {{- $targetURL := "" -}}
+    {{- $found := false -}}
+
+    {{- /* Check if this is the current language */ -}}
+    {{- if eq $targetLang $currentLang -}}
+      {{- $targetURL = $currentPage.Permalink -}}
+      {{- $found = true -}}
+    {{- else -}}
+      {{- /* Look for translation in current page's translations */ -}}
+      {{- range $translations -}}
+        {{- if eq .Language.Lang $targetLang -}}
+          {{- $targetURL = .Permalink -}}
+          {{- $found = true -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- /* Fall back to homepage if no translation found */ -}}
+    {{- if not $found -}}
+      {{- $targetURL = (index $.Site.Home.Translations (sub (len $.Site.Home.Translations) 1)).Permalink | default "/" -}}
+      {{- range $.Site.Home.AllTranslations -}}
+        {{- if eq .Language.Lang $targetLang -}}
+          {{- $targetURL = .Permalink -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+
     <a
-      href="{{ .Permalink }}"
-      class="flex items-center justify-between px-4 py-2.5 text-sm {{ if eq .Language.Lang $.Language.Lang }}text-pink-600 bg-pink-50 font-medium{{ else }}text-gray-700 hover:bg-gray-50{{ end }}"
-      {{ if eq .Language.Lang $.Language.Lang }}aria-current="true"{{ end }}
+      href="{{ $targetURL }}"
+      class="flex items-center justify-between px-4 py-2.5 text-sm {{ if eq $targetLang $currentLang }}text-pink-600 bg-pink-50 font-medium{{ else }}text-gray-700 hover:bg-gray-50{{ end }}"
+      {{ if eq $targetLang $currentLang }}aria-current="true"{{ end }}
     >
-      <span>{{ if eq .Language.Lang "en" }}English{{ else if eq .Language.Lang "es" }}Español{{ else }}{{ .Language.LanguageName }}{{ end }}</span>
-      {{ if eq .Language.Lang $.Language.Lang }}
+      <span>{{ if eq $targetLang "en" }}English{{ else if eq $targetLang "es" }}Español{{ else }}{{ .LanguageName }}{{ end }}</span>
+      {{ if eq $targetLang $currentLang }}
       <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
       </svg>
@@ -35,10 +69,31 @@
 {{- /* Also provide simple inline links for when JS fails */ -}}
 <noscript>
   <div class="flex gap-2 text-sm">
-    {{ range $.Site.Home.AllTranslations }}
-    <a href="{{ .Permalink }}" class="{{ if eq .Language.Lang $.Language.Lang }}text-pink-600 font-medium{{ else }}text-gray-600 hover:text-pink-600{{ end }}">
-      {{ .Language.Lang | upper }}
+    {{- $translations := .Translations -}}
+    {{- $currentLang := .Language.Lang -}}
+    {{- $currentPage := . -}}
+    {{- range $.Site.Languages -}}
+    {{- $targetLang := .Lang -}}
+    {{- $targetURL := "" -}}
+    {{- if eq $targetLang $currentLang -}}
+      {{- $targetURL = $currentPage.Permalink -}}
+    {{- else -}}
+      {{- range $translations -}}
+        {{- if eq .Language.Lang $targetLang -}}
+          {{- $targetURL = .Permalink -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if not $targetURL -}}
+        {{- range $.Site.Home.AllTranslations -}}
+          {{- if eq .Language.Lang $targetLang -}}
+            {{- $targetURL = .Permalink -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    <a href="{{ $targetURL }}" class="{{ if eq $targetLang $currentLang }}text-pink-600 font-medium{{ else }}text-gray-600 hover:text-pink-600{{ end }}">
+      {{ $targetLang | upper }}
     </a>
-    {{ end }}
+    {{- end -}}
   </div>
 </noscript>
