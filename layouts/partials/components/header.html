@@ -11,9 +11,9 @@
     </a>
 
     <!-- Desktop Navigation -->
-    <nav class="hidden lg:flex items-center gap-8">
+    <nav class="hidden lg:flex items-center gap-8 h-full">
       {{ range .Site.Menus.main }}
-      <a href="{{ .URL }}" class="text-gray-600 hover:text-pink-600 font-medium transition-colors">
+      <a href="{{ .URL }}" class="flex items-center h-full text-gray-600 hover:text-pink-600 font-medium transition-colors">
         {{ .Name }}
       </a>
       {{ end }}
