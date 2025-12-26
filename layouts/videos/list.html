@@ -44,40 +44,74 @@
       </div>
     </section>
 
-    <!-- YouTube Instructors -->
+    <!-- Featured YouTube Channels with Thumbnails -->
     <section class="mb-16">
       <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">{{ i18n "recommended_channels" }}</h2>
       <p class="text-gray-600 mb-8">Certified instructors offering free Pilates classes on YouTube</p>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {{ range $.Site.Data.teachers.youtube_instructors }}
-        <a href="{{ .youtube_url }}" target="_blank" rel="noopener" class="group bg-white rounded-xl border border-gray-100 p-6 shadow-sm hover:shadow-lg hover:border-pink-200 transition-all">
-          <div class="flex items-start justify-between mb-3">
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900 group-hover:text-pink-600 transition-colors">{{ .channel_name }}</h3>
-              <p class="text-sm text-gray-500">{{ .name }}</p>
+        {{ range $key, $channel := $.Site.Data.video_library.channels }}
+        <a href="{{ $channel.youtube_channel }}" target="_blank" rel="noopener" class="group bg-white rounded-xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-lg hover:border-pink-200 transition-all">
+          <!-- Featured Video Thumbnail -->
+          {{ if $channel.featured_video }}
+          <div class="relative aspect-video bg-gray-100 overflow-hidden">
+            <img
+              src="https://i.ytimg.com/vi/{{ $channel.featured_video.id }}/hqdefault.jpg"
+              alt="{{ $channel.featured_video.title }}"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+              <div class="w-14 h-14 bg-pink-600/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                  <polygon points="5,3 19,12 5,21"/>
+                </svg>
+              </div>
             </div>
-            <svg class="w-5 h-5 text-gray-400 group-hover:text-pink-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-            </svg>
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+              <p class="text-white text-sm font-medium truncate">{{ $channel.featured_video.title }}</p>
+            </div>
           </div>
-
-          <div class="flex items-center gap-2 mb-3">
-            <svg class="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+          {{ else }}
+          <div class="aspect-video bg-gradient-to-br from-pink-100 to-purple-100 flex items-center justify-center">
+            <svg class="w-16 h-16 text-pink-300" fill="currentColor" viewBox="0 0 24 24">
               <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
               <polygon fill="white" points="9.545,15.568 15.818,12 9.545,8.432"/>
             </svg>
-            <span class="text-sm text-gray-600">{{ .subscribers }} {{ i18n "subscribers" }}</span>
           </div>
+          {{ end }}
 
-          <div class="flex flex-wrap gap-1 mb-3">
-            {{ range .specialty }}
-            <span class="px-2 py-0.5 bg-purple-50 text-purple-700 text-xs rounded">{{ . }}</span>
-            {{ end }}
+          <!-- Channel Info -->
+          <div class="p-4">
+            <div class="flex items-start justify-between mb-2">
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900 group-hover:text-pink-600 transition-colors">{{ $channel.name }}</h3>
+                <p class="text-sm text-gray-500">{{ $channel.instructor }}</p>
+              </div>
+              <svg class="w-4 h-4 text-gray-400 group-hover:text-pink-600 transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+            </div>
+
+            <div class="flex items-center gap-2 mb-3">
+              <svg class="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
+                <polygon fill="white" points="9.545,15.568 15.818,12 9.545,8.432"/>
+              </svg>
+              <span class="text-sm text-gray-600">{{ $channel.subscribers }} {{ i18n "subscribers" }}</span>
+            </div>
+
+            <div class="flex flex-wrap gap-1 mb-2">
+              {{ range first 3 $channel.specialty }}
+              <span class="px-2 py-0.5 bg-purple-50 text-purple-700 text-xs rounded">{{ . }}</span>
+              {{ end }}
+              {{ if gt (len $channel.specialty) 3 }}
+              <span class="px-2 py-0.5 bg-gray-100 text-gray-500 text-xs rounded">+{{ sub (len $channel.specialty) 3 }}</span>
+              {{ end }}
+            </div>
+
+            <p class="text-xs text-gray-400">{{ $channel.certification }}</p>
           </div>
-
-          <p class="text-sm text-gray-600">{{ .style }}</p>
-          <p class="text-xs text-gray-400 mt-2">{{ .certification }}</p>
         </a>
         {{ end }}
       </div>

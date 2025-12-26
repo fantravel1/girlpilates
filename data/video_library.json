@@ -12,21 +12,31 @@
       "style": "contemporary",
       "best_for": ["beginners", "intermediate", "core", "quick workouts", "abs"],
       "video_lengths": ["5-30 minutes"],
-      "equipment_focus": ["mat"]
+      "equipment_focus": ["mat"],
+      "featured_video": {
+        "id": "inL-zRXWpkk",
+        "title": "15 Minute Full Body Pilates",
+        "description": "Complete full body workout targeting thighs, arms, and obliques"
+      }
     },
     "move_with_nicole": {
       "name": "Move With Nicole",
       "instructor": "Nicole McPherson",
       "youtube_channel": "https://www.youtube.com/@MoveWithNicole",
       "youtube_handle": "@MoveWithNicole",
-      "subscribers": "3M+",
+      "subscribers": "4.5M+",
       "specialty": ["Mat Pilates", "Yoga", "Barre", "Full Body Flows"],
       "description": "Former Latin Ballroom dancer offering calming, full-body workouts blending Pilates and Yoga with clear instruction",
       "certification": "RYT 500, Certified Pilates Instructor",
       "style": "contemporary",
       "best_for": ["beginners", "intermediate", "full body", "relaxation", "flexibility"],
       "video_lengths": ["10-50 minutes"],
-      "equipment_focus": ["mat", "light dumbbells optional"]
+      "equipment_focus": ["mat", "light dumbbells optional"],
+      "featured_video": {
+        "id": "9zB_3jIYBR4",
+        "title": "30 Min Full Body Pilates Workout",
+        "description": "Most popular video with 9.4M+ views - complete full body workout"
+      }
     },
     "lottie_murphy": {
       "name": "Lottie Murphy Pilates",
@@ -40,7 +50,12 @@
       "style": "classical",
       "best_for": ["beginners", "intermediate", "classical technique", "core", "posture"],
       "video_lengths": ["10-45 minutes"],
-      "equipment_focus": ["mat"]
+      "equipment_focus": ["mat"],
+      "featured_video": {
+        "id": "K56Z12XNQ5c",
+        "title": "30 Min Pilates Full Body Workout",
+        "description": "Popular full body class focusing on core and posture"
+      }
     },
     "jessica_valant": {
       "name": "Jessica Valant Pilates",
@@ -54,7 +69,12 @@
       "style": "therapeutic",
       "best_for": ["beginners", "rehabilitation", "back pain", "injuries", "seniors"],
       "video_lengths": ["10-30 minutes"],
-      "equipment_focus": ["mat", "ball", "band"]
+      "equipment_focus": ["mat", "ball", "band"],
+      "featured_video": {
+        "id": "XeXz8fIZDCE",
+        "title": "Knee Pain Exercises",
+        "description": "Physical therapy exercises for knee pain relief - 3.67M views"
+      }
     },
     "pilates_anytime": {
       "name": "Pilates Anytime",
@@ -68,7 +88,12 @@
       "style": "classical",
       "best_for": ["all levels", "classical technique", "reformer", "apparatus", "professional development"],
       "video_lengths": ["5-60 minutes"],
-      "equipment_focus": ["mat", "reformer", "cadillac", "chair", "barrel"]
+      "equipment_focus": ["mat", "reformer", "cadillac", "chair", "barrel"],
+      "featured_video": {
+        "id": "8bhDlpJNFpU",
+        "title": "Pilates For Older Women",
+        "description": "Most popular video with 1.24M views - gentle class for seniors"
+      }
     },
     "flow_with_mira": {
       "name": "Flow With Mira",
@@ -82,7 +107,12 @@
       "style": "contemporary",
       "best_for": ["beginners", "intermediate", "advanced", "full body", "core strength"],
       "video_lengths": ["15-45 minutes"],
-      "equipment_focus": ["mat"]
+      "equipment_focus": ["mat"],
+      "featured_video": {
+        "id": "K7VFJGZ9xds",
+        "title": "20 Min Beginner Pilates Full Body",
+        "description": "Perfect for absolute beginners - builds core strength and flexibility"
+      }
     },
     "lilly_sabri": {
       "name": "Lilly Sabri",
@@ -96,7 +126,12 @@
       "style": "contemporary",
       "best_for": ["intermediate", "advanced", "quick workouts", "toning", "HIIT"],
       "video_lengths": ["8-25 minutes"],
-      "equipment_focus": ["mat", "bands optional"]
+      "equipment_focus": ["mat", "bands optional"],
+      "featured_video": {
+        "id": "ohgLmY19jNg",
+        "title": "LOSE FAT in 7 Days - 5 min Home Workout",
+        "description": "Most popular video with 66M+ views - quick belly, waist and abs routine"
+      }
     },
     "go_chlo_pilates": {
       "name": "Go Chlo Pilates",
@@ -124,7 +159,12 @@
       "style": "contemporary",
       "best_for": ["beginners", "busy schedules", "prenatal", "postnatal", "body positivity"],
       "video_lengths": ["5-20 minutes"],
-      "equipment_focus": ["mat"]
+      "equipment_focus": ["mat"],
+      "featured_video": {
+        "id": "dFQEhuWm91I",
+        "title": "10 Minute Pilates for Beginners",
+        "description": "Quick beginner-friendly workout perfect for busy schedules"
+      }
     },
     "boho_beautiful": {
       "name": "Boho Beautiful",
@@ -138,7 +178,12 @@
       "style": "fusion",
       "best_for": ["all levels", "mindfulness", "flexibility", "relaxation", "yoga blend"],
       "video_lengths": ["15-45 minutes"],
-      "equipment_focus": ["mat"]
+      "equipment_focus": ["mat"],
+      "featured_video": {
+        "id": "ouv_isD5mZ8",
+        "title": "Ultimate Pilates 21 Day Challenge",
+        "description": "Popular full body workout filmed in Thailand for toning and strength"
+      }
     },
     "isa_welly": {
       "name": "Isa Welly",
@@ -152,7 +197,12 @@
       "style": "contemporary",
       "best_for": ["beginners", "intermediate", "quick workouts", "dance-inspired", "feel-good"],
       "video_lengths": ["12-30 minutes"],
-      "equipment_focus": ["mat"]
+      "equipment_focus": ["mat"],
+      "featured_video": {
+        "id": "9cRNbqJIUmY",
+        "title": "30-Minute Full-Body Dynamic Pilates",
+        "description": "Live class featuring energetic full-body dynamic movements"
+      }
     },
     "merrithew": {
       "name": "Merrithew (STOTT PILATES)",
@@ -180,7 +230,12 @@
       "style": "contemporary",
       "best_for": ["intermediate", "toning", "waist", "standing workouts", "barre blend"],
       "video_lengths": ["15-40 minutes"],
-      "equipment_focus": ["mat"]
+      "equipment_focus": ["mat"],
+      "featured_video": {
+        "id": "aFCXqWwNgDo",
+        "title": "30 min Small Waist + ABS",
+        "description": "Popular waist sculpting workout with 3.29M views"
+      }
     },
     "moving_mango": {
       "name": "Moving Mango",
@@ -208,7 +263,12 @@
       "style": "classical",
       "best_for": ["all levels", "seniors", "chair pilates", "dance background", "modifications"],
       "video_lengths": ["10-40 minutes"],
-      "equipment_focus": ["mat", "chair"]
+      "equipment_focus": ["mat", "chair"],
+      "featured_video": {
+        "id": "Rb6LGKLYb60",
+        "title": "Standing Pilates for Seniors",
+        "description": "Most popular video with 3.5M+ views - safe standing workout"
+      }
     },
     "online_pilates_classes": {
       "name": "Online Pilates Classes",
