@@ -4,121 +4,313 @@
       "name": "Blogilates",
       "instructor": "Cassey Ho",
       "youtube_channel": "https://www.youtube.com/@blogilates",
+      "youtube_handle": "@blogilates",
       "subscribers": "8.8M+",
-      "specialty": ["POP Pilates", "Mat Pilates", "Core Workouts"],
+      "specialty": ["POP Pilates", "Mat Pilates", "Core Workouts", "Abs", "Total Body"],
       "description": "The #1 female fitness channel on YouTube, featuring POP Pilates - a fusion of Pilates with upbeat music and dance-like transitions",
       "certification": "Certified Pilates Instructor",
-      "style": "contemporary"
+      "style": "contemporary",
+      "best_for": ["beginners", "intermediate", "core", "quick workouts", "abs"],
+      "video_lengths": ["5-30 minutes"],
+      "equipment_focus": ["mat"],
+      "featured_video": {
+        "id": "inL-zRXWpkk",
+        "title": "15 Minute Full Body Pilates",
+        "description": "Complete full body workout targeting thighs, arms, and obliques"
+      }
     },
     "move_with_nicole": {
       "name": "Move With Nicole",
       "instructor": "Nicole McPherson",
       "youtube_channel": "https://www.youtube.com/@MoveWithNicole",
-      "subscribers": "2.5M+",
-      "specialty": ["Mat Pilates", "Yoga", "Barre"],
-      "description": "Certified Pilates & Yoga instructor offering calming, full-body workouts with clear instruction",
+      "youtube_handle": "@MoveWithNicole",
+      "subscribers": "4.5M+",
+      "specialty": ["Mat Pilates", "Yoga", "Barre", "Full Body Flows"],
+      "description": "Former Latin Ballroom dancer offering calming, full-body workouts blending Pilates and Yoga with clear instruction",
       "certification": "RYT 500, Certified Pilates Instructor",
-      "style": "contemporary"
+      "style": "contemporary",
+      "best_for": ["beginners", "intermediate", "full body", "relaxation", "flexibility"],
+      "video_lengths": ["10-50 minutes"],
+      "equipment_focus": ["mat", "light dumbbells optional"],
+      "featured_video": {
+        "id": "9zB_3jIYBR4",
+        "title": "30 Min Full Body Pilates Workout",
+        "description": "Most popular video with 9.4M+ views - complete full body workout"
+      }
     },
     "lottie_murphy": {
       "name": "Lottie Murphy Pilates",
       "instructor": "Lottie Murphy",
       "youtube_channel": "https://www.youtube.com/@LottieMurphy",
-      "subscribers": "380K+",
-      "specialty": ["Classical Pilates", "Beginner Pilates", "Core Focus"],
+      "youtube_handle": "@LottieMurphy",
+      "subscribers": "400K+",
+      "specialty": ["Classical Pilates", "Beginner Pilates", "Core Focus", "Mindful Movement"],
       "description": "UK-based Pilates teacher with over a decade of experience teaching mindful, technical Pilates",
       "certification": "Body Control Pilates (Advanced Level)",
-      "style": "classical"
+      "style": "classical",
+      "best_for": ["beginners", "intermediate", "classical technique", "core", "posture"],
+      "video_lengths": ["10-45 minutes"],
+      "equipment_focus": ["mat"],
+      "featured_video": {
+        "id": "K56Z12XNQ5c",
+        "title": "30 Min Pilates Full Body Workout",
+        "description": "Popular full body class focusing on core and posture"
+      }
     },
     "jessica_valant": {
       "name": "Jessica Valant Pilates",
       "instructor": "Jessica Valant",
       "youtube_channel": "https://www.youtube.com/@JessicaValantPilates",
-      "subscribers": "568K+",
-      "specialty": ["Rehabilitation", "Back Pain Relief", "Therapeutic Pilates"],
-      "description": "Licensed physical therapist combining PT expertise with Pilates for therapeutic, effective workouts",
-      "certification": "MSPT, Polestar Pilates Certified",
-      "style": "therapeutic"
+      "youtube_handle": "@JessicaValantPilates",
+      "subscribers": "570K+",
+      "specialty": ["Rehabilitation", "Back Pain Relief", "Therapeutic Pilates", "Physical Therapy"],
+      "description": "Licensed physical therapist combining 25+ years of PT expertise with Pilates for therapeutic, effective workouts",
+      "certification": "MSPT, Polestar Pilates Certified, Perimenopause/Menopause Specialist",
+      "style": "therapeutic",
+      "best_for": ["beginners", "rehabilitation", "back pain", "injuries", "seniors"],
+      "video_lengths": ["10-30 minutes"],
+      "equipment_focus": ["mat", "ball", "band"],
+      "featured_video": {
+        "id": "XeXz8fIZDCE",
+        "title": "Knee Pain Exercises",
+        "description": "Physical therapy exercises for knee pain relief - 3.67M views"
+      }
     },
     "pilates_anytime": {
       "name": "Pilates Anytime",
       "instructor": "Various Master Instructors",
       "youtube_channel": "https://www.youtube.com/@PilatesAnytime",
-      "subscribers": "105K+",
-      "specialty": ["Classical Pilates", "All Apparatus", "Professional Instruction"],
-      "description": "Since 2010, providing access to world-class Pilates instruction from the best teachers globally",
-      "certification": "Multiple Certified Instructors",
-      "style": "classical"
+      "youtube_handle": "@PilatesAnytime",
+      "subscribers": "110K+",
+      "specialty": ["Classical Pilates", "All Apparatus", "Professional Instruction", "Teacher Training"],
+      "description": "Since 2010, providing access to world-class Pilates instruction from the best teachers globally including first-generation lineage instructors",
+      "certification": "Multiple Certified Master Instructors",
+      "style": "classical",
+      "best_for": ["all levels", "classical technique", "reformer", "apparatus", "professional development"],
+      "video_lengths": ["5-60 minutes"],
+      "equipment_focus": ["mat", "reformer", "cadillac", "chair", "barrel"],
+      "featured_video": {
+        "id": "8bhDlpJNFpU",
+        "title": "Pilates For Older Women",
+        "description": "Most popular video with 1.24M views - gentle class for seniors"
+      }
     },
     "flow_with_mira": {
       "name": "Flow With Mira",
-      "instructor": "Mira",
+      "instructor": "Mira Hassan",
       "youtube_channel": "https://www.youtube.com/@flowwithmira",
-      "subscribers": "500K+",
-      "specialty": ["Full Body Flows", "Core Strength", "Flexibility"],
-      "description": "Accessible Pilates for all levels with clear, encouraging instruction focused on core strength and mobility",
-      "certification": "Certified Pilates Instructor",
-      "style": "contemporary"
+      "youtube_handle": "@flowwithmira",
+      "subscribers": "600K+",
+      "specialty": ["Full Body Flows", "Core Strength", "Flexibility", "BASI Method"],
+      "description": "BASI Pilates Honors certified instructor with 20+ years experience, offering accessible Pilates with precise instruction",
+      "certification": "BASI Pilates Honors, BASI Faculty",
+      "style": "contemporary",
+      "best_for": ["beginners", "intermediate", "advanced", "full body", "core strength"],
+      "video_lengths": ["15-45 minutes"],
+      "equipment_focus": ["mat"],
+      "featured_video": {
+        "id": "K7VFJGZ9xds",
+        "title": "20 Min Beginner Pilates Full Body",
+        "description": "Perfect for absolute beginners - builds core strength and flexibility"
+      }
     },
     "lilly_sabri": {
       "name": "Lilly Sabri",
       "instructor": "Lilly Sabri",
       "youtube_channel": "https://www.youtube.com/@LillySabri",
+      "youtube_handle": "@LillySabri",
       "subscribers": "4.5M+",
-      "specialty": ["Pilates HIIT", "Toning", "Quick Workouts"],
-      "description": "Chartered physiotherapist and APPI Pilates instructor offering precision-based fitness workouts",
+      "specialty": ["Pilates HIIT", "Toning", "Quick Workouts", "Glutes", "Abs"],
+      "description": "Chartered physiotherapist and APPI Pilates instructor offering precision-based, high-energy fitness workouts",
       "certification": "Chartered Physiotherapist, APPI Pilates Instructor",
-      "style": "contemporary"
+      "style": "contemporary",
+      "best_for": ["intermediate", "advanced", "quick workouts", "toning", "HIIT"],
+      "video_lengths": ["8-25 minutes"],
+      "equipment_focus": ["mat", "bands optional"],
+      "featured_video": {
+        "id": "ohgLmY19jNg",
+        "title": "LOSE FAT in 7 Days - 5 min Home Workout",
+        "description": "Most popular video with 66M+ views - quick belly, waist and abs routine"
+      }
     },
     "go_chlo_pilates": {
       "name": "Go Chlo Pilates",
-      "instructor": "Chlo",
+      "instructor": "Chloe de Winter",
       "youtube_channel": "https://www.youtube.com/@gochlopilates",
-      "subscribers": "200K+",
-      "specialty": ["Physiotherapy-backed Pilates", "Home Workouts", "Equipment-free"],
-      "description": "Physiotherapist and master Pilates instructor offering challenging home-friendly workouts",
+      "youtube_handle": "@gochlopilates",
+      "subscribers": "250K+",
+      "specialty": ["Physiotherapy-backed Pilates", "Home Workouts", "Equipment-free", "Full Body"],
+      "description": "Physiotherapist and master Pilates instructor offering challenging, physio-informed home workouts",
       "certification": "Physiotherapist, Master Pilates Instructor",
-      "style": "therapeutic"
+      "style": "therapeutic",
+      "best_for": ["intermediate", "advanced", "rehabilitation", "strength", "challenging workouts"],
+      "video_lengths": ["15-45 minutes"],
+      "equipment_focus": ["mat", "foam roller optional"]
     },
     "the_balanced_life": {
-      "name": "The Balanced Life",
+      "name": "The Balanced Life / Lindywell",
       "instructor": "Robin Long",
       "youtube_channel": "https://www.youtube.com/@thebalancedlifeonline",
-      "subscribers": "300K+",
-      "specialty": ["Sustainable Fitness", "Body Positivity", "Short Sessions"],
-      "description": "Short, targeted Pilates sessions emphasizing body positivity and sustainable progress",
-      "certification": "Certified Pilates Instructor",
-      "style": "contemporary"
+      "youtube_handle": "@thebalancedlifeonline",
+      "subscribers": "350K+",
+      "specialty": ["Sustainable Fitness", "Body Positivity", "Short Sessions", "Prenatal/Postnatal"],
+      "description": "Short, targeted Pilates sessions emphasizing body positivity, sustainable progress, and fitting fitness into busy schedules",
+      "certification": "Certified Pilates Instructor, Nutrition Therapy Practitioner",
+      "style": "contemporary",
+      "best_for": ["beginners", "busy schedules", "prenatal", "postnatal", "body positivity"],
+      "video_lengths": ["5-20 minutes"],
+      "equipment_focus": ["mat"],
+      "featured_video": {
+        "id": "dFQEhuWm91I",
+        "title": "10 Minute Pilates for Beginners",
+        "description": "Quick beginner-friendly workout perfect for busy schedules"
+      }
     },
     "boho_beautiful": {
       "name": "Boho Beautiful",
       "instructor": "Juliana Spicoluk",
       "youtube_channel": "https://www.youtube.com/@BohoBeautiful",
+      "youtube_handle": "@BohoBeautiful",
       "subscribers": "5M+",
-      "specialty": ["Yoga-Pilates Fusion", "Mindfulness", "Travel Workouts"],
-      "description": "Combines Pilates with yoga and mindfulness for holistic mind-body workouts",
+      "specialty": ["Yoga-Pilates Fusion", "Mindfulness", "Travel Workouts", "Flexibility"],
+      "description": "Combines Pilates with yoga and mindfulness for holistic mind-body workouts in beautiful locations",
       "certification": "Certified Yoga & Pilates Instructor",
-      "style": "fusion"
+      "style": "fusion",
+      "best_for": ["all levels", "mindfulness", "flexibility", "relaxation", "yoga blend"],
+      "video_lengths": ["15-45 minutes"],
+      "equipment_focus": ["mat"],
+      "featured_video": {
+        "id": "ouv_isD5mZ8",
+        "title": "Ultimate Pilates 21 Day Challenge",
+        "description": "Popular full body workout filmed in Thailand for toning and strength"
+      }
     },
     "isa_welly": {
       "name": "Isa Welly",
       "instructor": "Isa Welly",
       "youtube_channel": "https://www.youtube.com/@IsaWelly",
-      "subscribers": "400K+",
-      "specialty": ["Dance-inspired Pilates", "Quick Flows", "All Levels"],
-      "description": "Former dancer offering accessible, engaging workouts with a joyful approach",
+      "youtube_handle": "@IsaWelly",
+      "subscribers": "450K+",
+      "specialty": ["Dance-inspired Pilates", "Quick Flows", "All Levels", "Feel-Good Workouts"],
+      "description": "Former dancer offering accessible, joyful Pilates workouts with upbeat energy",
       "certification": "Certified Pilates Instructor, Wellness Coach",
-      "style": "contemporary"
+      "style": "contemporary",
+      "best_for": ["beginners", "intermediate", "quick workouts", "dance-inspired", "feel-good"],
+      "video_lengths": ["12-30 minutes"],
+      "equipment_focus": ["mat"],
+      "featured_video": {
+        "id": "9cRNbqJIUmY",
+        "title": "30-Minute Full-Body Dynamic Pilates",
+        "description": "Live class featuring energetic full-body dynamic movements"
+      }
     },
     "merrithew": {
       "name": "Merrithew (STOTT PILATES)",
       "instructor": "Moira Merrithew & Team",
       "youtube_channel": "https://www.youtube.com/@MERRITHEW",
+      "youtube_handle": "@MERRITHEW",
       "subscribers": "100K+",
-      "specialty": ["STOTT PILATES", "Contemporary Pilates", "Rehabilitation"],
-      "description": "Official channel for STOTT PILATES, featuring anatomically-based contemporary Pilates",
+      "specialty": ["STOTT PILATES", "Contemporary Pilates", "Rehabilitation", "Professional Training"],
+      "description": "Official channel for STOTT PILATES, featuring anatomically-based contemporary Pilates with exercise science principles",
       "certification": "STOTT PILATES Master Instructors",
-      "style": "contemporary"
+      "style": "contemporary",
+      "best_for": ["all levels", "rehabilitation", "proper form", "apparatus", "professional"],
+      "video_lengths": ["5-30 minutes"],
+      "equipment_focus": ["mat", "reformer", "stability ball", "resistance band", "fitness circle"]
+    },
+    "eleni_fit": {
+      "name": "Eleni Fit",
+      "instructor": "Eleni",
+      "youtube_channel": "https://www.youtube.com/@EleniFit",
+      "youtube_handle": "@EleniFit",
+      "subscribers": "550K+",
+      "specialty": ["Pilates Barre", "HIIT Pilates", "Waist Workouts", "Standing Pilates"],
+      "description": "Dynamic Pilates and barre workouts focused on toning and sculpting",
+      "certification": "Certified Pilates & Barre Instructor",
+      "style": "contemporary",
+      "best_for": ["intermediate", "toning", "waist", "standing workouts", "barre blend"],
+      "video_lengths": ["15-40 minutes"],
+      "equipment_focus": ["mat"],
+      "featured_video": {
+        "id": "aFCXqWwNgDo",
+        "title": "30 min Small Waist + ABS",
+        "description": "Popular waist sculpting workout with 3.29M views"
+      }
+    },
+    "moving_mango": {
+      "name": "Moving Mango",
+      "instructor": "Hannah",
+      "youtube_channel": "https://www.youtube.com/@MovingMango",
+      "youtube_handle": "@MovingMango",
+      "subscribers": "200K+",
+      "specialty": ["Mindful Pilates", "Core Strengthening", "Fat Loss", "Mental Wellness"],
+      "description": "Blend of San Francisco Pilates and Vietnamese mindful flow, suitable for all levels",
+      "certification": "Certified Pilates & Aerial Teacher",
+      "style": "contemporary",
+      "best_for": ["all levels", "mindfulness", "core", "mental wellness"],
+      "video_lengths": ["15-35 minutes"],
+      "equipment_focus": ["mat"]
+    },
+    "girl_with_pilates_mat": {
+      "name": "The Girl With The Pilates Mat",
+      "instructor": "Rachel Lawrence",
+      "youtube_channel": "https://www.youtube.com/@TheGirlWithThePilatesMat",
+      "youtube_handle": "@TheGirlWithThePilatesMat",
+      "subscribers": "300K+",
+      "specialty": ["Classical Pilates", "Dance-based Fitness", "Chair Pilates", "Modifications"],
+      "description": "Certified instructor with 12+ years experience and former professional dancer offering accessible Pilates for all ages",
+      "certification": "Certified Pilates Instructor, Former Professional Dancer",
+      "style": "classical",
+      "best_for": ["all levels", "seniors", "chair pilates", "dance background", "modifications"],
+      "video_lengths": ["10-40 minutes"],
+      "equipment_focus": ["mat", "chair"],
+      "featured_video": {
+        "id": "Rb6LGKLYb60",
+        "title": "Standing Pilates for Seniors",
+        "description": "Most popular video with 3.5M+ views - safe standing workout"
+      }
+    },
+    "online_pilates_classes": {
+      "name": "Online Pilates Classes",
+      "instructor": "Lesley Logan & Team",
+      "youtube_channel": "https://www.youtube.com/@OnlinePilatesClasses",
+      "youtube_handle": "@OnlinePilatesClasses",
+      "subscribers": "150K+",
+      "specialty": ["Classical Pilates", "Reformer", "Mat", "Tower", "Wunda Chair"],
+      "description": "Weekly Pilates videos including mat, reformer, tower, and Wunda Chair workouts",
+      "certification": "Multiple Certified Instructors",
+      "style": "classical",
+      "best_for": ["intermediate", "advanced", "classical technique", "apparatus knowledge"],
+      "video_lengths": ["15-45 minutes"],
+      "equipment_focus": ["mat", "reformer", "tower", "chair"]
+    },
+    "evergreen_pilates": {
+      "name": "Evergreen Pilates",
+      "instructor": "Bonnie Turkel",
+      "youtube_channel": "https://www.youtube.com/channel/UCDsbtPUPEQaMSTiNkmlSejg",
+      "youtube_handle": "@EvergreenPilates",
+      "subscribers": "50K+",
+      "specialty": ["Classical Pilates", "Tutorial Breakdowns", "Form Focus"],
+      "description": "Detailed tutorials and tips for classical Pilates exercises",
+      "certification": "Certified Classical Pilates Instructor",
+      "style": "classical",
+      "best_for": ["all levels", "technique improvement", "tutorials", "form correction"],
+      "video_lengths": ["5-20 minutes"],
+      "equipment_focus": ["mat"]
+    },
+    "trifecta_pilates": {
+      "name": "Trifecta Pilates",
+      "instructor": "Beth Sandlin",
+      "youtube_channel": "https://www.youtube.com/@TrifectaPilates",
+      "youtube_handle": "@TrifectaPilates",
+      "subscribers": "100K+",
+      "specialty": ["Contemporary Pilates", "Reformer", "Props", "Creative Sequences"],
+      "description": "Creative Pilates programming with various equipment and props",
+      "certification": "Certified Pilates Instructor",
+      "style": "contemporary",
+      "best_for": ["intermediate", "advanced", "variety", "props", "creativity"],
+      "video_lengths": ["20-45 minutes"],
+      "equipment_focus": ["mat", "reformer", "props"]
     }
   },
   "verified_videos": {
@@ -131,130 +323,390 @@
       "focus": ["thighs", "arms", "obliques", "full body"],
       "equipment": ["mat"],
       "verified": true,
-      "verified_date": "2025-12-26"
+      "verified_date": "2025-12-26",
+      "youtube_url": "https://www.youtube.com/watch?v=inL-zRXWpkk"
+    }
+  },
+  "equipment_recommendations": {
+    "mat": {
+      "primary_channels": ["blogilates", "move_with_nicole", "lottie_murphy", "jessica_valant", "flow_with_mira"],
+      "secondary_channels": ["lilly_sabri", "the_balanced_life", "boho_beautiful", "isa_welly"],
+      "search_term": "mat pilates workout"
+    },
+    "ball": {
+      "primary_channels": ["jessica_valant", "merrithew", "pilates_anytime"],
+      "secondary_channels": ["the_balanced_life", "go_chlo_pilates"],
+      "search_term": "pilates stability ball workout"
+    },
+    "band": {
+      "primary_channels": ["merrithew", "jessica_valant", "go_chlo_pilates", "pilates_anytime"],
+      "secondary_channels": ["lilly_sabri", "blogilates"],
+      "search_term": "pilates resistance band workout"
+    },
+    "ring": {
+      "primary_channels": ["pilates_anytime", "merrithew", "lottie_murphy", "online_pilates_classes"],
+      "secondary_channels": ["jessica_valant", "flow_with_mira"],
+      "search_term": "pilates ring magic circle workout"
+    },
+    "reformer": {
+      "primary_channels": ["pilates_anytime", "merrithew", "online_pilates_classes"],
+      "secondary_channels": ["trifecta_pilates"],
+      "search_term": "pilates reformer workout"
+    }
+  },
+  "difficulty_recommendations": {
+    "beginner": {
+      "primary_channels": ["lottie_murphy", "jessica_valant", "the_balanced_life", "flow_with_mira"],
+      "secondary_channels": ["move_with_nicole", "boho_beautiful", "girl_with_pilates_mat"],
+      "notes": "Look for videos labeled 'beginner', 'intro', 'fundamentals', or 'basics'. Channels with PT backgrounds (Jessica Valant, Go Chlo) offer great modification guidance."
+    },
+    "intermediate": {
+      "primary_channels": ["blogilates", "move_with_nicole", "lottie_murphy", "flow_with_mira"],
+      "secondary_channels": ["lilly_sabri", "isa_welly", "pilates_anytime"],
+      "notes": "Most channels offer intermediate content. Look for 'intermediate' labels or 20-30 minute full body workouts."
+    },
+    "advanced": {
+      "primary_channels": ["pilates_anytime", "go_chlo_pilates", "lilly_sabri", "online_pilates_classes"],
+      "secondary_channels": ["blogilates", "flow_with_mira", "trifecta_pilates"],
+      "notes": "Search for 'advanced', 'challenging', or 'intense'. Classical channels (Pilates Anytime) offer authentic advanced repertoire."
     }
   },
   "curated_collections": {
     "classical_pilates_foundation": {
       "name": "Classical Pilates Foundation",
-      "description": "Core exercises from the original Joseph Pilates repertoire",
-      "recommended_channels": ["pilates_anytime", "lottie_murphy", "jessica_valant"],
-      "exercises": ["hundred", "roll-up", "single-leg-stretch", "double-leg-stretch", "spine-stretch", "saw", "swan", "teaser"]
+      "description": "Core exercises from the original Joseph Pilates repertoire - the 34 classical mat exercises",
+      "recommended_channels": ["pilates_anytime", "lottie_murphy", "online_pilates_classes", "evergreen_pilates"],
+      "exercises": ["hundred", "roll-up", "roll-over", "single-leg-circles", "rolling-like-a-ball", "single-leg-stretch", "double-leg-stretch", "spine-stretch", "open-leg-rocker", "corkscrew", "saw", "swan", "single-leg-kick", "double-leg-kick", "neck-pull", "scissors", "bicycle", "shoulder-bridge", "spine-twist", "jackknife", "side-kick-series", "teaser", "hip-circles", "swimming", "leg-pull-front", "leg-pull-back", "kneeling-side-kicks", "side-bend", "boomerang", "seal", "crab", "rocking", "control-balance", "push-up"],
+      "search_terms": ["classical pilates mat", "Joseph Pilates original exercises", "34 pilates exercises"]
     },
     "beginner_essentials": {
       "name": "Beginner Essentials",
-      "description": "Perfect starting point for those new to Pilates",
-      "recommended_channels": ["lottie_murphy", "jessica_valant", "the_balanced_life", "move_with_nicole"],
-      "exercises": ["pelvic-curl", "chest-lift", "ab-prep", "single-leg-stretch", "spine-twist", "cat-stretch"]
+      "description": "Perfect starting point for those new to Pilates - fundamental movements and principles",
+      "recommended_channels": ["lottie_murphy", "jessica_valant", "the_balanced_life", "flow_with_mira"],
+      "exercises": ["pelvic-curl", "chest-lift", "ab-prep", "single-leg-stretch", "spine-twist", "cat-stretch", "bird-dog", "swimming-prep", "dead-bug", "glute-bridge"],
+      "search_terms": ["pilates for beginners", "beginner pilates workout", "intro to pilates", "pilates fundamentals"]
     },
     "core_intensive": {
       "name": "Core Intensive",
-      "description": "Advanced core strengthening exercises",
-      "recommended_channels": ["blogilates", "flow_with_mira", "lilly_sabri"],
-      "exercises": ["hundred", "double-leg-stretch", "criss-cross", "teaser", "hip-circles", "jackknife"]
+      "description": "Challenging core strengthening exercises for a strong powerhouse",
+      "recommended_channels": ["blogilates", "flow_with_mira", "lilly_sabri", "go_chlo_pilates"],
+      "exercises": ["hundred", "double-leg-stretch", "criss-cross", "teaser", "hip-circles", "jackknife", "roll-over", "corkscrew", "scissors", "bicycle"],
+      "search_terms": ["pilates core workout", "pilates abs", "pilates flat stomach", "intense core pilates"]
     },
     "back_health": {
       "name": "Back Health & Rehabilitation",
-      "description": "Therapeutic exercises for back pain and spinal health",
-      "recommended_channels": ["jessica_valant", "go_chlo_pilates", "the_balanced_life"],
-      "exercises": ["cat-stretch", "pelvic-curl", "spine-stretch", "swan-prep", "swimming", "childs-pose"]
+      "description": "Therapeutic exercises for back pain relief and spinal health",
+      "recommended_channels": ["jessica_valant", "go_chlo_pilates", "the_balanced_life", "merrithew"],
+      "exercises": ["cat-stretch", "pelvic-curl", "spine-stretch", "swan-prep", "swimming", "childs-pose", "book-opening", "thread-the-needle", "prone-back-extension"],
+      "search_terms": ["pilates for back pain", "pilates spine health", "pilates lower back", "therapeutic pilates"]
     },
     "flexibility_mobility": {
       "name": "Flexibility & Mobility",
-      "description": "Stretching and mobility-focused routines",
-      "recommended_channels": ["move_with_nicole", "boho_beautiful", "lottie_murphy"],
-      "exercises": ["spine-stretch", "saw", "mermaid", "spine-twist", "roll-over", "seal"]
+      "description": "Stretching and mobility-focused routines for improved range of motion",
+      "recommended_channels": ["move_with_nicole", "boho_beautiful", "lottie_murphy", "jessica_valant"],
+      "exercises": ["spine-stretch", "saw", "mermaid", "spine-twist", "roll-over", "seal", "hip-circles", "standing-roll-down"],
+      "search_terms": ["pilates stretch", "pilates flexibility", "pilates mobility", "pilates for tight muscles"]
     },
     "quick_workouts": {
       "name": "10-Minute Quick Workouts",
-      "description": "Efficient workouts for busy schedules",
-      "recommended_channels": ["blogilates", "lilly_sabri", "isa_welly"],
-      "exercises": ["hundred", "roll-up", "single-leg-stretch", "double-leg-stretch", "criss-cross", "teaser"]
+      "description": "Efficient workouts for busy schedules - maximum results in minimum time",
+      "recommended_channels": ["blogilates", "lilly_sabri", "isa_welly", "the_balanced_life"],
+      "exercises": ["hundred", "roll-up", "single-leg-stretch", "double-leg-stretch", "criss-cross", "teaser"],
+      "search_terms": ["10 minute pilates", "quick pilates workout", "short pilates", "express pilates"]
     },
     "resistance_band": {
       "name": "Resistance Band Pilates",
-      "description": "Workouts incorporating resistance bands for added challenge",
-      "recommended_channels": ["merrithew", "jessica_valant", "go_chlo_pilates"],
-      "exercises": ["band-hundred", "band-footwork", "band-roll-down", "band-chest-press", "band-row"]
+      "description": "Workouts incorporating resistance bands for added challenge and muscle activation",
+      "recommended_channels": ["merrithew", "jessica_valant", "go_chlo_pilates", "pilates_anytime"],
+      "exercises": ["band-hundred", "band-footwork", "band-roll-down", "band-chest-press", "band-row", "band-bicep-curl", "band-tricep-extension"],
+      "search_terms": ["pilates with band", "resistance band pilates", "theraband pilates"]
     },
     "stability_ball": {
       "name": "Stability Ball Pilates",
-      "description": "Exercises using stability/exercise ball",
+      "description": "Exercises using stability/exercise ball for core challenge and balance work",
       "recommended_channels": ["jessica_valant", "merrithew", "pilates_anytime"],
-      "exercises": ["ball-bridge", "ball-pike", "ball-plank", "ball-back-extension", "ball-hamstring-curl"]
+      "exercises": ["ball-bridge", "ball-pike", "ball-plank", "ball-back-extension", "ball-hamstring-curl", "ball-roll-out", "ball-knee-tuck"],
+      "search_terms": ["pilates ball workout", "stability ball pilates", "exercise ball pilates"]
     },
     "pilates_ring": {
       "name": "Magic Circle Workouts",
-      "description": "Exercises using the Pilates ring/magic circle",
-      "recommended_channels": ["pilates_anytime", "merrithew", "lottie_murphy"],
-      "exercises": ["ring-hundred", "ring-inner-thigh", "ring-chest-squeeze", "ring-teaser"]
+      "description": "Exercises using the Pilates ring/magic circle for inner thigh and arm toning",
+      "recommended_channels": ["pilates_anytime", "merrithew", "lottie_murphy", "online_pilates_classes"],
+      "exercises": ["ring-hundred", "ring-inner-thigh", "ring-chest-squeeze", "ring-teaser", "ring-arm-series"],
+      "search_terms": ["pilates ring workout", "magic circle pilates", "pilates circle exercises"]
+    },
+    "prenatal_postnatal": {
+      "name": "Prenatal & Postnatal",
+      "description": "Safe Pilates workouts for pregnancy and postpartum recovery",
+      "recommended_channels": ["the_balanced_life", "jessica_valant", "merrithew"],
+      "exercises": ["pelvic-floor", "cat-stretch", "bird-dog", "side-lying-series", "standing-balance"],
+      "search_terms": ["prenatal pilates", "pregnancy pilates", "postnatal pilates", "postpartum pilates"]
+    },
+    "standing_pilates": {
+      "name": "Standing Pilates",
+      "description": "Upright Pilates workouts - great for the office or when you can't get on the floor",
+      "recommended_channels": ["eleni_fit", "blogilates", "jessica_valant", "girl_with_pilates_mat"],
+      "exercises": ["standing-roll-down", "standing-leg-circles", "standing-balance", "wall-roll-down"],
+      "search_terms": ["standing pilates", "pilates standing workout", "office pilates"]
+    },
+    "senior_friendly": {
+      "name": "Senior Friendly Pilates",
+      "description": "Gentle Pilates workouts suitable for older adults",
+      "recommended_channels": ["jessica_valant", "girl_with_pilates_mat", "the_balanced_life"],
+      "exercises": ["chair pilates", "seated exercises", "gentle stretches", "balance work"],
+      "search_terms": ["pilates for seniors", "gentle pilates", "chair pilates", "pilates over 60"]
     }
   },
   "exercise_video_recommendations": {
     "hundred": {
-      "search_terms": ["pilates hundred", "pilates 100 exercise", "pilates hundred tutorial"],
-      "recommended_channels": ["pilates_anytime", "lottie_murphy", "blogilates"],
+      "search_terms": ["pilates hundred", "pilates 100 exercise", "pilates hundred tutorial", "the hundred pilates"],
+      "recommended_channels": ["pilates_anytime", "lottie_murphy", "blogilates", "evergreen_pilates"],
       "difficulty_progression": {
-        "beginner": "Search: 'pilates hundred beginner modification'",
-        "intermediate": "Search: 'pilates hundred tutorial'",
-        "advanced": "Search: 'pilates hundred advanced variations'"
-      }
+        "beginner": "pilates hundred beginner modification bent knees",
+        "intermediate": "pilates hundred tutorial proper form",
+        "advanced": "pilates hundred advanced low legs"
+      },
+      "muscles": ["core", "abs"],
+      "classical_order": 1
     },
     "roll-up": {
-      "search_terms": ["pilates roll up", "pilates roll up tutorial", "roll up exercise"],
-      "recommended_channels": ["pilates_anytime", "jessica_valant", "lottie_murphy"],
+      "search_terms": ["pilates roll up", "pilates roll up tutorial", "roll up exercise pilates"],
+      "recommended_channels": ["pilates_anytime", "jessica_valant", "lottie_murphy", "flow_with_mira"],
       "difficulty_progression": {
-        "beginner": "Search: 'pilates roll up beginner modification'",
-        "intermediate": "Search: 'pilates roll up tutorial'",
-        "advanced": "Search: 'pilates roll up variations'"
-      }
+        "beginner": "pilates roll up beginner modification",
+        "intermediate": "pilates roll up tutorial",
+        "advanced": "pilates roll up no momentum"
+      },
+      "muscles": ["core", "abs", "spine"],
+      "classical_order": 2
+    },
+    "roll-over": {
+      "search_terms": ["pilates roll over", "pilates rollover tutorial"],
+      "recommended_channels": ["pilates_anytime", "online_pilates_classes", "lottie_murphy"],
+      "difficulty_progression": {
+        "beginner": "pilates roll over preparation",
+        "intermediate": "pilates roll over tutorial",
+        "advanced": "pilates roll over with leg variations"
+      },
+      "muscles": ["core", "spine", "back"],
+      "classical_order": 3
+    },
+    "single-leg-circles": {
+      "search_terms": ["pilates single leg circles", "leg circles pilates", "one leg circle pilates"],
+      "recommended_channels": ["pilates_anytime", "lottie_murphy", "flow_with_mira"],
+      "difficulty_progression": {
+        "beginner": "pilates leg circles beginner bent knee",
+        "intermediate": "pilates single leg circles",
+        "advanced": "pilates leg circles large circles"
+      },
+      "muscles": ["core", "hip flexors", "legs"],
+      "classical_order": 4
+    },
+    "rolling-like-a-ball": {
+      "search_terms": ["pilates rolling like a ball", "rolling ball pilates"],
+      "recommended_channels": ["pilates_anytime", "lottie_murphy", "blogilates"],
+      "difficulty_progression": {
+        "beginner": "rolling like a ball tutorial",
+        "intermediate": "pilates rolling like a ball",
+        "advanced": "rolling like a ball no momentum"
+      },
+      "muscles": ["core", "spine"],
+      "classical_order": 5
+    },
+    "single-leg-stretch": {
+      "search_terms": ["pilates single leg stretch", "ab series pilates", "series of five single leg"],
+      "recommended_channels": ["pilates_anytime", "jessica_valant", "move_with_nicole", "lottie_murphy"],
+      "difficulty_progression": {
+        "beginner": "pilates single leg stretch head down",
+        "intermediate": "pilates single leg stretch",
+        "advanced": "pilates ab series full"
+      },
+      "muscles": ["core", "abs"],
+      "classical_order": 6
+    },
+    "double-leg-stretch": {
+      "search_terms": ["pilates double leg stretch", "ab series double leg"],
+      "recommended_channels": ["pilates_anytime", "lottie_murphy", "flow_with_mira"],
+      "difficulty_progression": {
+        "beginner": "pilates double leg stretch small range",
+        "intermediate": "pilates double leg stretch",
+        "advanced": "pilates double leg stretch arms overhead"
+      },
+      "muscles": ["core", "abs"],
+      "classical_order": 7
+    },
+    "spine-stretch": {
+      "search_terms": ["pilates spine stretch forward", "spine stretch pilates"],
+      "recommended_channels": ["pilates_anytime", "lottie_murphy", "jessica_valant"],
+      "difficulty_progression": {
+        "beginner": "pilates spine stretch seated",
+        "intermediate": "pilates spine stretch forward",
+        "advanced": "pilates spine stretch with saw"
+      },
+      "muscles": ["spine", "hamstrings", "back"],
+      "classical_order": 8
     },
     "teaser": {
       "search_terms": ["pilates teaser", "pilates v-sit", "teaser exercise tutorial"],
-      "recommended_channels": ["pilates_anytime", "lottie_murphy", "blogilates"],
+      "recommended_channels": ["pilates_anytime", "lottie_murphy", "blogilates", "online_pilates_classes"],
       "difficulty_progression": {
-        "beginner": "Search: 'pilates teaser prep beginner'",
-        "intermediate": "Search: 'pilates teaser tutorial'",
-        "advanced": "Search: 'pilates teaser 2 and 3'"
-      }
-    },
-    "single-leg-stretch": {
-      "search_terms": ["pilates single leg stretch", "ab series pilates", "series of five"],
-      "recommended_channels": ["pilates_anytime", "jessica_valant", "move_with_nicole"],
-      "difficulty_progression": {
-        "beginner": "Search: 'pilates single leg stretch beginner'",
-        "intermediate": "Search: 'pilates single leg stretch'",
-        "advanced": "Search: 'pilates ab series full'"
-      }
+        "beginner": "pilates teaser prep bent knees",
+        "intermediate": "pilates teaser one leg",
+        "advanced": "pilates teaser 2 and 3 full"
+      },
+      "muscles": ["core", "abs", "hip flexors"],
+      "classical_order": 22
     },
     "swan": {
       "search_terms": ["pilates swan", "pilates back extension", "swan dive pilates"],
-      "recommended_channels": ["pilates_anytime", "lottie_murphy", "jessica_valant"],
+      "recommended_channels": ["pilates_anytime", "lottie_murphy", "jessica_valant", "evergreen_pilates"],
       "difficulty_progression": {
-        "beginner": "Search: 'pilates swan prep beginner'",
-        "intermediate": "Search: 'pilates swan tutorial'",
-        "advanced": "Search: 'pilates swan dive rocking'"
-      }
+        "beginner": "pilates baby swan prep",
+        "intermediate": "pilates swan tutorial",
+        "advanced": "pilates swan dive rocking"
+      },
+      "muscles": ["back", "spine", "glutes"],
+      "classical_order": 13
+    },
+    "swimming": {
+      "search_terms": ["pilates swimming", "pilates swimming exercise"],
+      "recommended_channels": ["pilates_anytime", "lottie_murphy", "blogilates"],
+      "difficulty_progression": {
+        "beginner": "pilates swimming prep alternating",
+        "intermediate": "pilates swimming",
+        "advanced": "pilates swimming fast tempo"
+      },
+      "muscles": ["back", "glutes", "core"],
+      "classical_order": 24
+    },
+    "saw": {
+      "search_terms": ["pilates saw", "pilates saw exercise", "the saw pilates"],
+      "recommended_channels": ["pilates_anytime", "lottie_murphy", "flow_with_mira"],
+      "difficulty_progression": {
+        "beginner": "pilates saw seated twist",
+        "intermediate": "pilates saw tutorial",
+        "advanced": "pilates saw full range"
+      },
+      "muscles": ["obliques", "spine", "hamstrings"],
+      "classical_order": 12
+    },
+    "mermaid": {
+      "search_terms": ["pilates mermaid", "mermaid stretch pilates", "pilates side stretch"],
+      "recommended_channels": ["move_with_nicole", "lottie_murphy", "pilates_anytime"],
+      "difficulty_progression": {
+        "beginner": "pilates mermaid stretch simple",
+        "intermediate": "pilates mermaid",
+        "advanced": "pilates mermaid with rotation"
+      },
+      "muscles": ["obliques", "spine", "shoulders"]
+    },
+    "plank": {
+      "search_terms": ["pilates plank", "front support pilates", "pilates plank variations"],
+      "recommended_channels": ["blogilates", "lilly_sabri", "lottie_murphy"],
+      "difficulty_progression": {
+        "beginner": "pilates plank on knees",
+        "intermediate": "pilates plank tutorial",
+        "advanced": "pilates plank variations leg lifts"
+      },
+      "muscles": ["core", "arms", "shoulders"]
+    },
+    "side-plank": {
+      "search_terms": ["pilates side plank", "side bend pilates", "pilates side support"],
+      "recommended_channels": ["blogilates", "lilly_sabri", "lottie_murphy", "pilates_anytime"],
+      "difficulty_progression": {
+        "beginner": "pilates side plank on knee",
+        "intermediate": "pilates side plank",
+        "advanced": "pilates side plank hip dips"
+      },
+      "muscles": ["obliques", "core", "shoulders"]
+    },
+    "criss-cross": {
+      "search_terms": ["pilates criss cross", "bicycle crunch pilates", "pilates oblique twist"],
+      "recommended_channels": ["blogilates", "lottie_murphy", "pilates_anytime"],
+      "difficulty_progression": {
+        "beginner": "pilates criss cross feet down",
+        "intermediate": "pilates criss cross",
+        "advanced": "pilates criss cross slow tempo"
+      },
+      "muscles": ["obliques", "core"],
+      "classical_order": 10
+    },
+    "shoulder-bridge": {
+      "search_terms": ["pilates shoulder bridge", "pilates bridge", "bridge exercise pilates"],
+      "recommended_channels": ["jessica_valant", "lottie_murphy", "pilates_anytime"],
+      "difficulty_progression": {
+        "beginner": "pilates bridge basic",
+        "intermediate": "pilates shoulder bridge",
+        "advanced": "pilates single leg bridge"
+      },
+      "muscles": ["glutes", "hamstrings", "core"],
+      "classical_order": 18
+    },
+    "leg-pull-front": {
+      "search_terms": ["pilates leg pull front", "front support leg pull"],
+      "recommended_channels": ["pilates_anytime", "online_pilates_classes", "lottie_murphy"],
+      "difficulty_progression": {
+        "beginner": "pilates leg pull prep",
+        "intermediate": "pilates leg pull front",
+        "advanced": "pilates leg pull front back"
+      },
+      "muscles": ["core", "arms", "glutes"],
+      "classical_order": 25
     }
   },
   "teacher_video_associations": {
     "romana-kryzanowska": {
-      "legacy_note": "Historical footage available through Pilates archives",
+      "legacy_note": "Historical footage and teachings available through Pilates archives. Romana trained directly with Joseph Pilates.",
       "recommended_channels": ["pilates_anytime"],
-      "search_terms": ["Romana Kryzanowska pilates", "Romana's Pilates method"]
+      "search_terms": ["Romana Kryzanowska pilates", "Romana's Pilates method", "classical pilates Romana"]
+    },
+    "ron-fletcher": {
+      "legacy_note": "Fletcher Pilates technique videos and archival content available. Known for percussive breathing.",
+      "recommended_channels": ["pilates_anytime"],
+      "search_terms": ["Ron Fletcher pilates", "Fletcher Pilates method", "percussive breathing pilates"]
     },
     "mari-winsor": {
-      "legacy_note": "Winsor Pilates videos available on YouTube and streaming platforms",
+      "legacy_note": "Winsor Pilates full workout videos widely available. Brought mat Pilates to millions via video.",
       "recommended_channels": ["pilates_anytime"],
-      "search_terms": ["Mari Winsor pilates", "Winsor Pilates workout"]
+      "search_terms": ["Mari Winsor pilates", "Winsor Pilates workout", "20 minute Winsor Pilates"]
     },
     "moira-merrithew": {
       "recommended_channels": ["merrithew"],
-      "search_terms": ["STOTT PILATES", "Merrithew pilates"]
+      "search_terms": ["STOTT PILATES", "Merrithew pilates", "contemporary pilates Moira"]
     },
     "rael-isacowitz": {
       "recommended_channels": ["pilates_anytime"],
-      "search_terms": ["Rael Isacowitz BASI", "BASI Pilates"]
+      "search_terms": ["Rael Isacowitz BASI", "BASI Pilates", "Rael Isacowitz workshop"]
+    },
+    "elizabeth-larkam": {
+      "recommended_channels": ["pilates_anytime"],
+      "search_terms": ["Elizabeth Larkam pilates", "fascia training pilates", "Balanced Body Elizabeth Larkam"]
+    }
+  },
+  "workout_type_recommendations": {
+    "full_body": {
+      "channels": ["move_with_nicole", "lottie_murphy", "flow_with_mira", "go_chlo_pilates"],
+      "search_term": "full body pilates workout"
+    },
+    "abs_core": {
+      "channels": ["blogilates", "lilly_sabri", "flow_with_mira"],
+      "search_term": "pilates abs workout"
+    },
+    "glutes_legs": {
+      "channels": ["blogilates", "lilly_sabri", "eleni_fit"],
+      "search_term": "pilates glutes legs workout"
+    },
+    "arms_upper_body": {
+      "channels": ["blogilates", "lilly_sabri", "lottie_murphy"],
+      "search_term": "pilates arms workout"
+    },
+    "back_posture": {
+      "channels": ["jessica_valant", "lottie_murphy", "go_chlo_pilates"],
+      "search_term": "pilates back posture workout"
+    },
+    "stretch_flexibility": {
+      "channels": ["move_with_nicole", "boho_beautiful", "lottie_murphy"],
+      "search_term": "pilates stretch flexibility"
     }
   }
 }
