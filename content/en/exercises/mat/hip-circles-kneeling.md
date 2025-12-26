@@ -12,7 +12,6 @@ muscles: ["lower back", "hips", "core", "obliques"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Kneel on all fours with wrists under shoulders, knees under hips"

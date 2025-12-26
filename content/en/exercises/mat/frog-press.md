@@ -12,7 +12,6 @@ muscles: ["inner thighs", "core", "hip flexors"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, bring soles of feet together in frog position"

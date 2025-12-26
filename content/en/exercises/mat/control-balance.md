@@ -12,7 +12,6 @@ muscles: ["core", "abs", "spine", "hip flexors"]
 difficulty: "advanced"
 duration: 90
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "From shoulder stand, lower one leg toward the floor behind head"

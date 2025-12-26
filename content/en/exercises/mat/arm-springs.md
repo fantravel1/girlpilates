@@ -12,7 +12,6 @@ muscles: ["chest", "shoulders", "arms", "back"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, hold band with both hands, arms extended to ceiling"

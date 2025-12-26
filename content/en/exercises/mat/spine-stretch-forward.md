@@ -12,7 +12,6 @@ muscles: ["spine", "core", "abs"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit tall with legs extended, feet flexed, hip-width apart"

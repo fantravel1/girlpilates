@@ -12,7 +12,6 @@ muscles: ["core", "hip flexors"]
 difficulty: "beginner"
 duration: 90
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Start on all fours, then lower to forearms"

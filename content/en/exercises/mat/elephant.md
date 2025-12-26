@@ -12,7 +12,6 @@ muscles: ["hamstrings", "core", "shoulders", "back"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Start in downward dog position, hands and feet on mat"

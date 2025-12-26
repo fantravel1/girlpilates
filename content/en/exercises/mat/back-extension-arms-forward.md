@@ -12,7 +12,6 @@ muscles: ["back extensors", "glutes", "shoulders"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie face down with arms extended forward on mat"

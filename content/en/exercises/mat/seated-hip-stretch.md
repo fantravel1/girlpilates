@@ -12,7 +12,6 @@ muscles: ["glutes", "piriformis", "outer hip"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit tall in a chair or on mat with legs bent"

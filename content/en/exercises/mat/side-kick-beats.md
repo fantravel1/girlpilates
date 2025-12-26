@@ -12,7 +12,6 @@ muscles: ["outer thighs", "inner thighs", "hip stabilizers", "core"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on side, bottom arm extended, legs stacked"

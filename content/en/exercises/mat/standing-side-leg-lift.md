@@ -12,7 +12,6 @@ muscles: ["outer thighs", "glutes", "hip abductors", "core"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Stand tall, holding wall or chair for balance if needed"

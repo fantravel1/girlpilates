@@ -12,7 +12,6 @@ muscles: ["core", "abs", "spine"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit at front of mat, knees bent, holding shins"

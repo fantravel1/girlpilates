@@ -12,7 +12,6 @@ muscles: ["core", "abs", "hip flexors", "spine"]
 difficulty: "intermediate"
 duration: 90
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, curl up, hug knees to chest"

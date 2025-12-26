@@ -12,7 +12,6 @@ muscles: ["core", "hip flexors"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie face down, forehead resting on hands, legs extended"

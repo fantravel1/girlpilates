@@ -12,7 +12,6 @@ muscles: ["core", "abs", "hip flexors"]
 difficulty: "advanced"
 duration: 90
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit with legs extended, hands behind you, fingers facing forward"

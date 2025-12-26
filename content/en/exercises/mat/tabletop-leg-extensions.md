@@ -12,7 +12,6 @@ muscles: ["core", "abs", "hip flexors"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, both legs in tabletop position"

@@ -12,7 +12,6 @@ muscles: ["core", "shoulders", "chest", "hamstrings"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Stand tall at end of mat"

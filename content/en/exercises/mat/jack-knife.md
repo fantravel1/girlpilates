@@ -12,7 +12,6 @@ muscles: ["core", "back", "shoulders", "legs"]
 difficulty: "advanced"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, arms by sides, legs at 45 degrees"

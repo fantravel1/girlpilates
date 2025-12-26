@@ -12,7 +12,6 @@ muscles: ["core", "spine"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Kneel tall on mat, arms at sides"

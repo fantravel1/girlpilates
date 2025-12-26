@@ -12,7 +12,6 @@ muscles: ["hip flexors", "core", "quads", "standing leg"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Stand tall with feet hip-width apart"

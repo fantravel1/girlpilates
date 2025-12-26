@@ -12,7 +12,6 @@ muscles: ["core", "abs", "hip flexors"]
 difficulty: "intermediate"
 duration: 90
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, curl up, lift both legs to ceiling"

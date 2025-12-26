@@ -12,7 +12,6 @@ muscles: ["inner thighs", "glutes", "quads", "core"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Stand with feet wider than shoulder-width, toes turned out"

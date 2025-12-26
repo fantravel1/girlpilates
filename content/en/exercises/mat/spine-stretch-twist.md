@@ -12,7 +12,6 @@ muscles: ["spine", "obliques", "hamstrings", "back"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit tall with legs extended shoulder-width apart"

@@ -12,7 +12,6 @@ muscles: ["lower abs", "hip flexors", "core", "back"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, legs extended toward ceiling at 90 degrees"

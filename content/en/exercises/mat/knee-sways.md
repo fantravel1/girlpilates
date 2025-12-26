@@ -12,7 +12,6 @@ muscles: ["obliques", "spine", "hip rotators"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, knees bent, feet flat on floor wider than hips"

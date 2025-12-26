@@ -12,7 +12,6 @@ muscles: ["lower abs", "hip flexors", "core"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back with knees bent, feet lifted, shins parallel to floor"

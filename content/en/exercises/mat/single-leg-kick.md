@@ -12,7 +12,6 @@ muscles: ["core", "abs", "spine", "hip flexors"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie face down, prop up on forearms, elbows under shoulders"

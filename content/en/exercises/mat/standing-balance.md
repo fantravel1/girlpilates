@@ -12,7 +12,6 @@ muscles: ["core", "hip flexors"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Stand tall with feet hip-width apart"

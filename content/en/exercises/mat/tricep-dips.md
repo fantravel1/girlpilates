@@ -12,7 +12,6 @@ muscles: ["core", "abs"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit on edge of stable chair or bench, hands gripping edge beside hips"

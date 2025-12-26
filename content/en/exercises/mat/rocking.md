@@ -12,7 +12,6 @@ muscles: ["core", "abs", "spine"]
 difficulty: "advanced"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie face down, bend knees, reach back to hold ankles"

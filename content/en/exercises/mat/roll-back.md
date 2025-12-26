@@ -12,7 +12,6 @@ muscles: ["abs", "spine", "hip flexors"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit tall with knees bent, feet flat on floor"

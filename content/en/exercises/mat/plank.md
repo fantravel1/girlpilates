@@ -12,7 +12,6 @@ muscles: ["core", "abs", "spine"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Start on hands and knees, then extend legs back one at a time"

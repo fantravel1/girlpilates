@@ -12,7 +12,6 @@ muscles: ["core", "abs", "hip flexors"]
 difficulty: "beginner"
 duration: 90
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, arms by sides, one leg extended to ceiling"

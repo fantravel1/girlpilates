@@ -12,7 +12,6 @@ muscles: ["core", "hip flexors", "spine", "shoulders"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit with knees bent, cross ankles and hold feet"

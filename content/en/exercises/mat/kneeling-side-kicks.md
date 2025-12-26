@@ -12,7 +12,6 @@ muscles: ["core", "abs", "hip flexors"]
 difficulty: "intermediate"
 duration: 90
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Kneel on mat, then lower right hand to floor, extend left leg to side"

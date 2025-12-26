@@ -12,7 +12,6 @@ muscles: ["core", "spine"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie face down, arms at sides, palms facing up"

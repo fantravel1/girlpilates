@@ -12,7 +12,6 @@ muscles: ["core", "spine"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit in Z-sit position (both knees bent to one side)"

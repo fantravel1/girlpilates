@@ -12,7 +12,6 @@ muscles: ["back extensors", "glutes", "shoulders", "core"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie prone, hands under shoulders, legs together"

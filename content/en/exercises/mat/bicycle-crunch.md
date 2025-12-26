@@ -12,7 +12,6 @@ muscles: ["core", "abs"]
 difficulty: "intermediate"
 duration: 90
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, hands behind head, legs in tabletop position"

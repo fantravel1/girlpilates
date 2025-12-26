@@ -12,7 +12,6 @@ muscles: ["back extensors", "glutes", "shoulders", "core"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie prone, arms extended overhead, legs long behind"

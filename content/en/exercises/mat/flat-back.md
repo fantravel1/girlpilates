@@ -12,7 +12,6 @@ muscles: ["back extensors", "hamstrings", "core"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit tall with legs extended, arms reaching forward"

@@ -12,7 +12,6 @@ muscles: ["rhomboids", "middle trapezius", "upper back"]
 difficulty: "beginner"
 duration: 30
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit or stand tall with arms at sides"

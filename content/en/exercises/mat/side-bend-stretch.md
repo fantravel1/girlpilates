@@ -12,7 +12,6 @@ muscles: ["obliques", "lats", "intercostals"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Stand or sit tall with arms at sides"

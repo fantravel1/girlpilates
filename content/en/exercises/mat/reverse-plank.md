@@ -12,7 +12,6 @@ muscles: ["triceps", "shoulders", "glutes", "hamstrings", "back"]
 difficulty: "intermediate"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit with legs extended, hands behind hips, fingers forward"

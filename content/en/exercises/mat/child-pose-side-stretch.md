@@ -12,7 +12,6 @@ muscles: ["lats", "obliques", "shoulders", "hips"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Start in child's pose with arms extended forward"

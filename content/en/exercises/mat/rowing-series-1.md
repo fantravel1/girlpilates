@@ -12,7 +12,6 @@ muscles: ["upper back", "shoulders", "biceps", "core"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit tall with legs extended, arms forward at chest height"

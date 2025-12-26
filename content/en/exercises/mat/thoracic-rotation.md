@@ -12,7 +12,6 @@ muscles: ["spine", "obliques", "chest", "shoulders"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on side with knees bent at 90 degrees, arms extended in front"

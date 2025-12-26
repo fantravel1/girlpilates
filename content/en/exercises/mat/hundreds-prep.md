@@ -12,7 +12,6 @@ muscles: ["core", "abs"]
 difficulty: "beginner"
 duration: 90
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, knees bent in tabletop (90-degree angle)"

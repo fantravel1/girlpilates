@@ -12,7 +12,6 @@ muscles: ["core", "abs", "spine"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit with legs folded to one side (Z-sit position)"

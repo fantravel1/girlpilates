@@ -12,7 +12,6 @@ muscles: ["core", "spine"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Start on hands and knees"

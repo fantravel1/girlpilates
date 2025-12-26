@@ -12,7 +12,6 @@ muscles: ["core", "glutes", "shoulders", "hamstrings"]
 difficulty: "advanced"
 duration: 90
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Start in plank position, hands under shoulders"

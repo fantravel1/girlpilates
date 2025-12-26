@@ -12,7 +12,6 @@ muscles: ["legs", "feet", "core", "glutes"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, legs in tabletop, arms by sides"

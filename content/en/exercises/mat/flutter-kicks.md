@@ -12,7 +12,6 @@ muscles: ["lower abs", "hip flexors", "quads"]
 difficulty: "intermediate"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, hands under hips or alongside body"

@@ -12,7 +12,6 @@ muscles: ["triceps", "shoulders", "core"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back with knees bent, arms extended toward ceiling"

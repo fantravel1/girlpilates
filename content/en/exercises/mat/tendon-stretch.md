@@ -12,7 +12,6 @@ muscles: ["hip flexors", "core", "hamstrings", "back"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit with legs extended, hands beside hips on mat"

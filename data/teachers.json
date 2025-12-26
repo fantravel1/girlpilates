@@ -4,57 +4,78 @@
       "id": "romana-kryzanowska",
       "name": "Romana Kryzanowska",
       "title": "First Generation Elder",
-      "title_es": "Elder de Primera Generación",
+      "title_es": "Elder de Primera Generacion",
       "bio": "Trained directly by Joseph Pilates, became heir to the Pilates method",
-      "bio_es": "Entrenada directamente por Joseph Pilates, se convirtió en heredera del método Pilates",
+      "bio_es": "Entrenada directamente por Joseph Pilates, se convirtio en heredera del metodo Pilates",
       "specialty": ["Classical Pilates", "Apparatus Work"],
-      "specialty_es": ["Pilates Clásico", "Trabajo con Aparatos"],
+      "specialty_es": ["Pilates Clasico", "Trabajo con Aparatos"],
       "certifications": ["Pilates Elder", "Direct Lineage to Joseph Pilates"],
       "location": "New York, USA",
       "legacy": true,
-      "years_teaching": 60
+      "years_teaching": 60,
+      "video_resources": {
+        "search_terms": ["Romana Kryzanowska pilates", "Romana's Pilates method", "classical pilates Romana"],
+        "recommended_channels": ["pilates_anytime"],
+        "note": "Historical footage and teachings available through Pilates Anytime archives"
+      }
     },
     {
       "id": "ron-fletcher",
       "name": "Ron Fletcher",
       "title": "First Generation Elder",
-      "title_es": "Elder de Primera Generación",
+      "title_es": "Elder de Primera Generacion",
       "bio": "Former Martha Graham dancer who brought Pilates to Hollywood",
-      "bio_es": "Ex bailarín de Martha Graham que llevó el Pilates a Hollywood",
+      "bio_es": "Ex bailarin de Martha Graham que llevo el Pilates a Hollywood",
       "specialty": ["Fletcher Pilates", "Percussive Breathing"],
-      "specialty_es": ["Pilates Fletcher", "Respiración Percusiva"],
+      "specialty_es": ["Pilates Fletcher", "Respiracion Percusiva"],
       "certifications": ["Pilates Elder", "Fletcher Pilates Founder"],
       "location": "Los Angeles, USA",
       "legacy": true,
-      "years_teaching": 50
+      "years_teaching": 50,
+      "video_resources": {
+        "search_terms": ["Ron Fletcher pilates", "Fletcher Pilates method", "percussive breathing pilates"],
+        "recommended_channels": ["pilates_anytime"],
+        "note": "Fletcher Pilates technique videos and archival content available"
+      }
     },
     {
       "id": "lolita-san-miguel",
       "name": "Lolita San Miguel",
       "title": "First Generation Elder",
-      "title_es": "Elder de Primera Generación",
+      "title_es": "Elder de Primera Generacion",
       "bio": "One of only two people certified by Joseph Pilates himself",
       "bio_es": "Una de solo dos personas certificadas por el propio Joseph Pilates",
       "specialty": ["Classical Pilates", "Teacher Training"],
-      "specialty_es": ["Pilates Clásico", "Formación de Profesores"],
+      "specialty_es": ["Pilates Clasico", "Formacion de Profesores"],
       "certifications": ["Certified by Joseph Pilates", "Master Teacher"],
       "location": "Puerto Rico",
       "legacy": true,
-      "years_teaching": 55
+      "years_teaching": 55,
+      "video_resources": {
+        "search_terms": ["Lolita San Miguel pilates", "Lolita's Legacy", "classical pilates elder"],
+        "recommended_channels": ["pilates_anytime"],
+        "note": "Rare archival content and teaching demonstrations available"
+      }
     },
     {
       "id": "mari-winsor",
       "name": "Mari Winsor",
       "title": "Contemporary Master",
-      "title_es": "Maestra Contemporánea",
+      "title_es": "Maestra Contemporanea",
       "bio": "Created Winsor Pilates, bringing mat Pilates to millions via video",
-      "bio_es": "Creadora de Winsor Pilates, llevando Pilates mat a millones a través de video",
+      "bio_es": "Creadora de Winsor Pilates, llevando Pilates mat a millones a traves de video",
       "specialty": ["Mat Pilates", "Fitness Integration"],
-      "specialty_es": ["Pilates Mat", "Integración Fitness"],
+      "specialty_es": ["Pilates Mat", "Integracion Fitness"],
       "certifications": ["Romana's Pilates Certified"],
       "location": "Los Angeles, USA",
       "legacy": true,
-      "years_teaching": 30
+      "years_teaching": 30,
+      "video_resources": {
+        "search_terms": ["Mari Winsor pilates", "Winsor Pilates workout", "20 minute Winsor Pilates"],
+        "recommended_channels": ["pilates_anytime"],
+        "youtube_search": "https://www.youtube.com/results?search_query=winsor+pilates+mari+winsor",
+        "note": "Winsor Pilates full workout videos widely available on YouTube"
+      }
     },
     {
       "id": "moira-merrithew",
@@ -62,12 +83,18 @@
       "title": "STOTT PILATES Co-Founder",
       "title_es": "Co-Fundadora de STOTT PILATES",
       "bio": "Developed contemporary Pilates with modern exercise science principles",
-      "bio_es": "Desarrolló Pilates contemporáneo con principios modernos de ciencia del ejercicio",
+      "bio_es": "Desarrollo Pilates contemporaneo con principios modernos de ciencia del ejercicio",
       "specialty": ["STOTT PILATES", "Rehabilitation"],
-      "specialty_es": ["STOTT PILATES", "Rehabilitación"],
+      "specialty_es": ["STOTT PILATES", "Rehabilitacion"],
       "certifications": ["STOTT PILATES Master Instructor"],
       "location": "Toronto, Canada",
-      "years_teaching": 35
+      "years_teaching": 35,
+      "video_resources": {
+        "search_terms": ["STOTT PILATES", "Merrithew pilates", "contemporary pilates Moira"],
+        "recommended_channels": ["merrithew"],
+        "youtube_channel": "https://www.youtube.com/@MERRITHEW",
+        "note": "Official STOTT PILATES content on Merrithew YouTube channel"
+      }
     },
     {
       "id": "rael-isacowitz",
@@ -80,7 +107,13 @@
       "specialty_es": ["BASI Pilates", "Movimiento Integrado"],
       "certifications": ["BASI Master Instructor", "International Presenter"],
       "location": "California, USA",
-      "years_teaching": 40
+      "years_teaching": 40,
+      "video_resources": {
+        "search_terms": ["Rael Isacowitz BASI", "BASI Pilates", "Rael Isacowitz workshop"],
+        "recommended_channels": ["pilates_anytime"],
+        "youtube_search": "https://www.youtube.com/results?search_query=rael+isacowitz+basi+pilates",
+        "note": "BASI Pilates instructional content and workshops available"
+      }
     },
     {
       "id": "elizabeth-larkam",
@@ -88,25 +121,35 @@
       "title": "Pilates Innovator",
       "title_es": "Innovadora de Pilates",
       "bio": "Pioneer in integrating Pilates with dance and rehabilitation",
-      "bio_es": "Pionera en integrar Pilates con danza y rehabilitación",
+      "bio_es": "Pionera en integrar Pilates con danza y rehabilitacion",
       "specialty": ["Fascia Training", "Dance Integration"],
-      "specialty_es": ["Entrenamiento de Fascia", "Integración con Danza"],
+      "specialty_es": ["Entrenamiento de Fascia", "Integracion con Danza"],
       "certifications": ["Balanced Body Master Instructor"],
       "location": "San Francisco, USA",
-      "years_teaching": 35
+      "years_teaching": 35,
+      "video_resources": {
+        "search_terms": ["Elizabeth Larkam pilates", "fascia training pilates", "Balanced Body Elizabeth Larkam"],
+        "recommended_channels": ["pilates_anytime"],
+        "note": "Fascia-focused Pilates and dance integration content"
+      }
     },
     {
       "id": "brooke-siler",
       "name": "Brooke Siler",
       "title": "Author & Studio Owner",
-      "title_es": "Autora y Dueña de Estudio",
+      "title_es": "Autora y Duena de Estudio",
       "bio": "Author of 'The Pilates Body' and founder of re:AB studio",
       "bio_es": "Autora de 'The Pilates Body' y fundadora del estudio re:AB",
       "specialty": ["Classical Pilates", "Celebrity Training"],
-      "specialty_es": ["Pilates Clásico", "Entrenamiento de Celebridades"],
+      "specialty_es": ["Pilates Clasico", "Entrenamiento de Celebridades"],
       "certifications": ["Romana's Pilates Certified"],
       "location": "New York, USA",
-      "years_teaching": 25
+      "years_teaching": 25,
+      "video_resources": {
+        "search_terms": ["Brooke Siler pilates", "The Pilates Body", "re:AB pilates"],
+        "recommended_channels": ["pilates_anytime"],
+        "note": "Classical Pilates instruction and author content"
+      }
     },
     {
       "id": "alycea-ungaro",
@@ -114,12 +157,17 @@
       "title": "Physical Therapist & Author",
       "title_es": "Fisioterapeuta y Autora",
       "bio": "Licensed PT who bridges Pilates and rehabilitation",
-      "bio_es": "Fisioterapeuta licenciada que une Pilates y rehabilitación",
+      "bio_es": "Fisioterapeuta licenciada que une Pilates y rehabilitacion",
       "specialty": ["Rehabilitation", "Injury Prevention"],
-      "specialty_es": ["Rehabilitación", "Prevención de Lesiones"],
+      "specialty_es": ["Rehabilitacion", "Prevencion de Lesiones"],
       "certifications": ["Licensed Physical Therapist", "Romana's Pilates"],
       "location": "New York, USA",
-      "years_teaching": 30
+      "years_teaching": 30,
+      "video_resources": {
+        "search_terms": ["Alycea Ungaro pilates", "pilates rehabilitation", "15 minute pilates"],
+        "recommended_channels": ["pilates_anytime", "jessica_valant"],
+        "note": "Therapeutic and rehabilitation-focused Pilates content"
+      }
     },
     {
       "id": "kathy-corey",
@@ -127,12 +175,17 @@
       "title": "Pilates Historian",
       "title_es": "Historiadora de Pilates",
       "bio": "Preserving the legacy and history of classical Pilates",
-      "bio_es": "Preservando el legado e historia del Pilates clásico",
+      "bio_es": "Preservando el legado e historia del Pilates clasico",
       "specialty": ["Classical Pilates", "Pilates History"],
-      "specialty_es": ["Pilates Clásico", "Historia del Pilates"],
+      "specialty_es": ["Pilates Clasico", "Historia del Pilates"],
       "certifications": ["Second Generation Elder"],
       "location": "San Diego, USA",
-      "years_teaching": 40
+      "years_teaching": 40,
+      "video_resources": {
+        "search_terms": ["Kathy Corey pilates", "pilates history", "classical pilates tradition"],
+        "recommended_channels": ["pilates_anytime"],
+        "note": "Historical context and classical Pilates preservation content"
+      }
     },
     {
       "id": "amy-taylor-alpers",
@@ -140,12 +193,17 @@
       "title": "The Pilates Center Co-Founder",
       "title_es": "Co-Fundadora de The Pilates Center",
       "bio": "Trained by Romana, co-founded premier training center",
-      "bio_es": "Entrenada por Romana, co-fundó centro de formación premier",
+      "bio_es": "Entrenada por Romana, co-fundo centro de formacion premier",
       "specialty": ["Classical Pilates", "Teacher Training"],
-      "specialty_es": ["Pilates Clásico", "Formación de Profesores"],
+      "specialty_es": ["Pilates Clasico", "Formacion de Profesores"],
       "certifications": ["Romana's Pilates Certified", "Master Teacher"],
       "location": "Boulder, USA",
-      "years_teaching": 30
+      "years_teaching": 30,
+      "video_resources": {
+        "search_terms": ["Amy Taylor Alpers pilates", "The Pilates Center", "Romana's Pilates training"],
+        "recommended_channels": ["pilates_anytime"],
+        "note": "Classical Pilates and teacher training content"
+      }
     },
     {
       "id": "deborah-lessen",
@@ -153,21 +211,26 @@
       "title": "Green Street Studio Founder",
       "title_es": "Fundadora de Green Street Studio",
       "bio": "Studied directly with Carola Trier, preserving original teachings",
-      "bio_es": "Estudió directamente con Carola Trier, preservando enseñanzas originales",
+      "bio_es": "Estudio directamente con Carola Trier, preservando ensenanzas originales",
       "specialty": ["Classical Pilates", "Original Method"],
-      "specialty_es": ["Pilates Clásico", "Método Original"],
+      "specialty_es": ["Pilates Clasico", "Metodo Original"],
       "certifications": ["First Generation Lineage", "Master Teacher"],
       "location": "New York, USA",
-      "years_teaching": 45
+      "years_teaching": 45,
+      "video_resources": {
+        "search_terms": ["Deborah Lessen pilates", "Green Street Studio", "Carola Trier lineage"],
+        "recommended_channels": ["pilates_anytime"],
+        "note": "Original method preservation and first-generation lineage content"
+      }
     }
   ],
   "certifying_bodies": [
     {
       "id": "pma",
       "name": "Pilates Method Alliance",
-      "name_es": "Alianza del Método Pilates",
+      "name_es": "Alianza del Metodo Pilates",
       "description": "International non-profit organization for Pilates professionals",
-      "description_es": "Organización internacional sin fines de lucro para profesionales de Pilates",
+      "description_es": "Organizacion internacional sin fines de lucro para profesionales de Pilates",
       "website": "https://www.pilatesmethodalliance.org"
     },
     {
@@ -183,7 +246,7 @@
       "name": "STOTT PILATES",
       "name_es": "STOTT PILATES",
       "description": "Contemporary approach to Pilates exercise",
-      "description_es": "Enfoque contemporáneo del ejercicio de Pilates",
+      "description_es": "Enfoque contemporaneo del ejercicio de Pilates",
       "website": "https://www.merrithew.com"
     },
     {
@@ -191,8 +254,110 @@
       "name": "Balanced Body",
       "name_es": "Balanced Body",
       "description": "Pilates education and equipment manufacturer",
-      "description_es": "Educación de Pilates y fabricante de equipos",
+      "description_es": "Educacion de Pilates y fabricante de equipos",
       "website": "https://www.pilates.com"
+    }
+  ],
+  "youtube_instructors": [
+    {
+      "id": "blogilates",
+      "name": "Cassey Ho",
+      "channel_name": "Blogilates",
+      "youtube_url": "https://www.youtube.com/@blogilates",
+      "subscribers": "8.8M+",
+      "specialty": ["POP Pilates", "Mat Pilates", "Core Workouts"],
+      "style": "Contemporary, upbeat music-driven workouts",
+      "certification": "Certified Pilates Instructor"
+    },
+    {
+      "id": "move_with_nicole",
+      "name": "Nicole McPherson",
+      "channel_name": "Move With Nicole",
+      "youtube_url": "https://www.youtube.com/@MoveWithNicole",
+      "subscribers": "2.5M+",
+      "specialty": ["Mat Pilates", "Yoga", "Barre"],
+      "style": "Calming, full-body workouts with clear instruction",
+      "certification": "RYT 500, Certified Pilates Instructor"
+    },
+    {
+      "id": "lottie_murphy",
+      "name": "Lottie Murphy",
+      "channel_name": "Lottie Murphy Pilates",
+      "youtube_url": "https://www.youtube.com/@LottieMurphy",
+      "subscribers": "380K+",
+      "specialty": ["Classical Pilates", "Beginner Pilates", "Core Focus"],
+      "style": "Mindful, technical instruction",
+      "certification": "Body Control Pilates (Advanced Level)"
+    },
+    {
+      "id": "jessica_valant",
+      "name": "Jessica Valant",
+      "channel_name": "Jessica Valant Pilates",
+      "youtube_url": "https://www.youtube.com/@JessicaValantPilates",
+      "subscribers": "568K+",
+      "specialty": ["Rehabilitation", "Back Pain Relief", "Therapeutic Pilates"],
+      "style": "PT-informed therapeutic approach",
+      "certification": "MSPT, Polestar Pilates Certified"
+    },
+    {
+      "id": "pilates_anytime",
+      "name": "Various Master Instructors",
+      "channel_name": "Pilates Anytime",
+      "youtube_url": "https://www.youtube.com/@PilatesAnytime",
+      "subscribers": "105K+",
+      "specialty": ["Classical Pilates", "All Apparatus", "Professional Instruction"],
+      "style": "World-class instruction from certified masters",
+      "certification": "Multiple Certified Instructors"
+    },
+    {
+      "id": "merrithew",
+      "name": "Moira Merrithew & Team",
+      "channel_name": "Merrithew (STOTT PILATES)",
+      "youtube_url": "https://www.youtube.com/@MERRITHEW",
+      "subscribers": "100K+",
+      "specialty": ["STOTT PILATES", "Contemporary Pilates", "Rehabilitation"],
+      "style": "Anatomically-based contemporary approach",
+      "certification": "STOTT PILATES Master Instructors"
+    },
+    {
+      "id": "lilly_sabri",
+      "name": "Lilly Sabri",
+      "channel_name": "Lilly Sabri",
+      "youtube_url": "https://www.youtube.com/@LillySabri",
+      "subscribers": "4.5M+",
+      "specialty": ["Pilates HIIT", "Toning", "Quick Workouts"],
+      "style": "High-energy, precision-based fitness",
+      "certification": "Chartered Physiotherapist, APPI Pilates Instructor"
+    },
+    {
+      "id": "flow_with_mira",
+      "name": "Mira",
+      "channel_name": "Flow With Mira",
+      "youtube_url": "https://www.youtube.com/@flowwithmira",
+      "subscribers": "500K+",
+      "specialty": ["Full Body Flows", "Core Strength", "Flexibility"],
+      "style": "Accessible, encouraging instruction",
+      "certification": "Certified Pilates Instructor"
+    },
+    {
+      "id": "the_balanced_life",
+      "name": "Robin Long",
+      "channel_name": "The Balanced Life",
+      "youtube_url": "https://www.youtube.com/@thebalancedlifeonline",
+      "subscribers": "300K+",
+      "specialty": ["Sustainable Fitness", "Body Positivity", "Short Sessions"],
+      "style": "Body-positive, sustainable approach",
+      "certification": "Certified Pilates Instructor"
+    },
+    {
+      "id": "go_chlo_pilates",
+      "name": "Chlo",
+      "channel_name": "Go Chlo Pilates",
+      "youtube_url": "https://www.youtube.com/@gochlopilates",
+      "subscribers": "200K+",
+      "specialty": ["Physiotherapy-backed Pilates", "Home Workouts"],
+      "style": "Challenging, physio-informed workouts",
+      "certification": "Physiotherapist, Master Pilates Instructor"
     }
   ]
 }

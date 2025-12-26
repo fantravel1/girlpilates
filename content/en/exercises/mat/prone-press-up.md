@@ -12,7 +12,6 @@ muscles: ["lower back", "abs", "shoulders"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie face down, hands under shoulders, elbows bent"

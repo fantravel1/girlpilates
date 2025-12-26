@@ -12,7 +12,6 @@ muscles: ["core", "abs", "spine"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie face down, forehead on mat, arms by sides"

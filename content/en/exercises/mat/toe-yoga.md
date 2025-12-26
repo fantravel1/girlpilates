@@ -12,7 +12,6 @@ muscles: ["feet", "toes", "intrinsic foot muscles"]
 difficulty: "beginner"
 duration: 30
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit or stand with bare feet flat on floor"

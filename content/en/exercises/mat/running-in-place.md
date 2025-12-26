@@ -12,7 +12,6 @@ muscles: ["calves", "feet", "hip flexors", "core"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back in neutral spine, legs in tabletop"

@@ -12,7 +12,6 @@ muscles: ["core", "hip flexors"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, left knee bent with foot on floor, right leg extended to ceiling"

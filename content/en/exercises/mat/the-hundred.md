@@ -12,7 +12,6 @@ muscles: ["core", "abs", "hip flexors"]
 difficulty: "beginner"
 duration: 120
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie flat on your back with arms by your sides"

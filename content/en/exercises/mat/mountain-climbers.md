@@ -12,7 +12,6 @@ muscles: ["core", "hip flexors", "shoulders", "quads"]
 difficulty: "intermediate"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Start in high plank position, hands under shoulders"

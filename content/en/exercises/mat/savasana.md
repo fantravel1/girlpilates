@@ -12,7 +12,6 @@ muscles: ["full body relaxation"]
 difficulty: "beginner"
 duration: 300
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back with legs extended, feet falling open"

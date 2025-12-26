@@ -12,7 +12,6 @@ muscles: ["quadriceps", "hip flexors"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on your side with bottom arm extended under head"

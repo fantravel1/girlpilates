@@ -12,7 +12,6 @@ muscles: ["core", "hip flexors", "rectus abdominis"]
 difficulty: "intermediate"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, arms reaching overhead, legs extended"
