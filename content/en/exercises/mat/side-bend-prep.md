@@ -12,7 +12,6 @@ muscles: ["obliques", "shoulders", "hips", "core"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit on right hip, legs bent, feet stacked behind you"

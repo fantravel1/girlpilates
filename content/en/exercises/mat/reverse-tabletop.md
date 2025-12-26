@@ -12,7 +12,6 @@ muscles: ["core", "spine"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit with knees bent, feet flat on floor, hands behind you with fingers forward"

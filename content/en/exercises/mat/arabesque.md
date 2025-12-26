@@ -12,7 +12,6 @@ muscles: ["glutes", "hamstrings", "back", "core", "standing leg"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Stand tall, weight on one leg"

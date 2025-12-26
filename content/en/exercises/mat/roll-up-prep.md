@@ -12,7 +12,6 @@ muscles: ["core", "abs", "spine"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, knees bent, feet flat, arms reaching toward ceiling"

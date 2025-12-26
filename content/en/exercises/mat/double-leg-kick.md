@@ -12,7 +12,6 @@ muscles: ["core", "abs", "spine"]
 difficulty: "intermediate"
 duration: 90
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie face down, turn head to one side, hands clasped behind back"

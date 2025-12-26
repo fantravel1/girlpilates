@@ -12,7 +12,6 @@ muscles: ["hip flexors", "hip extensors", "glutes", "inner thighs", "outer thigh
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on side, bottom arm extended under head"

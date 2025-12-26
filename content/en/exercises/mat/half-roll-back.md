@@ -12,7 +12,6 @@ muscles: ["core", "abs", "spine"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit tall with knees bent, feet flat on floor, arms reaching forward"

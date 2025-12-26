@@ -12,7 +12,6 @@ muscles: ["core", "hip flexors", "obliques", "shoulders"]
 difficulty: "advanced"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit tall, legs extended together, arms behind for support"

@@ -12,7 +12,6 @@ muscles: ["core", "hip flexors"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, both knees bent toward chest"

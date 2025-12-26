@@ -12,7 +12,6 @@ muscles: ["hip flexors", "glutes", "core", "hip rotators"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit tall on mat, knees bent, feet flat on floor"

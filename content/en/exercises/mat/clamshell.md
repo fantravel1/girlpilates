@@ -12,7 +12,6 @@ muscles: ["glute medius", "hip abductors", "external rotators"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on side with hips stacked, knees bent to 45 degrees"

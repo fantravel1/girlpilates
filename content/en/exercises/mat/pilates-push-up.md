@@ -12,7 +12,6 @@ muscles: ["core", "abs", "spine"]
 difficulty: "advanced"
 duration: 120
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Stand tall at end of mat, arms reaching overhead"

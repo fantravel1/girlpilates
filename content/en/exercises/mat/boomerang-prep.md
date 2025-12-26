@@ -12,7 +12,6 @@ muscles: ["core", "hip flexors", "back", "shoulders"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit with legs extended, ankles crossed right over left"

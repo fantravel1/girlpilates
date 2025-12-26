@@ -12,7 +12,6 @@ muscles: ["inner thighs", "glutes", "hamstrings"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie face down, bend both knees to 90 degrees"

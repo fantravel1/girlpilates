@@ -12,7 +12,6 @@ muscles: ["lower back", "hips", "glutes"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, bring both knees toward chest"

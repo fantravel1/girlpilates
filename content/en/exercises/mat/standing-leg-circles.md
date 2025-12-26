@@ -12,7 +12,6 @@ muscles: ["hip flexors", "outer thighs", "glutes", "standing leg"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Stand tall on one leg, holding wall or chair for balance"

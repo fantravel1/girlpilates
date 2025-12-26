@@ -12,7 +12,6 @@ muscles: ["obliques", "glutes", "hip flexors", "hip extensors"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Kneel on right knee, extend left leg straight out to side"

@@ -12,7 +12,6 @@ muscles: ["obliques", "hamstrings", "shoulders", "core"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Stand with feet wider than hip-width, arms extended to sides"

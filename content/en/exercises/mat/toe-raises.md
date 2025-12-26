@@ -12,7 +12,6 @@ muscles: ["tibialis anterior", "shins", "feet"]
 difficulty: "beginner"
 duration: 30
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit or stand with feet flat on floor"

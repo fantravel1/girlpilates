@@ -243,3 +243,55 @@ other = "Niveles de Dificultad"
 
 [stat_free]
 other = "Gratis"
+
+# Video Section
+[find_video_tutorials]
+other = "Encuentra Tutoriales en Video"
+
+[video_search_tip]
+other = "Busca en estos canales de expertos tutoriales sobre este ejercicio:"
+
+[curated_video_library]
+other = "Biblioteca de Videos Curada"
+
+[video_library_desc]
+other = "Descubre instruccion de Pilates de alta calidad de profesionales certificados en YouTube"
+
+[recommended_channels]
+other = "Canales Recomendados"
+
+[search_for_exercise]
+other = "Buscar este ejercicio"
+
+[view_channel]
+other = "Ver Canal"
+
+[video_collections]
+other = "Colecciones de Videos"
+
+[classical_pilates]
+other = "Pilates Clasico"
+
+[beginner_essentials]
+other = "Esenciales para Principiantes"
+
+[core_intensive]
+other = "Core Intensivo"
+
+[back_health]
+other = "Salud de la Espalda"
+
+[flexibility_mobility]
+other = "Flexibilidad y Movilidad"
+
+[quick_workouts]
+other = "Entrenamientos Rapidos"
+
+[subscribers]
+other = "suscriptores"
+
+[specialty]
+other = "Especialidad"
+
+[style]
+other = "Estilo"

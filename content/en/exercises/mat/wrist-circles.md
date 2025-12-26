@@ -12,7 +12,6 @@ muscles: ["core"]
 difficulty: "beginner"
 duration: 30
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Extend arms in front of you or rest elbows on table"

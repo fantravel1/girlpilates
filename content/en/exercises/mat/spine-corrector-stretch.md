@@ -12,7 +12,6 @@ muscles: ["spine", "chest", "shoulders", "abs"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Place rolled towel or small pillow under upper back"

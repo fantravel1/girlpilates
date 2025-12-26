@@ -12,7 +12,6 @@ muscles: ["abs", "hip flexors", "back", "legs"]
 difficulty: "advanced"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, arms extended overhead, legs extended at 45 degrees"

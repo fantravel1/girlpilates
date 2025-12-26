@@ -12,7 +12,6 @@ muscles: ["hamstrings", "calves", "spine", "core"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Stand with feet hip-width apart"

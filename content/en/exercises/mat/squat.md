@@ -12,7 +12,6 @@ muscles: ["quads", "glutes", "hamstrings", "core"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Stand with feet shoulder-width apart, toes slightly out"

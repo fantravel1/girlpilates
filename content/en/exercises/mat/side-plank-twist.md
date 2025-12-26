@@ -12,7 +12,6 @@ muscles: ["obliques", "shoulders", "core", "back"]
 difficulty: "advanced"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Start in side plank on forearm or hand, top arm reaching up"

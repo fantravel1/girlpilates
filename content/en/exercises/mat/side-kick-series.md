@@ -12,7 +12,6 @@ muscles: ["glutes", "hip flexors", "abductors", "adductors"]
 difficulty: "intermediate"
 duration: 90
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on side, bottom arm extended under head, top hand on floor for balance"

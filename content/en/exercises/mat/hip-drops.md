@@ -12,7 +12,6 @@ muscles: ["core", "abs"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Start in side plank on forearm, body in straight line"

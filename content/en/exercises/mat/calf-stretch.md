@@ -12,7 +12,6 @@ muscles: ["core"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Stand facing a wall, hands on wall at shoulder height"

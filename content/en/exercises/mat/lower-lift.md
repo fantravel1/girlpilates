@@ -12,7 +12,6 @@ muscles: ["lower abs", "hip flexors", "core"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, both legs extended toward ceiling"

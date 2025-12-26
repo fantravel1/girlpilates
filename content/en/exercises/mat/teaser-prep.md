@@ -12,7 +12,6 @@ muscles: ["abs", "hip flexors", "back", "legs"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, knees bent at tabletop, arms reaching toward ceiling"

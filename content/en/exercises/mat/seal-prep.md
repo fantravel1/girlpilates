@@ -12,7 +12,6 @@ muscles: ["core", "hip flexors", "spine"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit in a ball position, knees open, feet together"

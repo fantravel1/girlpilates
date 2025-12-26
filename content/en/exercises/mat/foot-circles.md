@@ -12,7 +12,6 @@ muscles: ["feet", "ankles", "lower legs"]
 difficulty: "beginner"
 duration: 30
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit or lie down, extend one leg"

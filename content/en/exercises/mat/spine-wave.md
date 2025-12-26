@@ -12,7 +12,6 @@ muscles: ["spine", "core", "back extensors"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Begin on hands and knees in tabletop position"

@@ -12,7 +12,6 @@ muscles: ["glutes", "hamstrings", "back extensors"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie face down, forehead resting on hands"

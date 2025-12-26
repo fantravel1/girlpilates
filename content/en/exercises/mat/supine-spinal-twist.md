@@ -12,7 +12,6 @@ muscles: ["spine", "obliques", "lower back", "chest"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back with knees bent, feet flat"

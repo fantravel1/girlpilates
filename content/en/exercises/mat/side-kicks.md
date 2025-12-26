@@ -12,7 +12,6 @@ muscles: ["core", "abs", "hip flexors"]
 difficulty: "intermediate"
 duration: 120
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on your side, bottom arm extended, head resting on it"

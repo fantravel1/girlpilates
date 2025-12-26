@@ -12,7 +12,6 @@ muscles: ["core", "abs", "spine"]
 difficulty: "advanced"
 duration: 90
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, legs together extended to ceiling, arms by sides"

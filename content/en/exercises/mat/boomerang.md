@@ -12,7 +12,6 @@ muscles: ["core", "abs", "spine", "hip flexors"]
 difficulty: "advanced"
 duration: 120
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit tall, legs extended and crossed at ankles"

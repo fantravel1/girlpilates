@@ -12,7 +12,6 @@ muscles: ["quads", "glutes", "core"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Stand with back against wall"

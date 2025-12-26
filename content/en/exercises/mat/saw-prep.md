@@ -12,7 +12,6 @@ muscles: ["obliques", "spine", "hamstrings"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit tall with legs extended wide, arms out to sides"

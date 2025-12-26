@@ -12,7 +12,6 @@ muscles: ["shoulders", "upper back", "rotator cuff"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie face down, one arm extended to side at shoulder height"

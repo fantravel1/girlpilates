@@ -12,7 +12,6 @@ muscles: ["hip flexors", "glutes", "core"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Stand on one leg, use wall or chair for balance if needed"

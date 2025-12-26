@@ -12,7 +12,6 @@ muscles: ["inner thighs", "hips", "groin"]
 difficulty: "beginner"
 duration: 90
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, bend knees with feet flat on floor"

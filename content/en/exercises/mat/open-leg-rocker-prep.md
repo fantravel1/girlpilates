@@ -12,7 +12,6 @@ muscles: ["core", "hamstrings", "hip flexors", "spine"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit tall, hold ankles or calves with knees bent"

@@ -12,7 +12,6 @@ muscles: ["spine", "core", "back"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit tall on mat or chair with hands on knees"

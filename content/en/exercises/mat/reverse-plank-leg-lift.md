@@ -12,7 +12,6 @@ muscles: ["glutes", "hamstrings", "triceps", "core", "shoulders"]
 difficulty: "advanced"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Start in reverse plank: hands behind you, fingers facing forward"

@@ -12,7 +12,6 @@ muscles: ["core", "abs"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back, knees bent, hands behind head"

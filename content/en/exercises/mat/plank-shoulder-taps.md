@@ -12,7 +12,6 @@ muscles: ["core", "shoulders", "arms", "obliques"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Start in high plank position, hands under shoulders"

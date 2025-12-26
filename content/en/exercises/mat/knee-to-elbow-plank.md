@@ -12,7 +12,6 @@ muscles: ["core", "obliques", "hip flexors", "shoulders"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Start in high plank position"

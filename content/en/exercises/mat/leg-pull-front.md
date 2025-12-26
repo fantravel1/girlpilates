@@ -12,7 +12,6 @@ muscles: ["core", "abs", "spine", "hip flexors"]
 difficulty: "advanced"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Start in a plank position, hands under shoulders"

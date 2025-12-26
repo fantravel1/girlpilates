@@ -12,7 +12,6 @@ muscles: ["core", "abs", "spine"]
 difficulty: "intermediate"
 duration: 90
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Sit tall with legs wide, feet flexed, arms extended to sides"

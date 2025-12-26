@@ -12,7 +12,6 @@ muscles: ["back extensors", "glutes", "shoulders", "quads"]
 difficulty: "intermediate"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie prone, bend knees and reach back to hold ankles"

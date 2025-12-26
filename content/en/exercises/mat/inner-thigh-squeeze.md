@@ -12,7 +12,6 @@ muscles: ["inner thighs", "pelvic floor", "core"]
 difficulty: "beginner"
 duration: 45
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie on back with knees bent, feet flat on floor"

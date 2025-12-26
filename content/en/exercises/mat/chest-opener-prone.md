@@ -12,7 +12,6 @@ muscles: ["chest", "shoulders", "biceps"]
 difficulty: "beginner"
 duration: 60
 
-video_id: "dQw4w9WgXcQ"
 
 steps:
   - "Lie face down with right arm extended out at shoulder height"
