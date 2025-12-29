@@ -1,0 +1,229 @@
+{{ define "main" }}
+{{ $premade := site.Data.premade_workouts }}
+{{ $workoutId := .Params.workout_id }}
+{{ $workout := index (where $premade.workouts "id" $workoutId) 0 }}
+
+{{ with $workout }}
+<article class="min-h-screen">
+  <!-- Hero Section -->
+  <div class="bg-gradient-to-br
+    {{ if eq .difficulty "beginner" }}from-green-400 via-emerald-500 to-teal-600{{ end }}
+    {{ if eq .difficulty "intermediate" }}from-yellow-400 via-orange-500 to-red-500{{ end }}
+    {{ if eq .difficulty "advanced" }}from-red-500 via-rose-600 to-pink-700{{ end }}
+    text-white py-16 lg:py-24">
+    <div class="container">
+      <div class="max-w-4xl">
+        <!-- Breadcrumb -->
+        <nav class="flex items-center gap-2 text-white/80 text-sm mb-6">
+          <a href="{{ "/workouts/" | relLangURL }}" class="hover:text-white">{{ i18n "workouts" | default "Workouts" }}</a>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          <a href="{{ "/workouts/premade/" | relLangURL }}" class="hover:text-white">{{ i18n "premade" | default "Ready-Made" }}</a>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          <span>{{ .title }}</span>
+        </nav>
+
+        <!-- Badges -->
+        <div class="flex flex-wrap gap-2 mb-4">
+          {{ if .featured }}
+          <span class="px-3 py-1 bg-yellow-400 text-yellow-900 rounded-full text-sm font-bold">
+            {{ i18n "featured" | default "Featured" }}
+          </span>
+          {{ end }}
+          <span class="px-3 py-1 bg-white/20 backdrop-blur rounded-full text-sm">
+            {{ .duration }} {{ i18n "min" | default "min" }}
+          </span>
+          <span class="px-3 py-1 bg-white/20 backdrop-blur rounded-full text-sm capitalize">
+            {{ .difficulty }}
+          </span>
+          {{ with .equipment }}
+          <span class="px-3 py-1 bg-white/20 backdrop-blur rounded-full text-sm">
+            {{ delimit . ", " }}
+          </span>
+          {{ end }}
+        </div>
+
+        <h1 class="text-4xl lg:text-5xl font-bold mb-4">{{ .title }}</h1>
+        <p class="text-xl text-white/90 mb-8">{{ .description }}</p>
+
+        <!-- Quick Stats -->
+        <div class="grid grid-cols-3 gap-4 max-w-lg">
+          <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
+            <div class="text-3xl font-bold">{{ .duration }}</div>
+            <div class="text-sm text-white/80">{{ i18n "minutes" | default "minutes" }}</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
+            <div class="text-3xl font-bold capitalize">{{ substr .difficulty 0 3 }}</div>
+            <div class="text-sm text-white/80">{{ i18n "level" | default "level" }}</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center">
+            <div class="text-3xl font-bold">{{ .calories }}</div>
+            <div class="text-sm text-white/80">{{ i18n "calories" | default "cal" }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container py-12">
+    <div class="lg:flex gap-12">
+      <!-- Main Column -->
+      <div class="flex-1 max-w-3xl">
+        <!-- Category Tags -->
+        <div class="mb-8">
+          <h2 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">{{ i18n "perfect_for" | default "Perfect For" }}</h2>
+          <div class="flex flex-wrap gap-2">
+            {{ with .categories.mood }}
+            {{ range . }}
+            <span class="px-3 py-1.5 bg-red-50 text-red-700 rounded-full text-sm font-medium">{{ . | humanize }}</span>
+            {{ end }}
+            {{ end }}
+            {{ with .categories.goal }}
+            {{ range . }}
+            <span class="px-3 py-1.5 bg-green-50 text-green-700 rounded-full text-sm font-medium">{{ . | humanize }}</span>
+            {{ end }}
+            {{ end }}
+            {{ with .categories.environment }}
+            {{ range . }}
+            <span class="px-3 py-1.5 bg-blue-50 text-blue-700 rounded-full text-sm font-medium">{{ . | humanize }}</span>
+            {{ end }}
+            {{ end }}
+            {{ with .categories.time }}
+            {{ range . }}
+            <span class="px-3 py-1.5 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">{{ . }}</span>
+            {{ end }}
+            {{ end }}
+            {{ with .categories.quirky }}
+            {{ range . }}
+            <span class="px-3 py-1.5 bg-yellow-50 text-yellow-700 rounded-full text-sm font-medium">{{ . | humanize }}</span>
+            {{ end }}
+            {{ end }}
+            {{ with .categories.life_stage }}
+            {{ range . }}
+            <span class="px-3 py-1.5 bg-indigo-50 text-indigo-700 rounded-full text-sm font-medium">{{ . | humanize }}</span>
+            {{ end }}
+            {{ end }}
+          </div>
+        </div>
+
+        <!-- Workout Content from markdown -->
+        <div class="prose prose-lg prose-pink max-w-none">
+          {{ $.Content }}
+        </div>
+
+        <!-- Equipment Needed -->
+        {{ with .equipment }}
+        <div class="mt-12 p-6 bg-gray-50 rounded-2xl">
+          <h3 class="font-semibold text-gray-900 mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+            {{ i18n "equipment_needed" | default "Equipment Needed" }}
+          </h3>
+          <div class="flex flex-wrap gap-3">
+            {{ range . }}
+            <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-gray-200">
+              {{ if eq . "mat" }}
+              <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V5z"/></svg>
+              {{ else if eq . "band" }}
+              <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 18h16"/></svg>
+              {{ else if eq . "ring" }}
+              <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke-width="2"/></svg>
+              {{ else if eq . "ball" }}
+              <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke-width="2"/><path stroke-linecap="round" stroke-width="2" d="M12 3v18M3 12h18"/></svg>
+              {{ else }}
+              <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              {{ end }}
+              <span class="font-medium capitalize">{{ . }}</span>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="lg:w-80 mt-12 lg:mt-0">
+        <div class="sticky top-24 space-y-6">
+          <!-- Start Workout Card -->
+          <div class="bg-gradient-to-br from-pink-500 to-purple-600 rounded-2xl p-6 text-white text-center">
+            <h3 class="text-xl font-bold mb-2">{{ i18n "ready_to_start" | default "Ready to Start?" }}</h3>
+            <p class="text-white/80 text-sm mb-4">{{ i18n "follow_along" | default "Follow along with the workout above" }}</p>
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="w-full bg-white text-pink-600 font-semibold py-3 px-6 rounded-xl hover:bg-gray-100 transition-colors flex items-center justify-center gap-2">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              {{ i18n "begin_workout" | default "Begin Workout" }}
+            </button>
+          </div>
+
+          <!-- Workout Generator CTA -->
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h3 class="font-semibold text-gray-900 mb-2">{{ i18n "want_custom" | default "Want a Custom Workout?" }}</h3>
+            <p class="text-gray-600 text-sm mb-4">{{ i18n "use_generator" | default "Use our workout generator to create a personalized routine" }}</p>
+            <a href="{{ "/workouts/generator/" | relLangURL }}" class="block text-center bg-gray-900 text-white font-semibold py-2.5 px-4 rounded-xl hover:bg-gray-800 transition-colors">
+              {{ i18n "generate_workout" | default "Generate Workout" }}
+            </a>
+          </div>
+
+          <!-- Browse More -->
+          <div class="bg-white rounded-2xl p-6 border border-gray-200">
+            <h3 class="font-semibold text-gray-900 mb-4">{{ i18n "browse_more" | default "Browse More Workouts" }}</h3>
+            <div class="space-y-2">
+              <a href="{{ "/workouts/premade/" | relLangURL }}" class="flex items-center justify-between py-2 text-gray-600 hover:text-pink-600">
+                <span>{{ i18n "all_premade" | default "All Ready-Made Workouts" }}</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="{{ "/workouts/programs/" | relLangURL }}" class="flex items-center justify-between py-2 text-gray-600 hover:text-pink-600">
+                <span>{{ i18n "workout_programs" | default "Workout Programs" }}</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="{{ "/exercises/" | relLangURL }}" class="flex items-center justify-between py-2 text-gray-600 hover:text-pink-600">
+                <span>{{ i18n "exercise_library" | default "Exercise Library" }}</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Related Workouts -->
+  {{ $currentId := .id }}
+  {{ $currentCategories := .categories }}
+  {{ $allWorkouts := $premade.workouts }}
+
+  <section class="bg-gray-50 py-16">
+    <div class="container">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">{{ i18n "you_might_like" | default "You Might Also Like" }}</h2>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {{ $count := 0 }}
+        {{ range $allWorkouts }}
+        {{ if and (ne .id $currentId) (lt $count 4) }}
+        <a href="{{ printf "/workouts/premade/%s/" .id | relLangURL }}" class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all group">
+          <div class="h-24 bg-gradient-to-br
+            {{ if eq .difficulty "beginner" }}from-green-400 to-emerald-500{{ end }}
+            {{ if eq .difficulty "intermediate" }}from-yellow-400 to-orange-500{{ end }}
+            {{ if eq .difficulty "advanced" }}from-red-400 to-rose-500{{ end }}
+            relative">
+            <div class="absolute top-2 left-2 bg-white/90 rounded-full px-2 py-0.5 text-xs font-medium">
+              {{ .duration }} min
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-900 group-hover:text-pink-600 transition-colors line-clamp-1">{{ .title }}</h3>
+            <p class="text-gray-600 text-sm line-clamp-1 mt-1">{{ .description }}</p>
+          </div>
+        </a>
+        {{ $count = add $count 1 }}
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+</article>
+{{ else }}
+<div class="container py-16 text-center">
+  <h1 class="text-2xl font-bold text-gray-900 mb-4">{{ i18n "workout_not_found" | default "Workout Not Found" }}</h1>
+  <p class="text-gray-600 mb-8">{{ i18n "workout_not_found_desc" | default "The workout you're looking for doesn't exist." }}</p>
+  <a href="{{ "/workouts/premade/" | relLangURL }}" class="btn btn-primary">{{ i18n "browse_workouts" | default "Browse Workouts" }}</a>
+</div>
+{{ end }}
+{{ end }}

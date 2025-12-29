@@ -7,8 +7,13 @@
 
 [[main]]
   name = "Entrenamientos"
-  url = "/es/entrenamientos/"
+  url = "/es/entrenamientos/premade/"
   weight = 20
+
+[[main]]
+  name = "Generador"
+  url = "/es/entrenamientos/generador/"
+  weight = 25
 
 [[main]]
   name = "Aprender"

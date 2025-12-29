@@ -1,0 +1,1038 @@
+{
+  "categories": {
+    "environment": {
+      "id": "environment",
+      "name": "Environment",
+      "name_es": "Entorno",
+      "description": "Workouts designed for specific spaces",
+      "description_es": "Entrenamientos diseñados para espacios específicos",
+      "icon": "location",
+      "options": [
+        {"id": "home", "name": "At Home", "name_es": "En Casa"},
+        {"id": "office", "name": "Office/Desk", "name_es": "Oficina/Escritorio"},
+        {"id": "hotel", "name": "Hotel Room", "name_es": "Habitación de Hotel"},
+        {"id": "outdoor", "name": "Outdoors/Park", "name_es": "Aire Libre/Parque"},
+        {"id": "small-space", "name": "Small Space", "name_es": "Espacio Pequeño"},
+        {"id": "gym", "name": "Gym/Studio", "name_es": "Gimnasio/Estudio"},
+        {"id": "bed", "name": "In Bed", "name_es": "En la Cama"},
+        {"id": "airplane", "name": "Airplane/Travel", "name_es": "Avión/Viaje"}
+      ]
+    },
+    "time": {
+      "id": "time",
+      "name": "Time Available",
+      "name_es": "Tiempo Disponible",
+      "description": "Workouts for every schedule",
+      "description_es": "Entrenamientos para cada horario",
+      "icon": "clock",
+      "options": [
+        {"id": "5min", "name": "5 Minutes", "name_es": "5 Minutos"},
+        {"id": "10min", "name": "10 Minutes", "name_es": "10 Minutos"},
+        {"id": "15min", "name": "15 Minutes", "name_es": "15 Minutos"},
+        {"id": "20min", "name": "20 Minutes", "name_es": "20 Minutos"},
+        {"id": "30min", "name": "30 Minutes", "name_es": "30 Minutos"},
+        {"id": "45min", "name": "45 Minutes", "name_es": "45 Minutos"},
+        {"id": "60min", "name": "60 Minutes", "name_es": "60 Minutos"}
+      ]
+    },
+    "mood": {
+      "id": "mood",
+      "name": "Current Mood",
+      "name_es": "Estado de Ánimo",
+      "description": "Match your workout to how you feel",
+      "description_es": "Adapta tu entrenamiento a cómo te sientes",
+      "icon": "heart",
+      "options": [
+        {"id": "energized", "name": "Energized & Ready", "name_es": "Energizada y Lista"},
+        {"id": "tired", "name": "Tired but Want to Move", "name_es": "Cansada pero Quiero Moverme"},
+        {"id": "stressed", "name": "Stressed & Tense", "name_es": "Estresada y Tensa"},
+        {"id": "lazy", "name": "Feeling Lazy", "name_es": "Con Pereza"},
+        {"id": "anxious", "name": "Anxious & Restless", "name_es": "Ansiosa e Inquieta"},
+        {"id": "sad", "name": "Need a Mood Boost", "name_es": "Necesito Animarme"},
+        {"id": "focused", "name": "Focused & Determined", "name_es": "Enfocada y Determinada"},
+        {"id": "playful", "name": "Playful & Fun", "name_es": "Juguetona y Divertida"}
+      ]
+    },
+    "goal": {
+      "id": "goal",
+      "name": "Fitness Goal",
+      "name_es": "Objetivo Fitness",
+      "description": "Target specific results",
+      "description_es": "Apunta a resultados específicos",
+      "icon": "target",
+      "options": [
+        {"id": "toning", "name": "Muscle Toning", "name_es": "Tonificación"},
+        {"id": "flexibility", "name": "Flexibility", "name_es": "Flexibilidad"},
+        {"id": "strength", "name": "Build Strength", "name_es": "Ganar Fuerza"},
+        {"id": "posture", "name": "Better Posture", "name_es": "Mejor Postura"},
+        {"id": "balance", "name": "Improve Balance", "name_es": "Mejorar Equilibrio"},
+        {"id": "pain-relief", "name": "Pain Relief", "name_es": "Alivio del Dolor"},
+        {"id": "weight-loss", "name": "Weight Management", "name_es": "Control de Peso"},
+        {"id": "recovery", "name": "Active Recovery", "name_es": "Recuperación Activa"}
+      ]
+    },
+    "body-focus": {
+      "id": "body-focus",
+      "name": "Body Focus",
+      "name_es": "Enfoque Corporal",
+      "description": "Target specific body areas",
+      "description_es": "Enfócate en áreas específicas",
+      "icon": "body",
+      "options": [
+        {"id": "full-body", "name": "Full Body", "name_es": "Cuerpo Completo"},
+        {"id": "core", "name": "Core & Abs", "name_es": "Core y Abdominales"},
+        {"id": "booty", "name": "Booty & Glutes", "name_es": "Glúteos"},
+        {"id": "legs", "name": "Legs & Thighs", "name_es": "Piernas y Muslos"},
+        {"id": "arms", "name": "Arms & Shoulders", "name_es": "Brazos y Hombros"},
+        {"id": "back", "name": "Back & Spine", "name_es": "Espalda y Columna"},
+        {"id": "hips", "name": "Hips & Hip Flexors", "name_es": "Caderas y Flexores"},
+        {"id": "neck-shoulders", "name": "Neck & Shoulders", "name_es": "Cuello y Hombros"}
+      ]
+    },
+    "life-stage": {
+      "id": "life-stage",
+      "name": "Life Stage",
+      "name_es": "Etapa de Vida",
+      "description": "Workouts for your journey",
+      "description_es": "Entrenamientos para tu camino",
+      "icon": "users",
+      "options": [
+        {"id": "prenatal", "name": "Prenatal", "name_es": "Prenatal"},
+        {"id": "postpartum", "name": "Postpartum", "name_es": "Postparto"},
+        {"id": "menstrual", "name": "Period-Friendly", "name_es": "Para el Período"},
+        {"id": "menopause", "name": "Menopause Support", "name_es": "Apoyo Menopausia"},
+        {"id": "senior", "name": "Active Aging", "name_es": "Envejecimiento Activo"},
+        {"id": "teen", "name": "Teen-Friendly", "name_es": "Para Adolescentes"}
+      ]
+    },
+    "quirky": {
+      "id": "quirky",
+      "name": "Fun & Themed",
+      "name_es": "Divertidos y Temáticos",
+      "description": "Unique workout experiences",
+      "description_es": "Experiencias de entrenamiento únicas",
+      "icon": "sparkles",
+      "options": [
+        {"id": "netflix", "name": "Netflix & Pilates", "name_es": "Netflix y Pilates"},
+        {"id": "wine", "name": "Wine Down Workout", "name_es": "Entrenamiento Relajante"},
+        {"id": "coffee", "name": "Coffee Break Moves", "name_es": "Movimientos del Café"},
+        {"id": "pjs", "name": "PJ Pilates", "name_es": "Pilates en Pijama"},
+        {"id": "date-prep", "name": "Date Night Prep", "name_es": "Preparación para Cita"},
+        {"id": "hangover", "name": "Gentle Hangover Helper", "name_es": "Ayuda Suave para Resaca"},
+        {"id": "rage", "name": "Rage Release", "name_es": "Liberar Rabia"},
+        {"id": "confidence", "name": "Confidence Booster", "name_es": "Impulso de Confianza"},
+        {"id": "sunday", "name": "Lazy Sunday Flow", "name_es": "Flujo de Domingo"},
+        {"id": "monday", "name": "Monday Motivation", "name_es": "Motivación de Lunes"},
+        {"id": "full-moon", "name": "Full Moon Flow", "name_es": "Flujo de Luna Llena"},
+        {"id": "self-care", "name": "Self-Care Sunday", "name_es": "Domingo de Autocuidado"}
+      ]
+    }
+  },
+  "workouts": [
+    {
+      "id": "5min-ab-blast",
+      "title": "5-Minute Ab Blast",
+      "title_es": "5 Minutos Abdominales Intensos",
+      "description": "Quick but effective core burner when you're short on time",
+      "description_es": "Quemador de core rápido pero efectivo cuando tienes poco tiempo",
+      "duration": 5,
+      "difficulty": "beginner",
+      "equipment": ["none"],
+      "categories": {
+        "time": ["5min"],
+        "body-focus": ["core"],
+        "environment": ["home", "hotel", "small-space"],
+        "mood": ["energized", "focused"]
+      },
+      "featured": true,
+      "calories": "30-40"
+    },
+    {
+      "id": "5min-morning-stretch",
+      "title": "5-Minute Morning Stretch",
+      "title_es": "Estiramiento Matutino de 5 Minutos",
+      "description": "Gentle wake-up stretches you can do before getting out of bed",
+      "description_es": "Estiramientos suaves para despertar que puedes hacer antes de levantarte",
+      "duration": 5,
+      "difficulty": "beginner",
+      "equipment": ["none"],
+      "categories": {
+        "time": ["5min"],
+        "environment": ["bed", "home"],
+        "mood": ["tired", "lazy"],
+        "goal": ["flexibility"]
+      },
+      "featured": false,
+      "calories": "15-25"
+    },
+    {
+      "id": "desk-emergency",
+      "title": "Desk Emergency Relief",
+      "title_es": "Alivio de Emergencia en el Escritorio",
+      "description": "Instant tension release for neck, shoulders, and back at your desk",
+      "description_es": "Alivio instantáneo de tensión en cuello, hombros y espalda en tu escritorio",
+      "duration": 5,
+      "difficulty": "beginner",
+      "equipment": ["none"],
+      "categories": {
+        "time": ["5min"],
+        "environment": ["office"],
+        "body-focus": ["neck-shoulders", "back"],
+        "mood": ["stressed"],
+        "goal": ["pain-relief"]
+      },
+      "featured": true,
+      "calories": "10-20"
+    },
+    {
+      "id": "airplane-stretches",
+      "title": "Airplane Seat Stretches",
+      "title_es": "Estiramientos en el Asiento del Avión",
+      "description": "Discrete stretches to prevent stiffness during flights",
+      "description_es": "Estiramientos discretos para prevenir rigidez durante vuelos",
+      "duration": 10,
+      "difficulty": "beginner",
+      "equipment": ["none"],
+      "categories": {
+        "time": ["10min"],
+        "environment": ["airplane"],
+        "mood": ["tired"],
+        "goal": ["flexibility", "pain-relief"]
+      },
+      "featured": false,
+      "calories": "20-30"
+    },
+    {
+      "id": "hotel-room-burn",
+      "title": "Hotel Room Total Body",
+      "title_es": "Cuerpo Completo en Habitación de Hotel",
+      "description": "Full workout using just the floor and wall of your hotel room",
+      "description_es": "Entrenamiento completo usando solo el piso y la pared de tu habitación",
+      "duration": 20,
+      "difficulty": "intermediate",
+      "equipment": ["none"],
+      "categories": {
+        "time": ["20min"],
+        "environment": ["hotel", "small-space"],
+        "body-focus": ["full-body"],
+        "goal": ["toning", "strength"]
+      },
+      "featured": true,
+      "calories": "100-140"
+    },
+    {
+      "id": "park-workout",
+      "title": "Park Bench Pilates",
+      "title_es": "Pilates en el Banco del Parque",
+      "description": "Use a park bench for an outdoor Pilates session",
+      "description_es": "Usa un banco del parque para una sesión de Pilates al aire libre",
+      "duration": 25,
+      "difficulty": "intermediate",
+      "equipment": ["none"],
+      "categories": {
+        "time": ["30min"],
+        "environment": ["outdoor"],
+        "body-focus": ["full-body"],
+        "mood": ["energized", "playful"]
+      },
+      "featured": false,
+      "calories": "120-160"
+    },
+    {
+      "id": "stressed-out-flow",
+      "title": "Stress Melt Flow",
+      "title_es": "Flujo para Derretir el Estrés",
+      "description": "Calming sequence focusing on breath and gentle stretches",
+      "description_es": "Secuencia calmante enfocada en respiración y estiramientos suaves",
+      "duration": 15,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["15min"],
+        "mood": ["stressed", "anxious"],
+        "goal": ["pain-relief", "flexibility"],
+        "body-focus": ["full-body"]
+      },
+      "featured": true,
+      "calories": "40-60"
+    },
+    {
+      "id": "tired-gentle-movement",
+      "title": "Tired But Moving",
+      "title_es": "Cansada Pero en Movimiento",
+      "description": "Super gentle movements for low-energy days when you still want to move",
+      "description_es": "Movimientos súper suaves para días de baja energía cuando aún quieres moverte",
+      "duration": 15,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["15min"],
+        "mood": ["tired", "lazy"],
+        "goal": ["flexibility", "recovery"],
+        "environment": ["home", "bed"]
+      },
+      "featured": false,
+      "calories": "30-50"
+    },
+    {
+      "id": "mood-booster",
+      "title": "Instant Mood Booster",
+      "title_es": "Impulso de Ánimo Instantáneo",
+      "description": "Energizing movements to lift your spirits and boost endorphins",
+      "description_es": "Movimientos energizantes para levantar el ánimo y aumentar endorfinas",
+      "duration": 15,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["15min"],
+        "mood": ["sad", "anxious"],
+        "goal": ["weight-loss"],
+        "body-focus": ["full-body"]
+      },
+      "featured": true,
+      "calories": "70-90"
+    },
+    {
+      "id": "anxiety-release",
+      "title": "Anxiety Release Session",
+      "title_es": "Sesión para Liberar Ansiedad",
+      "description": "Grounding exercises and breathing techniques to calm your nervous system",
+      "description_es": "Ejercicios de conexión a tierra y técnicas de respiración para calmar tu sistema nervioso",
+      "duration": 20,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["20min"],
+        "mood": ["anxious", "stressed"],
+        "goal": ["recovery"],
+        "body-focus": ["full-body"]
+      },
+      "featured": false,
+      "calories": "50-70"
+    },
+    {
+      "id": "rage-release",
+      "title": "Rage Release Workout",
+      "title_es": "Entrenamiento para Liberar Rabia",
+      "description": "Channel frustration into powerful movements and controlled release",
+      "description_es": "Canaliza la frustración en movimientos poderosos y liberación controlada",
+      "duration": 20,
+      "difficulty": "intermediate",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["20min"],
+        "mood": ["stressed", "energized"],
+        "quirky": ["rage"],
+        "goal": ["strength"],
+        "body-focus": ["full-body"]
+      },
+      "featured": true,
+      "calories": "120-150"
+    },
+    {
+      "id": "booty-sculptor",
+      "title": "Ultimate Booty Sculptor",
+      "title_es": "Escultor de Glúteos Definitivo",
+      "description": "Targeted glute work for lift and tone",
+      "description_es": "Trabajo de glúteos dirigido para levantar y tonificar",
+      "duration": 25,
+      "difficulty": "intermediate",
+      "equipment": ["mat", "band"],
+      "categories": {
+        "time": ["30min"],
+        "body-focus": ["booty", "legs"],
+        "goal": ["toning", "strength"],
+        "mood": ["focused", "energized"]
+      },
+      "featured": true,
+      "calories": "140-180"
+    },
+    {
+      "id": "flat-tummy-focus",
+      "title": "Flat Tummy Focus",
+      "title_es": "Enfoque en Abdomen Plano",
+      "description": "Core-intensive workout targeting all abdominal muscles",
+      "description_es": "Entrenamiento intensivo de core enfocado en todos los músculos abdominales",
+      "duration": 20,
+      "difficulty": "intermediate",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["20min"],
+        "body-focus": ["core"],
+        "goal": ["toning", "strength"],
+        "mood": ["focused"]
+      },
+      "featured": true,
+      "calories": "100-130"
+    },
+    {
+      "id": "arm-toner",
+      "title": "Sleek Arm Toner",
+      "title_es": "Tonificador de Brazos Esbeltos",
+      "description": "Define your arms and shoulders without bulking up",
+      "description_es": "Define tus brazos y hombros sin aumentar volumen",
+      "duration": 15,
+      "difficulty": "intermediate",
+      "equipment": ["mat", "band"],
+      "categories": {
+        "time": ["15min"],
+        "body-focus": ["arms"],
+        "goal": ["toning"],
+        "mood": ["energized", "focused"]
+      },
+      "featured": false,
+      "calories": "60-80"
+    },
+    {
+      "id": "inner-thigh-slim",
+      "title": "Inner Thigh Slim Down",
+      "title_es": "Adelgazar Muslos Internos",
+      "description": "Target the inner thighs for long, lean legs",
+      "description_es": "Enfócate en los muslos internos para piernas largas y delgadas",
+      "duration": 20,
+      "difficulty": "intermediate",
+      "equipment": ["mat", "ring"],
+      "categories": {
+        "time": ["20min"],
+        "body-focus": ["legs"],
+        "goal": ["toning"],
+        "mood": ["focused"]
+      },
+      "featured": false,
+      "calories": "90-120"
+    },
+    {
+      "id": "back-pain-relief",
+      "title": "Back Pain Relief",
+      "title_es": "Alivio del Dolor de Espalda",
+      "description": "Therapeutic movements to ease back tension and strengthen supporting muscles",
+      "description_es": "Movimientos terapéuticos para aliviar la tensión de la espalda y fortalecer músculos de apoyo",
+      "duration": 20,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["20min"],
+        "body-focus": ["back"],
+        "goal": ["pain-relief"],
+        "mood": ["tired", "stressed"]
+      },
+      "featured": true,
+      "calories": "50-70"
+    },
+    {
+      "id": "hip-flexor-release",
+      "title": "Hip Flexor Freedom",
+      "title_es": "Libertad de Flexores de Cadera",
+      "description": "Open tight hip flexors from sitting all day",
+      "description_es": "Abre los flexores de cadera tensos por estar sentada todo el día",
+      "duration": 15,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["15min"],
+        "body-focus": ["hips"],
+        "goal": ["flexibility", "pain-relief"],
+        "environment": ["home", "office"]
+      },
+      "featured": false,
+      "calories": "40-60"
+    },
+    {
+      "id": "neck-shoulder-rescue",
+      "title": "Neck & Shoulder Rescue",
+      "title_es": "Rescate de Cuello y Hombros",
+      "description": "Release tension from tech neck and hunched shoulders",
+      "description_es": "Libera la tensión del cuello tecnológico y hombros encorvados",
+      "duration": 15,
+      "difficulty": "beginner",
+      "equipment": ["none"],
+      "categories": {
+        "time": ["15min"],
+        "body-focus": ["neck-shoulders"],
+        "goal": ["pain-relief", "posture"],
+        "environment": ["office", "home"],
+        "mood": ["stressed"]
+      },
+      "featured": true,
+      "calories": "30-45"
+    },
+    {
+      "id": "posture-perfect",
+      "title": "Posture Perfect",
+      "title_es": "Postura Perfecta",
+      "description": "Strengthen postural muscles and retrain your alignment",
+      "description_es": "Fortalece los músculos posturales y reentrena tu alineación",
+      "duration": 25,
+      "difficulty": "intermediate",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["30min"],
+        "goal": ["posture"],
+        "body-focus": ["back", "core"],
+        "mood": ["focused"]
+      },
+      "featured": true,
+      "calories": "80-110"
+    },
+    {
+      "id": "balance-builder",
+      "title": "Balance Builder",
+      "title_es": "Constructor de Equilibrio",
+      "description": "Improve stability and proprioception for better body awareness",
+      "description_es": "Mejora la estabilidad y propiocepción para mejor conciencia corporal",
+      "duration": 20,
+      "difficulty": "intermediate",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["20min"],
+        "goal": ["balance"],
+        "body-focus": ["full-body", "core"],
+        "mood": ["focused"]
+      },
+      "featured": false,
+      "calories": "70-90"
+    },
+    {
+      "id": "active-recovery",
+      "title": "Active Recovery Day",
+      "title_es": "Día de Recuperación Activa",
+      "description": "Light movement to recover from intense workouts",
+      "description_es": "Movimiento ligero para recuperarte de entrenamientos intensos",
+      "duration": 20,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["20min"],
+        "goal": ["recovery", "flexibility"],
+        "mood": ["tired"],
+        "body-focus": ["full-body"]
+      },
+      "featured": false,
+      "calories": "40-60"
+    },
+    {
+      "id": "prenatal-first-trimester",
+      "title": "First Trimester Flow",
+      "title_es": "Flujo del Primer Trimestre",
+      "description": "Safe and gentle movements for early pregnancy",
+      "description_es": "Movimientos seguros y suaves para el inicio del embarazo",
+      "duration": 20,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["20min"],
+        "life-stage": ["prenatal"],
+        "mood": ["tired"],
+        "goal": ["flexibility"]
+      },
+      "featured": false,
+      "calories": "50-70"
+    },
+    {
+      "id": "prenatal-second-trimester",
+      "title": "Second Trimester Strength",
+      "title_es": "Fuerza del Segundo Trimestre",
+      "description": "Maintain strength and stability during your second trimester",
+      "description_es": "Mantén la fuerza y estabilidad durante tu segundo trimestre",
+      "duration": 25,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["30min"],
+        "life-stage": ["prenatal"],
+        "goal": ["strength", "balance"]
+      },
+      "featured": true,
+      "calories": "70-90"
+    },
+    {
+      "id": "prenatal-third-trimester",
+      "title": "Third Trimester Comfort",
+      "title_es": "Comodidad del Tercer Trimestre",
+      "description": "Relieve late-pregnancy discomfort and prepare for birth",
+      "description_es": "Alivia las molestias del final del embarazo y prepárate para el parto",
+      "duration": 20,
+      "difficulty": "beginner",
+      "equipment": ["mat", "ball"],
+      "categories": {
+        "time": ["20min"],
+        "life-stage": ["prenatal"],
+        "goal": ["pain-relief", "flexibility"]
+      },
+      "featured": false,
+      "calories": "40-60"
+    },
+    {
+      "id": "postpartum-gentle",
+      "title": "Postpartum Gentle Return",
+      "title_es": "Retorno Suave Postparto",
+      "description": "Rebuild core connection and pelvic floor after birth",
+      "description_es": "Reconstruye la conexión del core y suelo pélvico después del parto",
+      "duration": 15,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["15min"],
+        "life-stage": ["postpartum"],
+        "body-focus": ["core"],
+        "goal": ["recovery"]
+      },
+      "featured": true,
+      "calories": "30-45"
+    },
+    {
+      "id": "postpartum-rebuild",
+      "title": "Postpartum Core Rebuild",
+      "title_es": "Reconstrucción del Core Postparto",
+      "description": "Progressive core strengthening for postpartum recovery",
+      "description_es": "Fortalecimiento progresivo del core para recuperación postparto",
+      "duration": 20,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["20min"],
+        "life-stage": ["postpartum"],
+        "body-focus": ["core"],
+        "goal": ["strength", "toning"]
+      },
+      "featured": false,
+      "calories": "50-70"
+    },
+    {
+      "id": "period-friendly",
+      "title": "Period-Friendly Flow",
+      "title_es": "Flujo Amigable con el Período",
+      "description": "Gentle movements that ease cramps and support your cycle",
+      "description_es": "Movimientos suaves que alivian los calambres y apoyan tu ciclo",
+      "duration": 15,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["15min"],
+        "life-stage": ["menstrual"],
+        "goal": ["pain-relief"],
+        "mood": ["tired"]
+      },
+      "featured": true,
+      "calories": "30-45"
+    },
+    {
+      "id": "menopause-support",
+      "title": "Menopause Support Session",
+      "title_es": "Sesión de Apoyo para Menopausia",
+      "description": "Address menopause symptoms through targeted movement",
+      "description_es": "Aborda los síntomas de la menopausia a través del movimiento dirigido",
+      "duration": 25,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["30min"],
+        "life-stage": ["menopause"],
+        "goal": ["strength", "balance"],
+        "body-focus": ["full-body"]
+      },
+      "featured": false,
+      "calories": "70-90"
+    },
+    {
+      "id": "active-aging",
+      "title": "Active Aging Flow",
+      "title_es": "Flujo de Envejecimiento Activo",
+      "description": "Maintain mobility, strength, and independence as you age",
+      "description_es": "Mantén la movilidad, fuerza e independencia mientras envejeces",
+      "duration": 25,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["30min"],
+        "life-stage": ["senior"],
+        "goal": ["balance", "flexibility", "strength"]
+      },
+      "featured": true,
+      "calories": "60-80"
+    },
+    {
+      "id": "teen-starter",
+      "title": "Teen Pilates Starter",
+      "title_es": "Pilates para Adolescentes",
+      "description": "Fun introduction to Pilates for teens",
+      "description_es": "Introducción divertida al Pilates para adolescentes",
+      "duration": 20,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["20min"],
+        "life-stage": ["teen"],
+        "mood": ["playful"],
+        "body-focus": ["full-body"]
+      },
+      "featured": false,
+      "calories": "80-100"
+    },
+    {
+      "id": "netflix-pilates",
+      "title": "Netflix & Pilates",
+      "title_es": "Netflix y Pilates",
+      "description": "Mat exercises you can do while watching your favorite show",
+      "description_es": "Ejercicios de mat que puedes hacer mientras ves tu serie favorita",
+      "duration": 30,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["30min"],
+        "quirky": ["netflix"],
+        "mood": ["lazy", "playful"],
+        "environment": ["home"],
+        "body-focus": ["full-body"]
+      },
+      "featured": true,
+      "calories": "80-120"
+    },
+    {
+      "id": "wine-down",
+      "title": "Wine Down Evening Flow",
+      "title_es": "Flujo Relajante de Noche",
+      "description": "Relaxing end-of-day stretches (wine optional but encouraged)",
+      "description_es": "Estiramientos relajantes de fin de día (vino opcional pero recomendado)",
+      "duration": 20,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["20min"],
+        "quirky": ["wine"],
+        "mood": ["tired", "stressed"],
+        "environment": ["home"],
+        "goal": ["flexibility"]
+      },
+      "featured": true,
+      "calories": "40-60"
+    },
+    {
+      "id": "coffee-break",
+      "title": "Coffee Break Energizer",
+      "title_es": "Energizante del Café",
+      "description": "Quick pick-me-up to pair with your afternoon coffee",
+      "description_es": "Impulso rápido para acompañar tu café de la tarde",
+      "duration": 10,
+      "difficulty": "beginner",
+      "equipment": ["none"],
+      "categories": {
+        "time": ["10min"],
+        "quirky": ["coffee"],
+        "environment": ["office", "home"],
+        "mood": ["tired"]
+      },
+      "featured": false,
+      "calories": "35-50"
+    },
+    {
+      "id": "pj-pilates",
+      "title": "PJ Pilates",
+      "title_es": "Pilates en Pijama",
+      "description": "Cozy morning workout in your pajamas before you get dressed",
+      "description_es": "Entrenamiento acogedor matutino en pijama antes de vestirte",
+      "duration": 15,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["15min"],
+        "quirky": ["pjs"],
+        "environment": ["home", "bed"],
+        "mood": ["lazy", "playful"]
+      },
+      "featured": true,
+      "calories": "40-60"
+    },
+    {
+      "id": "date-night-prep",
+      "title": "Date Night Prep",
+      "title_es": "Preparación para Cita",
+      "description": "Quick workout to look and feel your best before going out",
+      "description_es": "Entrenamiento rápido para verte y sentirte mejor antes de salir",
+      "duration": 15,
+      "difficulty": "intermediate",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["15min"],
+        "quirky": ["date-prep"],
+        "goal": ["toning"],
+        "mood": ["energized"],
+        "body-focus": ["core", "booty"]
+      },
+      "featured": false,
+      "calories": "60-80"
+    },
+    {
+      "id": "hangover-helper",
+      "title": "Gentle Hangover Helper",
+      "title_es": "Ayuda Suave para Resaca",
+      "description": "Very gentle movements to help you feel human again",
+      "description_es": "Movimientos muy suaves para ayudarte a sentirte humana de nuevo",
+      "duration": 15,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["15min"],
+        "quirky": ["hangover"],
+        "mood": ["tired"],
+        "goal": ["recovery"],
+        "environment": ["home", "bed"]
+      },
+      "featured": true,
+      "calories": "25-40"
+    },
+    {
+      "id": "confidence-booster",
+      "title": "Confidence Booster",
+      "title_es": "Impulso de Confianza",
+      "description": "Power poses and strong movements to boost your confidence",
+      "description_es": "Poses de poder y movimientos fuertes para aumentar tu confianza",
+      "duration": 15,
+      "difficulty": "intermediate",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["15min"],
+        "quirky": ["confidence"],
+        "mood": ["sad", "anxious"],
+        "goal": ["strength"]
+      },
+      "featured": true,
+      "calories": "60-80"
+    },
+    {
+      "id": "lazy-sunday",
+      "title": "Lazy Sunday Flow",
+      "title_es": "Flujo de Domingo Perezoso",
+      "description": "Slow, indulgent stretches for a relaxed Sunday",
+      "description_es": "Estiramientos lentos e indulgentes para un domingo relajado",
+      "duration": 30,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["30min"],
+        "quirky": ["sunday", "self-care"],
+        "mood": ["lazy", "playful"],
+        "goal": ["flexibility"],
+        "environment": ["home"]
+      },
+      "featured": true,
+      "calories": "60-80"
+    },
+    {
+      "id": "monday-motivation",
+      "title": "Monday Motivation",
+      "title_es": "Motivación de Lunes",
+      "description": "Energizing start to set the tone for your week",
+      "description_es": "Comienzo energizante para establecer el tono de tu semana",
+      "duration": 20,
+      "difficulty": "intermediate",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["20min"],
+        "quirky": ["monday"],
+        "mood": ["energized", "focused"],
+        "goal": ["strength", "toning"]
+      },
+      "featured": true,
+      "calories": "90-120"
+    },
+    {
+      "id": "full-moon-flow",
+      "title": "Full Moon Release Flow",
+      "title_es": "Flujo de Liberación de Luna Llena",
+      "description": "Reflective practice to release and let go during the full moon",
+      "description_es": "Práctica reflexiva para liberar y soltar durante la luna llena",
+      "duration": 25,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["30min"],
+        "quirky": ["full-moon"],
+        "mood": ["stressed", "anxious"],
+        "goal": ["flexibility"]
+      },
+      "featured": false,
+      "calories": "50-70"
+    },
+    {
+      "id": "self-care-sunday",
+      "title": "Self-Care Sunday Ritual",
+      "title_es": "Ritual de Autocuidado del Domingo",
+      "description": "Complete self-care movement practice for mind and body",
+      "description_es": "Práctica completa de movimiento de autocuidado para mente y cuerpo",
+      "duration": 45,
+      "difficulty": "beginner",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["45min"],
+        "quirky": ["self-care", "sunday"],
+        "mood": ["lazy", "sad"],
+        "goal": ["flexibility", "recovery"]
+      },
+      "featured": true,
+      "calories": "90-120"
+    },
+    {
+      "id": "small-space-burn",
+      "title": "Small Space Fat Burn",
+      "title_es": "Quema Grasa en Espacio Pequeño",
+      "description": "High-intensity movements in a 6x6 foot space",
+      "description_es": "Movimientos de alta intensidad en un espacio de 2x2 metros",
+      "duration": 20,
+      "difficulty": "intermediate",
+      "equipment": ["none"],
+      "categories": {
+        "time": ["20min"],
+        "environment": ["small-space", "hotel"],
+        "goal": ["weight-loss", "toning"],
+        "mood": ["energized"]
+      },
+      "featured": false,
+      "calories": "120-160"
+    },
+    {
+      "id": "gym-mat-circuit",
+      "title": "Gym Mat Circuit",
+      "title_es": "Circuito de Mat en Gimnasio",
+      "description": "Pilates circuit workout for the gym floor",
+      "description_es": "Entrenamiento de circuito de Pilates para el piso del gimnasio",
+      "duration": 30,
+      "difficulty": "intermediate",
+      "equipment": ["mat", "ball"],
+      "categories": {
+        "time": ["30min"],
+        "environment": ["gym"],
+        "goal": ["strength", "toning"],
+        "body-focus": ["full-body"]
+      },
+      "featured": false,
+      "calories": "150-200"
+    },
+    {
+      "id": "bed-stretches",
+      "title": "Bed-Time Stretches",
+      "title_es": "Estiramientos en la Cama",
+      "description": "Relaxing stretches you can do in bed before sleep",
+      "description_es": "Estiramientos relajantes que puedes hacer en la cama antes de dormir",
+      "duration": 10,
+      "difficulty": "beginner",
+      "equipment": ["none"],
+      "categories": {
+        "time": ["10min"],
+        "environment": ["bed"],
+        "mood": ["tired"],
+        "goal": ["flexibility", "recovery"]
+      },
+      "featured": false,
+      "calories": "15-25"
+    },
+    {
+      "id": "ultimate-flexibility",
+      "title": "Ultimate Flexibility Flow",
+      "title_es": "Flujo de Flexibilidad Definitivo",
+      "description": "Deep stretching session to dramatically improve flexibility",
+      "description_es": "Sesión de estiramiento profundo para mejorar dramáticamente la flexibilidad",
+      "duration": 45,
+      "difficulty": "intermediate",
+      "equipment": ["mat", "band"],
+      "categories": {
+        "time": ["45min"],
+        "goal": ["flexibility"],
+        "mood": ["focused"],
+        "body-focus": ["full-body"]
+      },
+      "featured": true,
+      "calories": "100-140"
+    },
+    {
+      "id": "total-body-tone",
+      "title": "Total Body Tone",
+      "title_es": "Tonificación Total del Cuerpo",
+      "description": "Complete toning workout hitting every muscle group",
+      "description_es": "Entrenamiento de tonificación completo que trabaja todos los grupos musculares",
+      "duration": 45,
+      "difficulty": "intermediate",
+      "equipment": ["mat", "ring"],
+      "categories": {
+        "time": ["45min"],
+        "goal": ["toning"],
+        "body-focus": ["full-body"],
+        "mood": ["energized", "focused"]
+      },
+      "featured": true,
+      "calories": "180-240"
+    },
+    {
+      "id": "strength-builder",
+      "title": "Pilates Strength Builder",
+      "title_es": "Constructor de Fuerza Pilates",
+      "description": "Progressive strength-building using Pilates principles",
+      "description_es": "Construcción progresiva de fuerza usando principios de Pilates",
+      "duration": 40,
+      "difficulty": "advanced",
+      "equipment": ["mat", "band", "ring"],
+      "categories": {
+        "time": ["45min"],
+        "goal": ["strength"],
+        "body-focus": ["full-body"],
+        "mood": ["focused", "energized"]
+      },
+      "featured": false,
+      "calories": "200-260"
+    },
+    {
+      "id": "cardio-pilates",
+      "title": "Cardio Pilates Blast",
+      "title_es": "Pilates Cardio Explosivo",
+      "description": "Heart-pumping Pilates for calorie burn and cardiovascular fitness",
+      "description_es": "Pilates que acelera el corazón para quemar calorías y fitness cardiovascular",
+      "duration": 30,
+      "difficulty": "intermediate",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["30min"],
+        "goal": ["weight-loss"],
+        "mood": ["energized"],
+        "body-focus": ["full-body"]
+      },
+      "featured": true,
+      "calories": "200-280"
+    },
+    {
+      "id": "60min-signature",
+      "title": "60-Minute Signature Flow",
+      "title_es": "Flujo Signature de 60 Minutos",
+      "description": "Our complete signature Pilates experience",
+      "description_es": "Nuestra experiencia completa de Pilates signature",
+      "duration": 60,
+      "difficulty": "intermediate",
+      "equipment": ["mat"],
+      "categories": {
+        "time": ["60min"],
+        "body-focus": ["full-body"],
+        "goal": ["toning", "strength", "flexibility"],
+        "mood": ["focused"]
+      },
+      "featured": true,
+      "calories": "250-350"
+    },
+    {
+      "id": "advanced-challenge",
+      "title": "Advanced Pilates Challenge",
+      "title_es": "Desafío Avanzado de Pilates",
+      "description": "Push your limits with our most challenging workout",
+      "description_es": "Supera tus límites con nuestro entrenamiento más desafiante",
+      "duration": 45,
+      "difficulty": "advanced",
+      "equipment": ["mat", "ring", "ball"],
+      "categories": {
+        "time": ["45min"],
+        "goal": ["strength", "toning"],
+        "mood": ["energized", "focused"],
+        "body-focus": ["full-body"]
+      },
+      "featured": true,
+      "calories": "250-320"
+    }
+  ]
+}
