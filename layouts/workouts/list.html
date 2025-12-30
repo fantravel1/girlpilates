@@ -1,79 +1,132 @@
 {{ define "main" }}
-<div class="container py-8 lg:py-12">
-  <!-- Page Header -->
-  <header class="mb-8 lg:mb-12">
-    <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{{ .Title }}</h1>
-    {{ with .Description }}
-    <p class="text-lg text-gray-600 max-w-3xl">{{ . }}</p>
-    {{ end }}
-  </header>
+{{ $premade := site.Data.premade_workouts }}
 
-  <!-- Quick Actions -->
-  <div class="flex flex-wrap gap-4 mb-12">
-    <a href="{{ "/workouts/generator/" | relLangURL }}" class="btn btn-primary">
-      {{ i18n "generate_workout" | default "Generate Custom Workout" }}
-    </a>
-    <a href="{{ "/workouts/programs/" | relLangURL }}" class="btn btn-secondary">
-      {{ i18n "view_programs" | default "View All Programs" }}
-    </a>
+<div class="bg-gradient-to-br from-pink-50 via-purple-50 to-pink-50 py-16 lg:py-24">
+  <div class="container">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">{{ .Title }}</h1>
+      {{ with .Description }}
+      <p class="text-xl text-gray-600 mb-8">{{ . }}</p>
+      {{ end }}
+    </div>
   </div>
+</div>
+
+<div class="container py-12">
+  <!-- Two Main Options -->
+  <div class="grid gap-8 lg:grid-cols-2 mb-16">
+    <!-- Ready-Made Workouts Card -->
+    <div class="bg-gradient-to-br from-purple-500 to-pink-600 rounded-3xl p-8 text-white relative overflow-hidden group">
+      <div class="absolute -right-8 -bottom-8 w-48 h-48 bg-white/10 rounded-full"></div>
+      <div class="absolute right-12 bottom-12 w-24 h-24 bg-white/10 rounded-full"></div>
+      <div class="relative">
+        <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+          </svg>
+        </div>
+        <h2 class="text-3xl font-bold mb-3">{{ i18n "ready_made_workouts" | default "Ready-Made Workouts" }}</h2>
+        <p class="text-white/90 text-lg mb-4">{{ i18n "ready_made_desc" | default "Curated workouts for every mood, moment, and goal. Just pick and start!" }}</p>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="px-3 py-1 bg-white/20 rounded-full text-sm">{{ len $premade.workouts }} {{ i18n "workouts" | default "workouts" }}</span>
+          <span class="px-3 py-1 bg-white/20 rounded-full text-sm">{{ len $premade.categories }} {{ i18n "categories" | default "categories" }}</span>
+          <span class="px-3 py-1 bg-white/20 rounded-full text-sm">{{ i18n "all_levels" | default "All levels" }}</span>
+        </div>
+        <a href="{{ "/workouts/premade/" | relLangURL }}" class="inline-flex items-center gap-2 bg-white text-purple-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors">
+          {{ i18n "browse_workouts" | default "Browse Workouts" }}
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Workout Generator Card -->
+    <div class="bg-gradient-to-br from-emerald-500 to-teal-600 rounded-3xl p-8 text-white relative overflow-hidden group">
+      <div class="absolute -right-8 -bottom-8 w-48 h-48 bg-white/10 rounded-full"></div>
+      <div class="absolute right-12 bottom-12 w-24 h-24 bg-white/10 rounded-full"></div>
+      <div class="relative">
+        <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+          </svg>
+        </div>
+        <h2 class="text-3xl font-bold mb-3">{{ i18n "workout_generator" | default "Workout Generator" }}</h2>
+        <p class="text-white/90 text-lg mb-4">{{ i18n "generator_desc" | default "Create a personalized routine in seconds. Choose your time, focus, equipment, and level." }}</p>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="px-3 py-1 bg-white/20 rounded-full text-sm">{{ i18n "custom" | default "Custom" }}</span>
+          <span class="px-3 py-1 bg-white/20 rounded-full text-sm">{{ i18n "personalized" | default "Personalized" }}</span>
+          <span class="px-3 py-1 bg-white/20 rounded-full text-sm">{{ i18n "instant" | default "Instant" }}</span>
+        </div>
+        <a href="{{ "/workouts/generator/" | relLangURL }}" class="inline-flex items-center gap-2 bg-white text-emerald-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors">
+          {{ i18n "generate_workout" | default "Generate Workout" }}
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Ready-Made Workouts Preview -->
+  {{ $featuredPremade := where $premade.workouts "featured" true }}
+  {{ with $featuredPremade }}
+  <section class="mb-16">
+    <div class="flex items-center justify-between mb-8">
+      <h2 class="text-2xl font-bold text-gray-900">{{ i18n "featured_ready_made" | default "Featured Ready-Made Workouts" }}</h2>
+      <a href="{{ "/workouts/premade/" | relLangURL }}" class="text-pink-600 hover:text-pink-700 font-medium flex items-center gap-1">
+        {{ i18n "view_all" | default "View All" }}
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {{ range first 4 . }}
+      <a href="{{ printf "/workouts/premade/%s/" .id | relLangURL }}" class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all group">
+        <div class="h-24 bg-gradient-to-br relative
+          {{ if eq .difficulty "beginner" }}from-green-400 to-emerald-500{{ end }}
+          {{ if eq .difficulty "intermediate" }}from-yellow-400 to-orange-500{{ end }}
+          {{ if eq .difficulty "advanced" }}from-red-400 to-rose-500{{ end }}
+        ">
+          <div class="absolute top-2 left-2 bg-white/90 rounded-full px-2 py-0.5 text-xs font-medium">
+            {{ .duration }} min
+          </div>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-gray-900 group-hover:text-pink-600 transition-colors line-clamp-1">{{ .title }}</h3>
+          <p class="text-gray-600 text-sm line-clamp-1 mt-1">{{ .description }}</p>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- Workout Programs -->
+  {{ $sections := .Sections }}
+  {{ with $sections }}
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-8">{{ i18n "workout_programs" | default "Workout Programs" }}</h2>
+    <div class="grid gap-8 md:grid-cols-2">
+      {{ range . }}
+      <a href="{{ .RelPermalink }}" class="block bg-white rounded-xl p-6 border border-gray-200 hover:shadow-lg hover:border-pink-200 transition-all">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">{{ .Title }}</h3>
+        {{ with .Description }}
+        <p class="text-gray-600 mb-4">{{ . }}</p>
+        {{ end }}
+        {{ $count := len .RegularPages }}
+        <span class="text-sm text-pink-600 font-medium">{{ $count }} {{ i18n "programs" | default "programs" }} →</span>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
 
   <!-- Content from _index.md -->
   {{ if .Content }}
-  <div class="prose prose-lg prose-pink max-w-none mb-12">
+  <div class="prose prose-lg prose-pink max-w-none">
     {{ .Content }}
-  </div>
-  {{ end }}
-
-  <!-- Subsections (Programs) -->
-  {{ $sections := .Sections }}
-  {{ with $sections }}
-  <div class="grid gap-8 md:grid-cols-2 mb-12">
-    {{ range . }}
-    <a href="{{ .RelPermalink }}" class="block bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
-      <h2 class="text-xl font-bold text-gray-900 mb-2">{{ .Title }}</h2>
-      {{ with .Description }}
-      <p class="text-gray-600">{{ . }}</p>
-      {{ end }}
-      {{ $count := len .RegularPages }}
-      <p class="text-sm text-pink-600 mt-4 font-medium">{{ $count }} {{ i18n "programs" | default "programs" }} →</p>
-    </a>
-    {{ end }}
-  </div>
-  {{ end }}
-
-  <!-- Featured Programs -->
-  {{ $programs := .RegularPages }}
-  {{ with $programs }}
-  <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ i18n "featured_programs" | default "Featured Programs" }}</h2>
-  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-    {{ range . }}
-    <article class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
-      <div class="p-5">
-        <div class="flex items-start justify-between mb-2">
-          <h3 class="text-lg font-semibold">
-            <a href="{{ .RelPermalink }}" class="hover:text-pink-600 transition-colors">{{ .Title }}</a>
-          </h3>
-          {{ with .Params.duration }}
-          <span class="text-sm bg-pink-100 text-pink-700 px-2 py-1 rounded">{{ . }} min</span>
-          {{ end }}
-        </div>
-        {{ with .Description }}
-        <p class="text-gray-600 text-sm line-clamp-2">{{ . }}</p>
-        {{ end }}
-        {{ with .Params.difficulty }}
-        <span class="inline-block mt-3 px-3 py-1 text-xs font-medium rounded-full
-          {{ if eq . "beginner" }}bg-green-100 text-green-700{{ end }}
-          {{ if eq . "intermediate" }}bg-yellow-100 text-yellow-700{{ end }}
-          {{ if eq . "advanced" }}bg-red-100 text-red-700{{ end }}
-          {{ if eq . "principiante" }}bg-green-100 text-green-700{{ end }}
-          {{ if eq . "intermedio" }}bg-yellow-100 text-yellow-700{{ end }}
-          {{ if eq . "avanzado" }}bg-red-100 text-red-700{{ end }}
-        ">{{ . | title }}</span>
-        {{ end }}
-      </div>
-    </article>
-    {{ end }}
   </div>
   {{ end }}
 </div>

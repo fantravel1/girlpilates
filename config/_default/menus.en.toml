@@ -7,8 +7,13 @@
 
 [[main]]
   name = "Workouts"
-  url = "/workouts/"
+  url = "/workouts/premade/"
   weight = 20
+
+[[main]]
+  name = "Generator"
+  url = "/workouts/generator/"
+  weight = 25
 
 [[main]]
   name = "Learn"
