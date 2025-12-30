@@ -22,6 +22,7 @@ A comprehensive, **100% free** Pilates education platform serving 500M+ English 
 |---------|-------------|
 | 🏋️ **Exercise Library** | 500+ exercises with video, instructions, modifications |
 | 🎯 **Workout Generator** | AI-free client-side routine builder |
+| 📋 **Pre-Made Workouts** | 115+ curated workouts by mood, time, goal, equipment |
 | 📚 **Encyclopedia** | Complete Pilates education (history, anatomy, methods) |
 | 👩‍🏫 **Teacher Directory** | Verified instructor profiles with credentials |
 | 🌍 **Fully Bilingual** | Every page in English AND Spanish |
@@ -97,6 +98,9 @@ girlpilates.com/
 │   │   ├── workouts/
 │   │   │   ├── _index.md
 │   │   │   ├── generator.md
+│   │   │   ├── premade/              # 115+ curated workouts
+│   │   │   │   ├── _index.md
+│   │   │   │   └── [workout].md
 │   │   │   └── programs/
 │   │   ├── learn/
 │   │   │   ├── _index.md
@@ -116,6 +120,9 @@ girlpilates.com/
 │       ├── entrenamientos/
 │       │   ├── _index.md
 │       │   ├── generador.md
+│       │   ├── prefabricados/    # 115+ entrenamientos curados
+│       │   │   ├── _index.md
+│       │   │   └── [workout].md
 │       │   └── programas/
 │       ├── aprender/
 │       │   ├── _index.md
@@ -126,6 +133,7 @@ girlpilates.com/
 │
 ├── data/
 │   ├── exercises.json              # Exercise database
+│   ├── premade_workouts.json       # 115+ curated workouts
 │   ├── muscles.json                # Anatomy data
 │   └── teachers.json               # Instructor data
 │
@@ -188,6 +196,7 @@ ENGLISH (Default)                    SPANISH
 /exercises/                          /es/ejercicios/
 /exercises/mat/the-hundred/          /es/ejercicios/mat/el-cien/
 /workouts/                           /es/entrenamientos/
+/workouts/premade/                   /es/entrenamientos/prefabricados/
 /workouts/generator/                 /es/entrenamientos/generador/
 /learn/                              /es/aprender/
 /learn/womens-health/pelvic-floor/   /es/aprender/salud-femenina/suelo-pelvico/
@@ -1107,10 +1116,10 @@ npm run build
 
 ## ✅ Pre-Launch Checklist
 
-- [ ] All pages have EN + ES versions
-- [ ] All pages pass schema validation (search.google.com/test/rich-results)
-- [ ] Lighthouse mobile score > 90 on all metrics
-- [ ] robots.txt allows crawling
+- [x] All pages have EN + ES versions
+- [x] All pages pass schema validation (search.google.com/test/rich-results)
+- [x] Lighthouse mobile score > 90 on all metrics
+- [x] robots.txt allows crawling
 - [ ] XML sitemaps generated (sitemap.xml, sitemap-en.xml, sitemap-es.xml)
 - [ ] Custom domain configured with HTTPS
 - [ ] Analytics installed
