@@ -28,9 +28,8 @@ Crawl-delay: 10
 User-agent: MJ12bot
 Crawl-delay: 10
 
-# Sitemaps
+# Sitemaps (Hugo generates language-aware sitemap index)
 Sitemap: https://girlpilates.com/sitemap.xml
-Sitemap: https://girlpilates.com/en/sitemap.xml
 Sitemap: https://girlpilates.com/es/sitemap.xml
 
 # Host

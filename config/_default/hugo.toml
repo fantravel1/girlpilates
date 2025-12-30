@@ -15,11 +15,11 @@ summaryLength = 70
 
 # Outputs
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "sitemap"]
   section = ["HTML", "RSS"]
   page = ["HTML"]
 
-# Sitemap
+# Sitemap - generates per-language sitemaps + index
 [sitemap]
   changefreq = "weekly"
   priority = 0.5

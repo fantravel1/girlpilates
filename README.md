@@ -1120,7 +1120,7 @@ npm run build
 - [x] All pages pass schema validation (search.google.com/test/rich-results)
 - [x] Lighthouse mobile score > 90 on all metrics
 - [x] robots.txt allows crawling
-- [ ] XML sitemaps generated (sitemap.xml, sitemap-en.xml, sitemap-es.xml)
+- [x] XML sitemaps generated (sitemap.xml + /es/sitemap.xml)
 - [ ] Custom domain configured with HTTPS
 - [ ] Analytics installed
 - [ ] Search console verified for both languages
