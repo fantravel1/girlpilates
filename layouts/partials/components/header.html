@@ -32,7 +32,7 @@
         </svg>
         <span class="text-gray-400 hidden lg:inline">{{ i18n "search" }}...</span>
         <kbd class="hidden lg:inline-flex items-center gap-0.5 px-1.5 py-0.5 bg-white border border-gray-200 rounded text-[10px] text-gray-400 font-medium">
-          <span class="text-xs">{{ if eq (getenv "OS") "darwin" }}⌘{{ else }}Ctrl{{ end }}</span>K
+          <span class="text-xs" data-key-hint>Ctrl</span>K
         </kbd>
       </button>
 

@@ -63,6 +63,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Search functionality
 document.addEventListener('DOMContentLoaded', () => {
+  // Update keyboard shortcut hint based on user's OS
+  const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+  document.querySelectorAll('[data-key-hint]').forEach((el) => {
+    el.textContent = isMac ? '⌘' : 'Ctrl';
+  });
+
   const searchTriggerDesktop = document.getElementById('search-trigger-desktop');
   const searchTriggerMobile = document.getElementById('search-trigger-mobile');
   const searchModal = document.getElementById('search-modal');

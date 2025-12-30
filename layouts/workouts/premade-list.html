@@ -56,10 +56,11 @@
               {{ end }}
               {{ .name }}
             </h3>
+            {{ $categoryId := .id }}
             <div class="space-y-2">
               {{ range .options }}
               <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer hover:text-gray-900">
-                <input type="checkbox" class="filter-checkbox rounded border-gray-300 text-pink-600 focus:ring-pink-500" data-category="{{ $.id }}" data-value="{{ .id }}">
+                <input type="checkbox" class="filter-checkbox rounded border-gray-300 text-pink-600 focus:ring-pink-500" data-category="{{ $categoryId }}" data-value="{{ .id }}">
                 {{ .name }}
               </label>
               {{ end }}
@@ -84,12 +85,13 @@
           </div>
           <div class="p-4 space-y-6">
             {{ range $categories }}
+            {{ $categoryId := .id }}
             <div class="filter-group" data-category="{{ .id }}">
               <h3 class="font-semibold text-gray-900 mb-3">{{ .name }}</h3>
               <div class="space-y-2">
                 {{ range .options }}
                 <label class="flex items-center gap-2 text-sm text-gray-600">
-                  <input type="checkbox" class="filter-checkbox-mobile rounded border-gray-300 text-pink-600 focus:ring-pink-500" data-category="{{ $.id }}" data-value="{{ .id }}">
+                  <input type="checkbox" class="filter-checkbox-mobile rounded border-gray-300 text-pink-600 focus:ring-pink-500" data-category="{{ $categoryId }}" data-value="{{ .id }}">
                   {{ .name }}
                 </label>
                 {{ end }}
@@ -203,7 +205,7 @@
                   <span class="text-xs text-gray-500">{{ delimit . ", " }}</span>
                   {{ end }}
                 </div>
-                <a href="{{ printf "/workouts/premade/%s/" $.id | relLangURL }}" class="text-pink-600 hover:text-pink-700 font-medium text-sm flex items-center gap-1">
+                <a href="{{ printf "/workouts/premade/%s/" .id | relLangURL }}" class="text-pink-600 hover:text-pink-700 font-medium text-sm flex items-center gap-1">
                   {{ i18n "start" | default "Start" }}
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
                 </a>
