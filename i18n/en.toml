@@ -165,6 +165,15 @@ other = "Search"
 [search_placeholder]
 other = "Search exercises, workouts, articles..."
 
+[search_hint]
+other = "Search across all exercises, workouts, and articles"
+
+[no_results]
+other = "No results found"
+
+[try_different]
+other = "Try a different search term"
+
 # Footer
 [footer_tagline]
 other = "Free Pilates for every woman, everywhere. No subscriptions, no paywalls - just free, high-quality fitness education."

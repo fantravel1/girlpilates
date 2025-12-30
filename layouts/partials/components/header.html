@@ -1,7 +1,7 @@
 <header class="sticky top-0 bg-white/95 backdrop-blur border-b border-gray-100 z-30">
   <div class="container flex items-center justify-between h-14 lg:h-16">
     <!-- Logo -->
-    <a href="{{ .Site.Home.Permalink }}" class="flex items-center gap-2">
+    <a href="{{ .Site.Home.Permalink }}" class="flex items-center gap-2 shrink-0">
       <div class="w-8 h-8 bg-pink-600 rounded-lg flex items-center justify-center">
         <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
@@ -11,53 +11,204 @@
     </a>
 
     <!-- Desktop Navigation -->
-    <nav class="hidden lg:flex items-center gap-8 h-full">
+    <nav class="hidden lg:flex items-center gap-6 h-full">
       {{ range .Site.Menus.main }}
-      <a href="{{ .URL }}" class="flex items-center h-full text-gray-600 hover:text-pink-600 font-medium transition-colors">
+      <a href="{{ .URL }}" class="flex items-center h-full text-gray-600 hover:text-pink-600 font-medium transition-colors text-sm">
         {{ .Name }}
       </a>
       {{ end }}
     </nav>
 
-    <!-- Right Side: Language + Search -->
-    <div class="flex items-center gap-3">
-      <!-- Language Switcher -->
-      {{ partial "components/lang-switch.html" . }}
+    <!-- Right Side: Search + Language -->
+    <div class="flex items-center gap-2 lg:gap-3">
+      <!-- Desktop: Compact Search Bar -->
+      <button
+        id="search-trigger-desktop"
+        class="hidden md:flex items-center gap-2 h-9 px-3 bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg text-gray-500 text-sm transition-all group"
+        aria-label="{{ i18n "search" }}"
+      >
+        <svg class="w-4 h-4 text-gray-400 group-hover:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <span class="text-gray-400 hidden lg:inline">{{ i18n "search" }}...</span>
+        <kbd class="hidden lg:inline-flex items-center gap-0.5 px-1.5 py-0.5 bg-white border border-gray-200 rounded text-[10px] text-gray-400 font-medium">
+          <span class="text-xs">{{ if eq (getenv "OS") "darwin" }}⌘{{ else }}Ctrl{{ end }}</span>K
+        </kbd>
+      </button>
 
-      <!-- Search Button -->
-      <button id="search-btn" aria-label="{{ i18n "search" }}" class="p-2 text-gray-600 hover:text-pink-600 transition-colors">
+      <!-- Mobile: Icon Only -->
+      <button
+        id="search-trigger-mobile"
+        class="md:hidden p-2 text-gray-600 hover:text-pink-600 transition-colors"
+        aria-label="{{ i18n "search" }}"
+      >
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
         </svg>
       </button>
+
+      <!-- Language Switcher -->
+      {{ partial "components/lang-switch.html" . }}
     </div>
   </div>
 </header>
 
-<!-- Search Modal -->
-<div id="search-modal" class="fixed inset-0 bg-black/50 z-50 hidden" aria-hidden="true">
-  <div class="container pt-20">
-    <div class="bg-white rounded-xl shadow-2xl max-w-2xl mx-auto overflow-hidden">
-      <div class="flex items-center gap-3 p-4 border-b">
-        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-        </svg>
-        <input
-          type="search"
-          id="search-input"
-          placeholder="{{ i18n "search_placeholder" }}"
-          class="flex-1 outline-none text-lg"
-          autocomplete="off"
-        >
-        <button id="close-search" class="p-2 text-gray-400 hover:text-gray-600">
+<!-- Search Modal - Sophisticated Full-Screen Experience -->
+<div id="search-modal" class="fixed inset-0 z-50 hidden" aria-hidden="true" role="dialog" aria-modal="true">
+  <!-- Backdrop -->
+  <div class="search-backdrop absolute inset-0 bg-gray-900/60 backdrop-blur-sm"></div>
+
+  <!-- Modal Content -->
+  <div class="relative h-full flex flex-col md:items-center md:pt-[10vh]">
+    <div class="search-container bg-white w-full h-full md:h-auto md:max-h-[70vh] md:max-w-2xl md:rounded-2xl md:shadow-2xl flex flex-col overflow-hidden">
+
+      <!-- Search Header -->
+      <div class="flex items-center gap-3 p-4 border-b border-gray-100">
+        <div class="flex items-center justify-center w-10 h-10 bg-pink-50 rounded-xl shrink-0">
+          <svg class="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+        </div>
+        <div class="flex-1 relative">
+          <input
+            type="search"
+            id="search-input"
+            placeholder="{{ i18n "search_placeholder" | default "Search exercises, workouts, articles..." }}"
+            class="w-full text-lg text-gray-900 placeholder-gray-400 outline-none bg-transparent"
+            autocomplete="off"
+            autocapitalize="off"
+            spellcheck="false"
+          >
+          <div id="search-loading" class="absolute right-0 top-1/2 -translate-y-1/2 hidden">
+            <svg class="w-5 h-5 text-pink-500 animate-spin" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/>
+            </svg>
+          </div>
+        </div>
+        <button id="close-search" class="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-colors">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
           </svg>
         </button>
       </div>
-      <div id="search-results" class="max-h-96 overflow-y-auto p-2">
-        <!-- Results populated by JS -->
+
+      <!-- Search Results -->
+      <div id="search-results" class="flex-1 overflow-y-auto overscroll-contain">
+        <!-- Initial State -->
+        <div id="search-initial" class="p-6 text-center">
+          <div class="inline-flex items-center justify-center w-16 h-16 bg-gray-50 rounded-2xl mb-4">
+            <svg class="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+          </div>
+          <p class="text-gray-500 text-sm">{{ i18n "search_hint" | default "Search across all exercises, workouts, and articles" }}</p>
+          <div class="flex flex-wrap justify-center gap-2 mt-4">
+            <button class="search-suggestion px-3 py-1.5 bg-gray-100 hover:bg-pink-50 hover:text-pink-600 rounded-full text-xs text-gray-600 transition-colors" data-query="beginner">beginner</button>
+            <button class="search-suggestion px-3 py-1.5 bg-gray-100 hover:bg-pink-50 hover:text-pink-600 rounded-full text-xs text-gray-600 transition-colors" data-query="core">core</button>
+            <button class="search-suggestion px-3 py-1.5 bg-gray-100 hover:bg-pink-50 hover:text-pink-600 rounded-full text-xs text-gray-600 transition-colors" data-query="morning">morning</button>
+            <button class="search-suggestion px-3 py-1.5 bg-gray-100 hover:bg-pink-50 hover:text-pink-600 rounded-full text-xs text-gray-600 transition-colors" data-query="back pain">back pain</button>
+            <button class="search-suggestion px-3 py-1.5 bg-gray-100 hover:bg-pink-50 hover:text-pink-600 rounded-full text-xs text-gray-600 transition-colors" data-query="reformer">reformer</button>
+          </div>
+        </div>
+
+        <!-- Results will be populated here by JS -->
+        <div id="search-results-list" class="hidden divide-y divide-gray-100"></div>
+
+        <!-- No Results State -->
+        <div id="search-no-results" class="hidden p-6 text-center">
+          <div class="inline-flex items-center justify-center w-16 h-16 bg-gray-50 rounded-2xl mb-4">
+            <svg class="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M12 2a10 10 0 100 20 10 10 0 000-20z"/>
+            </svg>
+          </div>
+          <p class="text-gray-900 font-medium">{{ i18n "no_results" | default "No results found" }}</p>
+          <p class="text-gray-500 text-sm mt-1">{{ i18n "try_different" | default "Try a different search term" }}</p>
+        </div>
+      </div>
+
+      <!-- Search Footer -->
+      <div class="hidden md:flex items-center justify-between px-4 py-3 bg-gray-50 border-t border-gray-100 text-xs text-gray-400">
+        <div class="flex items-center gap-4">
+          <span class="flex items-center gap-1">
+            <kbd class="px-1.5 py-0.5 bg-white border border-gray-200 rounded text-[10px]">↑</kbd>
+            <kbd class="px-1.5 py-0.5 bg-white border border-gray-200 rounded text-[10px]">↓</kbd>
+            to navigate
+          </span>
+          <span class="flex items-center gap-1">
+            <kbd class="px-1.5 py-0.5 bg-white border border-gray-200 rounded text-[10px]">↵</kbd>
+            to select
+          </span>
+        </div>
+        <span class="flex items-center gap-1">
+          <kbd class="px-1.5 py-0.5 bg-white border border-gray-200 rounded text-[10px]">esc</kbd>
+          to close
+        </span>
       </div>
     </div>
   </div>
 </div>
+
+<style>
+  /* Search modal animations */
+  #search-modal {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+  }
+
+  #search-modal.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #search-modal .search-container {
+    transform: translateY(-20px) scale(0.98);
+    transition: transform 0.2s ease;
+  }
+
+  #search-modal.active .search-container {
+    transform: translateY(0) scale(1);
+  }
+
+  /* Result item styles */
+  .search-result-item {
+    @apply flex items-start gap-3 p-4 hover:bg-gray-50 transition-colors cursor-pointer;
+  }
+
+  .search-result-item.selected {
+    @apply bg-pink-50;
+  }
+
+  .search-result-icon {
+    @apply flex items-center justify-center w-10 h-10 rounded-xl shrink-0 text-white;
+  }
+
+  .search-result-type {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium uppercase tracking-wide;
+  }
+
+  /* Category colors */
+  .type-exercise { @apply bg-emerald-500; }
+  .type-workout { @apply bg-pink-500; }
+  .type-learn { @apply bg-blue-500; }
+  .type-teacher { @apply bg-purple-500; }
+  .type-other { @apply bg-gray-400; }
+
+  .badge-exercise { @apply bg-emerald-100 text-emerald-700; }
+  .badge-workout { @apply bg-pink-100 text-pink-700; }
+  .badge-learn { @apply bg-blue-100 text-blue-700; }
+  .badge-teacher { @apply bg-purple-100 text-purple-700; }
+  .badge-other { @apply bg-gray-100 text-gray-600; }
+
+  /* Mobile full-screen adjustments */
+  @media (max-width: 767px) {
+    #search-modal .search-container {
+      transform: translateY(100%);
+    }
+
+    #search-modal.active .search-container {
+      transform: translateY(0);
+    }
+  }
+</style>

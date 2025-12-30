@@ -165,6 +165,15 @@ other = "Buscar"
 [search_placeholder]
 other = "Buscar ejercicios, entrenamientos, artículos..."
 
+[search_hint]
+other = "Busca en todos los ejercicios, entrenamientos y artículos"
+
+[no_results]
+other = "No se encontraron resultados"
+
+[try_different]
+other = "Prueba con un término diferente"
+
 # Footer
 [footer_tagline]
 other = "Pilates gratis para todas las mujeres, en todas partes. Sin suscripciones, sin muros de pago - solo educación fitness gratuita y de alta calidad."

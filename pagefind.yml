@@ -1,0 +1,28 @@
+# Pagefind Configuration
+# Prioritizes metadata (title, description, keywords) over body content
+
+site: public
+
+# Boost metadata fields for higher ranking
+ranking:
+  page_length: 0.5
+  term_frequency: 1.0
+  term_saturation: 1.2
+  term_similarity: 1.5
+
+# Index metadata with higher weight
+index_selectors:
+  - "h1"
+  - "h2"
+  - "h3"
+  - "main"
+
+exclude_selectors:
+  - "nav"
+  - "footer"
+  - ".no-search"
+  - "#search-modal"
+  - ".mobile-nav"
+
+# Keep excerpts shorter for cleaner results
+excerpt_length: 180
