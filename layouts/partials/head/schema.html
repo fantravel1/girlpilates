@@ -130,12 +130,36 @@
 
   {{- /* Workout Program schema (EN and ES) */ -}}
   {{- if and (or (eq .Section "workouts") (eq .Section "entrenamientos")) .IsPage -}},
+  {{- /* Check if this is a premade workout with workout_id */ -}}
+  {{- $workoutData := dict -}}
+  {{- $isPremade := false -}}
+  {{- with .Params.workout_id -}}
+    {{- $premade := site.Data.premade_workouts -}}
+    {{- $workout := index (where $premade.workouts "id" .) 0 -}}
+    {{- if $workout -}}
+      {{- $workoutData = $workout -}}
+      {{- $isPremade = true -}}
+    {{- end -}}
+  {{- end -}}
   {
     "@context": "https://schema.org",
     "@type": "ExercisePlan",
     "name": "{{ .Title }}",
     "description": "{{ .Description }}",
     "inLanguage": "{{ .Language.Lang }}",
+    {{- if $isPremade -}}
+    "activityDuration": "PT{{ $workoutData.duration }}M",
+    "intensity": "{{ $workoutData.difficulty }}",
+    "exerciseType": [
+      {{- range $i, $equip := $workoutData.equipment -}}
+      {{- if $i -}},{{- end -}}
+      "{{ $equip }} Pilates"
+      {{- end -}}
+    ],
+    {{- if $workoutData.calories -}}
+    "workload": "{{ $workoutData.calories }} calories",
+    {{- end -}}
+    {{- else -}}
     {{- with .Params.duration -}}
     "activityDuration": "PT{{ . }}M",
     {{- end -}}
@@ -150,6 +174,7 @@
       {{- end -}}
     ],
     {{- end -}}
+    {{- end -}}
     "author": {
       "@type": "Organization",
       "name": "GirlPilates"
@@ -161,6 +186,60 @@
       "url": "{{ .Site.BaseURL }}"
     }
   }
+  {{- /* Add HowTo schema for premade workouts with step-by-step instructions */ -}}
+  {{- if $isPremade -}},
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "{{ if eq .Language.Lang "es" }}Cómo hacer {{ .Title }}{{ else }}How to do {{ .Title }}{{ end }}",
+    "description": "{{ .Description }}",
+    "totalTime": "PT{{ $workoutData.duration }}M",
+    "estimatedCost": {
+      "@type": "MonetaryAmount",
+      "currency": "USD",
+      "value": "0"
+    },
+    "tool": [
+      {{- range $i, $equip := $workoutData.equipment -}}
+      {{- if $i -}},{{- end -}}
+      {
+        "@type": "HowToTool",
+        "name": "{{ $equip | humanize }}"
+      }
+      {{- end -}}
+    ],
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "{{ if eq $.Language.Lang "es" }}Calentamiento{{ else }}Warm-Up{{ end }}",
+        "text": "{{ if eq $.Language.Lang "es" }}Prepara tu cuerpo con estiramientos suaves y respiración profunda{{ else }}Prepare your body with gentle stretches and deep breathing{{ end }}"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "{{ if eq $.Language.Lang "es" }}Entrenamiento Principal{{ else }}Main Workout{{ end }}",
+        "text": "{{ .Description }}"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "{{ if eq $.Language.Lang "es" }}Enfriamiento{{ else }}Cool-Down{{ end }}",
+        "text": "{{ if eq $.Language.Lang "es" }}Termina con estiramientos suaves y respiración profunda{{ else }}Finish with gentle stretches and deep breathing{{ end }}"
+      }
+    ],
+    "supply": [
+      {
+        "@type": "HowToSupply",
+        "name": "{{ if eq $.Language.Lang "es" }}Ropa cómoda{{ else }}Comfortable clothing{{ end }}"
+      },
+      {
+        "@type": "HowToSupply",
+        "name": "{{ if eq $.Language.Lang "es" }}Agua{{ else }}Water{{ end }}"
+      }
+    ]
+  }
+  {{- end -}}
   {{- end -}}
 
   {{- /* FAQ schema - parse from content */ -}}
