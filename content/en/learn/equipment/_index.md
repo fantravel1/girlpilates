@@ -1,61 +1,30 @@
 ---
 title: "Pilates Equipment Guide"
-description: "Comprehensive guide to Pilates equipment including the Reformer, Cadillac, Chair, and accessories. Learn what each piece does and how to choose the right equipment."
+description: "Understanding the Pilates apparatus - from the iconic Reformer to the versatile Cadillac. Learn what each piece does, who it's for, and what to expect in equipment-based sessions."
 date: 2024-01-15
 translationKey: "equipment-index"
 type: "learn"
 layout: "list"
 ---
 
-## Understanding Pilates Equipment
+## Beyond the Mat
 
-Pilates can be practiced with just a mat and your body weight, but Joseph Pilates designed specialized equipment that adds resistance, support, and variety to enhance the practice. Understanding the purpose and benefits of each piece of equipment helps you make informed decisions about your practice and equipment investments.
+While mat Pilates is accessible anywhere, Joseph Pilates designed an entire system of apparatus to support and challenge the body in ways the mat alone cannot. Each piece serves specific purposes and offers unique benefits.
 
-## What You'll Find in This Section
+## The Major Apparatus
 
-### Complete Equipment Overview
+- [The Reformer](/learn/equipment/reformer/) - The most popular piece of Pilates equipment
+- [The Cadillac (Trapeze Table)](/learn/equipment/cadillac/) - The most versatile apparatus
+- [The Wunda Chair](/learn/equipment/chair/) - Compact but powerful
+- [The Barrels](/learn/equipment/barrels/) - Curved surfaces for spinal work
+- [Props and Small Equipment](/learn/equipment/props/) - Magic Circles, bands, and more
 
-Discover the full range of Pilates apparatus, from the most popular Reformer to specialized pieces like the Ladder Barrel and Spine Corrector. Learn about the history, purpose, and unique benefits of each piece of equipment.
+## Equipment vs. Mat
 
-### Equipment Selection Guidance
+Neither is "better" - they serve different purposes:
 
-Whether you're setting up a home studio, choosing a Pilates studio to join, or deciding which classes to take, our comprehensive guide helps you understand:
-- Which equipment best suits your goals
-- Quality indicators to look for
-- Price ranges and investment considerations
-- Space requirements for home equipment
-- Maintenance and care recommendations
+**Mat Pilates:** Accessible anywhere, body weight resistance, develops self-sufficiency
 
-### Mat vs. Equipment Practice
+**Equipment Pilates:** Spring resistance assists AND challenges, supports rehabilitation, offers more variety
 
-Understand the differences between mat Pilates and equipment-based practice, and learn how they complement each other for a complete Pilates experience.
-
-## Start Your Equipment Education
-
-- [Complete Pilates Equipment Guide](/learn/equipment/equipment-guide/)
-
-## Why Equipment Matters
-
-Pilates equipment is not just about adding resistance - each piece was carefully designed by Joseph Pilates to:
-- **Provide feedback**: Springs and resistance help you feel when you're using the right muscles
-- **Offer support**: Equipment can assist with exercises that would be too difficult on the mat
-- **Add challenge**: Adjustable resistance allows for progressive difficulty
-- **Improve precision**: The guided nature of equipment helps perfect your form
-- **Enhance variety**: Equipment vastly expands your exercise repertoire
-- **Accelerate progress**: The unique properties of Pilates apparatus can speed your development
-
-## Equipment for Different Needs
-
-### For Beginners
-Start with mat work and gradually introduce equipment like the Reformer, which provides support and feedback that helps you understand proper technique.
-
-### For Rehabilitation
-Equipment like the Reformer and Cadillac offers adjustable support that's ideal for working around injuries or limitations while building strength.
-
-### For Advanced Practice
-The full apparatus studio provides endless challenge and variety, allowing you to continually progress and explore new movement possibilities.
-
-### For Home Practice
-Compact options like resistance circles, bands, and small props bring Pilates equipment benefits to any space.
-
-Explore our comprehensive equipment guide to deepen your understanding of the tools that make Pilates practice so unique and effective.
+Most serious practitioners do both.
