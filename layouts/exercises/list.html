@@ -1,12 +1,29 @@
 {{ define "main" }}
+<!-- Hero Section with Background Image -->
+<section class="relative min-h-[300px] lg:min-h-[400px] flex items-center overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img
+      src="/images/hero/freepik__candid-i-with-natural-textures-and-highly-realisti__15913.webp"
+      alt="Pilates exercises"
+      class="w-full h-full object-cover"
+    />
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-pink-900/85 via-purple-900/75 to-pink-900/70"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="container relative z-10 py-12 lg:py-16">
+    <div class="max-w-3xl">
+      <h1 class="text-3xl lg:text-5xl font-bold text-white mb-4 drop-shadow-lg">{{ .Title }}</h1>
+      {{ with .Description }}
+      <p class="text-lg lg:text-xl text-white/90 max-w-2xl drop-shadow">{{ . }}</p>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
 <div class="container py-8 lg:py-12">
-  <!-- Page Header -->
-  <header class="mb-8 lg:mb-12">
-    <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">{{ .Title }}</h1>
-    {{ with .Description }}
-    <p class="text-lg text-gray-600 max-w-3xl">{{ . }}</p>
-    {{ end }}
-  </header>
 
   <!-- Filters -->
   <div class="mb-8 flex flex-wrap gap-4">
