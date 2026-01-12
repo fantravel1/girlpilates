@@ -7,7 +7,7 @@
 
 [[main]]
   name = "Entrenamientos"
-  url = "/es/entrenamientos/premade/"
+  url = "/es/entrenamientos/prefabricados/"
   weight = 20
 
 [[main]]

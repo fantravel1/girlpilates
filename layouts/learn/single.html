@@ -3,11 +3,11 @@
   <!-- Breadcrumb -->
   <nav class="mb-8 text-sm">
     <ol class="flex flex-wrap items-center gap-2 text-gray-500">
-      <li><a href="/" class="hover:text-pink-600">{{ i18n "nav_home" | default "Home" }}</a></li>
+      <li><a href="{{ "/" | relLangURL }}" class="hover:text-pink-600">{{ i18n "nav_home" | default "Home" }}</a></li>
       <li><span class="mx-1">/</span></li>
-      <li><a href="/learn/" class="hover:text-pink-600">{{ i18n "nav_learn" | default "Learn" }}</a></li>
+      <li><a href="{{ "/learn/" | relLangURL }}" class="hover:text-pink-600">{{ i18n "nav_learn" | default "Learn" }}</a></li>
       {{ with .Parent }}
-      {{ if ne .RelPermalink "/learn/" }}
+      {{ if ne .RelPermalink (print "/" .Site.Language.Lang "/learn/" | default "/learn/") }}
       <li><span class="mx-1">/</span></li>
       <li><a href="{{ .RelPermalink }}" class="hover:text-pink-600">{{ .Title }}</a></li>
       {{ end }}
@@ -43,7 +43,7 @@
       </span>
       {{ end }}
       {{ with .Parent }}
-      {{ if ne .RelPermalink "/learn/" }}
+      {{ if ne .RelPermalink (print "/" .Site.Language.Lang "/learn/" | default "/learn/") }}
       <a href="{{ .RelPermalink }}" class="px-2 py-1 bg-pink-100 text-pink-700 rounded-full text-xs font-medium hover:bg-pink-200 transition-colors">
         {{ .Title }}
       </a>
