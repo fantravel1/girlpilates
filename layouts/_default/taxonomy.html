@@ -1,0 +1,78 @@
+{{ define "main" }}
+<!-- Taxonomy List Page (e.g., /difficulties/, /muscles/, /equipment/) -->
+<section class="relative min-h-[200px] lg:min-h-[300px] flex items-center overflow-hidden">
+  <!-- Background Gradient -->
+  <div class="absolute inset-0 bg-gradient-to-r from-pink-600 via-purple-600 to-pink-500"></div>
+
+  <!-- Content -->
+  <div class="container relative z-10 py-12 lg:py-16">
+    <div class="max-w-3xl">
+      <h1 class="text-3xl lg:text-5xl font-bold text-white mb-4 drop-shadow-lg">
+        {{ if eq .Data.Plural "difficulties" }}
+          {{ i18n "browse_by_difficulty" | default "Browse by Difficulty" }}
+        {{ else if eq .Data.Plural "muscles" }}
+          {{ i18n "browse_by_muscle" | default "Browse by Target Muscle" }}
+        {{ else if eq .Data.Plural "equipment" }}
+          {{ i18n "browse_by_equipment" | default "Browse by Equipment" }}
+        {{ else }}
+          {{ .Title }}
+        {{ end }}
+      </h1>
+      <p class="text-lg lg:text-xl text-white/90 max-w-2xl drop-shadow">
+        {{ if eq .Data.Plural "difficulties" }}
+          {{ i18n "difficulty_description" | default "Find exercises that match your skill level" }}
+        {{ else if eq .Data.Plural "muscles" }}
+          {{ i18n "muscle_description" | default "Target specific muscle groups with these exercises" }}
+        {{ else if eq .Data.Plural "equipment" }}
+          {{ i18n "equipment_description" | default "Browse exercises by the equipment they use" }}
+        {{ else }}
+          {{ .Description }}
+        {{ end }}
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="container py-8 lg:py-12">
+  <!-- Terms Grid -->
+  <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+    {{ range .Pages }}
+    <a href="{{ .Permalink }}" class="group bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-all p-6">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="text-xl font-semibold text-gray-900 group-hover:text-pink-600 transition-colors">
+          {{ .Title | title }}
+        </h2>
+        {{ if eq $.Data.Plural "difficulties" }}
+          {{ if or (eq .Title "beginner") (eq .Title "principiante") }}
+          <span class="px-3 py-1 bg-green-100 text-green-700 text-sm font-medium rounded-full">{{ i18n "beginner" | default "Beginner" }}</span>
+          {{ else if or (eq .Title "intermediate") (eq .Title "intermedio") }}
+          <span class="px-3 py-1 bg-yellow-100 text-yellow-700 text-sm font-medium rounded-full">{{ i18n "intermediate" | default "Intermediate" }}</span>
+          {{ else if or (eq .Title "advanced") (eq .Title "avanzado") }}
+          <span class="px-3 py-1 bg-red-100 text-red-700 text-sm font-medium rounded-full">{{ i18n "advanced" | default "Advanced" }}</span>
+          {{ end }}
+        {{ end }}
+      </div>
+      <p class="text-gray-600">
+        {{ len .Pages }} {{ if eq (len .Pages) 1 }}{{ i18n "exercise" | default "exercise" }}{{ else }}{{ i18n "exercises" | default "exercises" }}{{ end }}
+      </p>
+      <div class="mt-4 flex items-center text-pink-600 font-medium text-sm">
+        {{ i18n "view_exercises" | default "View exercises" }}
+        <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+
+  <!-- Back to Exercises Link -->
+  <div class="mt-12 text-center">
+    <a href="{{ "/exercises/" | relLangURL }}" class="inline-flex items-center gap-2 text-pink-600 hover:text-pink-700 font-medium">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+      {{ i18n "back_to_exercises" | default "Back to all exercises" }}
+    </a>
+  </div>
+</div>
+{{ end }}
