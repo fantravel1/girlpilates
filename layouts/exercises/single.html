@@ -7,17 +7,17 @@
         <!-- Breadcrumb badges -->
         <div class="flex flex-wrap items-center gap-2 mb-4">
           {{ with .Params.difficulty }}
-          <span class="px-3 py-1 text-sm font-medium rounded-full
-            {{ if eq . "beginner" }}bg-green-100 text-green-700{{ end }}
-            {{ if eq . "intermediate" }}bg-yellow-100 text-yellow-700{{ end }}
-            {{ if eq . "advanced" }}bg-red-100 text-red-700{{ end }}
-            {{ if eq . "principiante" }}bg-green-100 text-green-700{{ end }}
-            {{ if eq . "intermedio" }}bg-yellow-100 text-yellow-700{{ end }}
-            {{ if eq . "avanzado" }}bg-red-100 text-red-700{{ end }}
-          ">{{ . | title }}</span>
+          <a href="{{ "/difficulties/" | relLangURL }}{{ . | urlize }}/" class="px-3 py-1 text-sm font-medium rounded-full hover:ring-2 hover:ring-offset-1 transition-all
+            {{ if eq . "beginner" }}bg-green-100 text-green-700 hover:ring-green-300{{ end }}
+            {{ if eq . "intermediate" }}bg-yellow-100 text-yellow-700 hover:ring-yellow-300{{ end }}
+            {{ if eq . "advanced" }}bg-red-100 text-red-700 hover:ring-red-300{{ end }}
+            {{ if eq . "principiante" }}bg-green-100 text-green-700 hover:ring-green-300{{ end }}
+            {{ if eq . "intermedio" }}bg-yellow-100 text-yellow-700 hover:ring-yellow-300{{ end }}
+            {{ if eq . "avanzado" }}bg-red-100 text-red-700 hover:ring-red-300{{ end }}
+          ">{{ . | title }}</a>
           {{ end }}
           {{ range .Params.equipment }}
-          <span class="px-3 py-1 text-sm bg-white/80 text-gray-600 rounded-full">{{ . }}</span>
+          <a href="{{ "/equipment/" | relLangURL }}{{ . | urlize }}/" class="px-3 py-1 text-sm bg-white/80 text-gray-600 rounded-full hover:bg-pink-50 hover:text-pink-600 hover:ring-2 hover:ring-pink-200 hover:ring-offset-1 transition-all">{{ . }}</a>
           {{ end }}
         </div>
 
@@ -42,7 +42,9 @@
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
             </svg>
-            {{ delimit . ", " }}
+            <span class="flex flex-wrap gap-1">
+              {{ range $i, $muscle := . }}{{ if $i }}<span class="text-gray-400">,</span> {{ end }}<a href="{{ "/muscles/" | relLangURL }}{{ $muscle | urlize }}/" class="hover:text-pink-600 transition-colors">{{ $muscle }}</a>{{ end }}
+            </span>
           </span>
           {{ end }}
         </div>
@@ -224,7 +226,7 @@
               {{ with .Params.difficulty }}
               <div class="flex justify-between">
                 <dt class="text-gray-500">{{ i18n "difficulty" }}</dt>
-                <dd class="font-medium">{{ . | title }}</dd>
+                <dd class="font-medium"><a href="{{ "/difficulties/" | relLangURL }}{{ . | urlize }}/" class="hover:text-pink-600 transition-colors">{{ . | title }}</a></dd>
               </div>
               {{ end }}
               {{ with .Params.duration }}
@@ -236,17 +238,57 @@
               {{ with .Params.equipment }}
               <div class="flex justify-between">
                 <dt class="text-gray-500">{{ i18n "equipment" }}</dt>
-                <dd class="font-medium">{{ delimit . ", " }}</dd>
+                <dd class="font-medium">{{ range $i, $e := . }}{{ if $i }}, {{ end }}<a href="{{ "/equipment/" | relLangURL }}{{ $e | urlize }}/" class="hover:text-pink-600 transition-colors">{{ $e }}</a>{{ end }}</dd>
               </div>
               {{ end }}
               {{ with .Params.muscles }}
-              <div class="flex justify-between">
+              <div class="flex justify-between items-start">
                 <dt class="text-gray-500">{{ i18n "muscles" }}</dt>
-                <dd class="font-medium text-right">{{ delimit . ", " }}</dd>
+                <dd class="font-medium text-right">{{ range $i, $m := . }}{{ if $i }}, {{ end }}<a href="{{ "/muscles/" | relLangURL }}{{ $m | urlize }}/" class="hover:text-pink-600 transition-colors">{{ $m }}</a>{{ end }}</dd>
               </div>
               {{ end }}
             </dl>
           </div>
+
+          <!-- Used in Workouts -->
+          {{ $exerciseTitle := .Title | lower }}
+          {{ $usedInWorkouts := slice }}
+          {{ range $.Site.Data.premade_workouts.workouts }}
+            {{ $workout := . }}
+            {{ range .exercises }}
+              {{ if eq (.name | lower) $exerciseTitle }}
+                {{ $usedInWorkouts = $usedInWorkouts | append $workout }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+          {{ with $usedInWorkouts }}
+          <div class="bg-white rounded-xl border border-gray-100 p-6 shadow-sm mb-6">
+            <h3 class="font-semibold text-gray-900 mb-4 flex items-center gap-2">
+              <svg class="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+              </svg>
+              {{ i18n "used_in_workouts" | default "Used In Workouts" }}
+            </h3>
+            <ul class="space-y-3">
+              {{ range . | first 4 }}
+              <li>
+                <a href="{{ printf "/workouts/premade/%s/" .id | relLangURL }}" class="flex items-center gap-3 group">
+                  <div class="w-10 h-10 rounded-lg flex-shrink-0 flex items-center justify-center
+                    {{ if eq .difficulty "beginner" }}bg-green-100 text-green-600{{ end }}
+                    {{ if eq .difficulty "intermediate" }}bg-yellow-100 text-yellow-600{{ end }}
+                    {{ if eq .difficulty "advanced" }}bg-red-100 text-red-600{{ end }}">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/></svg>
+                  </div>
+                  <div>
+                    <span class="text-sm font-medium text-gray-900 group-hover:text-pink-600 transition-colors">{{ .title }}</span>
+                    <span class="block text-xs text-gray-500">{{ .duration }} min · {{ .difficulty }}</span>
+                  </div>
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          {{ end }}
 
           <!-- Related Exercises -->
           {{ $related := .Site.RegularPages.Related . | first 4 }}

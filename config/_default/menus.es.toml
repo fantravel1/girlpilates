@@ -21,6 +21,11 @@
   weight = 30
 
 [[main]]
+  name = "Videos"
+  url = "/es/videos/"
+  weight = 35
+
+[[main]]
   name = "Profesores"
   url = "/es/profesores/"
   weight = 40
