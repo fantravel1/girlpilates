@@ -184,7 +184,66 @@
         "mood": ["energized", "focused"]
       },
       "featured": true,
-      "calories": "30-40"
+      "calories": "30-40",
+      "follow_along_video": {
+        "id": "869DQ4sdEXw",
+        "title": "5 Minute Flat Abs!",
+        "channel": "Blogilates"
+      },
+      "related_videos": [
+        {"id": "lr5oEBVUevs", "title": "Beautiful Abs - Pilates Core Sculpting", "channel": "Blogilates"},
+        {"id": "AqXmgy5GTzI", "title": "Muffintop Massacre", "channel": "Blogilates"},
+        {"id": "9Yb8hFaoEhY", "title": "8 MIN AB CRUSHER", "channel": "Pamela Reif"}
+      ],
+      "exercises": [
+        {
+          "name": "Pelvic Tilts",
+          "type": "warmup",
+          "duration": 30,
+          "reps": "8 reps",
+          "instructions": ["Lie on your back, knees bent, feet flat", "Exhale, press lower back into mat", "Inhale, release to neutral"]
+        },
+        {
+          "name": "Hundred Prep",
+          "type": "exercise",
+          "duration": 45,
+          "reps": "50 pumps",
+          "instructions": ["Curl head and shoulders up", "Arms pump by your sides", "Legs tabletop or extended", "5 breaths in, 5 breaths out"]
+        },
+        {
+          "name": "Criss Cross",
+          "type": "exercise",
+          "duration": 45,
+          "reps": "20 reps (10 each side)",
+          "instructions": ["Hands behind head", "Twist elbow to opposite knee", "Alternate sides with control"]
+        },
+        {
+          "name": "Double Leg Stretch",
+          "type": "exercise",
+          "duration": 45,
+          "reps": "10 reps",
+          "instructions": ["Curl up, hug knees to chest", "Extend arms and legs out", "Circle arms, hug knees back in"]
+        },
+        {
+          "name": "Scissors",
+          "type": "exercise",
+          "duration": 45,
+          "reps": "20 reps (10 each side)",
+          "instructions": ["Legs to ceiling, curl up", "Lower one leg, switch", "Keep hips stable"]
+        },
+        {
+          "name": "Plank Hold",
+          "type": "exercise",
+          "duration": 45,
+          "instructions": ["Forearms or hands", "Body in straight line", "Engage core, breathe", "Hold steady"]
+        },
+        {
+          "name": "Knees to Chest",
+          "type": "cooldown",
+          "duration": 30,
+          "instructions": ["Hug both knees in", "Rock gently side to side", "Take 3 deep breaths", "You're done!"]
+        }
+      ]
     },
     {
       "id": "5min-morning-stretch",
@@ -202,7 +261,56 @@
         "goal": ["flexibility"]
       },
       "featured": false,
-      "calories": "15-25"
+      "calories": "15-25",
+      "follow_along_video": {
+        "id": "4C-gxOE0j7s",
+        "title": "20 Min Morning Pilates Routine",
+        "channel": "Move With Nicole"
+      },
+      "related_videos": [
+        {"id": "1092LottieMurphy", "title": "Day 6: Unwind Pilates", "channel": "Lottie Murphy"},
+        {"id": "1168LottieMurphy", "title": "Day 13: Pilates Stretch", "channel": "Lottie Murphy"}
+      ],
+      "exercises": [
+        {
+          "name": "Full Body Stretch",
+          "type": "warmup",
+          "duration": 30,
+          "instructions": ["Reach arms overhead", "Point toes long", "Take a big yawn stretch", "Feel your whole body lengthen"]
+        },
+        {
+          "name": "Knee Hugs",
+          "type": "exercise",
+          "duration": 40,
+          "reps": "8 each side",
+          "instructions": ["Hug one knee to chest", "Keep other leg long", "Switch sides slowly", "Breathe deeply"]
+        },
+        {
+          "name": "Supine Twist",
+          "type": "exercise",
+          "duration": 60,
+          "instructions": ["Both knees to one side", "Arms out in a T", "Look opposite direction", "Hold 30 seconds each side"]
+        },
+        {
+          "name": "Cat-Cow Stretch",
+          "type": "exercise",
+          "duration": 50,
+          "reps": "8 rounds",
+          "instructions": ["Come to hands and knees", "Arch back on inhale (cow)", "Round back on exhale (cat)", "Move with your breath"]
+        },
+        {
+          "name": "Child's Pose",
+          "type": "exercise",
+          "duration": 40,
+          "instructions": ["Sit back on heels", "Arms extended forward", "Forehead to mat or bed", "Breathe into your back"]
+        },
+        {
+          "name": "Seated Side Stretch",
+          "type": "cooldown",
+          "duration": 40,
+          "instructions": ["Sit up tall", "Reach one arm overhead", "Lean to opposite side", "20 seconds each side"]
+        }
+      ]
     },
     {
       "id": "5min-standing-stretch",
@@ -293,7 +401,62 @@
         "goal": ["pain-relief"]
       },
       "featured": true,
-      "calories": "10-20"
+      "calories": "10-20",
+      "follow_along_video": {
+        "id": "MWDu3gLgJ8E",
+        "title": "Pilates for Back Pain Relief",
+        "channel": "Jessica Valant Pilates"
+      },
+      "related_videos": [
+        {"id": "Lg0b0f4RqkA", "title": "Posture Correcting Pilates", "channel": "Jessica Valant"},
+        {"id": "djB2c2rpYsE", "title": "Lower Back Pain Relief Pilates", "channel": "Jessica Valant"}
+      ],
+      "exercises": [
+        {
+          "name": "Neck Rolls",
+          "type": "warmup",
+          "duration": 40,
+          "instructions": ["Drop chin to chest", "Slowly roll ear to shoulder", "Continue full circle", "4 rolls each direction"]
+        },
+        {
+          "name": "Shoulder Shrugs",
+          "type": "exercise",
+          "duration": 30,
+          "reps": "10 reps",
+          "instructions": ["Lift shoulders to ears", "Hold for 2 seconds", "Release and drop down", "Feel the tension melt"]
+        },
+        {
+          "name": "Seated Cat-Cow",
+          "type": "exercise",
+          "duration": 45,
+          "reps": "8 rounds",
+          "instructions": ["Sit at edge of chair", "Arch back, look up (cow)", "Round spine, tuck chin (cat)", "Hands on knees for support"]
+        },
+        {
+          "name": "Chest Opener",
+          "type": "exercise",
+          "duration": 40,
+          "instructions": ["Clasp hands behind back", "Squeeze shoulder blades together", "Lift chest up", "Hold and breathe deeply"]
+        },
+        {
+          "name": "Seated Twist",
+          "type": "exercise",
+          "duration": 50,
+          "instructions": ["Sit tall in your chair", "Twist to one side, hold arm of chair", "Look over your shoulder", "25 seconds each side"]
+        },
+        {
+          "name": "Wrist Circles & Stretch",
+          "type": "exercise",
+          "duration": 40,
+          "instructions": ["Circle wrists 5 times each way", "Extend arm, pull fingers back", "Then push fingers down", "20 seconds each stretch"]
+        },
+        {
+          "name": "Deep Breathing Reset",
+          "type": "cooldown",
+          "duration": 35,
+          "instructions": ["Close your eyes", "Inhale for 4 counts", "Hold for 4 counts", "Exhale for 6 counts", "Repeat 3 times"]
+        }
+      ]
     },
     {
       "id": "10min-full-body-wake-up",
@@ -311,7 +474,96 @@
         "environment": ["home"]
       },
       "featured": true,
-      "calories": "50-70"
+      "calories": "50-70",
+      "follow_along_video": {
+        "id": "4C-gxOE0j7s",
+        "title": "20 Min Morning Pilates Routine",
+        "channel": "Move With Nicole"
+      },
+      "related_videos": [
+        {"id": "I6xCb7s5CE4", "title": "Beautiful Body Pilates - Total Body", "channel": "Blogilates"},
+        {"id": "QhxwCPwCrOQ", "title": "Slim 'n Sculpt! Beginner's POP Pilates", "channel": "Blogilates"},
+        {"id": "QYgSGfdFXj4", "title": "Day 1: Strong and Calm Pilates", "channel": "Lottie Murphy"}
+      ],
+      "exercises": [
+        {
+          "name": "Full Body Reach",
+          "type": "warmup",
+          "duration": 30,
+          "instructions": ["Lie on back, arms overhead", "Reach fingertips and toes long", "Take 3 deep yawning breaths", "Wake up your whole body"]
+        },
+        {
+          "name": "Pelvic Tilts",
+          "type": "warmup",
+          "duration": 40,
+          "reps": "10 reps",
+          "instructions": ["Knees bent, feet flat", "Tilt pelvis up, flatten back to mat", "Release back to neutral", "Gentle spinal mobilization"]
+        },
+        {
+          "name": "Knee Circles",
+          "type": "exercise",
+          "duration": 40,
+          "instructions": ["Hug knees to chest", "Circle knees gently", "5 circles each direction", "Massage the lower back"]
+        },
+        {
+          "name": "Bridge Lifts",
+          "type": "exercise",
+          "duration": 50,
+          "reps": "10 reps",
+          "instructions": ["Feet hip-width apart", "Lift hips to ceiling", "Squeeze glutes at top", "Lower down with control"]
+        },
+        {
+          "name": "Rest",
+          "type": "rest",
+          "duration": 15,
+          "instructions": ["Take a breath", "Shake out your legs", "Prepare for the next exercise"]
+        },
+        {
+          "name": "Cat-Cow Flow",
+          "type": "exercise",
+          "duration": 50,
+          "reps": "10 rounds",
+          "instructions": ["Come to all fours", "Inhale, arch back (cow)", "Exhale, round spine (cat)", "Flow with your breath"]
+        },
+        {
+          "name": "Bird Dog",
+          "type": "exercise",
+          "duration": 60,
+          "reps": "8 each side",
+          "instructions": ["From all fours", "Extend opposite arm and leg", "Hold briefly, return", "Keep core stable"]
+        },
+        {
+          "name": "Thread the Needle",
+          "type": "exercise",
+          "duration": 50,
+          "instructions": ["From all fours", "Thread one arm under body", "Twist and open chest", "25 seconds each side"]
+        },
+        {
+          "name": "Down Dog to Plank",
+          "type": "exercise",
+          "duration": 60,
+          "reps": "6 reps",
+          "instructions": ["Start in down dog", "Shift forward to plank", "Push back to down dog", "Keep arms strong"]
+        },
+        {
+          "name": "Low Lunge Stretch",
+          "type": "exercise",
+          "duration": 60,
+          "instructions": ["Step one foot forward", "Back knee down", "Sink into hip stretch", "30 seconds each side"]
+        },
+        {
+          "name": "Standing Forward Fold",
+          "type": "cooldown",
+          "duration": 40,
+          "instructions": ["Fold forward, knees soft", "Let head hang heavy", "Grab opposite elbows", "Sway gently"]
+        },
+        {
+          "name": "Final Stretch & Breathe",
+          "type": "cooldown",
+          "duration": 45,
+          "instructions": ["Roll up slowly to stand", "Reach arms overhead", "Take 3 deep breaths", "You're ready for your day!"]
+        }
+      ]
     },
     {
       "id": "10min-standing-abs",
@@ -455,7 +707,114 @@
         "mood": ["energized"]
       },
       "featured": true,
-      "calories": "75-95"
+      "calories": "75-95",
+      "follow_along_video": {
+        "id": "jEFG7H3Q4IP",
+        "title": "Booty Burn Pilates",
+        "channel": "Bailey Brown Pilates"
+      },
+      "related_videos": [
+        {"id": "Zity7qS089s", "title": "Build a Booty Workout - Beginners", "channel": "Blogilates"},
+        {"id": "ym_ktF4ePMw", "title": "Day 3: Booty + Abs Sculpt", "channel": "Pilatesbody by Kayla"},
+        {"id": "xSTU1V7E8WD", "title": "Booty Lift Pilates", "channel": "Isa Welly"}
+      ],
+      "exercises": [
+        {
+          "name": "Glute Bridges",
+          "type": "warmup",
+          "duration": 50,
+          "reps": "15 reps",
+          "instructions": ["Lie on back, knees bent", "Lift hips, squeeze glutes", "Lower with control", "Activate those glutes!"]
+        },
+        {
+          "name": "Donkey Kicks Right",
+          "type": "exercise",
+          "duration": 45,
+          "reps": "20 reps",
+          "instructions": ["On all fours", "Lift right leg up, knee bent", "Squeeze at top", "Keep core tight"]
+        },
+        {
+          "name": "Donkey Kicks Left",
+          "type": "exercise",
+          "duration": 45,
+          "reps": "20 reps",
+          "instructions": ["On all fours", "Lift left leg up, knee bent", "Squeeze at top", "Match the other side"]
+        },
+        {
+          "name": "Fire Hydrants Right",
+          "type": "exercise",
+          "duration": 45,
+          "reps": "20 reps",
+          "instructions": ["Stay on all fours", "Lift right knee out to side", "Keep 90-degree angle", "Control the movement"]
+        },
+        {
+          "name": "Fire Hydrants Left",
+          "type": "exercise",
+          "duration": 45,
+          "reps": "20 reps",
+          "instructions": ["Stay on all fours", "Lift left knee out to side", "Keep 90-degree angle", "Feel the outer glute burn"]
+        },
+        {
+          "name": "Rest",
+          "type": "rest",
+          "duration": 30,
+          "instructions": ["Shake out your legs", "Take a deep breath", "Halfway there!"]
+        },
+        {
+          "name": "Single Leg Bridge Right",
+          "type": "exercise",
+          "duration": 45,
+          "reps": "12 reps",
+          "instructions": ["Lie on back, extend right leg", "Lift hips with left leg", "Keep hips level", "Serious glute burn!"]
+        },
+        {
+          "name": "Single Leg Bridge Left",
+          "type": "exercise",
+          "duration": 45,
+          "reps": "12 reps",
+          "instructions": ["Extend left leg up", "Lift hips with right leg", "Keep hips level", "Match the other side"]
+        },
+        {
+          "name": "Clamshells Right",
+          "type": "exercise",
+          "duration": 45,
+          "reps": "20 reps",
+          "instructions": ["Lie on right side, knees bent", "Open top knee like a clamshell", "Keep feet together", "Slow and controlled"]
+        },
+        {
+          "name": "Clamshells Left",
+          "type": "exercise",
+          "duration": 45,
+          "reps": "20 reps",
+          "instructions": ["Switch to left side", "Open top knee up", "Keep feet together", "Feel the side glutes"]
+        },
+        {
+          "name": "Glute Bridge Pulses",
+          "type": "exercise",
+          "duration": 45,
+          "reps": "30 pulses",
+          "instructions": ["Bridge position", "Small pulses at top", "Keep squeezing", "Don't drop those hips!"]
+        },
+        {
+          "name": "Tabletop Kickbacks",
+          "type": "exercise",
+          "duration": 50,
+          "reps": "10 each side",
+          "instructions": ["On all fours", "Kick one leg straight back", "Alternate legs", "Full extension each time"]
+        },
+        {
+          "name": "Pigeon Stretch Right",
+          "type": "cooldown",
+          "duration": 40,
+          "instructions": ["Right shin forward", "Extend left leg back", "Fold forward if possible", "Breathe into the stretch"]
+        },
+        {
+          "name": "Pigeon Stretch Left",
+          "type": "cooldown",
+          "duration": 40,
+          "instructions": ["Switch sides", "Left shin forward", "Relax into it", "You earned this stretch!"]
+        }
+      ]
     },
     {
       "id": "stressed-out-flow",
@@ -473,7 +832,98 @@
         "body-focus": ["full-body"]
       },
       "featured": true,
-      "calories": "40-60"
+      "calories": "40-60",
+      "follow_along_video": {
+        "id": "GFofzRS10-s",
+        "title": "Day 11: Calming & Cosy Pilates",
+        "channel": "Lottie Murphy"
+      },
+      "related_videos": [
+        {"id": "c4MfXAzp5ME", "title": "Day 13: Pilates Stretch", "channel": "Lottie Murphy"},
+        {"id": "2coNVRdG_Vg", "title": "Strengthen & Stretch Pilates", "channel": "Lottie Murphy"},
+        {"id": "yTUV9W5F6XE", "title": "Pilates Stretch & Tone", "channel": "Isa Welly"}
+      ],
+      "exercises": [
+        {
+          "name": "Grounding Breath",
+          "type": "warmup",
+          "duration": 60,
+          "instructions": ["Lie comfortably on your back", "Place hands on belly", "Breathe deeply into your hands", "5 slow breaths - in 4, out 6"]
+        },
+        {
+          "name": "Gentle Neck Release",
+          "type": "warmup",
+          "duration": 50,
+          "instructions": ["Slowly tilt ear to shoulder", "Hold and breathe", "25 seconds each side", "Let tension melt away"]
+        },
+        {
+          "name": "Shoulder Rolls",
+          "type": "exercise",
+          "duration": 40,
+          "instructions": ["Roll shoulders forward 5 times", "Then backward 5 times", "Big, slow circles", "Release held tension"]
+        },
+        {
+          "name": "Knees to Chest Rock",
+          "type": "exercise",
+          "duration": 50,
+          "instructions": ["Hug both knees in", "Rock gently side to side", "Massage your lower back", "Breathe and let go"]
+        },
+        {
+          "name": "Supine Twist Right",
+          "type": "exercise",
+          "duration": 60,
+          "instructions": ["Knees fall to right", "Arms out wide", "Look to left", "Breathe into your ribs"]
+        },
+        {
+          "name": "Supine Twist Left",
+          "type": "exercise",
+          "duration": 60,
+          "instructions": ["Knees fall to left", "Keep shoulders down", "Look to right", "Equal time both sides"]
+        },
+        {
+          "name": "Happy Baby",
+          "type": "exercise",
+          "duration": 60,
+          "instructions": ["Hold outside of feet", "Knees toward armpits", "Rock gently", "Release the hips and back"]
+        },
+        {
+          "name": "Cat-Cow Flow",
+          "type": "exercise",
+          "duration": 60,
+          "reps": "10 slow rounds",
+          "instructions": ["Very slow movement", "Inhale, arch and look up", "Exhale, round and tuck", "Move like honey"]
+        },
+        {
+          "name": "Child's Pose",
+          "type": "exercise",
+          "duration": 80,
+          "instructions": ["Sit back on heels", "Arms reaching forward", "Forehead to mat", "Breathe into your back body"]
+        },
+        {
+          "name": "Puppy Pose",
+          "type": "exercise",
+          "duration": 60,
+          "instructions": ["Hips stay high", "Arms stretched forward", "Chest melting to floor", "Heart opener and shoulder stretch"]
+        },
+        {
+          "name": "Seated Forward Fold",
+          "type": "exercise",
+          "duration": 70,
+          "instructions": ["Legs extended", "Fold gently forward", "Let head hang heavy", "No forcing - just breathe"]
+        },
+        {
+          "name": "Legs Up the Wall",
+          "type": "cooldown",
+          "duration": 90,
+          "instructions": ["Lie near wall, legs up", "Arms by your sides", "Close your eyes", "Ultimate stress relief pose"]
+        },
+        {
+          "name": "Final Relaxation",
+          "type": "cooldown",
+          "duration": 80,
+          "instructions": ["Lie flat, arms open", "Scan body for tension", "Let it all go", "You deserve this peace"]
+        }
+      ]
     },
     {
       "id": "tired-gentle-movement",
