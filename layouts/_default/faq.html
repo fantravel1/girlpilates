@@ -1,0 +1,136 @@
+{{ define "main" }}
+<article class="pb-16 lg:pb-24">
+  <!-- Hero Section -->
+  <div class="bg-gradient-to-br from-pink-50 to-purple-50 py-12 lg:py-16">
+    <div class="container">
+      <div class="max-w-3xl">
+        <nav class="flex items-center gap-2 text-sm text-gray-500 mb-4">
+          <a href="{{ "/" | relLangURL }}" class="hover:text-pink-600">{{ i18n "nav_home" | default "Home" }}</a>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          <span class="text-gray-900 font-medium">{{ .Title }}</span>
+        </nav>
+        <h1 class="text-3xl lg:text-5xl font-bold text-gray-900 mb-4">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="text-xl text-gray-600">{{ . }}</p>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ Content -->
+  <div class="container py-12">
+    <div class="max-w-3xl mx-auto">
+      <!-- Parse content into FAQ sections -->
+      {{ $content := .RawContent }}
+
+      <div class="space-y-8">
+        {{ $sections := findRE "(?s)## ([^\n]+)\n(.*?)(?=\n## |$)" $content }}
+        {{ range $sections }}
+          {{ $parts := findRE "(?s)## ([^\n]+)\n(.*)" . }}
+          {{ with $parts }}
+            {{ $sectionTitle := index (findRE "## ([^\n]+)" (index . 0)) 0 }}
+            {{ $sectionTitle = replaceRE "^## " "" $sectionTitle }}
+
+            <section>
+              <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                <span class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center">
+                  <svg class="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </span>
+                {{ $sectionTitle }}
+              </h2>
+            </section>
+          {{ end }}
+        {{ end }}
+      </div>
+
+      <!-- Render full content with styling -->
+      <div class="prose prose-lg prose-pink max-w-none
+        prose-h2:text-2xl prose-h2:font-bold prose-h2:text-gray-900 prose-h2:mt-12 prose-h2:mb-6 prose-h2:flex prose-h2:items-center prose-h2:gap-3
+        prose-h3:text-lg prose-h3:font-semibold prose-h3:text-gray-800 prose-h3:mt-0 prose-h3:mb-2
+        [&_h2]:before:content-[''] [&_h2]:before:w-10 [&_h2]:before:h-10 [&_h2]:before:bg-pink-100 [&_h2]:before:rounded-full [&_h2]:before:flex [&_h2]:before:items-center [&_h2]:before:justify-center [&_h2]:before:flex-shrink-0">
+
+        <!-- Custom FAQ styling with accordions -->
+        <div class="space-y-4 faq-content">
+          {{ .Content }}
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="mt-16 p-8 bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">{{ i18n "still_have_questions" | default "Still Have Questions?" }}</h2>
+        <p class="text-gray-600 mb-6">{{ i18n "faq_help_text" | default "Can't find what you're looking for? Check out these resources:" }}</p>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <a href="{{ "/learn/fundamentals/" | relLangURL }}" class="flex items-center gap-3 bg-white rounded-xl p-4 border border-gray-100 hover:border-pink-200 hover:shadow-md transition-all group">
+            <div class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+              </svg>
+            </div>
+            <div>
+              <span class="font-medium text-gray-900 group-hover:text-pink-600 transition-colors">{{ i18n "pilates_fundamentals" | default "Pilates Fundamentals" }}</span>
+              <span class="block text-sm text-gray-500">{{ i18n "learn_basics" | default "Learn the basics" }}</span>
+            </div>
+          </a>
+          <a href="{{ "/glossary/" | relLangURL }}" class="flex items-center gap-3 bg-white rounded-xl p-4 border border-gray-100 hover:border-pink-200 hover:shadow-md transition-all group">
+            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="font-medium text-gray-900 group-hover:text-pink-600 transition-colors">{{ i18n "glossary" | default "Pilates Glossary" }}</span>
+              <span class="block text-sm text-gray-500">{{ i18n "learn_terminology" | default "Learn the terminology" }}</span>
+            </div>
+          </a>
+          <a href="{{ "/contact/" | relLangURL }}" class="flex items-center gap-3 bg-white rounded-xl p-4 border border-gray-100 hover:border-pink-200 hover:shadow-md transition-all group">
+            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="font-medium text-gray-900 group-hover:text-pink-600 transition-colors">{{ i18n "contact_us" | default "Contact Us" }}</span>
+              <span class="block text-sm text-gray-500">{{ i18n "get_in_touch" | default "Get in touch" }}</span>
+            </div>
+          </a>
+          <a href="{{ "/exercises/" | relLangURL }}" class="flex items-center gap-3 bg-white rounded-xl p-4 border border-gray-100 hover:border-pink-200 hover:shadow-md transition-all group">
+            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="font-medium text-gray-900 group-hover:text-pink-600 transition-colors">{{ i18n "browse_exercises" | default "Browse Exercises" }}</span>
+              <span class="block text-sm text-gray-500">{{ i18n "start_practicing" | default "Start practicing" }}</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{ $questions := findRE "###\\s+([^\\n]+)\\n([^#]+)" .RawContent }}
+    {{ range $i, $q := $questions }}
+    {{ if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": "{{ index (findRE "###\\s+([^\\n]+)" $q) 0 | replaceRE "^###\\s+" "" | htmlEscape }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ $q | replaceRE "###\\s+[^\\n]+\\n" "" | replaceRE "\\n+" " " | truncate 500 | htmlEscape }}"
+      }
+    }
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}

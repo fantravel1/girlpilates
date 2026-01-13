@@ -124,6 +124,9 @@
   <link rel="alternate" type="application/rss+xml" title="GirlPilates RSS" href="{{ .Permalink }}">
   {{ end }}
 
+  <!-- Google Analytics -->
+  {{ partial "head/analytics.html" . }}
+
   {{ block "head" . }}{{ end }}
 </head>
 <body class="min-h-screen bg-white text-gray-900 font-sans antialiased">
@@ -156,5 +159,16 @@
   {{ end }}
 
   {{ block "scripts" . }}{{ end }}
+
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(reg => console.log('SW registered'))
+          .catch(err => console.log('SW registration failed'));
+      });
+    }
+  </script>
 </body>
 </html>
