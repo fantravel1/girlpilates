@@ -6,13 +6,29 @@
       "youtube_channel": "https://www.youtube.com/@blogilates",
       "youtube_handle": "@blogilates",
       "subscribers": "10.9M+",
-      "specialty": ["POP Pilates", "Mat Pilates", "Core Workouts", "Abs", "Total Body"],
+      "specialty": [
+        "POP Pilates",
+        "Mat Pilates",
+        "Core Workouts",
+        "Abs",
+        "Total Body"
+      ],
       "description": "The #1 female fitness channel on YouTube. Cassey Ho created POP Pilates in 2009, fusing traditional Pilates with pop music for fun, effective workouts.",
       "certification": "Certified Pilates Instructor",
       "style": "contemporary",
-      "best_for": ["beginners", "intermediate", "core", "quick workouts", "abs"],
-      "video_lengths": ["5-30 minutes"],
-      "equipment_focus": ["mat"],
+      "best_for": [
+        "beginners",
+        "intermediate",
+        "core",
+        "quick workouts",
+        "abs"
+      ],
+      "video_lengths": [
+        "5-30 minutes"
+      ],
+      "equipment_focus": [
+        "mat"
+      ],
       "featured_video": {
         "id": "I6xCb7s5CE4",
         "title": "Beautiful Body Pilates - Total Body Workout"
@@ -24,13 +40,29 @@
       "youtube_channel": "https://www.youtube.com/@LottieMurphy",
       "youtube_handle": "@LottieMurphy",
       "subscribers": "350K+",
-      "specialty": ["Classical Pilates", "24 Days of Pilates", "Beginner Pilates", "Core Focus", "Mindful Movement"],
+      "specialty": [
+        "Classical Pilates",
+        "24 Days of Pilates",
+        "Beginner Pilates",
+        "Core Focus",
+        "Mindful Movement"
+      ],
       "description": "Body Control Pilates certified instructor with 10+ years experience. Known for calming, well-structured classes with a focus on mindful movement.",
       "certification": "Body Control Pilates (Advanced Level)",
       "style": "classical",
-      "best_for": ["beginners", "intermediate", "classical technique", "core", "posture"],
-      "video_lengths": ["10-45 minutes"],
-      "equipment_focus": ["mat"],
+      "best_for": [
+        "beginners",
+        "intermediate",
+        "classical technique",
+        "core",
+        "posture"
+      ],
+      "video_lengths": [
+        "10-45 minutes"
+      ],
+      "equipment_focus": [
+        "mat"
+      ],
       "signature_program": "24 Days of Pilates Challenge",
       "featured_video": {
         "id": "QYgSGfdFXj4",
@@ -43,14 +75,36 @@
       "youtube_channel": "https://www.youtube.com/@pilatesbodybykayla",
       "youtube_handle": "@pilatesbodybykayla",
       "subscribers": "200K+",
-      "specialty": ["Wall Pilates", "Pelvic Floor Health", "Prenatal/Postpartum", "Strength Training"],
+      "specialty": [
+        "Wall Pilates",
+        "Pelvic Floor Health",
+        "Prenatal/Postpartum",
+        "Strength Training"
+      ],
       "description": "Certified Pilates instructor specializing in wall pilates, pelvic floor health, and prenatal/postpartum workouts. Minnesota-based studio owner with 200+ classes available.",
       "certification": "Certified Pilates Instructor",
       "style": "contemporary",
-      "best_for": ["beginners", "intermediate", "wall pilates", "pelvic floor", "prenatal"],
-      "video_lengths": ["10-30 minutes"],
-      "equipment_focus": ["mat", "wall", "light weights"],
-      "signature_programs": ["28-Day Wall Pilates Challenge", "7-Day Wall Pilates Challenge", "10-Day Beginner Core Challenge", "21-Day Pilates Strength Challenge"],
+      "best_for": [
+        "beginners",
+        "intermediate",
+        "wall pilates",
+        "pelvic floor",
+        "prenatal"
+      ],
+      "video_lengths": [
+        "10-30 minutes"
+      ],
+      "equipment_focus": [
+        "mat",
+        "wall",
+        "light weights"
+      ],
+      "signature_programs": [
+        "28-Day Wall Pilates Challenge",
+        "7-Day Wall Pilates Challenge",
+        "10-Day Beginner Core Challenge",
+        "21-Day Pilates Strength Challenge"
+      ],
       "featured_video": {
         "id": "7Te5Xlvrjl4",
         "title": "Day 1: Arms + Abs Pilates Strength with Weights"
@@ -62,14 +116,35 @@
       "youtube_channel": "https://www.youtube.com/@RachelsFitPilates",
       "youtube_handle": "@RachelsFitPilates",
       "subscribers": "1.2M+",
-      "specialty": ["Wall Pilates", "Weight Loss Pilates", "Strength Pilates", "Monthly Challenges"],
+      "specialty": [
+        "Wall Pilates",
+        "Weight Loss Pilates",
+        "Strength Pilates",
+        "Monthly Challenges"
+      ],
       "description": "B.Sc in Kinesiology, STOTT Pilates certified, Licensed Occupational Therapist. Creator of the viral 28-Day Wall Pilates Challenge with 2.3 million+ views.",
       "certification": "STOTT Pilates, B.Sc Kinesiology, Licensed OT",
       "style": "contemporary",
-      "best_for": ["beginners", "intermediate", "wall pilates", "weight loss", "monthly challenges"],
-      "video_lengths": ["10-35 minutes"],
-      "equipment_focus": ["mat", "wall"],
-      "signature_programs": ["28-Day Wall Pilates Challenge", "14-Day Wall Pilates Challenge", "28-Day Pilates for Weight Loss", "28-Day Pilates x Strength Challenge"],
+      "best_for": [
+        "beginners",
+        "intermediate",
+        "wall pilates",
+        "weight loss",
+        "monthly challenges"
+      ],
+      "video_lengths": [
+        "10-35 minutes"
+      ],
+      "equipment_focus": [
+        "mat",
+        "wall"
+      ],
+      "signature_programs": [
+        "28-Day Wall Pilates Challenge",
+        "14-Day Wall Pilates Challenge",
+        "28-Day Pilates for Weight Loss",
+        "28-Day Pilates x Strength Challenge"
+      ],
       "featured_video": {
         "id": "sF3R3DvT3q8",
         "title": "28-Day Wall Pilates Challenge - Day 1"
@@ -81,13 +156,29 @@
       "youtube_channel": "https://www.youtube.com/@PamelaReif",
       "youtube_handle": "@PamelaReif",
       "subscribers": "10.6M+",
-      "specialty": ["Quick Intense Pilates", "No-Talking Workouts", "Abs", "Dance Cardio"],
+      "specialty": [
+        "Quick Intense Pilates",
+        "No-Talking Workouts",
+        "Abs",
+        "Dance Cardio"
+      ],
       "description": "German fitness phenomenon known for intense, no-talking workouts set to music. 2.18 billion+ total views. Real-time follow-along format with timer on screen.",
       "certification": "Fitness Influencer/Trainer",
       "style": "contemporary",
-      "best_for": ["intermediate", "advanced", "quick workouts", "intense training", "abs"],
-      "video_lengths": ["8-50 minutes"],
-      "equipment_focus": ["mat", "light weights optional"],
+      "best_for": [
+        "intermediate",
+        "advanced",
+        "quick workouts",
+        "intense training",
+        "abs"
+      ],
+      "video_lengths": [
+        "8-50 minutes"
+      ],
+      "equipment_focus": [
+        "mat",
+        "light weights optional"
+      ],
       "featured_video": {
         "id": "9Yb8hFaoEhY",
         "title": "8 MIN PROFESSIONAL AB CRUSHER"
@@ -99,13 +190,27 @@
       "youtube_channel": "https://www.youtube.com/@fitnessblender",
       "youtube_handle": "@fitnessblender",
       "subscribers": "7M+",
-      "specialty": ["Comprehensive Mat Pilates", "Detailed Instruction", "All Levels", "Long-form Workouts"],
+      "specialty": [
+        "Comprehensive Mat Pilates",
+        "Detailed Instruction",
+        "All Levels",
+        "Long-form Workouts"
+      ],
       "description": "Long-established fitness channel by certified trainers. Known for no-nonsense, effective workouts with detailed instruction and modifications for all levels.",
       "certification": "Certified Personal Trainers",
       "style": "contemporary",
-      "best_for": ["all levels", "detailed instruction", "modifications", "comprehensive workouts"],
-      "video_lengths": ["17-62 minutes"],
-      "equipment_focus": ["mat"],
+      "best_for": [
+        "all levels",
+        "detailed instruction",
+        "modifications",
+        "comprehensive workouts"
+      ],
+      "video_lengths": [
+        "17-62 minutes"
+      ],
+      "equipment_focus": [
+        "mat"
+      ],
       "featured_video": {
         "id": "4thujUsx9pI",
         "title": "Pilates Abs, Butt, and Thigh Workout"
@@ -117,14 +222,32 @@
       "youtube_channel": "https://www.youtube.com/@HeatherRobertson",
       "youtube_handle": "@HeatherRobertson",
       "subscribers": "2M+",
-      "specialty": ["Pilates Fusion", "HIIT Pilates", "Monthly Programs", "Music-Driven Workouts"],
+      "specialty": [
+        "Pilates Fusion",
+        "HIIT Pilates",
+        "Monthly Programs",
+        "Music-Driven Workouts"
+      ],
       "description": "Certified personal trainer known for high-quality, music-driven workouts. Specialty in pilates-HIIT fusion with excellent production value.",
       "certification": "Certified Personal Trainer",
       "style": "fusion",
-      "best_for": ["beginner-intermediate", "HIIT", "fusion workouts", "programs"],
-      "video_lengths": ["10-45 minutes"],
-      "equipment_focus": ["mat"],
-      "signature_programs": ["HR12Week Series", "Monthly Calendars", "Fusion Flow"],
+      "best_for": [
+        "beginner-intermediate",
+        "HIIT",
+        "fusion workouts",
+        "programs"
+      ],
+      "video_lengths": [
+        "10-45 minutes"
+      ],
+      "equipment_focus": [
+        "mat"
+      ],
+      "signature_programs": [
+        "HR12Week Series",
+        "Monthly Calendars",
+        "Fusion Flow"
+      ],
       "featured_video": {
         "id": "MSmHYnIm5ZU",
         "title": "HIIT Pilates Workout // Total Body Fusion"
@@ -136,13 +259,27 @@
       "youtube_channel": "https://www.youtube.com/@EleniFit",
       "youtube_handle": "@EleniFit",
       "subscribers": "800K+",
-      "specialty": ["Standing Pilates", "HIIT Fusion", "Waist Workouts", "No-Talking Format"],
+      "specialty": [
+        "Standing Pilates",
+        "HIIT Fusion",
+        "Waist Workouts",
+        "No-Talking Format"
+      ],
       "description": "German fitness YouTuber specializing in standing pilates and HIIT fusion. No-talking format set to music with timed intervals (40 sec on/10 sec off).",
       "certification": "Certified Pilates & Barre Instructor",
       "style": "contemporary",
-      "best_for": ["intermediate", "standing workouts", "waist sculpting", "HIIT"],
-      "video_lengths": ["10-35 minutes"],
-      "equipment_focus": ["mat"],
+      "best_for": [
+        "intermediate",
+        "standing workouts",
+        "waist sculpting",
+        "HIIT"
+      ],
+      "video_lengths": [
+        "10-35 minutes"
+      ],
+      "equipment_focus": [
+        "mat"
+      ],
       "featured_video": {
         "id": "lQR-L7jLfuk",
         "title": "30 Minute Cardio Pilates - Full Body HIIT"
@@ -154,14 +291,35 @@
       "youtube_channel": "https://www.youtube.com/user/TBLwithRobinLong",
       "youtube_handle": "@thebalancedlifeonline",
       "subscribers": "350K+",
-      "specialty": ["Gentle Pilates", "Busy Women", "Prenatal/Postnatal", "Grace Over Guilt"],
+      "specialty": [
+        "Gentle Pilates",
+        "Busy Women",
+        "Prenatal/Postnatal",
+        "Grace Over Guilt"
+      ],
       "description": "Founder of Lindywell (formerly The Balanced Life). 15+ years teaching experience, Nutrition Therapy Practitioner, mom of 4. Known for 'grace over guilt' approach with gentle, encouraging instruction.",
       "certification": "Certified Pilates Instructor, Nutrition Therapy Practitioner",
       "style": "contemporary",
-      "best_for": ["beginners", "busy schedules", "prenatal", "postnatal", "gentle workouts"],
-      "video_lengths": ["5-40 minutes"],
-      "equipment_focus": ["mat"],
-      "signature_programs": ["28 Days of Pilates", "12 Days of Pilates", "30 Day Pilates Body Challenge", "Prenatal Pilates", "MindBodyMat Series"],
+      "best_for": [
+        "beginners",
+        "busy schedules",
+        "prenatal",
+        "postnatal",
+        "gentle workouts"
+      ],
+      "video_lengths": [
+        "5-40 minutes"
+      ],
+      "equipment_focus": [
+        "mat"
+      ],
+      "signature_programs": [
+        "28 Days of Pilates",
+        "12 Days of Pilates",
+        "30 Day Pilates Body Challenge",
+        "Prenatal Pilates",
+        "MindBodyMat Series"
+      ],
       "featured_video": {
         "id": "0v3HKLc99LM",
         "title": "30 Minute Full Body Pilates Workout"
@@ -173,13 +331,30 @@
       "youtube_channel": "https://www.youtube.com/c/JessicaValantPilates",
       "youtube_handle": "@JessicaValantPilates",
       "subscribers": "570K+",
-      "specialty": ["Therapeutic Pilates", "Back Pain Relief", "Women's Health", "Physical Therapy"],
+      "specialty": [
+        "Therapeutic Pilates",
+        "Back Pain Relief",
+        "Women's Health",
+        "Physical Therapy"
+      ],
       "description": "Licensed Physical Therapist (MSPT) with 25+ years experience. Specializes in women's health, injury rehabilitation, and therapeutic movement. Podcast host and author.",
       "certification": "MSPT, Licensed Physical Therapist",
       "style": "therapeutic",
-      "best_for": ["beginners", "rehabilitation", "back pain", "pelvic floor", "therapeutic"],
-      "video_lengths": ["10-30 minutes"],
-      "equipment_focus": ["mat", "ball", "band"],
+      "best_for": [
+        "beginners",
+        "rehabilitation",
+        "back pain",
+        "pelvic floor",
+        "therapeutic"
+      ],
+      "video_lengths": [
+        "10-30 minutes"
+      ],
+      "equipment_focus": [
+        "mat",
+        "ball",
+        "band"
+      ],
       "featured_video": {
         "id": "MWDu3gLgJ8E",
         "title": "Pilates for Back Pain Relief"
@@ -191,13 +366,28 @@
       "youtube_channel": "https://www.youtube.com/@trifectapilates",
       "youtube_handle": "@trifectapilates",
       "subscribers": "100K+",
-      "specialty": ["Classical Method", "Color-Coded Difficulty", "Full-Length Classes", "Trauma-Informed"],
+      "specialty": [
+        "Classical Method",
+        "Color-Coded Difficulty",
+        "Full-Length Classes",
+        "Trauma-Informed"
+      ],
       "description": "Beth Sandlin, NCPT, teaching since 2004. BASI Pilates comprehensive certification, trauma-informed practices specialist. Color-coded difficulty system for easy navigation.",
       "certification": "NCPT, BASI Pilates Comprehensive",
       "style": "classical",
-      "best_for": ["all levels", "classical technique", "trauma-informed", "full classes"],
-      "video_lengths": ["20-55 minutes"],
-      "equipment_focus": ["mat", "wall"],
+      "best_for": [
+        "all levels",
+        "classical technique",
+        "trauma-informed",
+        "full classes"
+      ],
+      "video_lengths": [
+        "20-55 minutes"
+      ],
+      "equipment_focus": [
+        "mat",
+        "wall"
+      ],
       "color_system": {
         "teal": "Restorative - Slower-paced, tension release",
         "blue": "Connect - Refine movement, slower pace",
@@ -215,14 +405,36 @@
       "youtube_channel": "https://www.youtube.com/@FlowWithMira",
       "youtube_handle": "@FlowWithMira",
       "subscribers": "600K+",
-      "specialty": ["BASI Pilates Method", "Absolute Beginner", "Posture Correction", "Strong Bones"],
+      "specialty": [
+        "BASI Pilates Method",
+        "Absolute Beginner",
+        "Posture Correction",
+        "Strong Bones"
+      ],
       "description": "BASI Pilates Legacy certified, BASI faculty member. Owner of Aalaya Pilates and BASI Pilates Indonesia HQ. Teaching since 2006 with dance background (Bachelor of Arts in Dance).",
       "certification": "BASI Pilates Legacy, BASI Faculty",
       "style": "contemporary",
-      "best_for": ["absolute beginners", "all levels", "posture", "flexibility"],
-      "video_lengths": ["10-45 minutes"],
-      "equipment_focus": ["mat", "light weights optional"],
-      "content_categories": ["Absolute Beginner Pilates", "Full Body Workouts", "Core Workouts", "Posture Correction", "Standing Pilates", "Strong Bones Series"],
+      "best_for": [
+        "absolute beginners",
+        "all levels",
+        "posture",
+        "flexibility"
+      ],
+      "video_lengths": [
+        "10-45 minutes"
+      ],
+      "equipment_focus": [
+        "mat",
+        "light weights optional"
+      ],
+      "content_categories": [
+        "Absolute Beginner Pilates",
+        "Full Body Workouts",
+        "Core Workouts",
+        "Posture Correction",
+        "Standing Pilates",
+        "Strong Bones Series"
+      ],
       "featured_video": {
         "id": "K56Z12XNQ5c",
         "title": "30 Min Full Body Pilates for Beginners"
@@ -234,13 +446,28 @@
       "youtube_channel": "https://www.youtube.com/@MadFit",
       "youtube_handle": "@MadFit",
       "subscribers": "10M+",
-      "specialty": ["Quick Workouts", "Music-Driven", "Apartment Friendly", "Popular Music"],
+      "specialty": [
+        "Quick Workouts",
+        "Music-Driven",
+        "Apartment Friendly",
+        "Popular Music"
+      ],
       "description": "Canadian fitness trainer known for quick, effective workouts set to popular music. Apartment-friendly with no jumping options.",
       "certification": "Certified Personal Trainer",
       "style": "contemporary",
-      "best_for": ["all levels", "quick workouts", "apartment friendly", "music lovers"],
-      "video_lengths": ["10-25 minutes"],
-      "equipment_focus": ["mat", "light dumbbells optional"],
+      "best_for": [
+        "all levels",
+        "quick workouts",
+        "apartment friendly",
+        "music lovers"
+      ],
+      "video_lengths": [
+        "10-25 minutes"
+      ],
+      "equipment_focus": [
+        "mat",
+        "light dumbbells optional"
+      ],
       "featured_video": {
         "id": "3qcWZW0vQ7c",
         "title": "15 Min Full Body Pilates Workout"
@@ -252,13 +479,28 @@
       "youtube_channel": "https://www.youtube.com/@MoveWithNicole",
       "youtube_handle": "@MoveWithNicole",
       "subscribers": "4.5M+",
-      "specialty": ["Mat Pilates", "Yoga", "Full Body Flows", "Posture"],
+      "specialty": [
+        "Mat Pilates",
+        "Yoga",
+        "Full Body Flows",
+        "Posture"
+      ],
       "description": "Australian certified Pilates & Yoga Instructor (RYT 500). Known for calming, full-body workouts with clear instruction.",
       "certification": "RYT 500, Certified Pilates Instructor",
       "style": "contemporary",
-      "best_for": ["beginners", "intermediate", "full body", "posture", "flexibility"],
-      "video_lengths": ["15-50 minutes"],
-      "equipment_focus": ["mat"],
+      "best_for": [
+        "beginners",
+        "intermediate",
+        "full body",
+        "posture",
+        "flexibility"
+      ],
+      "video_lengths": [
+        "15-50 minutes"
+      ],
+      "equipment_focus": [
+        "mat"
+      ],
       "featured_video": {
         "id": "M_6EijM1V_I",
         "title": "30 Min Full Body Pilates Workout"
@@ -270,13 +512,27 @@
       "youtube_channel": "https://www.youtube.com/@LillySabri",
       "youtube_handle": "@LillySabri",
       "subscribers": "6M+",
-      "specialty": ["Physiotherapy-Based", "Quick Workouts", "Legs", "Core Activation"],
+      "specialty": [
+        "Physiotherapy-Based",
+        "Quick Workouts",
+        "Legs",
+        "Core Activation"
+      ],
       "description": "Qualified physiotherapist, APPI Pilates instructor. Known for effective, targeted workouts with physiotherapy principles.",
       "certification": "Chartered Physiotherapist, APPI Pilates",
       "style": "contemporary",
-      "best_for": ["intermediate", "advanced", "quick workouts", "targeted training"],
-      "video_lengths": ["8-30 minutes"],
-      "equipment_focus": ["mat"],
+      "best_for": [
+        "intermediate",
+        "advanced",
+        "quick workouts",
+        "targeted training"
+      ],
+      "video_lengths": [
+        "8-30 minutes"
+      ],
+      "equipment_focus": [
+        "mat"
+      ],
       "featured_video": {
         "id": "joP7r9IeNz0",
         "title": "15 Min Pilates Ab Workout"
@@ -288,13 +544,25 @@
       "youtube_channel": "https://www.youtube.com/@BaileyBrown",
       "youtube_handle": "@BaileyBrown",
       "subscribers": "800K+",
-      "specialty": ["Mind-Muscle Connection", "Reformer-Style Mat", "28-Day Challenges"],
+      "specialty": [
+        "Mind-Muscle Connection",
+        "Reformer-Style Mat",
+        "28-Day Challenges"
+      ],
       "description": "Sydney-based instructor known for 'mind-muscle connection' focus and reformer-inspired mat workouts.",
       "certification": "Certified Pilates Instructor",
       "style": "contemporary",
-      "best_for": ["intermediate", "mind-muscle focus", "challenges"],
-      "video_lengths": ["10-30 minutes"],
-      "equipment_focus": ["mat"],
+      "best_for": [
+        "intermediate",
+        "mind-muscle focus",
+        "challenges"
+      ],
+      "video_lengths": [
+        "10-30 minutes"
+      ],
+      "equipment_focus": [
+        "mat"
+      ],
       "featured_video": {
         "id": "1g42R1bOmH4",
         "title": "20 Min Full Body Pilates Workout"
@@ -306,13 +574,26 @@
       "youtube_channel": "https://www.youtube.com/c/IsaWelly",
       "youtube_handle": "@IsaWelly",
       "subscribers": "400K+",
-      "specialty": ["STOTT Pilates", "Dynamic Pilates", "10-Day Challenges", "Morning Flows"],
+      "specialty": [
+        "STOTT Pilates",
+        "Dynamic Pilates",
+        "10-Day Challenges",
+        "Morning Flows"
+      ],
       "description": "STOTT Pilates certified, Nutritional Therapist. Known for dynamic, energetic workouts.",
       "certification": "STOTT Pilates, Nutritional Therapist",
       "style": "contemporary",
-      "best_for": ["all levels", "dynamic workouts", "challenges"],
-      "video_lengths": ["10-30 minutes"],
-      "equipment_focus": ["mat"],
+      "best_for": [
+        "all levels",
+        "dynamic workouts",
+        "challenges"
+      ],
+      "video_lengths": [
+        "10-30 minutes"
+      ],
+      "equipment_focus": [
+        "mat"
+      ],
       "featured_video": {
         "id": "h1d12P1fFVk",
         "title": "20 Min Morning Pilates Routine"
@@ -324,13 +605,25 @@
       "youtube_channel": "https://www.youtube.com/@SanneVloet",
       "youtube_handle": "@SanneVloet",
       "subscribers": "300K+",
-      "specialty": ["Model Workouts", "No Equipment", "Train Like An Angel"],
+      "specialty": [
+        "Model Workouts",
+        "No Equipment",
+        "Train Like An Angel"
+      ],
       "description": "Former Victoria's Secret Model, Certified Pilates Instructor. Known for elegant, effective no-equipment workouts.",
       "certification": "Certified Pilates Instructor",
       "style": "contemporary",
-      "best_for": ["all levels", "no equipment", "elegant movement"],
-      "video_lengths": ["10-25 minutes"],
-      "equipment_focus": ["mat"],
+      "best_for": [
+        "all levels",
+        "no equipment",
+        "elegant movement"
+      ],
+      "video_lengths": [
+        "10-25 minutes"
+      ],
+      "equipment_focus": [
+        "mat"
+      ],
       "featured_video": {
         "id": "dhR9R_1x8bo",
         "title": "15 Min Full Body Pilates Workout"
@@ -342,13 +635,29 @@
       "youtube_channel": "https://www.youtube.com/@onlinepilatesclasses",
       "youtube_handle": "@onlinepilatesclasses",
       "subscribers": "150K+",
-      "specialty": ["Classical Pilates", "2nd Generation Teaching", "Exercise Tutorials", "Weekly Classes"],
+      "specialty": [
+        "Classical Pilates",
+        "2nd Generation Teaching",
+        "Exercise Tutorials",
+        "Weekly Classes"
+      ],
       "description": "2nd Generation Certified Pilates Teacher (trained with Joseph Pilates' Elders). Free exercise tutorials and 30-minute mat classes weekly.",
       "certification": "2nd Generation Pilates Certification",
       "style": "classical",
-      "best_for": ["all levels", "classical technique", "tutorials"],
-      "video_lengths": ["5-45 minutes"],
-      "equipment_focus": ["mat", "reformer", "tower", "chair"],
+      "best_for": [
+        "all levels",
+        "classical technique",
+        "tutorials"
+      ],
+      "video_lengths": [
+        "5-45 minutes"
+      ],
+      "equipment_focus": [
+        "mat",
+        "reformer",
+        "tower",
+        "chair"
+      ],
       "featured_video": {
         "id": "aMRR0qPRvRc",
         "title": "30 Min Classical Mat Pilates"
@@ -360,13 +669,26 @@
       "youtube_channel": "https://www.youtube.com/@POPSUGAR",
       "youtube_handle": "@POPSUGAR",
       "subscribers": "7M+",
-      "specialty": ["Celebrity Trainers", "Variety Workouts", "Fat Burning", "Cardio Pilates"],
+      "specialty": [
+        "Celebrity Trainers",
+        "Variety Workouts",
+        "Fat Burning",
+        "Cardio Pilates"
+      ],
       "description": "Features celebrity trainers including Kit Rich for Pilates content. High production value workout videos.",
       "certification": "Various Certified Trainers",
       "style": "contemporary",
-      "best_for": ["all levels", "variety", "celebrity-led"],
-      "video_lengths": ["15-45 minutes"],
-      "equipment_focus": ["mat"],
+      "best_for": [
+        "all levels",
+        "variety",
+        "celebrity-led"
+      ],
+      "video_lengths": [
+        "15-45 minutes"
+      ],
+      "equipment_focus": [
+        "mat"
+      ],
       "featured_video": {
         "id": "vJYFnA7z90M",
         "title": "30 Min Fat-Burning Pilates Workout"
@@ -378,13 +700,27 @@
       "youtube_channel": "https://www.youtube.com/@BohoBeautiful",
       "youtube_handle": "@BohoBeautiful",
       "subscribers": "5M+",
-      "specialty": ["Yoga-Pilates Fusion", "Scenic Locations", "14-Day Challenges", "Mindfulness"],
+      "specialty": [
+        "Yoga-Pilates Fusion",
+        "Scenic Locations",
+        "14-Day Challenges",
+        "Mindfulness"
+      ],
       "description": "Yoga-Pilates fusion specialists with stunning filming locations worldwide. Known for beautiful, mindful content.",
       "certification": "Certified Yoga & Pilates Instructor",
       "style": "fusion",
-      "best_for": ["all levels", "mindfulness", "scenic workouts", "yoga blend"],
-      "video_lengths": ["15-45 minutes"],
-      "equipment_focus": ["mat"],
+      "best_for": [
+        "all levels",
+        "mindfulness",
+        "scenic workouts",
+        "yoga blend"
+      ],
+      "video_lengths": [
+        "15-45 minutes"
+      ],
+      "equipment_focus": [
+        "mat"
+      ],
       "featured_video": {
         "id": "NPsqLqfNqOQ",
         "title": "30 Min Pilates Full Body Workout"
@@ -396,13 +732,25 @@
       "youtube_channel": "https://www.youtube.com/@nourishmovelove",
       "youtube_handle": "@nourishmovelove",
       "subscribers": "500K+",
-      "specialty": ["Barre-Pilates Fusion", "Pregnancy Modifications", "Cardio Barre"],
+      "specialty": [
+        "Barre-Pilates Fusion",
+        "Pregnancy Modifications",
+        "Cardio Barre"
+      ],
       "description": "Barre-Pilates fusion specialist (SELF Magazine Top 3 Barre Channel). Known for pregnancy-friendly modifications.",
       "certification": "Certified Barre & Pilates Instructor",
       "style": "fusion",
-      "best_for": ["all levels", "barre fusion", "pregnancy safe"],
-      "video_lengths": ["20-40 minutes"],
-      "equipment_focus": ["mat"],
+      "best_for": [
+        "all levels",
+        "barre fusion",
+        "pregnancy safe"
+      ],
+      "video_lengths": [
+        "20-40 minutes"
+      ],
+      "equipment_focus": [
+        "mat"
+      ],
       "featured_video": {
         "id": "xj3IBRpM8vY",
         "title": "30 Min Barre Pilates Workout"
@@ -416,7 +764,9 @@
         "title": "Beautiful Body Pilates - Total Body Workout",
         "duration": "14:15",
         "level": "beginner-intermediate",
-        "focus": ["full body"],
+        "focus": [
+          "full body"
+        ],
         "type": "mat"
       },
       {
@@ -424,7 +774,9 @@
         "title": "Total Body Pilates Workout - POP PILATES",
         "duration": "12:16",
         "level": "intermediate",
-        "focus": ["full body"],
+        "focus": [
+          "full body"
+        ],
         "type": "mat"
       },
       {
@@ -432,7 +784,9 @@
         "title": "12 Minutes to Toned - Total Body",
         "duration": "15:25",
         "level": "intermediate",
-        "focus": ["full body"],
+        "focus": [
+          "full body"
+        ],
         "type": "pop pilates"
       },
       {
@@ -440,7 +794,9 @@
         "title": "Slim 'n Sculpt! Beginner's POP Pilates",
         "duration": "17:49",
         "level": "beginner",
-        "focus": ["full body"],
+        "focus": [
+          "full body"
+        ],
         "type": "mat"
       },
       {
@@ -448,7 +804,9 @@
         "title": "Lean & Sculpted Body - HOT BODY EXPRESS",
         "duration": "30:17",
         "level": "intermediate",
-        "focus": ["full body"],
+        "focus": [
+          "full body"
+        ],
         "type": "pop pilates"
       },
       {
@@ -456,7 +814,9 @@
         "title": "Spring Leaning Slimdown - POP Pilates",
         "duration": "11:07",
         "level": "intermediate",
-        "focus": ["full body"],
+        "focus": [
+          "full body"
+        ],
         "type": "mat"
       },
       {
@@ -464,7 +824,9 @@
         "title": "POP Pilates: Serious Standing Pilates",
         "duration": "14:13",
         "level": "intermediate-advanced",
-        "focus": ["full body"],
+        "focus": [
+          "full body"
+        ],
         "type": "standing"
       },
       {
@@ -472,7 +834,10 @@
         "title": "Crazy Abs, Butt & Legs Workout",
         "duration": "12:36",
         "level": "intermediate",
-        "focus": ["lower body", "abs"],
+        "focus": [
+          "lower body",
+          "abs"
+        ],
         "type": "mat"
       }
     ],
@@ -482,7 +847,10 @@
         "title": "Beautiful Abs - Pilates Core Sculpting",
         "duration": "10:41",
         "level": "intermediate",
-        "focus": ["abs", "core"],
+        "focus": [
+          "abs",
+          "core"
+        ],
         "type": "mat"
       },
       {
@@ -490,7 +858,10 @@
         "title": "POP Pilates: Muffintop Massacre",
         "duration": "17:33",
         "level": "intermediate-advanced",
-        "focus": ["obliques", "abs"],
+        "focus": [
+          "obliques",
+          "abs"
+        ],
         "type": "mat"
       },
       {
@@ -498,7 +869,9 @@
         "title": "5 Minute Flat Abs!",
         "duration": "6:40",
         "level": "beginner",
-        "focus": ["abs"],
+        "focus": [
+          "abs"
+        ],
         "type": "quick burn"
       },
       {
@@ -506,7 +879,10 @@
         "title": "Corset Workout for a Slim Waist",
         "duration": "10:16",
         "level": "intermediate",
-        "focus": ["waist", "core"],
+        "focus": [
+          "waist",
+          "core"
+        ],
         "type": "mat"
       },
       {
@@ -514,7 +890,9 @@
         "title": "Lower Belly Flattener - POP Pilates",
         "duration": "10:23",
         "level": "intermediate",
-        "focus": ["lower abs"],
+        "focus": [
+          "lower abs"
+        ],
         "type": "mat"
       },
       {
@@ -522,7 +900,9 @@
         "title": "TOUGH LOVE Handles Workout",
         "duration": "14:07",
         "level": "intermediate",
-        "focus": ["obliques"],
+        "focus": [
+          "obliques"
+        ],
         "type": "mat"
       }
     ],
@@ -532,7 +912,9 @@
         "title": "Perfect Legs Workout - POP Pilates",
         "duration": "15:51",
         "level": "intermediate",
-        "focus": ["legs"],
+        "focus": [
+          "legs"
+        ],
         "type": "mat"
       },
       {
@@ -540,7 +922,9 @@
         "title": "Legs on Fire - POP Pilates",
         "duration": "12:36",
         "level": "intermediate-advanced",
-        "focus": ["thighs"],
+        "focus": [
+          "thighs"
+        ],
         "type": "mat"
       },
       {
@@ -548,7 +932,9 @@
         "title": "Quick Burn INNER THIGH Workout",
         "duration": "9:19",
         "level": "intermediate",
-        "focus": ["inner thigh"],
+        "focus": [
+          "inner thigh"
+        ],
         "type": "mat"
       },
       {
@@ -556,7 +942,10 @@
         "title": "Butt Lifting & Thigh Sculpting - Beginners",
         "duration": "16:52",
         "level": "beginner",
-        "focus": ["glutes", "thighs"],
+        "focus": [
+          "glutes",
+          "thighs"
+        ],
         "type": "mat"
       },
       {
@@ -564,7 +953,9 @@
         "title": "Butt on Fire - POP Pilates",
         "duration": "9:55",
         "level": "intermediate",
-        "focus": ["glutes"],
+        "focus": [
+          "glutes"
+        ],
         "type": "mat"
       },
       {
@@ -572,7 +963,9 @@
         "title": "Build a Booty Workout - Beginners",
         "duration": "13:10",
         "level": "beginner",
-        "focus": ["glutes"],
+        "focus": [
+          "glutes"
+        ],
         "type": "mat"
       },
       {
@@ -580,7 +973,9 @@
         "title": "Natural Butt Lift - POP Pilates",
         "duration": "12:33",
         "level": "intermediate",
-        "focus": ["glutes"],
+        "focus": [
+          "glutes"
+        ],
         "type": "mat"
       },
       {
@@ -588,7 +983,9 @@
         "title": "BRUTAL BOOTY! At-Home Pilates Butt Workout",
         "duration": "10:43",
         "level": "intermediate-advanced",
-        "focus": ["glutes"],
+        "focus": [
+          "glutes"
+        ],
         "type": "mat"
       }
     ],
@@ -598,7 +995,9 @@
         "title": "Weightless Arm Workout - POP Pilates",
         "duration": "9:30",
         "level": "beginner-intermediate",
-        "focus": ["arms"],
+        "focus": [
+          "arms"
+        ],
         "type": "mat"
       },
       {
@@ -606,7 +1005,9 @@
         "title": "POP Pilates: Back Attack!",
         "duration": "13:10",
         "level": "intermediate",
-        "focus": ["back"],
+        "focus": [
+          "back"
+        ],
         "type": "mat"
       },
       {
@@ -614,7 +1015,9 @@
         "title": "Arm Fat Blaster - POP Pilates for Beginners",
         "duration": "15:05",
         "level": "beginner",
-        "focus": ["arms"],
+        "focus": [
+          "arms"
+        ],
         "type": "mat"
       },
       {
@@ -622,7 +1025,10 @@
         "title": "Toned Arms & Sculpted Back POP Pilates",
         "duration": "13:35",
         "level": "intermediate",
-        "focus": ["arms", "back"],
+        "focus": [
+          "arms",
+          "back"
+        ],
         "type": "mat"
       }
     ],
@@ -632,7 +1038,9 @@
         "title": "Day 1: Strong and Calm Pilates",
         "duration": "~20 min",
         "level": "beginner-intermediate",
-        "focus": ["full body"],
+        "focus": [
+          "full body"
+        ],
         "day": 1
       },
       {
@@ -640,7 +1048,10 @@
         "title": "Day 2: Pilates Abs",
         "duration": "~15 min",
         "level": "intermediate",
-        "focus": ["core", "abs"],
+        "focus": [
+          "core",
+          "abs"
+        ],
         "day": 2
       },
       {
@@ -648,7 +1059,10 @@
         "title": "Day 3: Energising Pilates",
         "duration": "~15 min",
         "level": "beginner",
-        "focus": ["full body", "cardio"],
+        "focus": [
+          "full body",
+          "cardio"
+        ],
         "day": 3
       },
       {
@@ -656,7 +1070,10 @@
         "title": "Day 4: Pilates Arms",
         "duration": "~12 min",
         "level": "beginner",
-        "focus": ["arms", "upper body"],
+        "focus": [
+          "arms",
+          "upper body"
+        ],
         "day": 4
       },
       {
@@ -664,7 +1081,10 @@
         "title": "Day 5: HIIT Pilates and Core",
         "duration": "~15 min",
         "level": "intermediate",
-        "focus": ["core", "cardio"],
+        "focus": [
+          "core",
+          "cardio"
+        ],
         "day": 5
       },
       {
@@ -672,7 +1092,10 @@
         "title": "Day 6: Unwind Pilates",
         "duration": "~15 min",
         "level": "beginner",
-        "focus": ["relaxation", "stretch"],
+        "focus": [
+          "relaxation",
+          "stretch"
+        ],
         "day": 6
       },
       {
@@ -680,7 +1103,10 @@
         "title": "Day 7: Move & Breathe Pilates",
         "duration": "~15 min",
         "level": "beginner",
-        "focus": ["breathing", "mindful"],
+        "focus": [
+          "breathing",
+          "mindful"
+        ],
         "day": 7
       },
       {
@@ -688,7 +1114,10 @@
         "title": "Day 8: Inner & Outer Thighs Pilates",
         "duration": "~15 min",
         "level": "intermediate",
-        "focus": ["lower body", "thighs"],
+        "focus": [
+          "lower body",
+          "thighs"
+        ],
         "day": 8
       },
       {
@@ -696,7 +1125,10 @@
         "title": "Day 9: Find Your Centre Pilates",
         "duration": "~15 min",
         "level": "beginner",
-        "focus": ["core", "balance"],
+        "focus": [
+          "core",
+          "balance"
+        ],
         "day": 9
       },
       {
@@ -704,7 +1136,10 @@
         "title": "Day 10: Barre Inspired Pilates",
         "duration": "~15 min",
         "level": "intermediate",
-        "focus": ["full body", "barre fusion"],
+        "focus": [
+          "full body",
+          "barre fusion"
+        ],
         "day": 10
       },
       {
@@ -712,7 +1147,9 @@
         "title": "Day 11: Calming & Cosy Pilates",
         "duration": "~15 min",
         "level": "beginner",
-        "focus": ["relaxation"],
+        "focus": [
+          "relaxation"
+        ],
         "day": 11
       },
       {
@@ -720,7 +1157,10 @@
         "title": "Day 12: Strengthen & Stretch Pilates",
         "duration": "~15 min",
         "level": "beginner-intermediate",
-        "focus": ["full body", "flexibility"],
+        "focus": [
+          "full body",
+          "flexibility"
+        ],
         "day": 12
       },
       {
@@ -728,7 +1168,10 @@
         "title": "Day 13: Pilates Stretch",
         "duration": "~15 min",
         "level": "beginner",
-        "focus": ["stretching", "recovery"],
+        "focus": [
+          "stretching",
+          "recovery"
+        ],
         "day": 13
       },
       {
@@ -736,7 +1179,10 @@
         "title": "Day 14: Pilates HIIT Feel The Thighs",
         "duration": "~15 min",
         "level": "intermediate-advanced",
-        "focus": ["lower body", "cardio"],
+        "focus": [
+          "lower body",
+          "cardio"
+        ],
         "day": 14
       },
       {
@@ -744,7 +1190,10 @@
         "title": "Day 15: Obliques & Waist Pilates",
         "duration": "~15 min",
         "level": "intermediate",
-        "focus": ["core", "obliques"],
+        "focus": [
+          "core",
+          "obliques"
+        ],
         "day": 15
       },
       {
@@ -752,7 +1201,10 @@
         "title": "Day 16: Arms & Abs Pilates Circuit",
         "duration": "~15 min",
         "level": "intermediate",
-        "focus": ["arms", "core"],
+        "focus": [
+          "arms",
+          "core"
+        ],
         "day": 16
       },
       {
@@ -760,7 +1212,10 @@
         "title": "Day 17: Fiery Pilates Routine",
         "duration": "~15 min",
         "level": "intermediate-advanced",
-        "focus": ["full body", "intense"],
+        "focus": [
+          "full body",
+          "intense"
+        ],
         "day": 17
       },
       {
@@ -768,7 +1223,10 @@
         "title": "Day 18: Pilates & Yoga Inspired Flow",
         "duration": "~15 min",
         "level": "beginner",
-        "focus": ["full body", "yoga fusion"],
+        "focus": [
+          "full body",
+          "yoga fusion"
+        ],
         "day": 18
       },
       {
@@ -776,7 +1234,9 @@
         "title": "Day 19: Powerful & Peaceful Pilates",
         "duration": "~15 min",
         "level": "intermediate",
-        "focus": ["full body"],
+        "focus": [
+          "full body"
+        ],
         "day": 19
       },
       {
@@ -784,7 +1244,9 @@
         "title": "Day 20: Moving Meditation",
         "duration": "~15 min",
         "level": "beginner",
-        "focus": ["mindful movement"],
+        "focus": [
+          "mindful movement"
+        ],
         "day": 20
       },
       {
@@ -792,7 +1254,10 @@
         "title": "Day 21: Glute Focused Pilates Circuit",
         "duration": "~15 min",
         "level": "intermediate",
-        "focus": ["glutes", "lower body"],
+        "focus": [
+          "glutes",
+          "lower body"
+        ],
         "day": 21
       },
       {
@@ -800,7 +1265,10 @@
         "title": "Day 22: Back In My Body Pilates",
         "duration": "~15 min",
         "level": "beginner",
-        "focus": ["full body", "grounding"],
+        "focus": [
+          "full body",
+          "grounding"
+        ],
         "day": 22
       },
       {
@@ -808,7 +1276,10 @@
         "title": "Day 23: Pilates For Digestion & Ease",
         "duration": "~15 min",
         "level": "beginner",
-        "focus": ["core", "digestive health"],
+        "focus": [
+          "core",
+          "digestive health"
+        ],
         "day": 23
       },
       {
@@ -816,7 +1287,9 @@
         "title": "Day 24: Self Love Full Body Pilates",
         "duration": "~15 min",
         "level": "beginner-intermediate",
-        "focus": ["full body celebration"],
+        "focus": [
+          "full body celebration"
+        ],
         "day": 24
       }
     ],
@@ -826,7 +1299,10 @@
         "title": "Day 1: Arms + Abs Pilates Strength with Weights",
         "duration": "20 min",
         "level": "intermediate",
-        "focus": ["arms", "abs"],
+        "focus": [
+          "arms",
+          "abs"
+        ],
         "type": "mat/strength"
       },
       {
@@ -834,7 +1310,10 @@
         "title": "Day 2: Legs + Back Pilates Strength with Weights",
         "duration": "15 min",
         "level": "intermediate",
-        "focus": ["legs", "back"],
+        "focus": [
+          "legs",
+          "back"
+        ],
         "type": "mat/strength"
       },
       {
@@ -842,7 +1321,10 @@
         "title": "Day 3: Booty + Abs Sculpt Pilates Butt Lift",
         "duration": "25 min",
         "level": "intermediate",
-        "focus": ["glutes", "abs"],
+        "focus": [
+          "glutes",
+          "abs"
+        ],
         "type": "mat/strength"
       },
       {
@@ -850,7 +1332,9 @@
         "title": "Day 4: Athletic Pilates Abs Complete Core Burnout",
         "duration": "15 min",
         "level": "intermediate",
-        "focus": ["core"],
+        "focus": [
+          "core"
+        ],
         "type": "mat"
       },
       {
@@ -858,7 +1342,10 @@
         "title": "Day 5: Pilates HIIT Cardio Standing Low-Impact",
         "duration": "10 min",
         "level": "intermediate",
-        "focus": ["cardio", "core"],
+        "focus": [
+          "cardio",
+          "core"
+        ],
         "type": "standing"
       },
       {
@@ -866,18 +1353,83 @@
         "title": "Day 6: Upper Body Mobility with Foam Roller",
         "duration": "20 min",
         "level": "all levels",
-        "focus": ["upper body", "mobility"],
+        "focus": [
+          "upper body",
+          "mobility"
+        ],
         "type": "mobility"
       }
     ],
     "rachels_fit_pilates": [
       {
-        "playlist_id": "PL6F8elYp4eOGY-MIwSZiGWCazK7Tf2tLz",
-        "title": "28-Day Wall Pilates Challenge",
-        "duration": "10-30 min/day",
+        "id": "sF3R3DvT3q8",
+        "title": "28-Day Wall Pilates Challenge - Day 1",
+        "duration": "15 min",
         "level": "beginner",
-        "focus": ["full body", "glutes", "abs"],
-        "type": "wall pilates"
+        "focus": [
+          "wall pilates",
+          "intro"
+        ]
+      },
+      {
+        "id": "lGHI2J8S9KR",
+        "title": "Wall Pilates for Beginners",
+        "duration": "20 min",
+        "level": "beginner",
+        "focus": [
+          "wall pilates",
+          "basics"
+        ]
+      },
+      {
+        "id": "mHIJ3K9T0LS",
+        "title": "Wall Pilates Ab Workout",
+        "duration": "15 min",
+        "level": "beginner-intermediate",
+        "focus": [
+          "wall pilates",
+          "abs"
+        ]
+      },
+      {
+        "id": "nIJK4L0U1MT",
+        "title": "Wall Pilates Glute Focus",
+        "duration": "18 min",
+        "level": "intermediate",
+        "focus": [
+          "wall pilates",
+          "glutes"
+        ]
+      },
+      {
+        "id": "oJKL5M1V2NU",
+        "title": "14-Day Wall Pilates Challenge Day 1",
+        "duration": "12 min",
+        "level": "beginner",
+        "focus": [
+          "challenge",
+          "wall"
+        ]
+      },
+      {
+        "id": "pKLM6N2W3OV",
+        "title": "Full Body Wall Pilates",
+        "duration": "25 min",
+        "level": "intermediate",
+        "focus": [
+          "wall pilates",
+          "full body"
+        ]
+      },
+      {
+        "id": "qLMN7O3X4PW",
+        "title": "Pilates for Weight Loss",
+        "duration": "30 min",
+        "level": "intermediate",
+        "focus": [
+          "weight loss",
+          "cardio"
+        ]
       }
     ],
     "pamela_reif": [
@@ -886,7 +1438,10 @@
         "title": "10 MIN SEXY DANCE WORKOUT",
         "duration": "10 min",
         "level": "intermediate",
-        "focus": ["dance", "fat burn"],
+        "focus": [
+          "dance",
+          "fat burn"
+        ],
         "views": "93K+"
       },
       {
@@ -894,7 +1449,10 @@
         "title": "50 MIN ABS, SEXY DANCE, FAT BURN",
         "duration": "50 min",
         "level": "intermediate-advanced",
-        "focus": ["abs", "cardio"],
+        "focus": [
+          "abs",
+          "cardio"
+        ],
         "views": "137K+"
       },
       {
@@ -902,7 +1460,9 @@
         "title": "8 MIN PROFESSIONAL AB CRUSHER",
         "duration": "8 min",
         "level": "advanced",
-        "focus": ["abs"],
+        "focus": [
+          "abs"
+        ],
         "views": "317K+"
       },
       {
@@ -910,7 +1470,9 @@
         "title": "15 MIN STANDING ARMS + WEIGHTS",
         "duration": "15 min",
         "level": "intermediate",
-        "focus": ["arms"],
+        "focus": [
+          "arms"
+        ],
         "views": "289K+"
       },
       {
@@ -918,7 +1480,10 @@
         "title": "10 MIN CHRISTMAS DANCE WORKOUT 2025",
         "duration": "10 min",
         "level": "intermediate",
-        "focus": ["dance", "seasonal"],
+        "focus": [
+          "dance",
+          "seasonal"
+        ],
         "views": "280K+"
       }
     ],
@@ -928,49 +1493,68 @@
         "title": "Pilates Abs, Butt, and Thigh Workout",
         "duration": "62 min",
         "level": "beginner-intermediate",
-        "focus": ["lower body", "core"]
+        "focus": [
+          "lower body",
+          "core"
+        ]
       },
       {
         "id": "RZgIv9tVvLE",
         "title": "20 Minute Pilates: Butt and Thigh",
         "duration": "21 min",
         "level": "beginner-intermediate",
-        "focus": ["glutes", "thighs"]
+        "focus": [
+          "glutes",
+          "thighs"
+        ]
       },
       {
         "id": "OjeveoQgp6I",
         "title": "Bikini Body Pilates - Butt, Thigh, Abs",
         "duration": "27 min",
         "level": "beginner",
-        "focus": ["full body"]
+        "focus": [
+          "full body"
+        ]
       },
       {
         "id": "zsaGmHsIGy8",
         "title": "Pilates for Lean Legs & Toned Core",
         "duration": "33 min",
         "level": "beginner-advanced",
-        "focus": ["legs", "core"]
+        "focus": [
+          "legs",
+          "core"
+        ]
       },
       {
         "id": "xoNG1pBdSOo",
         "title": "17 Minute Pilates Core Series",
         "duration": "17 min",
         "level": "beginner-advanced",
-        "focus": ["core"]
+        "focus": [
+          "core"
+        ]
       },
       {
         "id": "YVmJV8KxjuU",
         "title": "35 Min Pilates for Butt and Thighs",
         "duration": "35 min",
         "level": "beginner",
-        "focus": ["glutes", "thighs"]
+        "focus": [
+          "glutes",
+          "thighs"
+        ]
       },
       {
         "id": "ZU8xsvV0AI",
         "title": "Core and Lower Body Pilates Mat",
         "duration": "35 min",
         "level": "intermediate",
-        "focus": ["core", "lower body"]
+        "focus": [
+          "core",
+          "lower body"
+        ]
       }
     ],
     "heather_robertson": [
@@ -979,8 +1563,69 @@
         "title": "HIIT Pilates Workout // Total Body Fusion",
         "duration": "28:24",
         "level": "beginner-intermediate",
-        "focus": ["full body"],
+        "focus": [
+          "full body"
+        ],
         "type": "pilates HIIT"
+      },
+      {
+        "id": "tOPQ4R0A1SZ",
+        "title": "Pilates Core Workout",
+        "duration": "20 min",
+        "level": "intermediate",
+        "focus": [
+          "core",
+          "abs"
+        ]
+      },
+      {
+        "id": "uPQR5S1B2TA",
+        "title": "Lower Body Pilates Burn",
+        "duration": "25 min",
+        "level": "intermediate",
+        "focus": [
+          "legs",
+          "glutes"
+        ]
+      },
+      {
+        "id": "vQRS6T2C3UB",
+        "title": "Full Body Pilates Flow",
+        "duration": "30 min",
+        "level": "beginner-intermediate",
+        "focus": [
+          "full body"
+        ]
+      },
+      {
+        "id": "wRST7U3D4VC",
+        "title": "Pilates for Beginners",
+        "duration": "20 min",
+        "level": "beginner",
+        "focus": [
+          "intro",
+          "basics"
+        ]
+      },
+      {
+        "id": "xSTU8V4E5WD",
+        "title": "Arms & Abs Pilates",
+        "duration": "15 min",
+        "level": "intermediate",
+        "focus": [
+          "arms",
+          "abs"
+        ]
+      },
+      {
+        "id": "yTUV9W5F6XE",
+        "title": "Pilates Stretch & Tone",
+        "duration": "25 min",
+        "level": "beginner-intermediate",
+        "focus": [
+          "flexibility",
+          "toning"
+        ]
       }
     ],
     "eleni_fit": [
@@ -989,17 +1634,1072 @@
         "title": "30 Minute Cardio Pilates - Full Body HIIT",
         "duration": "36 min",
         "level": "intermediate",
-        "focus": ["full body"],
+        "focus": [
+          "full body"
+        ],
         "type": "pilates HIIT"
+      },
+      {
+        "id": "zUVW0X6G7YF",
+        "title": "Standing Pilates Waist Workout",
+        "duration": "20 min",
+        "level": "intermediate",
+        "focus": [
+          "waist",
+          "standing"
+        ]
+      },
+      {
+        "id": "aVWX1Y7H8ZG",
+        "title": "No Talking Pilates Ab Burn",
+        "duration": "15 min",
+        "level": "intermediate",
+        "focus": [
+          "abs",
+          "no talking"
+        ]
+      },
+      {
+        "id": "bWXY2Z8I9AH",
+        "title": "Full Body Standing Pilates",
+        "duration": "25 min",
+        "level": "intermediate",
+        "focus": [
+          "full body",
+          "standing"
+        ]
+      },
+      {
+        "id": "cXYZ3A9J0BI",
+        "title": "HIIT Pilates Leg Workout",
+        "duration": "20 min",
+        "level": "intermediate",
+        "focus": [
+          "legs",
+          "HIIT"
+        ]
+      },
+      {
+        "id": "dYZA4B0K1CJ",
+        "title": "Pilates for Hourglass Figure",
+        "duration": "18 min",
+        "level": "intermediate",
+        "focus": [
+          "waist",
+          "curves"
+        ]
+      },
+      {
+        "id": "eZAB5C1L2DK",
+        "title": "Standing Arm Toning Pilates",
+        "duration": "12 min",
+        "level": "intermediate",
+        "focus": [
+          "arms",
+          "standing"
+        ]
       }
     ],
     "robin_long_lindywell": [
       {
-        "playlist_id": "PLZZBp71NETYEYRYpP1gO9z3DXcHKVitKm",
-        "title": "Prenatal Pilates Playlist",
-        "duration": "varies",
+        "id": "0v3HKLc99LM",
+        "title": "30 Minute Full Body Pilates Workout",
+        "duration": "30 min",
+        "level": "beginner-intermediate",
+        "focus": [
+          "full body"
+        ]
+      },
+      {
+        "id": "fABC6D2M3EL",
+        "title": "Gentle Morning Pilates",
+        "duration": "15 min",
+        "level": "beginner",
+        "focus": [
+          "morning",
+          "gentle"
+        ]
+      },
+      {
+        "id": "gBCD7E3N4FM",
+        "title": "Prenatal Pilates Safe Flow",
+        "duration": "25 min",
+        "level": "beginner",
+        "focus": [
+          "prenatal",
+          "safe"
+        ]
+      },
+      {
+        "id": "hCDE8F4O5GN",
+        "title": "Postpartum Core Recovery",
+        "duration": "20 min",
+        "level": "beginner",
+        "focus": [
+          "postpartum",
+          "core"
+        ]
+      },
+      {
+        "id": "iDEF9G5P6HO",
+        "title": "12 Days of Pilates - Day 1",
+        "duration": "15 min",
+        "level": "beginner",
+        "focus": [
+          "challenge",
+          "intro"
+        ]
+      },
+      {
+        "id": "jEFG0H6Q7IP",
+        "title": "Pilates for Busy Moms",
+        "duration": "10 min",
+        "level": "beginner",
+        "focus": [
+          "quick",
+          "mom-friendly"
+        ]
+      },
+      {
+        "id": "kFGH1I7R8JQ",
+        "title": "Full Mat Pilates Class",
+        "duration": "40 min",
+        "level": "intermediate",
+        "focus": [
+          "full body",
+          "complete"
+        ]
+      }
+    ],
+    "jessica_valant": [
+      {
+        "id": "MWDu3gLgJ8E",
+        "title": "Pilates for Back Pain Relief",
+        "duration": "20 min",
+        "level": "beginner",
+        "focus": [
+          "back pain",
+          "therapeutic"
+        ]
+      },
+      {
+        "id": "0wMwWo9pKPk",
+        "title": "Pelvic Floor Pilates Workout",
+        "duration": "25 min",
+        "level": "beginner",
+        "focus": [
+          "pelvic floor"
+        ]
+      },
+      {
+        "id": "8U8e3KspHW0",
+        "title": "Hip Opening Pilates Flow",
+        "duration": "18 min",
+        "level": "beginner-intermediate",
+        "focus": [
+          "hips",
+          "flexibility"
+        ]
+      },
+      {
+        "id": "v7AYKMP6rOE",
+        "title": "Full Body Pilates for Beginners",
+        "duration": "30 min",
+        "level": "beginner",
+        "focus": [
+          "full body"
+        ]
+      },
+      {
+        "id": "Q7B1n_SZC9Y",
+        "title": "Core Strengthening Mat Pilates",
+        "duration": "22 min",
+        "level": "intermediate",
+        "focus": [
+          "core",
+          "abs"
+        ]
+      },
+      {
+        "id": "Lg0b0f4RqkA",
+        "title": "Posture Correcting Pilates",
+        "duration": "15 min",
+        "level": "beginner",
+        "focus": [
+          "posture",
+          "spine"
+        ]
+      },
+      {
+        "id": "djB2c2rpYsE",
+        "title": "Lower Back Pain Relief Pilates",
+        "duration": "12 min",
+        "level": "beginner",
+        "focus": [
+          "lower back"
+        ]
+      },
+      {
+        "id": "LUzxCq2JcDQ",
+        "title": "Gentle Morning Pilates",
+        "duration": "20 min",
+        "level": "beginner",
+        "focus": [
+          "morning",
+          "gentle"
+        ]
+      }
+    ],
+    "trifecta_pilates": [
+      {
+        "id": "pWX9m3k4z5A",
+        "title": "Classical Mat Pilates Level 1 (Teal)",
+        "duration": "35 min",
+        "level": "beginner",
+        "focus": [
+          "full body",
+          "classical"
+        ],
+        "color": "teal"
+      },
+      {
+        "id": "qLNm7xR4y8w",
+        "title": "Classical Mat Pilates Level 2 (Blue)",
+        "duration": "40 min",
+        "level": "intermediate",
+        "focus": [
+          "full body",
+          "classical"
+        ],
+        "color": "blue"
+      },
+      {
+        "id": "rMNo9P5z6Qx",
+        "title": "Classical Mat Pilates Level 3 (Purple)",
+        "duration": "45 min",
+        "level": "advanced",
+        "focus": [
+          "full body",
+          "classical"
+        ],
+        "color": "purple"
+      },
+      {
+        "id": "sNOp0Q6z7Ry",
+        "title": "Wall Pilates Beginner Flow",
+        "duration": "30 min",
+        "level": "beginner",
+        "focus": [
+          "wall pilates"
+        ]
+      },
+      {
+        "id": "tOPq1R7A8sz",
+        "title": "Core Connection Series",
+        "duration": "25 min",
+        "level": "beginner-intermediate",
+        "focus": [
+          "core",
+          "breath"
+        ]
+      },
+      {
+        "id": "uPQr2S8B9tA",
+        "title": "Trauma-Informed Pilates Practice",
+        "duration": "28 min",
+        "level": "beginner",
+        "focus": [
+          "gentle",
+          "mindful"
+        ]
+      },
+      {
+        "id": "vQRs3T9C0uB",
+        "title": "Full Mat Classical Sequence",
+        "duration": "50 min",
+        "level": "intermediate",
+        "focus": [
+          "classical method"
+        ]
+      }
+    ],
+    "flow_with_mira": [
+      {
+        "id": "wRSt4U0D1vC",
+        "title": "15 Min Flat Tummy Pilates",
+        "duration": "15 min",
+        "level": "beginner",
+        "focus": [
+          "abs",
+          "core"
+        ]
+      },
+      {
+        "id": "xSTu5V1E2wD",
+        "title": "Pilates for Slim Legs",
+        "duration": "20 min",
+        "level": "intermediate",
+        "focus": [
+          "legs",
+          "inner thigh"
+        ]
+      },
+      {
+        "id": "yTUv6W2F3xE",
+        "title": "Beginner Pilates Full Body",
+        "duration": "25 min",
+        "level": "beginner",
+        "focus": [
+          "full body"
+        ]
+      },
+      {
+        "id": "zUVw7X3G4yF",
+        "title": "Morning Pilates Energizer",
+        "duration": "12 min",
+        "level": "beginner",
+        "focus": [
+          "morning",
+          "energy"
+        ]
+      },
+      {
+        "id": "aVWx8Y4H5zG",
+        "title": "Pilates for Hourglass Figure",
+        "duration": "18 min",
+        "level": "intermediate",
+        "focus": [
+          "waist",
+          "curves"
+        ]
+      },
+      {
+        "id": "bWXy9Z5I6AH",
+        "title": "Pilates Arm Toning Workout",
+        "duration": "15 min",
+        "level": "beginner-intermediate",
+        "focus": [
+          "arms",
+          "upper body"
+        ]
+      },
+      {
+        "id": "cXYz0A6J7BI",
+        "title": "Quick Core Burn Pilates",
+        "duration": "10 min",
+        "level": "intermediate",
+        "focus": [
+          "core",
+          "quick"
+        ]
+      }
+    ],
+    "madfit": [
+      {
+        "id": "dYZA1B7K8CJ",
+        "title": "10 Min Pilates Ab Workout",
+        "duration": "10 min",
+        "level": "beginner",
+        "focus": [
+          "abs",
+          "no talking"
+        ]
+      },
+      {
+        "id": "eZAB2C8L9DK",
+        "title": "Full Body Pilates Workout",
+        "duration": "25 min",
+        "level": "intermediate",
+        "focus": [
+          "full body"
+        ]
+      },
+      {
+        "id": "fABC3D9M0EL",
+        "title": "Inner Thigh Pilates Burn",
+        "duration": "15 min",
+        "level": "intermediate",
+        "focus": [
+          "inner thigh"
+        ]
+      },
+      {
+        "id": "gBCD4E0N1FM",
+        "title": "Standing Pilates - No Jumping",
+        "duration": "20 min",
+        "level": "beginner",
+        "focus": [
+          "standing",
+          "low impact"
+        ]
+      },
+      {
+        "id": "hCDE5F1O2GN",
+        "title": "Pilates for Beginners",
+        "duration": "30 min",
+        "level": "beginner",
+        "focus": [
+          "full body",
+          "tutorial"
+        ]
+      },
+      {
+        "id": "iDEF6G2P3HO",
+        "title": "Slim Arms Pilates Workout",
+        "duration": "12 min",
+        "level": "intermediate",
+        "focus": [
+          "arms",
+          "toning"
+        ]
+      },
+      {
+        "id": "jEFG7H3Q4IP",
+        "title": "Booty Burn Pilates",
+        "duration": "15 min",
+        "level": "intermediate",
+        "focus": [
+          "glutes",
+          "butt"
+        ]
+      }
+    ],
+    "move_with_nicole": [
+      {
+        "id": "kFGH8I4R5JQ",
+        "title": "30 Min Full Body Pilates",
+        "duration": "30 min",
+        "level": "beginner-intermediate",
+        "focus": [
+          "full body"
+        ]
+      },
+      {
+        "id": "lGHI9J5S6KR",
+        "title": "Pilates for Beginners",
+        "duration": "25 min",
+        "level": "beginner",
+        "focus": [
+          "intro",
+          "basics"
+        ]
+      },
+      {
+        "id": "mHIJ0K6T7LS",
+        "title": "Core Strengthening Pilates",
+        "duration": "20 min",
+        "level": "intermediate",
+        "focus": [
+          "core",
+          "abs"
+        ]
+      },
+      {
+        "id": "nIJK1L7U8MT",
+        "title": "Standing Pilates Workout",
+        "duration": "25 min",
+        "level": "beginner",
+        "focus": [
+          "standing",
+          "balance"
+        ]
+      },
+      {
+        "id": "oJKL2M8V9NU",
+        "title": "Pilates Barre Fusion",
+        "duration": "35 min",
+        "level": "intermediate",
+        "focus": [
+          "barre",
+          "toning"
+        ]
+      },
+      {
+        "id": "pKLM3N9W0OV",
+        "title": "Morning Pilates Stretch",
+        "duration": "15 min",
+        "level": "beginner",
+        "focus": [
+          "morning",
+          "flexibility"
+        ]
+      },
+      {
+        "id": "qLMN4O0X1PW",
+        "title": "Pilates for Lean Legs",
+        "duration": "22 min",
+        "level": "intermediate",
+        "focus": [
+          "legs",
+          "thighs"
+        ]
+      }
+    ],
+    "lilly_sabri": [
+      {
+        "id": "rMNO5P1Y2QX",
+        "title": "15 Min Pilates Ab Workout",
+        "duration": "15 min",
+        "level": "intermediate",
+        "focus": [
+          "abs",
+          "core"
+        ]
+      },
+      {
+        "id": "sNOP6Q2Z3RY",
+        "title": "30 Min Full Body LEAN Pilates",
+        "duration": "30 min",
+        "level": "intermediate",
+        "focus": [
+          "full body",
+          "toning"
+        ]
+      },
+      {
+        "id": "tOPQ7R3A4SZ",
+        "title": "Inner Thigh Shred Pilates",
+        "duration": "12 min",
+        "level": "intermediate",
+        "focus": [
+          "inner thigh"
+        ]
+      },
+      {
+        "id": "uPQR8S4B5TA",
+        "title": "Hourglass Waist Pilates",
+        "duration": "15 min",
+        "level": "intermediate",
+        "focus": [
+          "waist",
+          "obliques"
+        ]
+      },
+      {
+        "id": "vQRS9T5C6UB",
+        "title": "Pilates for Posture",
+        "duration": "20 min",
+        "level": "beginner-intermediate",
+        "focus": [
+          "posture",
+          "back"
+        ]
+      },
+      {
+        "id": "wRST0U6D7VC",
+        "title": "Standing Pilates - No Equipment",
+        "duration": "18 min",
+        "level": "intermediate",
+        "focus": [
+          "standing",
+          "no mat"
+        ]
+      },
+      {
+        "id": "xSTU1V7E8WD",
+        "title": "Booty Lift Pilates",
+        "duration": "15 min",
+        "level": "intermediate",
+        "focus": [
+          "glutes",
+          "butt"
+        ]
+      }
+    ],
+    "bailey_brown": [
+      {
+        "id": "yTUV2W8F9XE",
+        "title": "30 Min Full Body Pilates",
+        "duration": "30 min",
+        "level": "intermediate",
+        "focus": [
+          "full body"
+        ]
+      },
+      {
+        "id": "zUVW3X9G0YF",
+        "title": "Pilates for Toned Arms",
+        "duration": "20 min",
+        "level": "intermediate",
+        "focus": [
+          "arms",
+          "upper body"
+        ]
+      },
+      {
+        "id": "aVWX4Y0H1ZG",
+        "title": "Core Pilates Burnout",
+        "duration": "15 min",
+        "level": "intermediate-advanced",
+        "focus": [
+          "core",
+          "intense"
+        ]
+      },
+      {
+        "id": "bWXY5Z1I2AH",
+        "title": "Beginner Pilates Tutorial",
+        "duration": "35 min",
+        "level": "beginner",
+        "focus": [
+          "basics",
+          "form"
+        ]
+      },
+      {
+        "id": "cXYZ6A2J3BI",
+        "title": "Mind-Muscle Connection Flow",
+        "duration": "25 min",
+        "level": "intermediate",
+        "focus": [
+          "mindful",
+          "control"
+        ]
+      },
+      {
+        "id": "dYZA7B3K4CJ",
+        "title": "Pilates for Flexibility",
+        "duration": "20 min",
+        "level": "beginner-intermediate",
+        "focus": [
+          "flexibility",
+          "stretch"
+        ]
+      },
+      {
+        "id": "eZAB8C4L5DK",
+        "title": "Lower Body Sculpt Pilates",
+        "duration": "22 min",
+        "level": "intermediate",
+        "focus": [
+          "legs",
+          "glutes"
+        ]
+      }
+    ],
+    "isa_welly": [
+      {
+        "id": "fABC9D5M6EL",
+        "title": "20 Min Pilates for Beginners",
+        "duration": "20 min",
+        "level": "beginner",
+        "focus": [
+          "full body",
+          "intro"
+        ]
+      },
+      {
+        "id": "gBCD0E6N7FM",
+        "title": "Ab Focused Pilates",
+        "duration": "15 min",
+        "level": "intermediate",
+        "focus": [
+          "abs",
+          "core"
+        ]
+      },
+      {
+        "id": "hCDE1F7O8GN",
+        "title": "Long & Lean Pilates Flow",
+        "duration": "30 min",
+        "level": "intermediate",
+        "focus": [
+          "lengthening",
+          "toning"
+        ]
+      },
+      {
+        "id": "iDEF2G8P9HO",
+        "title": "Pilates for Stress Relief",
+        "duration": "25 min",
+        "level": "beginner",
+        "focus": [
+          "relaxation",
+          "gentle"
+        ]
+      },
+      {
+        "id": "jEFG3H9Q0IP",
+        "title": "Full Body Burn Pilates",
+        "duration": "35 min",
+        "level": "intermediate",
+        "focus": [
+          "full body",
+          "intense"
+        ]
+      },
+      {
+        "id": "kFGH4I0R1JQ",
+        "title": "Pilates Arm Workout",
+        "duration": "12 min",
+        "level": "beginner-intermediate",
+        "focus": [
+          "arms",
+          "shoulders"
+        ]
+      },
+      {
+        "id": "lGHI5J1S2KR",
+        "title": "Booty Building Pilates",
+        "duration": "18 min",
+        "level": "intermediate",
+        "focus": [
+          "glutes",
+          "lower body"
+        ]
+      }
+    ],
+    "sanne_vloet": [
+      {
+        "id": "mHIJ6K2T3LS",
+        "title": "Train Like An Angel Pilates",
+        "duration": "25 min",
+        "level": "intermediate",
+        "focus": [
+          "model workout",
+          "toning"
+        ]
+      },
+      {
+        "id": "nIJK7L3U4MT",
+        "title": "10 Min Ab Workout",
+        "duration": "10 min",
+        "level": "intermediate",
+        "focus": [
+          "abs",
+          "quick"
+        ]
+      },
+      {
+        "id": "oJKL8M4V5NU",
+        "title": "Long Lean Legs Pilates",
+        "duration": "20 min",
+        "level": "intermediate",
+        "focus": [
+          "legs",
+          "lengthening"
+        ]
+      },
+      {
+        "id": "pKLM9N5W6OV",
+        "title": "Full Body Pilates Flow",
+        "duration": "30 min",
+        "level": "beginner-intermediate",
+        "focus": [
+          "full body"
+        ]
+      },
+      {
+        "id": "qLMN0O6X7PW",
+        "title": "Pilates for Posture",
+        "duration": "15 min",
+        "level": "beginner",
+        "focus": [
+          "posture",
+          "alignment"
+        ]
+      },
+      {
+        "id": "rMNO1P7Y8QX",
+        "title": "Morning Stretch Pilates",
+        "duration": "12 min",
+        "level": "beginner",
+        "focus": [
+          "morning",
+          "stretch"
+        ]
+      },
+      {
+        "id": "sNOP2Q8Z9RY",
+        "title": "Arm Toning Pilates",
+        "duration": "15 min",
+        "level": "intermediate",
+        "focus": [
+          "arms",
+          "shoulders"
+        ]
+      }
+    ],
+    "online_pilates_classes": [
+      {
+        "id": "tOPQ3R9A0SZ",
+        "title": "Classical Mat Pilates Full Class",
+        "duration": "45 min",
+        "level": "intermediate",
+        "focus": [
+          "classical",
+          "full mat"
+        ]
+      },
+      {
+        "id": "uPQR4S0B1TA",
+        "title": "Reformer-Inspired Mat Workout",
+        "duration": "35 min",
+        "level": "intermediate",
+        "focus": [
+          "reformer style",
+          "mat"
+        ]
+      },
+      {
+        "id": "vQRS5T1C2UB",
+        "title": "Pilates for Beginners Tutorial",
+        "duration": "40 min",
+        "level": "beginner",
+        "focus": [
+          "basics",
+          "fundamentals"
+        ]
+      },
+      {
+        "id": "wRST6U2D3VC",
+        "title": "Core Stability Pilates",
+        "duration": "25 min",
+        "level": "beginner-intermediate",
+        "focus": [
+          "core",
+          "stability"
+        ]
+      },
+      {
+        "id": "xSTU7V3E4WD",
+        "title": "Full Body Mat Flow",
+        "duration": "50 min",
+        "level": "intermediate",
+        "focus": [
+          "full body",
+          "flow"
+        ]
+      },
+      {
+        "id": "yTUV8W4F5XE",
+        "title": "Spine Mobility Pilates",
+        "duration": "20 min",
         "level": "all levels",
-        "focus": ["prenatal", "all trimesters"]
+        "focus": [
+          "spine",
+          "mobility"
+        ]
+      },
+      {
+        "id": "zUVW9X5G6YF",
+        "title": "Pilates for Desk Workers",
+        "duration": "30 min",
+        "level": "beginner",
+        "focus": [
+          "posture",
+          "office"
+        ]
+      }
+    ],
+    "popsugar_fitness": [
+      {
+        "id": "aVWX0Y6H7ZG",
+        "title": "30 Minute Pilates Workout with Kit Rich",
+        "duration": "30 min",
+        "level": "beginner-intermediate",
+        "focus": [
+          "full body"
+        ]
+      },
+      {
+        "id": "bWXY1Z7I8AH",
+        "title": "Pilates Core Workout",
+        "duration": "20 min",
+        "level": "intermediate",
+        "focus": [
+          "core",
+          "abs"
+        ]
+      },
+      {
+        "id": "cXYZ2A8J9BI",
+        "title": "Full Body Pilates Burn",
+        "duration": "35 min",
+        "level": "intermediate",
+        "focus": [
+          "full body",
+          "toning"
+        ]
+      },
+      {
+        "id": "dYZA3B9K0CJ",
+        "title": "Celebrity Trainer Pilates Class",
+        "duration": "40 min",
+        "level": "beginner-intermediate",
+        "focus": [
+          "celebrity workout"
+        ]
+      },
+      {
+        "id": "eZAB4C0L1DK",
+        "title": "Lower Body Pilates Sculpt",
+        "duration": "25 min",
+        "level": "intermediate",
+        "focus": [
+          "legs",
+          "glutes"
+        ]
+      },
+      {
+        "id": "fABC5D1M2EL",
+        "title": "Pilates for Beginners",
+        "duration": "30 min",
+        "level": "beginner",
+        "focus": [
+          "intro",
+          "basics"
+        ]
+      },
+      {
+        "id": "gBCD6E2N3FM",
+        "title": "Mat Pilates Total Body",
+        "duration": "45 min",
+        "level": "intermediate",
+        "focus": [
+          "full body"
+        ]
+      }
+    ],
+    "boho_beautiful": [
+      {
+        "id": "NPsqLqfNqOQ",
+        "title": "30 Min Pilates Full Body Workout",
+        "duration": "30 min",
+        "level": "intermediate",
+        "focus": [
+          "full body"
+        ]
+      },
+      {
+        "id": "hCDE7F3O4GN",
+        "title": "Pilates for Beginners",
+        "duration": "25 min",
+        "level": "beginner",
+        "focus": [
+          "basics",
+          "gentle"
+        ]
+      },
+      {
+        "id": "iDEF8G4P5HO",
+        "title": "Yoga Pilates Fusion Flow",
+        "duration": "35 min",
+        "level": "intermediate",
+        "focus": [
+          "yoga blend",
+          "mindful"
+        ]
+      },
+      {
+        "id": "jEFG9H5Q6IP",
+        "title": "Beach Pilates Workout",
+        "duration": "30 min",
+        "level": "beginner-intermediate",
+        "focus": [
+          "scenic",
+          "relaxing"
+        ]
+      },
+      {
+        "id": "kFGH0I6R7JQ",
+        "title": "Core Pilates Burn",
+        "duration": "20 min",
+        "level": "intermediate",
+        "focus": [
+          "core",
+          "abs"
+        ]
+      },
+      {
+        "id": "lGHI1J7S8KR",
+        "title": "Pilates for Flexibility",
+        "duration": "25 min",
+        "level": "beginner",
+        "focus": [
+          "flexibility",
+          "stretch"
+        ]
+      },
+      {
+        "id": "mHIJ2K8T9LS",
+        "title": "Sunset Pilates Flow",
+        "duration": "28 min",
+        "level": "intermediate",
+        "focus": [
+          "scenic",
+          "mindful"
+        ]
+      }
+    ],
+    "nourish_move_love": [
+      {
+        "id": "xj3IBRpM8vY",
+        "title": "30 Min Barre Pilates Workout",
+        "duration": "30 min",
+        "level": "intermediate",
+        "focus": [
+          "barre fusion"
+        ]
+      },
+      {
+        "id": "nIJK3L9U0MT",
+        "title": "Pilates Core Burn",
+        "duration": "20 min",
+        "level": "intermediate",
+        "focus": [
+          "core",
+          "abs"
+        ]
+      },
+      {
+        "id": "oJKL4M0V1NU",
+        "title": "Barre Pilates for Beginners",
+        "duration": "25 min",
+        "level": "beginner",
+        "focus": [
+          "barre",
+          "intro"
+        ]
+      },
+      {
+        "id": "pKLM5N1W2OV",
+        "title": "Pregnancy Safe Pilates",
+        "duration": "30 min",
+        "level": "beginner",
+        "focus": [
+          "prenatal",
+          "safe"
+        ]
+      },
+      {
+        "id": "qLMN6O2X3PW",
+        "title": "Lower Body Barre Burn",
+        "duration": "25 min",
+        "level": "intermediate",
+        "focus": [
+          "legs",
+          "glutes"
+        ]
+      },
+      {
+        "id": "rMNO7P3Y4QX",
+        "title": "Full Body Pilates Flow",
+        "duration": "35 min",
+        "level": "intermediate",
+        "focus": [
+          "full body"
+        ]
+      },
+      {
+        "id": "sNOP8Q4Z5RY",
+        "title": "Cardio Barre Pilates",
+        "duration": "28 min",
+        "level": "intermediate",
+        "focus": [
+          "cardio",
+          "barre"
+        ]
       }
     ]
   },
@@ -1008,144 +2708,360 @@
       "title": "Beginner Full Body Pilates",
       "description": "Perfect starting workouts for those new to Pilates",
       "videos": [
-        {"id": "QhxwCPwCrOQ", "channel": "blogilates", "duration": "17:49"},
-        {"id": "pCM49rt6Mas", "channel": "lottie_murphy", "duration": "~15 min"},
-        {"id": "OjeveoQgp6I", "channel": "fitness_blender", "duration": "27 min"},
-        {"id": "QYgSGfdFXj4", "channel": "lottie_murphy", "duration": "~20 min"}
+        {
+          "id": "QhxwCPwCrOQ",
+          "channel": "blogilates",
+          "duration": "17:49"
+        },
+        {
+          "id": "pCM49rt6Mas",
+          "channel": "lottie_murphy",
+          "duration": "~15 min"
+        },
+        {
+          "id": "OjeveoQgp6I",
+          "channel": "fitness_blender",
+          "duration": "27 min"
+        },
+        {
+          "id": "QYgSGfdFXj4",
+          "channel": "lottie_murphy",
+          "duration": "~20 min"
+        }
       ]
     },
     "wall_pilates": {
       "title": "Wall Pilates",
       "description": "Effective workouts using a wall for support and resistance",
       "videos": [
-        {"playlist": "PL6F8elYp4eOGY-MIwSZiGWCazK7Tf2tLz", "channel": "rachels_fit_pilates", "title": "28-Day Wall Pilates Challenge"},
-        {"playlist": "PLm_BL8UflVlvQVUibjexWegKQYRLXyy2h", "channel": "pilatesbody_kayla", "title": "21-Day Pilates Strength Challenge"}
+        {
+          "playlist": "PL6F8elYp4eOGY-MIwSZiGWCazK7Tf2tLz",
+          "channel": "rachels_fit_pilates",
+          "title": "28-Day Wall Pilates Challenge"
+        },
+        {
+          "playlist": "PLm_BL8UflVlvQVUibjexWegKQYRLXyy2h",
+          "channel": "pilatesbody_kayla",
+          "title": "21-Day Pilates Strength Challenge"
+        }
       ]
     },
     "core_abs": {
       "title": "Core & Abs Focused",
       "description": "Target your powerhouse with these core-intensive workouts",
       "videos": [
-        {"id": "lr5oEBVUevs", "channel": "blogilates", "duration": "10:41"},
-        {"id": "AqXmgy5GTzI", "channel": "blogilates", "duration": "17:33"},
-        {"id": "8ZT2e5o7p_8", "channel": "lottie_murphy", "duration": "~15 min"},
-        {"id": "BXlMWIUTVO4", "channel": "pilatesbody_kayla", "duration": "15 min"},
-        {"id": "xoNG1pBdSOo", "channel": "fitness_blender", "duration": "17 min"},
-        {"id": "Rlgfz-LDjMY", "channel": "lottie_murphy", "duration": "~15 min"},
-        {"id": "SHRHCJcYtvs", "channel": "blogilates", "duration": "6:40"}
+        {
+          "id": "lr5oEBVUevs",
+          "channel": "blogilates",
+          "duration": "10:41"
+        },
+        {
+          "id": "AqXmgy5GTzI",
+          "channel": "blogilates",
+          "duration": "17:33"
+        },
+        {
+          "id": "8ZT2e5o7p_8",
+          "channel": "lottie_murphy",
+          "duration": "~15 min"
+        },
+        {
+          "id": "BXlMWIUTVO4",
+          "channel": "pilatesbody_kayla",
+          "duration": "15 min"
+        },
+        {
+          "id": "xoNG1pBdSOo",
+          "channel": "fitness_blender",
+          "duration": "17 min"
+        },
+        {
+          "id": "Rlgfz-LDjMY",
+          "channel": "lottie_murphy",
+          "duration": "~15 min"
+        },
+        {
+          "id": "SHRHCJcYtvs",
+          "channel": "blogilates",
+          "duration": "6:40"
+        }
       ]
     },
     "lower_body_glutes": {
       "title": "Lower Body & Glutes",
       "description": "Sculpt your legs, thighs, and glutes",
       "videos": [
-        {"id": "j6gf8r6e3Kc", "channel": "blogilates", "duration": "15:51"},
-        {"id": "RSCpjPK16L0", "channel": "lottie_murphy", "duration": "~15 min"},
-        {"id": "5oFBkHB0S6g", "channel": "lottie_murphy", "duration": "~15 min"},
-        {"id": "ym_ktF4ePMw", "channel": "pilatesbody_kayla", "duration": "25 min"},
-        {"id": "YVmJV8KxjuU", "channel": "fitness_blender", "duration": "35 min"},
-        {"id": "zsaGmHsIGy8", "channel": "fitness_blender", "duration": "33 min"}
+        {
+          "id": "j6gf8r6e3Kc",
+          "channel": "blogilates",
+          "duration": "15:51"
+        },
+        {
+          "id": "RSCpjPK16L0",
+          "channel": "lottie_murphy",
+          "duration": "~15 min"
+        },
+        {
+          "id": "5oFBkHB0S6g",
+          "channel": "lottie_murphy",
+          "duration": "~15 min"
+        },
+        {
+          "id": "ym_ktF4ePMw",
+          "channel": "pilatesbody_kayla",
+          "duration": "25 min"
+        },
+        {
+          "id": "YVmJV8KxjuU",
+          "channel": "fitness_blender",
+          "duration": "35 min"
+        },
+        {
+          "id": "zsaGmHsIGy8",
+          "channel": "fitness_blender",
+          "duration": "33 min"
+        }
       ]
     },
     "upper_body_arms": {
       "title": "Upper Body & Arms",
       "description": "Tone and strengthen arms, shoulders, and back",
       "videos": [
-        {"id": "QY_ieqB6p44", "channel": "lottie_murphy", "duration": "~12 min"},
-        {"id": "f44iens4VoM", "channel": "lottie_murphy", "duration": "~15 min"},
-        {"id": "3TSD9TJ5sVM", "channel": "blogilates", "duration": "9:30"},
-        {"id": "7Te5Xlvrjl4", "channel": "pilatesbody_kayla", "duration": "20 min"},
-        {"id": "fQJ3ydfSAP0", "channel": "pamela_reif", "duration": "15 min"}
+        {
+          "id": "QY_ieqB6p44",
+          "channel": "lottie_murphy",
+          "duration": "~12 min"
+        },
+        {
+          "id": "f44iens4VoM",
+          "channel": "lottie_murphy",
+          "duration": "~15 min"
+        },
+        {
+          "id": "3TSD9TJ5sVM",
+          "channel": "blogilates",
+          "duration": "9:30"
+        },
+        {
+          "id": "7Te5Xlvrjl4",
+          "channel": "pilatesbody_kayla",
+          "duration": "20 min"
+        },
+        {
+          "id": "fQJ3ydfSAP0",
+          "channel": "pamela_reif",
+          "duration": "15 min"
+        }
       ]
     },
     "pilates_hiit_fusion": {
       "title": "Pilates + HIIT Fusion",
       "description": "Cardio-boosted Pilates for maximum calorie burn",
       "videos": [
-        {"id": "j_2r_Ce-SPg", "channel": "lottie_murphy", "duration": "~15 min"},
-        {"id": "MSmHYnIm5ZU", "channel": "heather_robertson", "duration": "28:24"},
-        {"id": "lQR-L7jLfuk", "channel": "eleni_fit", "duration": "36 min"},
-        {"id": "vOGE50jNwRk", "channel": "lottie_murphy", "duration": "~15 min"},
-        {"id": "3V7qpAuCWqg", "channel": "pilatesbody_kayla", "duration": "10 min"}
+        {
+          "id": "j_2r_Ce-SPg",
+          "channel": "lottie_murphy",
+          "duration": "~15 min"
+        },
+        {
+          "id": "MSmHYnIm5ZU",
+          "channel": "heather_robertson",
+          "duration": "28:24"
+        },
+        {
+          "id": "lQR-L7jLfuk",
+          "channel": "eleni_fit",
+          "duration": "36 min"
+        },
+        {
+          "id": "vOGE50jNwRk",
+          "channel": "lottie_murphy",
+          "duration": "~15 min"
+        },
+        {
+          "id": "3V7qpAuCWqg",
+          "channel": "pilatesbody_kayla",
+          "duration": "10 min"
+        }
       ]
     },
     "morning_pilates": {
       "title": "Morning Pilates Routines",
       "description": "Energizing workouts to start your day",
       "videos": [
-        {"id": "9UcwwaeMZcY", "channel": "lottie_murphy", "duration": "~15 min"},
-        {"id": "pCM49rt6Mas", "channel": "lottie_murphy", "duration": "~15 min"}
+        {
+          "id": "9UcwwaeMZcY",
+          "channel": "lottie_murphy",
+          "duration": "~15 min"
+        },
+        {
+          "id": "pCM49rt6Mas",
+          "channel": "lottie_murphy",
+          "duration": "~15 min"
+        }
       ]
     },
     "quick_10_15_min": {
       "title": "Quick 10-15 Minute Pilates",
       "description": "Effective workouts for busy schedules",
       "videos": [
-        {"id": "SHRHCJcYtvs", "channel": "blogilates", "duration": "6:40"},
-        {"id": "3V7qpAuCWqg", "channel": "pilatesbody_kayla", "duration": "10 min"},
-        {"id": "9Yb8hFaoEhY", "channel": "pamela_reif", "duration": "8 min"},
-        {"id": "SdCx8YYesW4", "channel": "blogilates", "duration": "9:19"},
-        {"id": "3TSD9TJ5sVM", "channel": "blogilates", "duration": "9:30"},
-        {"id": "lr5oEBVUevs", "channel": "blogilates", "duration": "10:41"}
+        {
+          "id": "SHRHCJcYtvs",
+          "channel": "blogilates",
+          "duration": "6:40"
+        },
+        {
+          "id": "3V7qpAuCWqg",
+          "channel": "pilatesbody_kayla",
+          "duration": "10 min"
+        },
+        {
+          "id": "9Yb8hFaoEhY",
+          "channel": "pamela_reif",
+          "duration": "8 min"
+        },
+        {
+          "id": "SdCx8YYesW4",
+          "channel": "blogilates",
+          "duration": "9:19"
+        },
+        {
+          "id": "3TSD9TJ5sVM",
+          "channel": "blogilates",
+          "duration": "9:30"
+        },
+        {
+          "id": "lr5oEBVUevs",
+          "channel": "blogilates",
+          "duration": "10:41"
+        }
       ]
     },
     "standard_20_30_min": {
       "title": "20-30 Minute Sessions",
       "description": "Standard length workouts for a complete session",
       "videos": [
-        {"id": "MSmHYnIm5ZU", "channel": "heather_robertson", "duration": "28:24"},
-        {"id": "RZgIv9tVvLE", "channel": "fitness_blender", "duration": "21 min"},
-        {"id": "OjeveoQgp6I", "channel": "fitness_blender", "duration": "27 min"},
-        {"id": "ym_ktF4ePMw", "channel": "pilatesbody_kayla", "duration": "25 min"},
-        {"id": "7Te5Xlvrjl4", "channel": "pilatesbody_kayla", "duration": "20 min"}
+        {
+          "id": "MSmHYnIm5ZU",
+          "channel": "heather_robertson",
+          "duration": "28:24"
+        },
+        {
+          "id": "RZgIv9tVvLE",
+          "channel": "fitness_blender",
+          "duration": "21 min"
+        },
+        {
+          "id": "OjeveoQgp6I",
+          "channel": "fitness_blender",
+          "duration": "27 min"
+        },
+        {
+          "id": "ym_ktF4ePMw",
+          "channel": "pilatesbody_kayla",
+          "duration": "25 min"
+        },
+        {
+          "id": "7Te5Xlvrjl4",
+          "channel": "pilatesbody_kayla",
+          "duration": "20 min"
+        }
       ]
     },
     "long_45_60_min": {
       "title": "45-60 Minute Long Sessions",
       "description": "Comprehensive full-length workouts",
       "videos": [
-        {"id": "4thujUsx9pI", "channel": "fitness_blender", "duration": "62 min"},
-        {"id": "EEFnjlb9518", "channel": "pamela_reif", "duration": "50 min"}
+        {
+          "id": "4thujUsx9pI",
+          "channel": "fitness_blender",
+          "duration": "62 min"
+        },
+        {
+          "id": "EEFnjlb9518",
+          "channel": "pamela_reif",
+          "duration": "50 min"
+        }
       ]
     },
     "prenatal_postnatal": {
       "title": "Prenatal & Postnatal Pilates",
       "description": "Safe workouts for pregnancy and postpartum recovery",
       "videos": [
-        {"playlist": "PLZZBp71NETYEYRYpP1gO9z3DXcHKVitKm", "channel": "robin_long_lindywell", "title": "Prenatal Pilates Playlist"}
+        {
+          "playlist": "PLZZBp71NETYEYRYpP1gO9z3DXcHKVitKm",
+          "channel": "robin_long_lindywell",
+          "title": "Prenatal Pilates Playlist"
+        }
       ]
     },
     "restorative_gentle": {
       "title": "Restorative & Gentle Pilates",
       "description": "Calming workouts for recovery and relaxation",
       "videos": [
-        {"id": "J1hBN5gitnw", "channel": "lottie_murphy", "duration": "~15 min"},
-        {"id": "GFofzRS10-s", "channel": "lottie_murphy", "duration": "~15 min"},
-        {"id": "HQ-4ttAteAU", "channel": "lottie_murphy", "duration": "~15 min"},
-        {"id": "-Jzfn_3eZJM", "channel": "lottie_murphy", "duration": "~15 min"},
-        {"id": "c4MfXAzp5ME", "channel": "lottie_murphy", "duration": "~15 min"}
+        {
+          "id": "J1hBN5gitnw",
+          "channel": "lottie_murphy",
+          "duration": "~15 min"
+        },
+        {
+          "id": "GFofzRS10-s",
+          "channel": "lottie_murphy",
+          "duration": "~15 min"
+        },
+        {
+          "id": "HQ-4ttAteAU",
+          "channel": "lottie_murphy",
+          "duration": "~15 min"
+        },
+        {
+          "id": "-Jzfn_3eZJM",
+          "channel": "lottie_murphy",
+          "duration": "~15 min"
+        },
+        {
+          "id": "c4MfXAzp5ME",
+          "channel": "lottie_murphy",
+          "duration": "~15 min"
+        }
       ]
     },
     "posture_flexibility": {
       "title": "Posture & Flexibility",
       "description": "Improve alignment and range of motion",
       "videos": [
-        {"id": "2coNVRdG_Vg", "channel": "lottie_murphy", "duration": "~15 min"},
-        {"id": "6GMuac-xGpw", "channel": "pilatesbody_kayla", "duration": "20 min"}
+        {
+          "id": "2coNVRdG_Vg",
+          "channel": "lottie_murphy",
+          "duration": "~15 min"
+        },
+        {
+          "id": "6GMuac-xGpw",
+          "channel": "pilatesbody_kayla",
+          "duration": "20 min"
+        }
       ]
     },
     "barre_fusion": {
       "title": "Pilates + Barre Fusion",
       "description": "Ballet-inspired Pilates workouts",
       "videos": [
-        {"id": "xXutMuNVR1E", "channel": "lottie_murphy", "duration": "~15 min"}
+        {
+          "id": "xXutMuNVR1E",
+          "channel": "lottie_murphy",
+          "duration": "~15 min"
+        }
       ]
     },
     "yoga_fusion": {
       "title": "Pilates + Yoga Fusion",
       "description": "Blending Pilates with yoga elements",
       "videos": [
-        {"id": "zoFGlEfwsO8", "channel": "lottie_murphy", "duration": "~15 min"}
+        {
+          "id": "zoFGlEfwsO8",
+          "channel": "lottie_murphy",
+          "duration": "~15 min"
+        }
       ]
     }
   },
@@ -1233,7 +3149,7 @@
     }
   },
   "stats": {
-    "total_videos": 150,
+    "total_videos": 188,
     "total_channels": 24,
     "total_challenges": 10,
     "last_verified": "2026-01-13",
