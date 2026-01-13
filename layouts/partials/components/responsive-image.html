@@ -1,0 +1,54 @@
+{{/*
+  Responsive Image Partial
+
+  Usage: {{ partial "components/responsive-image.html" (dict "src" "/images/hero/image.webp" "alt" "Description" "class" "w-full h-full object-cover" "loading" "lazy" "priority" false) }}
+
+  Parameters:
+  - src: Image source path (required)
+  - alt: Alt text (required)
+  - class: CSS classes (optional)
+  - loading: "lazy" or "eager" (default: "lazy")
+  - priority: true for LCP images (default: false)
+  - sizes: Custom sizes attribute (default: "100vw")
+*/}}
+
+{{ $src := .src }}
+{{ $alt := .alt | default "" }}
+{{ $class := .class | default "" }}
+{{ $loading := .loading | default "lazy" }}
+{{ $priority := .priority | default false }}
+{{ $sizes := .sizes | default "100vw" }}
+
+{{ if $priority }}
+  {{ $loading = "eager" }}
+{{ end }}
+
+{{/* For WebP images, try to provide fallback */}}
+{{ $isWebP := hasSuffix $src ".webp" }}
+{{ $fallbackSrc := "" }}
+{{ if $isWebP }}
+  {{ $fallbackSrc = $src | replaceRE ".webp$" ".jpg" }}
+{{ end }}
+
+{{ if $isWebP }}
+<picture>
+  <source srcset="{{ $src }}" type="image/webp">
+  <img
+    src="{{ $src }}"
+    alt="{{ $alt }}"
+    class="{{ $class }}"
+    loading="{{ $loading }}"
+    {{ if $priority }}fetchpriority="high"{{ end }}
+    decoding="{{ if $priority }}sync{{ else }}async{{ end }}"
+  >
+</picture>
+{{ else }}
+<img
+  src="{{ $src }}"
+  alt="{{ $alt }}"
+  class="{{ $class }}"
+  loading="{{ $loading }}"
+  {{ if $priority }}fetchpriority="high"{{ end }}
+  decoding="{{ if $priority }}sync{{ else }}async{{ end }}"
+>
+{{ end }}

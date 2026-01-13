@@ -1,0 +1,100 @@
+{{ define "main" }}
+<article class="pb-16 lg:pb-24">
+  <!-- Hero Section -->
+  <div class="bg-gradient-to-br from-emerald-50 to-teal-50 py-12 lg:py-16">
+    <div class="container">
+      <div class="max-w-3xl">
+        <nav class="flex items-center gap-2 text-sm text-gray-500 mb-4">
+          <a href="{{ "/" | relLangURL }}" class="hover:text-pink-600">{{ i18n "nav_home" | default "Home" }}</a>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          <span class="text-gray-900 font-medium">{{ .Title }}</span>
+        </nav>
+        <h1 class="text-3xl lg:text-5xl font-bold text-gray-900 mb-4">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="text-xl text-gray-600">{{ . }}</p>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Navigation -->
+  <div class="sticky top-16 bg-white/95 backdrop-blur border-b border-gray-100 z-10">
+    <div class="container py-3">
+      <div class="flex flex-wrap gap-2 justify-center">
+        {{ $letters := slice "A" "B" "C" "D" "E" "F" "G" "H" "I" "L" "M" "N" "O" "P" "R" "S" "T" "W" "Z" }}
+        {{ range $letters }}
+        <a href="#{{ . }}" class="w-8 h-8 flex items-center justify-center rounded-lg text-sm font-semibold text-gray-600 hover:bg-pink-100 hover:text-pink-600 transition-colors">
+          {{ . }}
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
+  <!-- Glossary Content -->
+  <div class="container py-12">
+    <div class="max-w-3xl mx-auto">
+      <div class="prose prose-lg prose-pink max-w-none
+        prose-h2:text-3xl prose-h2:font-bold prose-h2:text-pink-600 prose-h2:mt-12 prose-h2:mb-6 prose-h2:scroll-mt-32
+        prose-p:my-3
+        prose-strong:text-gray-900 prose-strong:font-semibold
+        [&_h2]:flex [&_h2]:items-center [&_h2]:gap-3
+        [&_p]:pl-4 [&_p]:border-l-2 [&_p]:border-gray-100 [&_p:has(strong:first-child)]:border-pink-200 [&_p:has(strong:first-child)]:bg-pink-50/50 [&_p:has(strong:first-child)]:py-3 [&_p:has(strong:first-child)]:px-4 [&_p:has(strong:first-child)]:rounded-r-lg [&_p:has(strong:first-child)]:my-4">
+        {{ .Content }}
+      </div>
+
+      <!-- Related Resources -->
+      <div class="mt-16 p-8 bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">{{ i18n "learn_more" | default "Learn More" }}</h2>
+        <p class="text-gray-600 mb-6">{{ i18n "glossary_resources_text" | default "Dive deeper into Pilates with these resources:" }}</p>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <a href="{{ "/learn/fundamentals/" | relLangURL }}" class="flex items-center gap-3 bg-white rounded-xl p-4 border border-gray-100 hover:border-emerald-200 hover:shadow-md transition-all group">
+            <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+              </svg>
+            </div>
+            <div>
+              <span class="font-medium text-gray-900 group-hover:text-emerald-600 transition-colors">{{ i18n "pilates_fundamentals" | default "Pilates Fundamentals" }}</span>
+              <span class="block text-sm text-gray-500">{{ i18n "learn_basics" | default "Master the basics" }}</span>
+            </div>
+          </a>
+          <a href="{{ "/learn/anatomy/" | relLangURL }}" class="flex items-center gap-3 bg-white rounded-xl p-4 border border-gray-100 hover:border-emerald-200 hover:shadow-md transition-all group">
+            <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="font-medium text-gray-900 group-hover:text-emerald-600 transition-colors">{{ i18n "anatomy_guide" | default "Anatomy Guide" }}</span>
+              <span class="block text-sm text-gray-500">{{ i18n "understand_body" | default "Understand your body" }}</span>
+            </div>
+          </a>
+          <a href="{{ "/exercises/" | relLangURL }}" class="flex items-center gap-3 bg-white rounded-xl p-4 border border-gray-100 hover:border-emerald-200 hover:shadow-md transition-all group">
+            <div class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="font-medium text-gray-900 group-hover:text-emerald-600 transition-colors">{{ i18n "exercise_library" | default "Exercise Library" }}</span>
+              <span class="block text-sm text-gray-500">{{ i18n "see_in_action" | default "See terms in action" }}</span>
+            </div>
+          </a>
+          <a href="{{ "/faq/" | relLangURL }}" class="flex items-center gap-3 bg-white rounded-xl p-4 border border-gray-100 hover:border-emerald-200 hover:shadow-md transition-all group">
+            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="font-medium text-gray-900 group-hover:text-emerald-600 transition-colors">{{ i18n "faq" | default "FAQ" }}</span>
+              <span class="block text-sm text-gray-500">{{ i18n "common_questions" | default "Common questions" }}</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+{{ end }}
