@@ -6,7 +6,7 @@ logo = "/images/logo.svg"
 favicon = "/images/favicon.ico"
 
 # SEO
-googleAnalytics = ""
+googleAnalytics = "G-R3NYH2V0DF"
 enableOpenGraph = true
 enableTwitterCards = true
 
