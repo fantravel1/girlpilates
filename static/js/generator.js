@@ -163,6 +163,10 @@ function getText(key, lang) {
       tipText: 'Take 30-60 seconds rest between exercises. Focus on form over speed.',
       noExercises: 'No exercises found. Try different filters.',
       generateNew: 'Generate New',
+      howTo: 'How to do it',
+      watchVideo: 'Watch Video',
+      viewDetails: 'View Details',
+      steps: 'Steps',
     },
     es: {
       yourWorkout: 'Tu Entrenamiento',
@@ -176,6 +180,10 @@ function getText(key, lang) {
       tipText: 'Descansa 30-60 segundos entre ejercicios. Enfócate en la forma, no en la velocidad.',
       noExercises: 'No se encontraron ejercicios. Intenta con otros filtros.',
       generateNew: 'Generar Nuevo',
+      howTo: 'Cómo hacerlo',
+      watchVideo: 'Ver Video',
+      viewDetails: 'Ver Detalles',
+      steps: 'Pasos',
     },
   };
   return texts[lang]?.[key] || texts.en[key];
@@ -257,27 +265,81 @@ function displayWorkout(workout, container, lang) {
       const title = lang === 'es' && ex.title_es ? ex.title_es : ex.title;
       const description = lang === 'es' && ex.description_es ? ex.description_es : ex.description;
       const diffLabel = ex.difficulty?.charAt(0).toUpperCase() + ex.difficulty?.slice(1) || '';
+      const steps = lang === 'es' && ex.steps_es ? ex.steps_es : ex.steps;
+
+      // Build exercise page URL or YouTube search URL
+      const basePath = lang === 'es' ? '/es/ejercicios/' : '/exercises/';
+      const exerciseUrl = ex.slug ? `${basePath}${ex.slug}/` : null;
+      const youtubeSearchUrl = `https://www.youtube.com/results?search_query=pilates+${encodeURIComponent(ex.title)}+tutorial`;
+
+      // Build steps HTML if available
+      const stepsHTML = steps && steps.length > 0 ? `
+        <div class="exercise-steps hidden mt-3 pt-3 border-t border-gray-100">
+          <p class="text-xs font-medium text-gray-700 mb-2">${getText('howTo', lang)}:</p>
+          <ol class="space-y-1.5 text-sm text-gray-600">
+            ${steps.map((step, i) => `
+              <li class="flex gap-2">
+                <span class="flex-shrink-0 w-5 h-5 bg-pink-100 text-pink-700 rounded-full flex items-center justify-center text-xs font-medium">${i + 1}</span>
+                <span>${step}</span>
+              </li>
+            `).join('')}
+          </ol>
+        </div>
+      ` : '';
+
+      // Build action buttons
+      const actionButtons = `
+        <div class="flex flex-wrap items-center gap-2 mt-3">
+          ${steps && steps.length > 0 ? `
+            <button type="button" class="exercise-toggle inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium text-pink-600 bg-pink-50 hover:bg-pink-100 rounded-lg transition-colors">
+              <svg class="w-3.5 h-3.5 toggle-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+              ${getText('howTo', lang)}
+            </button>
+          ` : ''}
+          ${exerciseUrl ? `
+            <a href="${exerciseUrl}" class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              ${getText('viewDetails', lang)}
+            </a>
+          ` : ''}
+          <a href="${youtubeSearchUrl}" target="_blank" rel="noopener" class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium text-red-600 bg-red-50 hover:bg-red-100 rounded-lg transition-colors">
+            <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
+              <polygon fill="white" points="9.545,15.568 15.818,12 9.545,8.432"/>
+            </svg>
+            ${getText('watchVideo', lang)}
+          </a>
+        </div>
+      `;
 
       return `
-      <div class="flex items-start gap-4 p-4 bg-white rounded-xl border border-gray-100 hover:shadow-sm transition-shadow">
-        <span class="flex-shrink-0 w-10 h-10 bg-pink-600 text-white rounded-full flex items-center justify-center font-bold">
-          ${index + 1}
-        </span>
-        <div class="flex-1 min-w-0">
-          <div class="flex flex-wrap items-center gap-2 mb-1">
-            <h3 class="font-semibold text-gray-900">${title}</h3>
-            ${ex.category === 'warmup' ? `<span class="px-2 py-0.5 text-xs bg-blue-100 text-blue-700 rounded-full">${getText('warmup', lang)}</span>` : ''}
-            ${ex.category === 'cooldown' ? `<span class="px-2 py-0.5 text-xs bg-green-100 text-green-700 rounded-full">${getText('cooldown', lang)}</span>` : ''}
-          </div>
-          <p class="text-sm text-gray-600 mb-2">${description || ''}</p>
-          <div class="flex flex-wrap items-center gap-3 text-xs text-gray-500">
-            <span class="flex items-center gap-1">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-              ${Math.ceil((ex.duration || 60) / 60)} ${getText('min', lang)}
-            </span>
-            <span class="px-2 py-0.5 bg-gray-100 rounded">${diffLabel}</span>
+      <div class="exercise-card p-4 bg-white rounded-xl border border-gray-100 hover:shadow-sm transition-shadow">
+        <div class="flex items-start gap-4">
+          <span class="flex-shrink-0 w-10 h-10 bg-pink-600 text-white rounded-full flex items-center justify-center font-bold">
+            ${index + 1}
+          </span>
+          <div class="flex-1 min-w-0">
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <h3 class="font-semibold text-gray-900">${title}</h3>
+              ${ex.category === 'warmup' ? `<span class="px-2 py-0.5 text-xs bg-blue-100 text-blue-700 rounded-full">${getText('warmup', lang)}</span>` : ''}
+              ${ex.category === 'cooldown' ? `<span class="px-2 py-0.5 text-xs bg-green-100 text-green-700 rounded-full">${getText('cooldown', lang)}</span>` : ''}
+            </div>
+            <p class="text-sm text-gray-600 mb-2">${description || ''}</p>
+            <div class="flex flex-wrap items-center gap-3 text-xs text-gray-500">
+              <span class="flex items-center gap-1">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                ${Math.ceil((ex.duration || 60) / 60)} ${getText('min', lang)}
+              </span>
+              <span class="px-2 py-0.5 bg-gray-100 rounded">${diffLabel}</span>
+            </div>
+            ${actionButtons}
+            ${stepsHTML}
           </div>
         </div>
       </div>
@@ -311,6 +373,20 @@ function displayWorkout(workout, container, lang) {
       </div>
     </div>
   `;
+
+  // Add event listeners for expandable steps
+  container.querySelectorAll('.exercise-toggle').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.exercise-card');
+      const steps = card.querySelector('.exercise-steps');
+      const icon = btn.querySelector('.toggle-icon');
+
+      if (steps) {
+        steps.classList.toggle('hidden');
+        icon?.classList.toggle('rotate-180');
+      }
+    });
+  });
 }
 
 // Comprehensive embedded exercises for fallback
