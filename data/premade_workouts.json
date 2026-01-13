@@ -185,6 +185,16 @@
       },
       "featured": true,
       "calories": "30-40",
+      "follow_along_video": {
+        "id": "869DQ4sdEXw",
+        "title": "5 Minute Flat Abs!",
+        "channel": "Blogilates"
+      },
+      "related_videos": [
+        {"id": "lr5oEBVUevs", "title": "Beautiful Abs - Pilates Core Sculpting", "channel": "Blogilates"},
+        {"id": "AqXmgy5GTzI", "title": "Muffintop Massacre", "channel": "Blogilates"},
+        {"id": "9Yb8hFaoEhY", "title": "8 MIN AB CRUSHER", "channel": "Pamela Reif"}
+      ],
       "exercises": [
         {
           "name": "Pelvic Tilts",
@@ -252,6 +262,15 @@
       },
       "featured": false,
       "calories": "15-25",
+      "follow_along_video": {
+        "id": "4C-gxOE0j7s",
+        "title": "20 Min Morning Pilates Routine",
+        "channel": "Move With Nicole"
+      },
+      "related_videos": [
+        {"id": "1092LottieMurphy", "title": "Day 6: Unwind Pilates", "channel": "Lottie Murphy"},
+        {"id": "1168LottieMurphy", "title": "Day 13: Pilates Stretch", "channel": "Lottie Murphy"}
+      ],
       "exercises": [
         {
           "name": "Full Body Stretch",
@@ -383,6 +402,15 @@
       },
       "featured": true,
       "calories": "10-20",
+      "follow_along_video": {
+        "id": "MWDu3gLgJ8E",
+        "title": "Pilates for Back Pain Relief",
+        "channel": "Jessica Valant Pilates"
+      },
+      "related_videos": [
+        {"id": "Lg0b0f4RqkA", "title": "Posture Correcting Pilates", "channel": "Jessica Valant"},
+        {"id": "djB2c2rpYsE", "title": "Lower Back Pain Relief Pilates", "channel": "Jessica Valant"}
+      ],
       "exercises": [
         {
           "name": "Neck Rolls",
@@ -447,6 +475,16 @@
       },
       "featured": true,
       "calories": "50-70",
+      "follow_along_video": {
+        "id": "4C-gxOE0j7s",
+        "title": "20 Min Morning Pilates Routine",
+        "channel": "Move With Nicole"
+      },
+      "related_videos": [
+        {"id": "I6xCb7s5CE4", "title": "Beautiful Body Pilates - Total Body", "channel": "Blogilates"},
+        {"id": "QhxwCPwCrOQ", "title": "Slim 'n Sculpt! Beginner's POP Pilates", "channel": "Blogilates"},
+        {"id": "QYgSGfdFXj4", "title": "Day 1: Strong and Calm Pilates", "channel": "Lottie Murphy"}
+      ],
       "exercises": [
         {
           "name": "Full Body Reach",
@@ -670,6 +708,16 @@
       },
       "featured": true,
       "calories": "75-95",
+      "follow_along_video": {
+        "id": "jEFG7H3Q4IP",
+        "title": "Booty Burn Pilates",
+        "channel": "Bailey Brown Pilates"
+      },
+      "related_videos": [
+        {"id": "Zity7qS089s", "title": "Build a Booty Workout - Beginners", "channel": "Blogilates"},
+        {"id": "ym_ktF4ePMw", "title": "Day 3: Booty + Abs Sculpt", "channel": "Pilatesbody by Kayla"},
+        {"id": "xSTU1V7E8WD", "title": "Booty Lift Pilates", "channel": "Isa Welly"}
+      ],
       "exercises": [
         {
           "name": "Glute Bridges",
@@ -785,6 +833,16 @@
       },
       "featured": true,
       "calories": "40-60",
+      "follow_along_video": {
+        "id": "GFofzRS10-s",
+        "title": "Day 11: Calming & Cosy Pilates",
+        "channel": "Lottie Murphy"
+      },
+      "related_videos": [
+        {"id": "c4MfXAzp5ME", "title": "Day 13: Pilates Stretch", "channel": "Lottie Murphy"},
+        {"id": "2coNVRdG_Vg", "title": "Strengthen & Stretch Pilates", "channel": "Lottie Murphy"},
+        {"id": "yTUV9W5F6XE", "title": "Pilates Stretch & Tone", "channel": "Isa Welly"}
+      ],
       "exercises": [
         {
           "name": "Grounding Breath",
