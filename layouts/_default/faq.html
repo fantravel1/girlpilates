@@ -20,31 +20,6 @@
   <!-- FAQ Content -->
   <div class="container py-12">
     <div class="max-w-3xl mx-auto">
-      <!-- Parse content into FAQ sections -->
-      {{ $content := .RawContent }}
-
-      <div class="space-y-8">
-        {{ $sections := findRE "(?s)## ([^\n]+)\n(.*?)(?=\n## |$)" $content }}
-        {{ range $sections }}
-          {{ $parts := findRE "(?s)## ([^\n]+)\n(.*)" . }}
-          {{ with $parts }}
-            {{ $sectionTitle := index (findRE "## ([^\n]+)" (index . 0)) 0 }}
-            {{ $sectionTitle = replaceRE "^## " "" $sectionTitle }}
-
-            <section>
-              <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                <span class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center">
-                  <svg class="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                  </svg>
-                </span>
-                {{ $sectionTitle }}
-              </h2>
-            </section>
-          {{ end }}
-        {{ end }}
-      </div>
-
       <!-- Render full content with styling -->
       <div class="prose prose-lg prose-pink max-w-none
         prose-h2:text-2xl prose-h2:font-bold prose-h2:text-gray-900 prose-h2:mt-12 prose-h2:mb-6 prose-h2:flex prose-h2:items-center prose-h2:gap-3
