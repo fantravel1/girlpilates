@@ -238,7 +238,7 @@ async function initPagefindSearch() {
 
         // Get full data for results and sort by metadata match
         const fullResults = await Promise.all(
-          results.results.slice(0, 12).map(async (result) => {
+          results.results.slice(0, 20).map(async (result) => {
             const data = await result.data();
             return {
               ...data,
@@ -248,20 +248,32 @@ async function initPagefindSearch() {
           })
         );
 
-        // Sort by metadata match first, then by pagefind score
-        fullResults.sort((a, b) => {
-          if (b.metadataMatch !== a.metadataMatch) {
-            return b.metadataMatch - a.metadataMatch;
-          }
-          return b.score - a.score;
-        });
+        // Deduplicate by URL - keep the highest scoring result for each URL
+        const seenUrls = new Set();
+        const deduplicatedResults = fullResults
+          .sort((a, b) => {
+            // Sort by metadata match first, then by pagefind score
+            if (b.metadataMatch !== a.metadataMatch) {
+              return b.metadataMatch - a.metadataMatch;
+            }
+            return b.score - a.score;
+          })
+          .filter((result) => {
+            if (seenUrls.has(result.url)) {
+              return false;
+            }
+            seenUrls.add(result.url);
+            return true;
+          })
+          .slice(0, 12);
 
-        window.currentResults = fullResults;
+        window.currentResults = deduplicatedResults;
         window.selectedIndex = -1;
 
-        const items = fullResults.map((data, index) => {
+        const items = deduplicatedResults.map((data, index) => {
           const type = getContentType(data.url);
           const icon = getTypeIcon(type);
+          const cleanExcerpt = formatExcerpt(data.excerpt);
 
           return `
             <a href="${data.url}" class="search-result-item" data-index="${index}">
@@ -273,7 +285,7 @@ async function initPagefindSearch() {
                   <span class="search-result-type badge-${type}">${type}</span>
                 </div>
                 <h3 class="font-medium text-gray-900 truncate">${data.meta?.title || 'Untitled'}</h3>
-                <p class="text-sm text-gray-500 line-clamp-2 mt-0.5">${data.excerpt}</p>
+                <p class="search-result-excerpt text-sm text-gray-500 line-clamp-2 mt-0.5">${cleanExcerpt}</p>
               </div>
               <svg class="w-5 h-5 text-gray-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -343,6 +355,30 @@ function getTypeIcon(type) {
     other: '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>'
   };
   return icons[type] || icons.other;
+}
+
+// Format excerpt for cleaner display
+function formatExcerpt(excerpt) {
+  if (!excerpt) return '';
+
+  // Clean up the excerpt text
+  let cleaned = excerpt
+    // Normalize whitespace
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  // If excerpt starts with lowercase or mid-word, add ellipsis
+  if (cleaned && /^[a-z]/.test(cleaned)) {
+    cleaned = '…' + cleaned;
+  }
+
+  // Ensure excerpt ends cleanly (not mid-word if possible)
+  // If it ends mid-sentence without punctuation, add ellipsis
+  if (cleaned && !/[.!?…]$/.test(cleaned)) {
+    cleaned = cleaned + '…';
+  }
+
+  return cleaned;
 }
 
 // Lite YouTube Embed
