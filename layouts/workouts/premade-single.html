@@ -132,6 +132,7 @@
 
         <!-- Exercise List -->
         {{ with .exercises }}
+        {{ $exercises := . }}
         <div class="mt-12 p-6 bg-white rounded-2xl border border-gray-200">
           <h3 class="font-semibold text-gray-900 mb-4 flex items-center gap-2">
             <svg class="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -140,8 +141,8 @@
             {{ i18n "exercises_in_workout" | default "Exercises in This Workout" }}
           </h3>
           <ol class="space-y-3">
-            {{ range $i, $ex := . }}
-            <li class="flex items-center gap-4 py-2 {{ if lt $i (sub (len $) 1) }}border-b border-gray-100{{ end }}">
+            {{ range $i, $ex := $exercises }}
+            <li class="flex items-center gap-4 py-2 {{ if lt $i (sub (len $exercises) 1) }}border-b border-gray-100{{ end }}">
               <span class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold
                 {{ if eq .type "warmup" }}bg-blue-100 text-blue-600{{ else if eq .type "cooldown" }}bg-purple-100 text-purple-600{{ else }}bg-pink-100 text-pink-600{{ end }}">
                 {{ add $i 1 }}
