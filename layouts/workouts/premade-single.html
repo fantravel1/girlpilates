@@ -293,8 +293,34 @@
               {{ i18n "begin_workout" | default "Begin Workout" }}
             </button>
             <p class="text-white/60 text-xs mt-3">{{ len .exercises }} exercises · {{ .duration }} min · Press Space to pause</p>
-            <!-- Exercise data for workout player -->
-            <script type="application/json" id="workout-exercises-data">{{ .exercises | jsonify }}</script>
+            <!-- Exercise data for workout player (enhanced with video links) -->
+            {{- $exercisesDb := site.Data.exercises.exercises -}}
+            {{- $enhancedExercises := slice -}}
+            {{- range .exercises -}}
+              {{- $ex := . -}}
+              {{- $exName := .name | lower -}}
+              {{- $videoId := "" -}}
+              {{- $videoTitle := "" -}}
+              {{- range $exercisesDb -}}
+                {{- if eq (.title | lower) $exName -}}
+                  {{- with .recommended_videos -}}
+                    {{- $firstVideo := index . 0 -}}
+                    {{- $videoId = $firstVideo.id -}}
+                    {{- $videoTitle = $firstVideo.title -}}
+                  {{- end -}}
+                {{- end -}}
+              {{- end -}}
+              {{- $enhanced := merge $ex (dict "video_id" $videoId "video_title" $videoTitle) -}}
+              {{- $enhancedExercises = $enhancedExercises | append $enhanced -}}
+            {{- end -}}
+            <script type="application/json" id="workout-exercises-data">{{ $enhancedExercises | jsonify }}</script>
+            <!-- Video data for workout player -->
+            {{ with .follow_along_video }}
+            <div data-follow-along-video='{{ . | jsonify }}' class="hidden"></div>
+            {{ end }}
+            {{ with .related_videos }}
+            <div data-related-videos='{{ . | jsonify }}' class="hidden"></div>
+            {{ end }}
             {{ else }}
             <p class="text-white/80 text-sm mb-4">{{ i18n "follow_along" | default "Follow along with the workout above" }}</p>
             <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="w-full bg-white text-pink-600 font-semibold py-3 px-6 rounded-xl hover:bg-gray-100 transition-colors flex items-center justify-center gap-2">
